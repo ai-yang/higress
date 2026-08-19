@@ -1,0 +1,7 @@
+compose_ps_resources=0
+docker_project_containers=0
+docker_project_networks=0
+docker_project_volumes=0
+port_11088_curl_exit=7
+port_19988_curl_exit=7
+port_result=connection_refused

@@ -1,0 +1,1 @@
+Docker server 26.0.0

@@ -1,0 +1,39 @@
+Script started on 2026-08-11 19:31:27+08:00 [<not executed on terminal>]
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 41,
+    "backend-1": 59
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 55,
+    "backend-1": 45
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 48,
+    "backend-1": 52
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
+
+Script done on 2026-08-11 19:31:32+08:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,261 @@
+{
+  "combined": {
+    "BenchmarkExecConditionalStr": {
+      "allocs_per_op": [
+        160,
+        28
+      ],
+      "allocs_reduction_pct": 82.5,
+      "b_per_op": [
+        12017,
+        1296
+      ],
+      "b_reduction_pct": 89.2152783556628,
+      "baseline": {
+        "ci95_mean_normal": [
+          25695.6372638352,
+          26068.6127361648
+        ],
+        "cv_pct": 2.325007032843345,
+        "max": 28879.0,
+        "mean": 25882.125,
+        "median": 25753.0,
+        "min": 25130.0,
+        "n": 40,
+        "sd": 601.7612264993057
+      },
+      "ci95_nonoverlap": true,
+      "median_speedup_x": 2.9753336029114434,
+      "median_time_reduction_pct": 66.39032345746126,
+      "optimized": {
+        "ci95_mean_normal": [
+          8637.235813278703,
+          8708.014186721297
+        ],
+        "cv_pct": 1.316721534717493,
+        "max": 9011.0,
+        "mean": 8672.625,
+        "median": 8655.5,
+        "min": 8477.0,
+        "n": 40,
+        "sd": 114.19432100029296
+      }
+    },
+    "BenchmarkParseTmplStr": {
+      "allocs_per_op": [
+        33,
+        11
+      ],
+      "allocs_reduction_pct": 66.66666666666667,
+      "b_per_op": [
+        3304,
+        832
+      ],
+      "b_reduction_pct": 74.818401937046,
+      "baseline": {
+        "ci95_mean_normal": [
+          13458.49946657736,
+          13577.05053342264
+        ],
+        "cv_pct": 1.4149600617461933,
+        "max": 14047.0,
+        "mean": 13517.775,
+        "median": 13502.5,
+        "min": 13208.0,
+        "n": 40,
+        "sd": 191.2711174867115
+      },
+      "ci95_nonoverlap": true,
+      "median_speedup_x": 1.2896986484550361,
+      "median_time_reduction_pct": 22.46250694315868,
+      "optimized": {
+        "ci95_mean_normal": [
+          10444.503641153706,
+          10523.996358846294
+        ],
+        "cv_pct": 1.2233026181904039,
+        "max": 10753.0,
+        "mean": 10484.25,
+        "median": 10469.5,
+        "min": 10291.0,
+        "n": 40,
+        "sd": 128.25410474762742
+      }
+    }
+  },
+  "method": {
+    "samples_per_variant_per_series": 20,
+    "series": 2,
+    "summary": "median; sample CV; normal-approximation 95% CI for mean"
+  },
+  "series": {
+    "1": {
+      "BenchmarkExecConditionalStr": {
+        "allocs_per_op": [
+          160,
+          28
+        ],
+        "allocs_reduction_pct": 82.5,
+        "b_per_op": [
+          12017,
+          1296
+        ],
+        "b_reduction_pct": 89.2152783556628,
+        "baseline": {
+          "ci95_mean_normal": [
+            25762.394359179463,
+            26413.805640820534
+          ],
+          "cv_pct": 2.848667468645092,
+          "max": 28879.0,
+          "mean": 26088.1,
+          "median": 25923.5,
+          "min": 25270.0,
+          "n": 20,
+          "sd": 743.1632178876001
+        },
+        "ci95_nonoverlap": true,
+        "median_speedup_x": 2.9910580362293757,
+        "median_time_reduction_pct": 66.56701448492682,
+        "optimized": {
+          "ci95_mean_normal": [
+            8630.260570489205,
+            8728.139429510797
+          ],
+          "cv_pct": 1.2865839601293738,
+          "max": 8868.0,
+          "mean": 8679.2,
+          "median": 8667.0,
+          "min": 8477.0,
+          "n": 20,
+          "sd": 111.66519506754862
+        }
+      },
+      "BenchmarkParseTmplStr": {
+        "allocs_per_op": [
+          33,
+          11
+        ],
+        "allocs_reduction_pct": 66.66666666666667,
+        "b_per_op": [
+          3304,
+          832
+        ],
+        "b_reduction_pct": 74.818401937046,
+        "baseline": {
+          "ci95_mean_normal": [
+            13405.859196894811,
+            13600.640803105189
+          ],
+          "cv_pct": 1.6456541348624698,
+          "max": 14047.0,
+          "mean": 13503.25,
+          "median": 13486.0,
+          "min": 13208.0,
+          "n": 20,
+          "sd": 222.21679196581644
+        },
+        "ci95_nonoverlap": true,
+        "median_speedup_x": 1.2924433370070438,
+        "median_time_reduction_pct": 22.627168915912797,
+        "optimized": {
+          "ci95_mean_normal": [
+            10407.010605467494,
+            10520.589394532504
+          ],
+          "cv_pct": 1.238330970562206,
+          "max": 10696.0,
+          "mean": 10463.8,
+          "median": 10434.5,
+          "min": 10291.0,
+          "n": 20,
+          "sd": 129.5764760976881
+        }
+      }
+    },
+    "2": {
+      "BenchmarkExecConditionalStr": {
+        "allocs_per_op": [
+          160,
+          28
+        ],
+        "allocs_reduction_pct": 82.5,
+        "b_per_op": [
+          12017,
+          1296
+        ],
+        "b_reduction_pct": 89.2152783556628,
+        "baseline": {
+          "ci95_mean_normal": [
+            25536.39562150085,
+            25815.90437849915
+          ],
+          "cv_pct": 1.2419223576192528,
+          "max": 26483.0,
+          "mean": 25676.15,
+          "median": 25632.5,
+          "min": 25130.0,
+          "n": 20,
+          "sd": 318.8778474258558
+        },
+        "ci95_nonoverlap": true,
+        "median_speedup_x": 2.9617540008088277,
+        "median_time_reduction_pct": 66.23622354432848,
+        "optimized": {
+          "ci95_mean_normal": [
+            8613.811510018197,
+            8718.288489981802
+          ],
+          "cv_pct": 1.3753978802485467,
+          "max": 9011.0,
+          "mean": 8666.05,
+          "median": 8654.5,
+          "min": 8484.0,
+          "n": 20,
+          "sd": 119.19266800127916
+        }
+      },
+      "BenchmarkParseTmplStr": {
+        "allocs_per_op": [
+          33,
+          11
+        ],
+        "allocs_reduction_pct": 66.66666666666667,
+        "b_per_op": [
+          3304,
+          832
+        ],
+        "b_reduction_pct": 74.818401937046,
+        "baseline": {
+          "ci95_mean_normal": [
+            13462.629889631658,
+            13601.97011036834
+          ],
+          "cv_pct": 1.1747184987899986,
+          "max": 13835.0,
+          "mean": 13532.3,
+          "median": 13502.5,
+          "min": 13279.0,
+          "n": 20,
+          "sd": 158.96643141175898
+        },
+        "ci95_nonoverlap": true,
+        "median_speedup_x": 1.2884064885496183,
+        "median_time_reduction_pct": 22.384743566006293,
+        "optimized": {
+          "ci95_mean_normal": [
+            10449.101111097812,
+            10560.298888902189
+          ],
+          "cv_pct": 1.2076508324723843,
+          "max": 10753.0,
+          "mean": 10504.7,
+          "median": 10480.0,
+          "min": 10296.0,
+          "n": 20,
+          "sd": 126.86009699872658
+        }
+      }
+    }
+  }
+}

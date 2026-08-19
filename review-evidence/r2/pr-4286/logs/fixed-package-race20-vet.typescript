@@ -1,0 +1,21 @@
+Script started on 2026-08-11 19:08:22+08:00 [<not executed on terminal>]
++ REPO=<workspace>/higress-audit-bug-control
++ IMAGE=golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f
++ docker run --rm --volume <workspace>/higress-audit-bug-control:/src:ro --volume pr4286-r2-go-mod-cache:/gomodcache --volume pr4286-r2-go-build-cache:/gocache --workdir /src/plugins/golang-filter --env GOMODCACHE=/gomodcache --env GOCACHE=/gocache --env GOPROXY=https://goproxy.cn,direct golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f bash -euo pipefail -c '
+    go version
+    go test -mod=readonly ./mcp-server/registry
+    go test -mod=readonly -race -count=20 -run "^TestSelectOneInstanceCanSelectEveryBackend$" ./mcp-server/registry
+    go vet -mod=readonly ./mcp-server/registry
+  '
+go version go1.24.4 linux/amd64
+go: downloading github.com/higress-group/mcp-go v0.0.0-20250428145706-792ce64b4b30
+go: downloading github.com/go-redis/redis/v8 v8.11.5
+go: downloading github.com/google/uuid v1.6.0
+go: downloading github.com/higress-group/envoy v0.0.0-20260810022824-5347463a5fdb
+go: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+go: downloading github.com/cespare/xxhash/v2 v2.2.0
+go: downloading google.golang.org/protobuf v1.36.10
+ok  	github.com/alibaba/higress/plugins/golang-filter/mcp-server/registry	0.005s
+ok  	github.com/alibaba/higress/plugins/golang-filter/mcp-server/registry	1.029s
+
+Script done on 2026-08-11 19:09:17+08:00 [COMMAND_EXIT_CODE="0"]

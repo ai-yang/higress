@@ -1,0 +1,17 @@
+global:
+  local: true
+  imagePullPolicy: IfNotPresent
+
+controller:
+  tag: latest
+  automaticHttps:
+    enabled: false
+
+pilot:
+  tag: de2c9628294f51b13c4a70b3a862b4372890797a
+
+gateway:
+  replicas: 1
+  tag: pr4286-r2-baseline-4b23e08a
+  service:
+    type: ClusterIP

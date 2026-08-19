@@ -1,0 +1,133 @@
+{
+  "all_assertions_passed": true,
+  "baseline_revision": "4b23e08a386779c8958673ebb052fc6306fe807c",
+  "fixed_revision": "83c5c03560ac212c8bb2e236db559a29e8bf300d",
+  "iterations_per_round": 100,
+  "rounds": [
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 100
+      },
+      "errors": [],
+      "expected_unique_backends": 1,
+      "responses": 100,
+      "round": 1,
+      "unique_backends": 1,
+      "variant": "baseline"
+    },
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 100
+      },
+      "errors": [],
+      "expected_unique_backends": 1,
+      "responses": 100,
+      "round": 2,
+      "unique_backends": 1,
+      "variant": "baseline"
+    },
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 100
+      },
+      "errors": [],
+      "expected_unique_backends": 1,
+      "responses": 100,
+      "round": 3,
+      "unique_backends": 1,
+      "variant": "baseline"
+    },
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 41,
+        "backend-1": 59
+      },
+      "errors": [],
+      "expected_unique_backends": 2,
+      "responses": 100,
+      "round": 1,
+      "unique_backends": 2,
+      "variant": "fixed"
+    },
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 55,
+        "backend-1": 45
+      },
+      "errors": [],
+      "expected_unique_backends": 2,
+      "responses": 100,
+      "round": 2,
+      "unique_backends": 2,
+      "variant": "fixed"
+    },
+    {
+      "assertion_passed": true,
+      "counts": {
+        "backend-0": 48,
+        "backend-1": 52
+      },
+      "errors": [],
+      "expected_unique_backends": 2,
+      "responses": 100,
+      "round": 3,
+      "unique_backends": 2,
+      "variant": "fixed"
+    }
+  ],
+  "runtime_health": {
+    "baseline": {
+      "go_filter_panic_counters": [
+        0,
+        0
+      ],
+      "nacos_instances": [
+        {
+          "enabled": true,
+          "healthy": true,
+          "ip": "10.244.0.8",
+          "port": 5678,
+          "weight": 1.0
+        },
+        {
+          "enabled": true,
+          "healthy": true,
+          "ip": "10.244.0.9",
+          "port": 5678,
+          "weight": 1.0
+        }
+      ],
+      "two_healthy_equal_weight_instances": true,
+      "zero_go_filter_panics": true
+    },
+    "fixed": {
+      "go_filter_panic_counters": [
+        0,
+        0
+      ],
+      "nacos_instances": [
+        {
+          "enabled": true,
+          "healthy": true,
+          "ip": "10.244.0.8",
+          "port": 5678,
+          "weight": 1.0
+        },
+        {
+          "enabled": true,
+          "healthy": true,
+          "ip": "10.244.0.9",
+          "port": 5678,
+          "weight": 1.0
+        }
+      ],
+      "two_healthy_equal_weight_instances": true,
+      "zero_go_filter_panics": true
+    }
+  }
+}

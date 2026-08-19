@@ -1,0 +1,1 @@
+gateway_id=sha256:c4e469c1e892f216a508674902cbb527d39aecf03264008123c5f07c62836f4f gateway_repo_digests=["higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:93e4da97560d00871299e67163df4f1801732aeea4934a9cea841f9e7b4a26e8"]

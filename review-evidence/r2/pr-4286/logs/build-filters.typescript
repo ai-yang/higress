@@ -1,0 +1,144 @@
+Script started on 2026-08-11 19:12:14+08:00 [<not executed on terminal>]
++ EVIDENCE=<workspace>/pr-drafts/runtime-4286-r2
++ IMAGE=golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f
++ build_filter /tmp/higress-pr4286-r2-baseline baseline
++ local source_root=/tmp/higress-pr4286-r2-baseline
++ local variant=baseline
++ docker run --rm --volume /tmp/higress-pr4286-r2-baseline:/src:ro --volume <workspace>/pr-drafts/runtime-4286-r2/build/baseline:/out --volume pr4286-r2-go-mod-cache:/gomodcache --volume pr4286-r2-go-build-cache:/gocache --workdir /src/plugins/golang-filter --env GOMODCACHE=/gomodcache --env GOCACHE=/gocache --env GOPROXY=https://goproxy.cn,direct golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f bash -euo pipefail -c '
+      go version
+      gcc --version | head -n 1
+      go env GOOS GOARCH GOVERSION GOPROXY GOMODCACHE GOCACHE
+      CGO_ENABLED=1 GOOS=linux GOARCH=amd64 CC=gcc AS=as \
+        go build -mod=readonly -buildmode=c-shared -o /out/golang-filter_amd64.so .
+    '
+go version go1.24.4 linux/amd64
+gcc (Debian 12.2.0-14+deb12u1) 12.2.0
+linux
+amd64
+go1.24.4
+https://goproxy.cn,direct
+/gomodcache
+/gocache
+go: downloading github.com/cncf/xds/go v0.0.0-20250121191232-2f005788dc42
+go: downloading github.com/distribution/distribution/v3 v3.0.0-20220526142353-ffbd94cbe269
+go: downloading github.com/luoxiner/nacos-sdk-go/v2 v2.2.9-40
+go: downloading github.com/openai/openai-go/v2 v2.7.0
+go: downloading gorm.io/driver/clickhouse v0.6.1
+go: downloading gorm.io/driver/mysql v1.5.7
+go: downloading gorm.io/driver/postgres v1.5.11
+go: downloading gorm.io/driver/sqlite v1.5.7
+go: downloading gorm.io/gorm v1.25.12
+go: downloading github.com/milvus-io/milvus-sdk-go/v2 v2.4.2
+go: downloading github.com/jinzhu/now v1.1.5
+go: downloading golang.org/x/text v0.21.0
+go: downloading github.com/jinzhu/inflection v1.0.0
+go: downloading github.com/mattn/go-sqlite3 v1.14.22
+go: downloading github.com/jackc/pgx/v5 v5.5.5
+go: downloading github.com/go-sql-driver/mysql v1.7.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d
+go: downloading cel.dev/expr v0.15.0
+go: downloading github.com/envoyproxy/protoc-gen-validate v1.0.4
+go: downloading golang.org/x/time v0.3.0
+go: downloading google.golang.org/grpc v1.59.0
+go: downloading github.com/prometheus/client_golang v1.14.0
+go: downloading gopkg.in/natefinch/lumberjack.v2 v2.0.0
+go: downloading github.com/aliyun/credentials-go v1.4.3
+go: downloading github.com/aliyun/aliyun-secretsmanager-client-go v1.1.5
+go: downloading github.com/golang/mock v1.6.0
+go: downloading github.com/alibabacloud-go/tea v1.2.2
+go: downloading github.com/alibabacloud-go/kms-20160120/v3 v3.2.3
+go: downloading go.uber.org/zap v1.27.0
+go: downloading github.com/aliyun/alibabacloud-dkms-transfer-go-sdk v0.1.8
+go: downloading github.com/alibabacloud-go/tea-utils/v2 v2.0.7
+go: downloading github.com/aliyun/alibaba-cloud-sdk-go v1.61.1800
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/alibabacloud-go/darabonba-openapi/v2 v2.0.10
+go: downloading github.com/buger/jsonparser v1.1.1
+go: downloading github.com/aliyun/alibabacloud-dkms-gcs-go-sdk v0.5.1
+go: downloading github.com/golang/protobuf v1.5.3
+go: downloading golang.org/x/sync v0.10.0
+go: downloading github.com/hashicorp/go-version v1.6.0
+go: downloading github.com/ClickHouse/clickhouse-go/v2 v2.23.2
+go: downloading github.com/alibabacloud-go/tea-utils v1.4.4
+go: downloading github.com/tidwall/gjson v1.18.0
+go: downloading github.com/milvus-io/milvus-proto/go-api/v2 v2.4.10-0.20240819025435-512e3b98866a
+go: downloading github.com/cockroachdb/errors v1.9.1
+go: downloading github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
+go: downloading github.com/jackc/puddle/v2 v2.2.1
+go: downloading golang.org/x/crypto v0.32.0
+go: downloading github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a
+go: downloading github.com/jackc/pgpassfile v1.0.0
+go: downloading golang.org/x/net v0.34.0
+go: downloading github.com/json-iterator/go v1.1.12
+go: downloading github.com/modern-go/reflect2 v1.0.2
+go: downloading github.com/alibabacloud-go/debug v1.0.1
+go: downloading github.com/orcaman/concurrent-map v0.0.0-20210501183033-44dafcb38ecc
+go: downloading github.com/deckarep/golang-set v1.7.1
+go: downloading github.com/alibabacloud-go/tea-xml v1.1.3
+go: downloading github.com/alibabacloud-go/alibabacloud-gateway-spi v0.0.5
+go: downloading github.com/alibabacloud-go/darabonba-encode-util v0.0.2
+go: downloading github.com/alibabacloud-go/darabonba-array v0.1.0
+go: downloading github.com/alibabacloud-go/openapi-util v0.1.0
+go: downloading github.com/alibabacloud-go/darabonba-string v1.0.2
+go: downloading github.com/alibabacloud-go/darabonba-map v0.0.2
+go: downloading gopkg.in/ini.v1 v1.67.0
+go: downloading github.com/alibabacloud-go/alibabacloud-gateway-pop v0.0.6
+go: downloading github.com/alibabacloud-go/endpoint-util v1.1.0
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237
+go: downloading github.com/tidwall/sjson v1.2.5
+go: downloading github.com/beorn7/perks v1.0.1
+go: downloading github.com/prometheus/procfs v0.8.0
+go: downloading github.com/prometheus/common v0.37.0
+go: downloading github.com/prometheus/client_model v0.4.0
+go: downloading github.com/tidwall/pretty v1.2.1
+go: downloading github.com/tidwall/match v1.2.0
+go: downloading go.uber.org/multierr v1.11.0
+go: downloading github.com/gogo/protobuf v1.3.2
+go: downloading github.com/getsentry/sentry-go v0.12.0
+go: downloading github.com/cockroachdb/logtags v0.0.0-20211118104740-dabe8e521a4f
+go: downloading github.com/cockroachdb/redact v1.1.3
+go: downloading github.com/kr/pretty v0.3.1
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/ClickHouse/ch-go v0.61.5
+go: downloading github.com/andybalholm/brotli v1.1.0
+go: downloading go.opentelemetry.io/otel/trace v1.26.0
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: downloading github.com/shopspring/decimal v1.4.0
+go: downloading github.com/paulmach/orb v0.11.1
+go: downloading github.com/tjfoc/gmsm v1.4.1
+go: downloading github.com/clbanning/mxj/v2 v2.5.5
+go: downloading github.com/alibabacloud-go/darabonba-signature-util v0.0.7
+go: downloading golang.org/x/sys v0.29.0
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.4
+go: downloading go.opentelemetry.io/otel v1.26.0
+go: downloading github.com/rogpeppe/go-internal v1.10.0
+go: downloading github.com/kr/text v0.2.0
+go: downloading github.com/pierrec/lz4/v4 v4.1.21
+go: downloading github.com/go-faster/city v1.0.1
+go: downloading github.com/go-faster/errors v0.7.1
+go: downloading github.com/klauspost/compress v1.17.8
+go: downloading github.com/segmentio/asm v1.2.0
+go: downloading github.com/jmespath/go-jmespath v0.4.0
++ build_filter <workspace>/higress-audit-bug-control fixed
++ local source_root=<workspace>/higress-audit-bug-control
++ local variant=fixed
++ docker run --rm --volume <workspace>/higress-audit-bug-control:/src:ro --volume <workspace>/pr-drafts/runtime-4286-r2/build/fixed:/out --volume pr4286-r2-go-mod-cache:/gomodcache --volume pr4286-r2-go-build-cache:/gocache --workdir /src/plugins/golang-filter --env GOMODCACHE=/gomodcache --env GOCACHE=/gocache --env GOPROXY=https://goproxy.cn,direct golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f bash -euo pipefail -c '
+      go version
+      gcc --version | head -n 1
+      go env GOOS GOARCH GOVERSION GOPROXY GOMODCACHE GOCACHE
+      CGO_ENABLED=1 GOOS=linux GOARCH=amd64 CC=gcc AS=as \
+        go build -mod=readonly -buildmode=c-shared -o /out/golang-filter_amd64.so .
+    '
+go version go1.24.4 linux/amd64
+gcc (Debian 12.2.0-14+deb12u1) 12.2.0
+linux
+amd64
+go1.24.4
+https://goproxy.cn,direct
+/gomodcache
+/gocache
++ sha256sum <workspace>/pr-drafts/runtime-4286-r2/build/baseline/golang-filter_amd64.so <workspace>/pr-drafts/runtime-4286-r2/build/fixed/golang-filter_amd64.so
+962222bdb25c198072d60e97c9cac01486bfa8453500af4901f4acc2549a8ec1  <workspace>/pr-drafts/runtime-4286-r2/build/baseline/golang-filter_amd64.so
+cb517a76abec6e918f9a0b8d124da956311c2562718aa31cdd295de38fe1efe0  <workspace>/pr-drafts/runtime-4286-r2/build/fixed/golang-filter_amd64.so
+
+Script done on 2026-08-11 19:13:55+08:00 [COMMAND_EXIT_CODE="0"]

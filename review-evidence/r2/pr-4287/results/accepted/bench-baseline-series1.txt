@@ -1,0 +1,46 @@
+goos: linux
+goarch: amd64
+pkg: api-workflow/utils
+cpu: Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
+BenchmarkExecConditionalStr 	   13618	     26028 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13980	     25557 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13887	     26124 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13526	     26240 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13662	     26281 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   14109	     25270 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13954	     25690 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13826	     25825 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   14079	     25856 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13828	     25675 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13869	     25645 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13988	     26295 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13497	     26930 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   12912	     28879 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13800	     25968 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13860	     25752 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13778	     26018 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13694	     25754 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13998	     25879 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkExecConditionalStr 	   13948	     26096 ns/op	   12017 B/op	     160 allocs/op
+BenchmarkParseTmplStr       	   25509	     14047 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   25243	     13328 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26251	     13339 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26667	     13426 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26314	     13600 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   25921	     13427 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26638	     13272 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26802	     13228 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26170	     13515 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26113	     13614 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26685	     13224 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26929	     13208 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26703	     13510 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26210	     13740 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26376	     13462 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26630	     13368 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26720	     13540 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26210	     13809 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   25959	     13756 ns/op	    3304 B/op	      33 allocs/op
+BenchmarkParseTmplStr       	   26053	     13652 ns/op	    3304 B/op	      33 allocs/op
+PASS
+ok  	api-workflow/utils	22.309s

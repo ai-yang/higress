@@ -1,0 +1,13 @@
+Linux 5.15.0-186-generic (aia) 	08/11/26 	_x86_64_	(80 CPU)
+
+19:34:51     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+19:34:52       0    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+
+19:34:52     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+19:34:53       0    1.01    0.00    1.01    0.00    0.00    1.01    0.00    0.00    0.00   96.97
+
+19:34:53     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+19:34:54       0    2.13    0.00   11.70    0.00    0.00    0.00    0.00    0.00    0.00   86.17
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:       0    1.03    0.00    4.14    0.00    0.00    0.34    0.00    0.00    0.00   94.48

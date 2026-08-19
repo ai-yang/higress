@@ -1,0 +1,39 @@
+Script started on 2026-08-11 19:33:26+08:00 [<not executed on terminal>]
++ /tmp/pr4286-bin/kind get clusters
+pr4286-r2
++ docker ps -a --filter name=pr4286-r2
+CONTAINER ID   IMAGE                                       COMMAND                  CREATED          STATUS          PORTS                       NAMES
+ce2f163e009e   docker.m.daocloud.io/kindest/node:v1.25.3   "/usr/local/bin/entr…"   11 minutes ago   Up 11 minutes   127.0.0.1:35713->6443/tcp   pr4286-r2-control-plane
++ docker volume ls --filter name=pr4286-r2
+DRIVER    VOLUME NAME
+local     pr4286-r2-go-build-cache
+local     pr4286-r2-go-mod-cache
++ ss -ltnp
++ grep -E ':(18080|18848)\b'
++ true
++ /tmp/pr4286-bin/kind delete cluster --name pr4286-r2
+Deleting cluster "pr4286-r2" ...
++ docker volume rm pr4286-r2-go-build-cache pr4286-r2-go-mod-cache
+pr4286-r2-go-build-cache
+pr4286-r2-go-mod-cache
++ git -C <workspace>/higress-audit-bug-control worktree remove /tmp/higress-pr4286-r2-baseline
++ /tmp/pr4286-bin/kind get clusters
+No kind clusters found.
++ docker ps -a --filter name=pr4286-r2
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
++ docker volume ls --filter name=pr4286-r2
+DRIVER    VOLUME NAME
++ ss -ltnp
++ grep -E ':(18080|18848)\b'
++ true
++ git -C <workspace>/higress-audit-bug-control worktree list
+<workspace>/higress                    0fe031f1 [agent/fix-httproute-higress-backendref]
+<workspace>/higress-audit-baseline     c1fbf7fb (detached HEAD)
+<workspace>/higress-audit-bug-control  83c5c035 [agent/fix-mcp-registry-instance-selection]
+<workspace>/higress-audit-bug-plugin   4649f92b [agent/fix-gemini-function-calls]
+<workspace>/higress-audit-perf         d62bdbdf [agent/perf-cache-api-workflow-regexp]
+<workspace>/higress-issue1536          57ba17d8 [agent/fix-eureka-plan-shutdown]
+<workspace>/higress-issue3743          c7f41a0d [agent/fix-ai-quota-non-stream]
+/tmp/higress-pr4287-r2-base                         4b23e08a (detached HEAD)
+
+Script done on 2026-08-11 19:33:31+08:00 [COMMAND_EXIT_CODE="0"]

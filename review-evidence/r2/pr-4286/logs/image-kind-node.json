@@ -1,0 +1,64 @@
+[
+    {
+        "Id": "sha256:5e6551f3a2209fd00168c23832a8a6564eb6347805e73973044d065893883e29",
+        "RepoTags": [
+            "docker.m.daocloud.io/kindest/node:v1.25.3"
+        ],
+        "RepoDigests": [
+            "docker.m.daocloud.io/kindest/node@sha256:cd248d1438192f7814fbca8fede13cfe5b9918746dfa12583976158a834fd5c5"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2022-11-02T03:23:49.55089881Z",
+        "DockerVersion": "20.10.19",
+        "Author": "",
+        "Config": {
+            "Hostname": "9d465b0ed75f",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "container=docker"
+            ],
+            "Cmd": null,
+            "Image": "docker.io/kindest/base:v20221102-76f15095",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/usr/local/bin/entrypoint",
+                "/sbin/init"
+            ],
+            "OnBuild": null,
+            "Labels": {},
+            "StopSignal": "SIGRTMIN+3"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 898081841,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/984f68e0356cf751a5d96a391042cb5150dfa644043df6ced0b8b9aaa3f32219/diff",
+                "MergedDir": "/var/lib/docker/overlay2/c688fc7de8a849a12dd8ca896192871b78fe79c2156c9826753bb33b4c9161c7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/c688fc7de8a849a12dd8ca896192871b78fe79c2156c9826753bb33b4c9161c7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/c688fc7de8a849a12dd8ca896192871b78fe79c2156c9826753bb33b4c9161c7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:1b2cf029cc9907c94860df86a78aad374659b21ca9bb53b89afe516e96180c34",
+                "sha256:6c2ec615b9bed71a8eb2c18cc893166a50c0421b80116e8bc08180d8d0da4e8d"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pr4286-dummy-backend
+  namespace: pr4286-runtime
+spec:
+  selector:
+    app: pr4286-backend-0
+  ports:
+    - name: http
+      port: 5678
+      targetPort: 5678
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pr4286-route
+  namespace: pr4286-runtime
+spec:
+  ingressClassName: higress
+  rules:
+    - host: pr4286.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: pr4286-dummy-backend
+                port:
+                  number: 5678

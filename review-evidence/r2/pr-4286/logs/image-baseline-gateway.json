@@ -1,0 +1,83 @@
+[
+    {
+        "Id": "sha256:43d5d4245b5eb130a0c75862c770167597e971beea398c15dc1931aeea01a8e4",
+        "RepoTags": [
+            "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:pr4286-r2-baseline-4b23e08a"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-08-11T19:14:24.200764209+08:00",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "ISTIO_META_ISTIO_PROXY_SHA=1a53bf14a57976dd0f509752b748caf3b1125d54",
+                "SUPERCRONIC_URL=https://github.com/higress-group/proxy/releases/download/v2.2.0/supercronic-linux-amd64",
+                "SUPERCRONIC=supercronic-linux-amd64"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/usr/local/bin/higress-proxy-start.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "io.higress.runtime-verification": "pr4286-r2",
+                "io.higress.runtime-verification.variant": "baseline",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.revision": "4b23e08a386779c8958673ebb052fc6306fe807c",
+                "org.opencontainers.image.source": "https://github.com/higress-group/higress",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1343353782,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a784c4384f9577e2a4f6f2b02b204d9e57d0cceff75b029b5959d1d09e55ab89/diff:/var/lib/docker/overlay2/c1f16371194f1895862e59c6aa83cfaa54bd8f8794d7d402468abd3568b3a64f/diff:/var/lib/docker/overlay2/96f613788572c2b5f3d4d780e8d828ca68d6b71dedcda5511e60dbf10d269b11/diff:/var/lib/docker/overlay2/6a8838329638b0ad8c5a74ecbee4e3c0379d79b01ede3bd496c283188ad19c92/diff:/var/lib/docker/overlay2/549c13ca6863c70eb8014d8dea385decb484f0ede3961bdecef822d01669136b/diff:/var/lib/docker/overlay2/47476ac798821bab5003ce6e62e6a0fb0d030834c08a3e4378f5ad224f1d6c04/diff:/var/lib/docker/overlay2/dfb15bee428f9861e01f89e3aa884aef4b9ec3cd50192205fcabf9b06898c725/diff:/var/lib/docker/overlay2/13e8d344d147f53b8b794a8c9ffd35303535822f035fbcd117a2bda4bc757993/diff:/var/lib/docker/overlay2/03c9feefdd8a545cf2e4da99d201e3422c705182cc48cb49d38e9106fde56529/diff:/var/lib/docker/overlay2/a6dcaa2565e8acf7604c1d37b6366b63f886baa02c2eb861cd23ac6a265d7dd1/diff:/var/lib/docker/overlay2/0b0bdf0b11ac8b0564ce52073bd17bd130321cb8071d10dccadb5f5873f139e7/diff:/var/lib/docker/overlay2/3ad0ee81204c59ba3174d2b398fb772c89d14ba9fc2f1b2c573086cb8cbb8b41/diff:/var/lib/docker/overlay2/6f28188f27010d1ffbffd3eca367867644f56a84f2453c4c3cbd4ddb4812fb83/diff:/var/lib/docker/overlay2/73be25dfb45cb067ea3c4fa63305983dc9e29cab68353eb84d68216ae215d6bb/diff",
+                "MergedDir": "/var/lib/docker/overlay2/ljse78ws1vi5fyfixi2eb6o1e/merged",
+                "UpperDir": "/var/lib/docker/overlay2/ljse78ws1vi5fyfixi2eb6o1e/diff",
+                "WorkDir": "/var/lib/docker/overlay2/ljse78ws1vi5fyfixi2eb6o1e/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d",
+                "sha256:7813b4551afdb16bb8953979b70a8cf892e5255a221f92de30f9f821f2a4d606",
+                "sha256:53ab0b692ba58bcee0450908a7216b495a8b426b521f4824397084bc1f2e03f4",
+                "sha256:a71d5240fcbb332e54bac2acc84e81a92409b0046d101c19433a57e308f999c8",
+                "sha256:d93727e1e33576736e5dcfcd807cd2c6a1a622a15abd2c9173667ad2b73ff7dd",
+                "sha256:94767889d5d7130bcd002d604443977fbdf8c379a035827a4ac69b2f8a2a4f37",
+                "sha256:878eb5db61668fbb5b0e1df13f8c19a80ca497378ae785146bd436d59df79733",
+                "sha256:1f2a58241f3270df058df36228724c6fcf37e2ef59a4738788e53b2b98da4780",
+                "sha256:8f8a9df428f7164e567f979575ea24e343f123e36e5332af2f423595541cb771",
+                "sha256:72794b4cd4739d24a28fbd97716e7ef0bd5ebb92adcb11a2c99167da4e73598e",
+                "sha256:cae29f580ba7b6a00ea3053b2740f1a6b1f49b2030b1eab0394d74b16acac63a",
+                "sha256:060e72aaf8cb5361b7914f79806f95434d7fd77087470fdf0771710d1b00f1c0",
+                "sha256:e8f6ff936a47b8670617c39e0a063ad065287e7f41ad0a1047f9d0a45d082e46",
+                "sha256:6f80f18930d24ca558c57d7b34a6f6a567ce1c157bb735f131d61c2c52b9e5f8",
+                "sha256:beb127af7d3acfb94e958b1f22b77758974b890b7ed1f833311493a370ee8d53"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-08-11T19:14:24.789502976+08:00"
+        }
+    }
+]

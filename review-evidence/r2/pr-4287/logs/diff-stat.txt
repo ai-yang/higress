@@ -1,0 +1,3 @@
+ .../extensions/api-workflow/utils/conditional.go   |  9 +++++----
+ .../api-workflow/utils/conditional_test.go         | 22 ++++++++++++++++++++++
+ 2 files changed, 27 insertions(+), 4 deletions(-)

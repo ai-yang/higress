@@ -1,0 +1,6 @@
+**
+!build/
+!build/baseline/
+!build/baseline/golang-filter_amd64.so
+!build/fixed/
+!build/fixed/golang-filter_amd64.so

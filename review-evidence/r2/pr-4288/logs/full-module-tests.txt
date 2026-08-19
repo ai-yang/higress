@@ -1,0 +1,5 @@
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy	56.635s
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/config	0.008s
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider	0.032s
+?   	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/test	[no test files]
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/util	0.008s

@@ -1,0 +1,69 @@
+[
+    {
+        "Id": "sha256:d9c14fa955d91004fe52c7f20aa6b337a7632a0f4d03593883902f2e5f20bb54",
+        "RepoTags": [
+            "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot:de2c9628294f51b13c4a70b3a862b4372890797a"
+        ],
+        "RepoDigests": [
+            "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot@sha256:d27d518cc48d8075808422d19cad6209282a9fd7e517552a3bfc3cbe2dad72e1"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-06-24T11:40:44.503466929+08:00",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "1337:1337",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/local/bin/higress-pilot-start.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 209755682,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/0524daa7c063aa34e48f6a0117c91daed1fe2858f44a363a42a7612c072e75fd/diff:/var/lib/docker/overlay2/53ab2f74f98ebdafdf8188be0e22bd479d38c25d51f72e7960ae72f85f6e673f/diff:/var/lib/docker/overlay2/3ad0ee81204c59ba3174d2b398fb772c89d14ba9fc2f1b2c573086cb8cbb8b41/diff:/var/lib/docker/overlay2/6f28188f27010d1ffbffd3eca367867644f56a84f2453c4c3cbd4ddb4812fb83/diff:/var/lib/docker/overlay2/73be25dfb45cb067ea3c4fa63305983dc9e29cab68353eb84d68216ae215d6bb/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f0269ad67c64d93dce827cf5461834b53b8a22dcb48b5ea4dbec14237d393e87/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f0269ad67c64d93dce827cf5461834b53b8a22dcb48b5ea4dbec14237d393e87/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f0269ad67c64d93dce827cf5461834b53b8a22dcb48b5ea4dbec14237d393e87/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d",
+                "sha256:7813b4551afdb16bb8953979b70a8cf892e5255a221f92de30f9f821f2a4d606",
+                "sha256:53ab0b692ba58bcee0450908a7216b495a8b426b521f4824397084bc1f2e03f4",
+                "sha256:ca5bf6d5c4f7f65fd94c2318befc6e2b9756964ed2658210ae86dcc15e3ac955",
+                "sha256:001b665322aa84f0ac8d4f06a372d5e3c3a6fc30a821a28d264772c17de3eee9",
+                "sha256:b7f69ec05b407b0335104e6bf3f1e18890878afeddf5dd4c4e0ba9be7950e309"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

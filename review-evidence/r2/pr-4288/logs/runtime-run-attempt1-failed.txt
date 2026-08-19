@@ -1,0 +1,93 @@
+Warning: No resource found to remove for project "higress-pr4288-r2-runtime".
+Linux aia 5.15.0-186-generic #196-Ubuntu SMP Sat Jun 20 16:09:34 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Docker server 26.0.0
+Docker Compose version v2.25.0
+gateway_id=sha256:c4e469c1e892f216a508674902cbb527d39aecf03264008123c5f07c62836f4f gateway_repo_digests=["higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:93e4da97560d00871299e67163df4f1801732aeea4934a9cea841f9e7b4a26e8"]
+mock_id=sha256:6769dc3a703c719c1d2756bda113659be28ae16cf0da58dd5fd823d6b9a050ea mock_repo_digests=["nginx@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10"]
+name: higress-pr4288-r2-runtime
+services:
+  envoy:
+    command:
+      - -c
+      - /etc/envoy/envoy.yaml
+      - --component-log-level
+      - wasm:debug
+    depends_on:
+      mock-gemini:
+        condition: service_started
+        required: true
+    entrypoint:
+      - /usr/local/bin/envoy
+    image: higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:93e4da97560d00871299e67163df4f1801732aeea4934a9cea841f9e7b4a26e8
+    init: true
+    networks:
+      pr4288-host: null
+      pr4288-internal: null
+    ports:
+      - host_ip: 127.0.0.1
+        target: 10000
+        published: "11088"
+        protocol: tcp
+      - host_ip: 127.0.0.1
+        target: 9901
+        published: "19988"
+        protocol: tcp
+    restart: "no"
+    volumes:
+      - type: bind
+        source: <workspace>/pr-drafts/runtime-4288-r2/envoy.yaml
+        target: /etc/envoy/envoy.yaml
+        read_only: true
+      - type: bind
+        source: <workspace>/pr-drafts/runtime-4288-r2/ai-proxy-baseline.wasm
+        target: /etc/envoy/main.wasm
+        read_only: true
+  mock-gemini:
+    image: nginx@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+    init: true
+    networks:
+      pr4288-internal: null
+    restart: "no"
+    volumes:
+      - type: bind
+        source: <workspace>/pr-drafts/runtime-4288-r2/nginx.conf
+        target: /etc/nginx/nginx.conf
+        read_only: true
+      - type: bind
+        source: <workspace>/pr-drafts/runtime-4288-r2/gemini-response.json
+        target: /usr/share/nginx/html/gemini-response.json
+        read_only: true
+networks:
+  pr4288-host:
+    name: higress-pr4288-r2-runtime_pr4288-host
+  pr4288-internal:
+    name: higress-pr4288-r2-runtime_pr4288-internal
+    internal: true
+ Network higress-pr4288-r2-runtime_pr4288-internal  Creating
+ Network higress-pr4288-r2-runtime_pr4288-internal  Created
+ Network higress-pr4288-r2-runtime_pr4288-host  Creating
+ Network higress-pr4288-r2-runtime_pr4288-host  Created
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Creating
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Created
+ Container higress-pr4288-r2-runtime-envoy-1  Creating
+ Container higress-pr4288-r2-runtime-envoy-1  Created
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Starting
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Started
+ Container higress-pr4288-r2-runtime-envoy-1  Starting
+ Container higress-pr4288-r2-runtime-envoy-1  Started
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (56) Recv failure: Connection reset by peer
+ Container higress-pr4288-r2-runtime-envoy-1  Stopping
+ Container higress-pr4288-r2-runtime-envoy-1  Stopped
+ Container higress-pr4288-r2-runtime-envoy-1  Removing
+ Container higress-pr4288-r2-runtime-envoy-1  Removed
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Stopping
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Stopped
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Removing
+ Container higress-pr4288-r2-runtime-mock-gemini-1  Removed
+ Network higress-pr4288-r2-runtime_pr4288-host  Removing
+ Network higress-pr4288-r2-runtime_pr4288-internal  Removing
+ Network higress-pr4288-r2-runtime_pr4288-host  Removed
+ Network higress-pr4288-r2-runtime_pr4288-internal  Removed

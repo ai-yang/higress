@@ -1,0 +1,73 @@
+admin:
+  address:
+    socket_address:
+      address: 0.0.0.0
+      port_value: 9901
+
+static_resources:
+  listeners:
+    - name: pr4288_listener
+      address:
+        socket_address:
+          address: 0.0.0.0
+          port_value: 10000
+      filter_chains:
+        - filters:
+            - name: envoy.filters.network.http_connection_manager
+              typed_config:
+                "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+                stat_prefix: pr4288
+                access_log:
+                  - name: envoy.access_loggers.stdout
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.access_loggers.stream.v3.StdoutAccessLog
+                      log_format:
+                        text_format_source:
+                          inline_string: "RID=%REQ(X-REQUEST-ID)% ITER=%REQ(X-VERIFICATION-ITERATION)% METHOD=%REQ(:METHOD)% PATH=%REQ(:PATH)% CODE=%RESPONSE_CODE% FLAGS=%RESPONSE_FLAGS% UPSTREAM=%UPSTREAM_HOST% RECEIVED=%BYTES_RECEIVED% SENT=%BYTES_SENT% DURATION_MS=%DURATION%\n"
+                route_config:
+                  name: pr4288_route
+                  virtual_hosts:
+                    - name: mock_gemini
+                      domains:
+                        - "*"
+                      routes:
+                        - match:
+                            prefix: /
+                          route:
+                            cluster: mock_gemini
+                http_filters:
+                  - name: envoy.filters.http.wasm
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.wasm.v3.Wasm
+                      config:
+                        name: ai-proxy
+                        root_id: ai-proxy
+                        configuration:
+                          "@type": type.googleapis.com/google.protobuf.StringValue
+                          value: |
+                            {"provider":{"type":"gemini","apiTokens":["<redacted-test-token>"],"modelMapping":{"*":"gemini-pro"}}}
+                        vm_config:
+                          vm_id: pr4288-ai-proxy
+                          runtime: envoy.wasm.runtime.v8
+                          code:
+                            local:
+                              filename: /etc/envoy/main.wasm
+                  - name: envoy.filters.http.router
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
+
+  clusters:
+    - name: mock_gemini
+      connect_timeout: 5s
+      type: STRICT_DNS
+      dns_lookup_family: V4_ONLY
+      lb_policy: ROUND_ROBIN
+      load_assignment:
+        cluster_name: mock_gemini
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address:
+                      address: mock-gemini
+                      port_value: 8080

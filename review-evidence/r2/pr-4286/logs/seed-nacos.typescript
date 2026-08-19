@@ -1,0 +1,81 @@
+Script started on 2026-08-11 19:29:14+08:00 [<not executed on terminal>]
++ export KUBECONFIG=/tmp/pr4286-r2-kubeconfig
++ KUBECONFIG=/tmp/pr4286-r2-kubeconfig
++ KUBECTL=/tmp/pr4286-bin/kubectl
++ EVIDENCE=<workspace>/pr-drafts/runtime-4286-r2
++ NACOS=http://127.0.0.1:18848/nacos
+++ /tmp/pr4286-bin/kubectl get pod -n pr4286-runtime -l app=pr4286-backend-0 -o 'jsonpath={.items[0].status.podIP}'
++ backend0_ip=10.244.0.8
+++ /tmp/pr4286-bin/kubectl get pod -n pr4286-runtime -l app=pr4286-backend-1 -o 'jsonpath={.items[0].status.podIP}'
++ backend1_ip=10.244.0.9
++ curl -fsS -X POST http://127.0.0.1:18848/nacos/v1/ns/instance --data-urlencode serviceName=pr4286-backend --data-urlencode groupName=PR4286_GROUP --data-urlencode ip=10.244.0.8 --data-urlencode port=5678 --data-urlencode ephemeral=false
+ok+ printf '\n'
+
++ curl -fsS -X POST http://127.0.0.1:18848/nacos/v1/ns/instance --data-urlencode serviceName=pr4286-backend --data-urlencode groupName=PR4286_GROUP --data-urlencode ip=10.244.0.9 --data-urlencode port=5678 --data-urlencode ephemeral=false
+ok+ printf '\n'
+
++ curl -fsS -X POST http://127.0.0.1:18848/nacos/v1/cs/configs --data-urlencode dataId=pr4286-backend-mcp-tools.json --data-urlencode group=PR4286_GROUP --data-urlencode content@<workspace>/pr-drafts/runtime-4286-r2/cluster/nacos-tool-config.json
+true+ printf '\n'
+
++ curl -fsS 'http://127.0.0.1:18848/nacos/v1/ns/instance/list?serviceName=pr4286-backend&groupName=PR4286_GROUP'
+++ seq 1 30
++ for attempt in $(seq 1 30)
++ curl -fsS 'http://127.0.0.1:18848/nacos/v1/cs/configs?dataId=pr4286-backend-mcp-tools.json&group=PR4286_GROUP'
++ break
++ test -s <workspace>/pr-drafts/runtime-4286-r2/raw/nacos-tool-config-after-seed.json
++ /tmp/pr4286-bin/kubectl exec -n higress-system deployment/higress-gateway -- curl -fsS http://10.244.0.8:5678/
+I0811 19:29:15.063765 1626358 log.go:198] (0xc00101e000) (0xc000ce05a0) Create stream
+I0811 19:29:15.063867 1626358 log.go:198] (0xc00101e000) (0xc000ce05a0) Stream added, broadcasting: 1
+I0811 19:29:15.067263 1626358 log.go:198] (0xc00101e000) Reply frame received for 1
+I0811 19:29:15.067288 1626358 log.go:198] (0xc00101e000) (0xc0005a0280) Create stream
+I0811 19:29:15.067305 1626358 log.go:198] (0xc00101e000) (0xc0005a0280) Stream added, broadcasting: 3
+I0811 19:29:15.068410 1626358 log.go:198] (0xc00101e000) Reply frame received for 3
+I0811 19:29:15.068437 1626358 log.go:198] (0xc00101e000) (0xc000aba140) Create stream
+I0811 19:29:15.068450 1626358 log.go:198] (0xc00101e000) (0xc000aba140) Stream added, broadcasting: 5
+I0811 19:29:15.069352 1626358 log.go:198] (0xc00101e000) Reply frame received for 5
+I0811 19:29:15.117956 1626358 log.go:198] (0xc00101e000) Data frame received for 3
+I0811 19:29:15.117986 1626358 log.go:198] (0xc0005a0280) (3) Data frame handling
+I0811 19:29:15.118004 1626358 log.go:198] (0xc0005a0280) (3) Data frame sent
+backend-0
+I0811 19:29:15.119107 1626358 log.go:198] (0xc00101e000) Data frame received for 3
+I0811 19:29:15.119129 1626358 log.go:198] (0xc0005a0280) (3) Data frame handling
+I0811 19:29:15.119156 1626358 log.go:198] (0xc00101e000) Data frame received for 5
+I0811 19:29:15.119188 1626358 log.go:198] (0xc000aba140) (5) Data frame handling
+I0811 19:29:15.121274 1626358 log.go:198] (0xc00101e000) Data frame received for 1
+I0811 19:29:15.121302 1626358 log.go:198] (0xc000ce05a0) (1) Data frame handling
+I0811 19:29:15.121320 1626358 log.go:198] (0xc000ce05a0) (1) Data frame sent
+I0811 19:29:15.121337 1626358 log.go:198] (0xc00101e000) (0xc000ce05a0) Stream removed, broadcasting: 1
+I0811 19:29:15.121356 1626358 log.go:198] (0xc00101e000) Go away received
+I0811 19:29:15.121698 1626358 log.go:198] (0xc00101e000) (0xc000ce05a0) Stream removed, broadcasting: 1
+I0811 19:29:15.121724 1626358 log.go:198] (0xc00101e000) (0xc0005a0280) Stream removed, broadcasting: 3
+I0811 19:29:15.121739 1626358 log.go:198] (0xc00101e000) (0xc000aba140) Stream removed, broadcasting: 5
++ /tmp/pr4286-bin/kubectl exec -n higress-system deployment/higress-gateway -- curl -fsS http://10.244.0.9:5678/
+I0811 19:29:15.270148 1626397 log.go:198] (0xc00022f080) (0xc0001c4500) Create stream
+I0811 19:29:15.270243 1626397 log.go:198] (0xc00022f080) (0xc0001c4500) Stream added, broadcasting: 1
+I0811 19:29:15.273143 1626397 log.go:198] (0xc00022f080) Reply frame received for 1
+I0811 19:29:15.273200 1626397 log.go:198] (0xc00022f080) (0xc000e87360) Create stream
+I0811 19:29:15.273217 1626397 log.go:198] (0xc00022f080) (0xc000e87360) Stream added, broadcasting: 3
+I0811 19:29:15.274245 1626397 log.go:198] (0xc00022f080) Reply frame received for 3
+I0811 19:29:15.274287 1626397 log.go:198] (0xc00022f080) (0xc000ea55e0) Create stream
+I0811 19:29:15.274306 1626397 log.go:198] (0xc00022f080) (0xc000ea55e0) Stream added, broadcasting: 5
+I0811 19:29:15.275027 1626397 log.go:198] (0xc00022f080) Reply frame received for 5
+I0811 19:29:15.324142 1626397 log.go:198] (0xc00022f080) Data frame received for 3
+I0811 19:29:15.324175 1626397 log.go:198] (0xc000e87360) (3) Data frame handling
+I0811 19:29:15.324200 1626397 log.go:198] (0xc000e87360) (3) Data frame sent
+backend-1
+I0811 19:29:15.325627 1626397 log.go:198] (0xc00022f080) Data frame received for 3
+I0811 19:29:15.325676 1626397 log.go:198] (0xc000e87360) (3) Data frame handling
+I0811 19:29:15.325758 1626397 log.go:198] (0xc00022f080) Data frame received for 5
+I0811 19:29:15.325792 1626397 log.go:198] (0xc000ea55e0) (5) Data frame handling
+I0811 19:29:15.327583 1626397 log.go:198] (0xc00022f080) Data frame received for 1
+I0811 19:29:15.327611 1626397 log.go:198] (0xc0001c4500) (1) Data frame handling
+I0811 19:29:15.327629 1626397 log.go:198] (0xc0001c4500) (1) Data frame sent
+I0811 19:29:15.327650 1626397 log.go:198] (0xc00022f080) (0xc0001c4500) Stream removed, broadcasting: 1
+I0811 19:29:15.327670 1626397 log.go:198] (0xc00022f080) Go away received
+I0811 19:29:15.328038 1626397 log.go:198] (0xc00022f080) (0xc0001c4500) Stream removed, broadcasting: 1
+I0811 19:29:15.328070 1626397 log.go:198] (0xc00022f080) (0xc000e87360) Stream removed, broadcasting: 3
+I0811 19:29:15.328088 1626397 log.go:198] (0xc00022f080) (0xc000ea55e0) Stream removed, broadcasting: 5
++ python3 - <workspace>/pr-drafts/runtime-4286-r2/raw/nacos-instances-after-seed.json
+nacos_two_healthy_equal_weight_instances=true
+
+Script done on 2026-08-11 19:29:15+08:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,133 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pr4286-runtime
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pr4286-nacos
+  namespace: pr4286-runtime
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pr4286-nacos
+  template:
+    metadata:
+      labels:
+        app: pr4286-nacos
+    spec:
+      containers:
+        - name: nacos
+          image: docker.m.daocloud.io/nacos/nacos-server:v2.3.2-slim
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MODE
+              value: standalone
+            - name: PREFER_HOST_MODE
+              value: hostname
+            - name: NACOS_AUTH_ENABLE
+              value: "false"
+            - name: JVM_XMS
+              value: 256m
+            - name: JVM_XMX
+              value: 256m
+            - name: JVM_XMN
+              value: 128m
+          ports:
+            - name: http
+              containerPort: 8848
+            - name: grpc-client
+              containerPort: 9848
+            - name: grpc-raft
+              containerPort: 9849
+          readinessProbe:
+            httpGet:
+              path: /nacos/v1/console/health/readiness
+              port: 8848
+            initialDelaySeconds: 10
+            periodSeconds: 2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pr4286-nacos
+  namespace: pr4286-runtime
+spec:
+  selector:
+    app: pr4286-nacos
+  ports:
+    - name: http
+      port: 8848
+      targetPort: 8848
+    - name: grpc-client
+      port: 9848
+      targetPort: 9848
+    - name: grpc-raft
+      port: 9849
+      targetPort: 9849
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pr4286-backend-0
+  namespace: pr4286-runtime
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pr4286-backend-0
+  template:
+    metadata:
+      labels:
+        app: pr4286-backend-0
+    spec:
+      containers:
+        - name: echo
+          image: docker.m.daocloud.io/hashicorp/http-echo:1.0.0
+          imagePullPolicy: IfNotPresent
+          args:
+            - -listen=:5678
+            - -text=backend-0
+          ports:
+            - name: http
+              containerPort: 5678
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5678
+            initialDelaySeconds: 1
+            periodSeconds: 2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pr4286-backend-1
+  namespace: pr4286-runtime
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pr4286-backend-1
+  template:
+    metadata:
+      labels:
+        app: pr4286-backend-1
+    spec:
+      containers:
+        - name: echo
+          image: docker.m.daocloud.io/hashicorp/http-echo:1.0.0
+          imagePullPolicy: IfNotPresent
+          args:
+            - -listen=:5678
+            - -text=backend-1
+          ports:
+            - name: http
+              containerPort: 5678
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5678
+            initialDelaySeconds: 1
+            periodSeconds: 2

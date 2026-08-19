@@ -1,0 +1,12 @@
+c32fd6c81a71f11257d1aea8773456e418b1d5c5d32dfde40e5cce2e41c36b35  <workspace>/pr-drafts/runtime-4286/cluster/runtime-fixtures.yaml
+d40efa08ba01438a093f7e5c2e08349ca966f4e09473c9f24d5736a5055486a0  <workspace>/pr-drafts/runtime-4286/cluster/ingress-route.yaml
+00756ba671a23e127ddc2785f5fcc28505d31266048b82095ded95e2b8e7b1b0  <workspace>/pr-drafts/runtime-4286/cluster/higress-config-patch.yaml
+76346732a1974aaccaf5af0fbb4db89fc2a7c6f1f8e3a4750688246f021e592b  <workspace>/pr-drafts/runtime-4286/cluster/nacos-tool-config.json
+a12424ff140c364c7162b162010656fb96bfae341e5f0462a950d0e89c2de634  <workspace>/pr-drafts/runtime-4286/cluster/mcp-tools-list.json
+d2f48e8df66fbedb0fcb62e7ba49b95177af33b4472dddbc0f580ea3f3e6ede9  <workspace>/pr-drafts/runtime-4286/cluster/mcp-tool-call.json
+c32fd6c81a71f11257d1aea8773456e418b1d5c5d32dfde40e5cce2e41c36b35  <workspace>/pr-drafts/runtime-4286-r2/cluster/runtime-fixtures.yaml
+d40efa08ba01438a093f7e5c2e08349ca966f4e09473c9f24d5736a5055486a0  <workspace>/pr-drafts/runtime-4286-r2/cluster/ingress-route.yaml
+00756ba671a23e127ddc2785f5fcc28505d31266048b82095ded95e2b8e7b1b0  <workspace>/pr-drafts/runtime-4286-r2/cluster/higress-config-patch.yaml
+76346732a1974aaccaf5af0fbb4db89fc2a7c6f1f8e3a4750688246f021e592b  <workspace>/pr-drafts/runtime-4286-r2/cluster/nacos-tool-config.json
+461d21a8958c6f043aae345282a9d7f1027c9e88952d471c6dffa1e175cb453e  <workspace>/pr-drafts/runtime-4286-r2/cluster/mcp-tools-list.json
+a5b9a3c9e8bf43557655212979701fcba068d149f9f7195a86eb4b3413e611c5  <workspace>/pr-drafts/runtime-4286-r2/cluster/mcp-tool-call.json

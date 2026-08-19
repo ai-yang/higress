@@ -1,0 +1,25 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index c0d5d69d..6cbf9c6b 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -27,9 +27,10 @@ For every contribution to which that policy applies:
+   maintainers to accept verification or review.
+ 
+ Declare agent participation in the PR template. The policy excludes human-only
+-work and allows only the declared trivial exception for spelling, punctuation,
+-whitespace, or formatting changes with no substantive choice or behavioral
+-effect.
++work. Small documentation-only corrections limited to spelling, punctuation,
++whitespace, or formatting (such as typo adjustments) may skip the issue-spec
++workflow when they involve no substantive choice or behavioral effect.
++Agent-assisted bug fixes and material feature work must still follow this gate.
+ 
+ For work subject to this gate, the maintainer-approved issue-spec Design Issue
+ is the authoritative design carrier. Do not create or require a plugin-local
+diff --git a/istio/istio b/istio/istio
+index d17cf07b..d5e408b7 160000
+--- a/istio/istio
++++ b/istio/istio
+@@ -1 +1 @@
+-Subproject commit d17cf07b810bb877e93d87455a1410b8269e3173
++Subproject commit d5e408b7007e76e8f4f93565bcc21dd44143c214

@@ -1,0 +1,32 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "role": "model",
+        "parts": [
+          {
+            "text": "Let me check. "
+          },
+          {
+            "functionCall": {
+              "name": "lookup",
+              "args": {
+                "id": 42
+              }
+            }
+          },
+          {
+            "text": "One moment."
+          }
+        ]
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 10,
+    "candidatesTokenCount": 5,
+    "totalTokenCount": 15
+  }
+}

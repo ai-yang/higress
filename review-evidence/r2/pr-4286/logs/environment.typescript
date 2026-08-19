@@ -1,0 +1,74 @@
+Script started on 2026-08-11 19:32:38+08:00 [<not executed on terminal>]
++ EVIDENCE=<workspace>/pr-drafts/runtime-4286-r2
++ REPO=<workspace>/higress-audit-bug-control
++ BASELINE=/tmp/higress-pr4286-r2-baseline
++ date --iso-8601=seconds
+2026-08-11T19:32:38+08:00
++ uname -a
+Linux aia 5.15.0-186-generic #196-Ubuntu SMP Sat Jun 20 16:09:34 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
++ nproc
+80
++ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi        16Gi        95Gi        41Mi       140Gi       233Gi
+Swap:          8.0Gi          0B       8.0Gi
++ docker version
+Client: Docker Engine - Community
+ Version:           26.0.0
+ API version:       1.45
+ Go version:        go1.21.8
+ Git commit:        2ae903e
+ Built:             Wed Mar 20 15:17:48 2024
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          26.0.0
+  API version:      1.45 (minimum version 1.24)
+  Go version:       go1.21.8
+  Git commit:       8b79278
+  Built:            Wed Mar 20 15:17:48 2024
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.28
+  GitCommit:        ae07eda36dd25f8a1b98dfbf587313b99c0190bb
+ nvidia:
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e94
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
++ /tmp/pr4286-bin/kind version
+kind v0.17.0 go1.19.2 linux/amd64
++ /tmp/pr4286-bin/kubectl version --client --short
+Flag --short has been deprecated, and will be removed in the future. The --short output will become the default.
+Client Version: v1.25.3
+Kustomize Version: v4.5.7
++ /tmp/pr4286-bin/helm version
+version.BuildInfo{Version:"v3.14.4", GitCommit:"81c902a123462fd4052bc5e9aa9c513c4c8fc142", GitTreeState:"clean", GoVersion:"go1.21.9"}
++ git -C /tmp/higress-pr4286-r2-baseline rev-parse HEAD
+4b23e08a386779c8958673ebb052fc6306fe807c
++ git -C <workspace>/higress-audit-bug-control rev-parse HEAD
+83c5c03560ac212c8bb2e236db559a29e8bf300d
++ git -C <workspace>/higress-audit-bug-control status --short --branch
+## agent/fix-mcp-registry-instance-selection...fork/agent/fix-mcp-registry-instance-selection
+?? external
++ git -C <workspace>/higress-audit-bug-control diff --exit-code -- plugins/golang-filter/mcp-server/registry
++ sha256sum <workspace>/pr-drafts/runtime-4286-r2/build/baseline/golang-filter_amd64.so <workspace>/pr-drafts/runtime-4286-r2/build/fixed/golang-filter_amd64.so
+962222bdb25c198072d60e97c9cac01486bfa8453500af4901f4acc2549a8ec1  <workspace>/pr-drafts/runtime-4286-r2/build/baseline/golang-filter_amd64.so
+cb517a76abec6e918f9a0b8d124da956311c2562718aa31cdd295de38fe1efe0  <workspace>/pr-drafts/runtime-4286-r2/build/fixed/golang-filter_amd64.so
++ sha256sum /tmp/pr4286-bin/kind /tmp/pr4286-bin/kubectl /tmp/pr4286-bin/helm
+a8c045856db33f839908b6acb90dc8ec397253ffdaef7baf058f5a542e009b9c  /tmp/pr4286-bin/kind
+f57e568495c377407485d3eadc27cda25310694ef4ffc480eeea81dea2b60624  /tmp/pr4286-bin/kubectl
+912d3c044f46dcc43c22d073dec7eacf6ba8701dfc7f60688174b3eaa30d3698  /tmp/pr4286-bin/helm
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:481184afc44176eb23d64e0011dc3ea1ae6a410c
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:latest
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot:de2c9628294f51b13c4a70b3a862b4372890797a
++ docker image inspect docker.m.daocloud.io/nacos/nacos-server:v2.3.2-slim
++ docker image inspect docker.m.daocloud.io/hashicorp/http-echo:1.0.0
++ docker image inspect golang:1.24.4
++ docker image inspect docker.m.daocloud.io/kindest/node:v1.25.3
+
+Script done on 2026-08-11 19:32:40+08:00 [COMMAND_EXIT_CODE="0"]

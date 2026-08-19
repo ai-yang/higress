@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "<workspace>/pr-drafts/runtime-4288-r2/assert_fixed_response.py", line 12, in <module>
+    assert isinstance(choices, list) and len(choices) == 1, choices
+AssertionError: None

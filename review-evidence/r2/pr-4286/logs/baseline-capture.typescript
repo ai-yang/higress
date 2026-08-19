@@ -1,0 +1,157 @@
+Script started on 2026-08-11 19:30:15+08:00 [<not executed on terminal>]
++ [[ 1 -ne 1 ]]
++ [[ baseline != baseline ]]
++ variant=baseline
++ export KUBECONFIG=/tmp/pr4286-r2-kubeconfig
++ KUBECONFIG=/tmp/pr4286-r2-kubeconfig
++ KUBECTL=/tmp/pr4286-bin/kubectl
++ HELM=/tmp/pr4286-bin/helm
++ EVIDENCE=<workspace>/pr-drafts/runtime-4286-r2
++ NACOS=http://127.0.0.1:18848/nacos
++ /tmp/pr4286-bin/kubectl get pod -n higress-system -l app=higress-gateway -o json
++ /tmp/pr4286-bin/kubectl get pods -A -o json
++ /tmp/pr4286-bin/kubectl get pods -A -o wide
+NAMESPACE            NAME                                              READY   STATUS    RESTARTS        AGE     IP           NODE                      NOMINATED NODE   READINESS GATES
+higress-system       higress-controller-69fd484895-c5kt2               2/2     Running   0               2m18s   10.244.0.5   pr4286-r2-control-plane   <none>           <none>
+higress-system       higress-gateway-7b79b4c479-frsl6                  1/1     Running   0               2m18s   10.244.0.6   pr4286-r2-control-plane   <none>           <none>
+kube-system          coredns-565d847f94-dhrvl                          1/1     Running   0               7m23s   10.244.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          coredns-565d847f94-txkfv                          1/1     Running   0               7m23s   10.244.0.4   pr4286-r2-control-plane   <none>           <none>
+kube-system          etcd-pr4286-r2-control-plane                      1/1     Running   0               7m36s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          kindnet-hrnc9                                     1/1     Running   0               7m24s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          kube-apiserver-pr4286-r2-control-plane            1/1     Running   0               7m36s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          kube-controller-manager-pr4286-r2-control-plane   1/1     Running   1 (2m47s ago)   7m36s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          kube-proxy-fshkg                                  1/1     Running   0               7m24s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+kube-system          kube-scheduler-pr4286-r2-control-plane            1/1     Running   0               7m36s   172.29.0.2   pr4286-r2-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-684f458cdd-n8bpz           1/1     Running   0               7m23s   10.244.0.3   pr4286-r2-control-plane   <none>           <none>
+pr4286-runtime       pr4286-backend-0-7c5b76945c-tqvxn                 1/1     Running   0               2m12s   10.244.0.8   pr4286-r2-control-plane   <none>           <none>
+pr4286-runtime       pr4286-backend-1-5898d8fc8f-c4nkg                 1/1     Running   0               2m12s   10.244.0.9   pr4286-r2-control-plane   <none>           <none>
+pr4286-runtime       pr4286-nacos-b67c6566d-bzj8g                      1/1     Running   0               2m12s   10.244.0.7   pr4286-r2-control-plane   <none>           <none>
++ /tmp/pr4286-bin/kubectl get configmap -n higress-system higress-config -o yaml
++ /tmp/pr4286-bin/kubectl logs -n higress-system deployment/higress-gateway
++ /tmp/pr4286-bin/kubectl logs -n higress-system deployment/higress-controller -c higress-core
++ /tmp/pr4286-bin/kubectl logs -n pr4286-runtime deployment/pr4286-nacos
++ /tmp/pr4286-bin/kubectl get pod -n higress-system -l app=higress-gateway -o 'jsonpath={.items[0].status.containerStatuses[0].imageID}'
+docker.io/library/import-2026-08-11@sha256:1a9cf2a756b7589aabd3dc6434388c57c5a18f9c2bc70bc0aa4e5332727dfbd5+ printf '\n'
+
++ /tmp/pr4286-bin/kubectl exec -n higress-system deployment/higress-gateway -- sha256sum /var/lib/istio/envoy/golang-filter.so
+I0811 19:30:17.019999 1632712 log.go:198] (0xc00091c210) (0xc0008da8c0) Create stream
+I0811 19:30:17.020083 1632712 log.go:198] (0xc00091c210) (0xc0008da8c0) Stream added, broadcasting: 1
+I0811 19:30:17.022864 1632712 log.go:198] (0xc00091c210) Reply frame received for 1
+I0811 19:30:17.022931 1632712 log.go:198] (0xc00091c210) (0xc000e4c000) Create stream
+I0811 19:30:17.022993 1632712 log.go:198] (0xc00091c210) (0xc000e4c000) Stream added, broadcasting: 3
+I0811 19:30:17.024288 1632712 log.go:198] (0xc00091c210) Reply frame received for 3
+I0811 19:30:17.024337 1632712 log.go:198] (0xc00091c210) (0xc000aa7720) Create stream
+I0811 19:30:17.024367 1632712 log.go:198] (0xc00091c210) (0xc000aa7720) Stream added, broadcasting: 5
+I0811 19:30:17.025656 1632712 log.go:198] (0xc00091c210) Reply frame received for 5
+I0811 19:30:17.570740 1632712 log.go:198] (0xc00091c210) Data frame received for 3
+I0811 19:30:17.570785 1632712 log.go:198] (0xc000e4c000) (3) Data frame handling
+I0811 19:30:17.570804 1632712 log.go:198] (0xc000e4c000) (3) Data frame sent
+962222bdb25c198072d60e97c9cac01486bfa8453500af4901f4acc2549a8ec1  /var/lib/istio/envoy/golang-filter.so
+I0811 19:30:17.570843 1632712 log.go:198] (0xc00091c210) Data frame received for 5
+I0811 19:30:17.570908 1632712 log.go:198] (0xc000aa7720) (5) Data frame handling
+I0811 19:30:17.570932 1632712 log.go:198] (0xc00091c210) Data frame received for 3
+I0811 19:30:17.570969 1632712 log.go:198] (0xc000e4c000) (3) Data frame handling
+I0811 19:30:17.573072 1632712 log.go:198] (0xc00091c210) Data frame received for 1
+I0811 19:30:17.573092 1632712 log.go:198] (0xc0008da8c0) (1) Data frame handling
+I0811 19:30:17.573109 1632712 log.go:198] (0xc0008da8c0) (1) Data frame sent
+I0811 19:30:17.573118 1632712 log.go:198] (0xc00091c210) (0xc0008da8c0) Stream removed, broadcasting: 1
+I0811 19:30:17.573127 1632712 log.go:198] (0xc00091c210) Go away received
+I0811 19:30:17.573600 1632712 log.go:198] (0xc00091c210) (0xc0008da8c0) Stream removed, broadcasting: 1
+I0811 19:30:17.573629 1632712 log.go:198] (0xc00091c210) (0xc000e4c000) Stream removed, broadcasting: 3
+I0811 19:30:17.573650 1632712 log.go:198] (0xc00091c210) (0xc000aa7720) Stream removed, broadcasting: 5
++ /tmp/pr4286-bin/kubectl exec -n higress-system deployment/higress-gateway -- /usr/local/bin/envoy --version
+I0811 19:30:17.712639 1632816 log.go:198] (0xc00022ee70) (0xc0008b85a0) Create stream
+I0811 19:30:17.712737 1632816 log.go:198] (0xc00022ee70) (0xc0008b85a0) Stream added, broadcasting: 1
+I0811 19:30:17.714924 1632816 log.go:198] (0xc00022ee70) Reply frame received for 1
+I0811 19:30:17.715029 1632816 log.go:198] (0xc00022ee70) (0xc0008b8640) Create stream
+I0811 19:30:17.715045 1632816 log.go:198] (0xc00022ee70) (0xc0008b8640) Stream added, broadcasting: 3
+I0811 19:30:17.716050 1632816 log.go:198] (0xc00022ee70) Reply frame received for 3
+I0811 19:30:17.716088 1632816 log.go:198] (0xc00022ee70) (0xc000842460) Create stream
+I0811 19:30:17.716106 1632816 log.go:198] (0xc00022ee70) (0xc000842460) Stream added, broadcasting: 5
+I0811 19:30:17.717188 1632816 log.go:198] (0xc00022ee70) Reply frame received for 5
+I0811 19:30:17.797618 1632816 log.go:198] (0xc00022ee70) Data frame received for 3
+I0811 19:30:17.797650 1632816 log.go:198] (0xc0008b8640) (3) Data frame handling
+I0811 19:30:17.797671 1632816 log.go:198] (0xc0008b8640) (3) Data frame sent
+
+/usr/local/bin/envoy  version: 4735dd6b874700fc2bc9a218ce80ba0be759e53f/1.36.4/Clean/RELEASE/BoringSSL
+
+I0811 19:30:17.801051 1632816 log.go:198] (0xc00022ee70) Data frame received for 3
+I0811 19:30:17.801072 1632816 log.go:198] (0xc0008b8640) (3) Data frame handling
+I0811 19:30:17.801163 1632816 log.go:198] (0xc00022ee70) Data frame received for 5
+I0811 19:30:17.801204 1632816 log.go:198] (0xc000842460) (5) Data frame handling
+I0811 19:30:17.803835 1632816 log.go:198] (0xc00022ee70) Data frame received for 1
+I0811 19:30:17.803860 1632816 log.go:198] (0xc0008b85a0) (1) Data frame handling
+I0811 19:30:17.803878 1632816 log.go:198] (0xc0008b85a0) (1) Data frame sent
+I0811 19:30:17.803897 1632816 log.go:198] (0xc00022ee70) (0xc0008b85a0) Stream removed, broadcasting: 1
+I0811 19:30:17.804104 1632816 log.go:198] (0xc00022ee70) Go away received
+I0811 19:30:17.804284 1632816 log.go:198] (0xc00022ee70) (0xc0008b85a0) Stream removed, broadcasting: 1
+I0811 19:30:17.804305 1632816 log.go:198] (0xc00022ee70) (0xc0008b8640) Stream removed, broadcasting: 3
+I0811 19:30:17.804322 1632816 log.go:198] (0xc00022ee70) (0xc000842460) Stream removed, broadcasting: 5
++ /tmp/pr4286-bin/kubectl exec -n higress-system deployment/higress-gateway -- sh -c 'curl -fsS http://127.0.0.1:15000/stats'
+I0811 19:30:17.955694 1632957 log.go:198] (0xc0008a4000) (0xc0006aa8c0) Create stream
+I0811 19:30:17.955799 1632957 log.go:198] (0xc0008a4000) (0xc0006aa8c0) Stream added, broadcasting: 1
+I0811 19:30:17.960996 1632957 log.go:198] (0xc0008a4000) Reply frame received for 1
+I0811 19:30:17.961050 1632957 log.go:198] (0xc0008a4000) (0xc0006aa000) Create stream
+I0811 19:30:17.961070 1632957 log.go:198] (0xc0008a4000) (0xc0006aa000) Stream added, broadcasting: 3
+I0811 19:30:17.962294 1632957 log.go:198] (0xc0008a4000) Reply frame received for 3
+I0811 19:30:17.962348 1632957 log.go:198] (0xc0008a4000) (0xc000474000) Create stream
+I0811 19:30:17.962368 1632957 log.go:198] (0xc0008a4000) (0xc000474000) Stream added, broadcasting: 5
+I0811 19:30:17.963347 1632957 log.go:198] (0xc0008a4000) Reply frame received for 5
+I0811 19:30:18.002978 1632957 log.go:198] (0xc0008a4000) Data frame received for 3
+I0811 19:30:18.002999 1632957 log.go:198] (0xc0006aa000) (3) Data frame handling
+I0811 19:30:18.003012 1632957 log.go:198] (0xc0006aa000) (3) Data frame sent
+I0811 19:30:18.003430 1632957 log.go:198] (0xc0008a4000) Data frame received for 3
+I0811 19:30:18.003466 1632957 log.go:198] (0xc0006aa000) (3) Data frame handling
+I0811 19:30:18.003493 1632957 log.go:198] (0xc0006aa000) (3) Data frame sent
+I0811 19:30:18.003509 1632957 log.go:198] (0xc0008a4000) Data frame received for 3
+I0811 19:30:18.003525 1632957 log.go:198] (0xc0006aa000) (3) Data frame handling
+I0811 19:30:18.003679 1632957 log.go:198] (0xc0006aa000) (3) Data frame sent
+I0811 19:30:18.003841 1632957 log.go:198] (0xc0008a4000) Data frame received for 3
+I0811 19:30:18.003856 1632957 log.go:198] (0xc0006aa000) (3) Data frame handling
+I0811 19:30:18.003945 1632957 log.go:198] (0xc0008a4000) Data frame received for 5
+I0811 19:30:18.003964 1632957 log.go:198] (0xc000474000) (5) Data frame handling
+I0811 19:30:18.005982 1632957 log.go:198] (0xc0008a4000) Data frame received for 1
+I0811 19:30:18.005995 1632957 log.go:198] (0xc0006aa8c0) (1) Data frame handling
+I0811 19:30:18.006006 1632957 log.go:198] (0xc0006aa8c0) (1) Data frame sent
+I0811 19:30:18.006018 1632957 log.go:198] (0xc0008a4000) (0xc0006aa8c0) Stream removed, broadcasting: 1
+I0811 19:30:18.006033 1632957 log.go:198] (0xc0008a4000) Go away received
+I0811 19:30:18.006428 1632957 log.go:198] (0xc0008a4000) (0xc0006aa8c0) Stream removed, broadcasting: 1
+I0811 19:30:18.006465 1632957 log.go:198] (0xc0008a4000) (0xc0006aa000) Stream removed, broadcasting: 3
+I0811 19:30:18.006483 1632957 log.go:198] (0xc0008a4000) (0xc000474000) Stream removed, broadcasting: 5
++ grep -E 'golang-filter-mcp-(server|session)|http\.outbound_0\.0\.0\.0_80\.downstream_rq_total|panic_error' <workspace>/pr-drafts/runtime-4286-r2/raw/baseline-envoy-stats.txt
+extension_config_discovery.http_filter.golang-filter-mcp-server.version_text: "2026-08-11T11:28:22Z/5"
+extension_config_discovery.http_filter.golang-filter-mcp-session.version_text: "2026-08-11T11:28:22Z/5"
+extension_config_discovery.http_filter.golang-filter-mcp-server.config_conflict: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.config_fail: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.config_reload: 1
+extension_config_discovery.http_filter.golang-filter-mcp-server.golang.panic_error: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.init_fetch_timeout: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.last_update_success: 1
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_attempt: 2
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_failure: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_rejected: 0
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_success: 1
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_time: 1786447702462
+extension_config_discovery.http_filter.golang-filter-mcp-server.version: 10314705478540176555
+extension_config_discovery.http_filter.golang-filter-mcp-session.config_conflict: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.config_fail: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.config_reload: 1
+extension_config_discovery.http_filter.golang-filter-mcp-session.golang.panic_error: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.init_fetch_timeout: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.last_update_success: 1
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_attempt: 2
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_failure: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_rejected: 0
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_success: 1
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_time: 1786447702307
+extension_config_discovery.http_filter.golang-filter-mcp-session.version: 10314705478540176555
+http.outbound_0.0.0.0_80.downstream_rq_total: 301
+extension_config_discovery.http_filter.golang-filter-mcp-server.update_duration: P0(nan,150) P25(nan,152.5) P50(nan,155) P75(nan,157.5) P90(nan,159) P95(nan,159.5) P99(nan,159.9) P99.5(nan,159.95) P99.9(nan,159.99) P100(nan,160)
+extension_config_discovery.http_filter.golang-filter-mcp-session.update_duration: P0(nan,37) P25(nan,37.25) P50(nan,37.5) P75(nan,37.75) P90(nan,37.9) P95(nan,37.95) P99(nan,37.99) P99.5(nan,37.995) P99.9(nan,37.999) P100(nan,38)
++ curl -fsS 'http://127.0.0.1:18848/nacos/v1/ns/instance/list?serviceName=pr4286-backend&groupName=PR4286_GROUP'
++ curl -fsS 'http://127.0.0.1:18848/nacos/v1/cs/configs?dataId=pr4286-backend-mcp-tools.json&group=PR4286_GROUP'
++ curl -fsS -X POST http://127.0.0.1:18080/pr4286/mcp -H 'Host: pr4286.example.com' -H 'Content-Type: application/json' --data-binary @<workspace>/pr-drafts/runtime-4286-r2/cluster/mcp-tools-list.json
++ /tmp/pr4286-bin/helm history pr4286 -n higress-system -o yaml
++ /tmp/pr4286-bin/helm get all pr4286 -n higress-system
+
+Script done on 2026-08-11 19:30:18+08:00 [COMMAND_EXIT_CODE="0"]

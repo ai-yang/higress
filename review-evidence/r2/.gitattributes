@@ -1,0 +1,3 @@
+# Preserve recorded log/result bytes, including terminal CRLF and whitespace.
+pr-*/logs/** -whitespace
+pr-*/results/** -whitespace
