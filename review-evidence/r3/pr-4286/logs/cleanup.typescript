@@ -1,0 +1,43 @@
+Script started on 2026-08-30 03:05:32+08:00 [<not executed on terminal>]
++ : <repo>
++ /tmp/pr4286-bin/kind get clusters
+pr4286-r3
++ docker ps -a --filter name=pr4286-r3
+CONTAINER ID   IMAGE                                       COMMAND                  CREATED          STATUS          PORTS                       NAMES
+39701cee4e40   docker.m.daocloud.io/kindest/node:v1.25.3   "/usr/local/bin/entr…"   16 minutes ago   Up 16 minutes   127.0.0.1:33543->6443/tcp   pr4286-r3-control-plane
++ docker volume ls --filter name=pr4286-r3
+DRIVER    VOLUME NAME
+local     pr4286-r3-go-build-cache
+local     pr4286-r3-go-mod-cache
++ ss -ltnp
++ grep -E ':(18080|18848)\b'
++ true
++ /tmp/pr4286-bin/kind delete cluster --name pr4286-r3
+Deleting cluster "pr4286-r3" ...
++ docker volume rm pr4286-r3-go-build-cache pr4286-r3-go-mod-cache
+pr4286-r3-go-build-cache
+pr4286-r3-go-mod-cache
++ git -C <repo> worktree remove <baseline>
++ /tmp/pr4286-bin/kind get clusters
+No kind clusters found.
++ docker ps -a --filter name=pr4286-r3
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
++ docker volume ls --filter name=pr4286-r3
+DRIVER    VOLUME NAME
++ ss -ltnp
++ grep -E ':(18080|18848)\b'
++ true
++ git -C <repo> worktree list
+<workspace>/higress                     7cc8cde4 [agent/fix-httproute-higress-backendref]
+<workspace>/higress-audit-20260818      aae6fbce (detached HEAD)
+<workspace>/higress-audit-baseline      c1fbf7fb (detached HEAD)
+<repo>   81c547a2 [agent/fix-mcp-registry-instance-selection]
+<workspace>/higress-audit-bug-plugin    2869a8e7 [agent/fix-gemini-function-calls]
+<workspace>/higress-audit-perf          d62bdbdf [agent/perf-cache-api-workflow-regexp]
+<workspace>/higress-issue1536           57ba17d8 [agent/fix-eureka-plan-shutdown]
+<workspace>/higress-issue3743           d03df020 [agent/fix-ai-quota-non-stream]
+<workspace>/higress-pr4231-baseline     409b3ed2 (detached HEAD)
+<workspace>/higress-pr4232-baseline     409b3ed2 (detached HEAD)
+<workspace>/higress-r2-public-evidence  1715e5c6 [evidence/r2-pr-4286-4288-20260819]
+
+Script done on 2026-08-30 03:05:37+08:00 [COMMAND_EXIT_CODE="0"]

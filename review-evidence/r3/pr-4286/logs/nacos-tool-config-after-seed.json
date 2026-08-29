@@ -1,0 +1,23 @@
+{
+  "protocol": "http",
+  "tools": [
+    {
+      "name": "identity",
+      "description": "Return the selected backend identity",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ],
+  "toolsMeta": {
+    "identity": {
+      "invokeContext": {
+        "method": "GET",
+        "path": "/"
+      },
+      "parametersMapping": {}
+    }
+  }
+}

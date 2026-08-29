@@ -1,0 +1,79 @@
+Script started on 2026-08-30 03:04:34+08:00 [<not executed on terminal>]
++++ dirname -- harness/capture-environment.sh
+++ cd -- harness
+++ pwd
++ SCRIPT_DIR=<evidence>/harness
++ EVIDENCE=<evidence>
++ BASELINE=<baseline>
++ : <repo>
++ mkdir -p <evidence>/raw
++ date --iso-8601=seconds
+2026-08-30T03:04:34+08:00
++ uname -a
+Linux <host> 5.15.0-186-generic #196-Ubuntu SMP Sat Jun 20 16:09:34 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
++ nproc
+80
++ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi        32Gi       6.9Gi       462Mi       211Gi       216Gi
+Swap:          8.0Gi       1.1Gi       6.9Gi
++ docker version
+Client: Docker Engine - Community
+ Version:           26.0.0
+ API version:       1.45
+ Go version:        go1.21.8
+ Git commit:        2ae903e
+ Built:             Wed Mar 20 15:17:48 2024
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          26.0.0
+  API version:      1.45 (minimum version 1.24)
+  Go version:       go1.21.8
+  Git commit:       8b79278
+  Built:            Wed Mar 20 15:17:48 2024
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.28
+  GitCommit:        ae07eda36dd25f8a1b98dfbf587313b99c0190bb
+ nvidia:
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e94
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
++ /tmp/pr4286-bin/kind version
+kind v0.17.0 go1.19.2 linux/amd64
++ /tmp/pr4286-bin/kubectl version --client --short
+Flag --short has been deprecated, and will be removed in the future. The --short output will become the default.
+Client Version: v1.25.3
+Kustomize Version: v4.5.7
++ /tmp/pr4286-bin/helm version
+version.BuildInfo{Version:"v3.14.4", GitCommit:"81c902a123462fd4052bc5e9aa9c513c4c8fc142", GitTreeState:"clean", GoVersion:"go1.21.9"}
++ git -C <baseline> rev-parse HEAD
+409b3ed2644a977776391eae78ed6cb11e99d3d3
++ git -C <repo> rev-parse HEAD
+81c547a2c26c370f0f101b8342770d47e97378cb
++ git -C <repo> status --short --branch
+## agent/fix-mcp-registry-instance-selection...fork/agent/fix-mcp-registry-instance-selection [ahead 58, behind 1]
+?? external
++ git -C <repo> diff --exit-code -- plugins/golang-filter/mcp-server/registry
++ sha256sum <evidence>/build/baseline/golang-filter_amd64.so <evidence>/build/fixed/golang-filter_amd64.so
+c8bc4bfc0fa5ab73e96327c19e6454b57590d6278c08583df8bef7eaac54c823  <evidence>/build/baseline/golang-filter_amd64.so
+a9dbdd158fdadbc1163ceb8b22326759b4ec136f7de78bdf338f971240cd1c12  <evidence>/build/fixed/golang-filter_amd64.so
++ sha256sum /tmp/pr4286-bin/kind /tmp/pr4286-bin/kubectl /tmp/pr4286-bin/helm
+a8c045856db33f839908b6acb90dc8ec397253ffdaef7baf058f5a542e009b9c  /tmp/pr4286-bin/kind
+f57e568495c377407485d3eadc27cda25310694ef4ffc480eeea81dea2b60624  /tmp/pr4286-bin/kubectl
+912d3c044f46dcc43c22d073dec7eacf6ba8701dfc7f60688174b3eaa30d3698  /tmp/pr4286-bin/helm
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:3498bc95bdea417fe0ce3f3017b0015cda907908
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:latest
++ docker image inspect higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot:de2c9628294f51b13c4a70b3a862b4372890797a
++ docker image inspect docker.m.daocloud.io/nacos/nacos-server:v2.3.2-slim
++ docker image inspect docker.m.daocloud.io/hashicorp/http-echo:1.0.0
++ docker image inspect golang:1.24.4
++ docker image inspect docker.m.daocloud.io/kindest/node:v1.25.3
+
+Script done on 2026-08-30 03:04:36+08:00 [COMMAND_EXIT_CODE="0"]

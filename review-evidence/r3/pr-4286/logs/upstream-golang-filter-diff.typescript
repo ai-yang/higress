@@ -1,0 +1,48 @@
+Script started on 2026-08-30 03:06:29+08:00 [<not executed on terminal>]
+diff --git a/plugins/golang-filter/Dockerfile b/plugins/golang-filter/Dockerfile
+index 266bdb80..8f9a01c7 100644
+--- a/plugins/golang-filter/Dockerfile
++++ b/plugins/golang-filter/Dockerfile
+@@ -1,4 +1,4 @@
+-FROM golang:1.22-bullseye AS golang-base
++FROM golang:1.23-bullseye AS golang-base
+
+ ARG GOPROXY
+ ARG GO_FILTER_NAME
+@@ -36,4 +36,4 @@ RUN if [ "$GOARCH" = "arm64" ]; then \
+ FROM scratch AS output
+ ARG GO_FILTER_NAME
+ ARG GOARCH
+-COPY --from=golang-base /${GO_FILTER_NAME}.so golang-filter_${GOARCH}.so
+\ No newline at end of file
++COPY --from=golang-base /${GO_FILTER_NAME}.so golang-filter_${GOARCH}.so
+diff --git a/plugins/golang-filter/go.mod b/plugins/golang-filter/go.mod
+index 4b31b7df..c2603987 100644
+--- a/plugins/golang-filter/go.mod
++++ b/plugins/golang-filter/go.mod
+@@ -2,7 +2,7 @@ module github.com/alibaba/higress/plugins/golang-filter
+
+ go 1.23
+
+-replace github.com/envoyproxy/envoy => github.com/higress-group/envoy v0.0.0-20260810022824-5347463a5fdb
++replace github.com/envoyproxy/envoy => github.com/higress-group/envoy v0.0.0-20260811163927-9e54c67a6c89
+
+ replace github.com/mark3labs/mcp-go => github.com/higress-group/mcp-go v0.0.0-20250428145706-792ce64b4b30
+
+diff --git a/plugins/golang-filter/go.sum b/plugins/golang-filter/go.sum
+index 21300767..fb4852e3 100644
+--- a/plugins/golang-filter/go.sum
++++ b/plugins/golang-filter/go.sum
+@@ -297,8 +297,8 @@ github.com/hashicorp/go-version v1.6.0/go.mod h1:fltr4n8CU8Ke44wwGCBoEymUuxUHl09
+ github.com/hashicorp/golang-lru v0.5.0/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
+ github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ4Ao+sR/qLZy8=
+ github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
+-github.com/higress-group/envoy v0.0.0-20260810022824-5347463a5fdb h1:yIahIUEMcf4eSiHZAG7q1rLdLHTmoS9DEaYilQ8RIqY=
+-github.com/higress-group/envoy v0.0.0-20260810022824-5347463a5fdb/go.mod h1:mgMEye9tOlNiUTG+iYhQYgCzQcX46MMS0Jo6bVwRt1U=
++github.com/higress-group/envoy v0.0.0-20260811163927-9e54c67a6c89 h1:XWCm/iynQBXOOkrztP0Mc9jDIrgLcvzj4la55ecCxY0=
++github.com/higress-group/envoy v0.0.0-20260811163927-9e54c67a6c89/go.mod h1:mgMEye9tOlNiUTG+iYhQYgCzQcX46MMS0Jo6bVwRt1U=
+ github.com/higress-group/mcp-go v0.0.0-20250428145706-792ce64b4b30 h1:N4NMq8M1nZyyChPyzn+EUUdHi5asig2uLR5hOyRmsXI=
+ github.com/higress-group/mcp-go v0.0.0-20250428145706-792ce64b4b30/go.mod h1:O9gri9UOzthw728vusc2oNu99lVh8cKCajpxNfC90gE=
+ github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
+
+Script done on 2026-08-30 03:06:29+08:00 [COMMAND_EXIT_CODE="0"]

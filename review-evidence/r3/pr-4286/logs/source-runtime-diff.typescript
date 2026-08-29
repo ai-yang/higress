@@ -1,0 +1,16 @@
+Script started on 2026-08-30 03:06:29+08:00 [<not executed on terminal>]
+diff --git a/plugins/golang-filter/mcp-server/registry/remote.go b/plugins/golang-filter/mcp-server/registry/remote.go
+index d8bfe7db..b58acfb3 100644
+--- a/plugins/golang-filter/mcp-server/registry/remote.go
++++ b/plugins/golang-filter/mcp-server/registry/remote.go
+@@ -190,7 +190,7 @@ func selectOneInstance(ctx *RpcContext) (*Instance, error) {
+
+     instances := *ctx.Instances
+     if len(instances) > 1 {
+-        instanceId = rand.Intn(len(instances) - 1)
++        instanceId = rand.Intn(len(instances))
+     }
+     select_instance := instances[instanceId]
+     return &select_instance, nil
+
+Script done on 2026-08-30 03:06:29+08:00 [COMMAND_EXIT_CODE="0"]

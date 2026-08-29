@@ -1,0 +1,15 @@
+data:
+  higress: |-
+    mcpServer:
+      enable: true
+      sse_path_suffix: /sse
+      servers:
+        - name: pr4286-registry
+          path: /pr4286/mcp
+          type: nacos-mcp-registry
+          domain_list:
+            - "*"
+          config:
+            serverAddr: pr4286-nacos.pr4286-runtime.svc.cluster.local
+            serviceMatcher:
+              PR4286_GROUP: ^pr4286-backend$

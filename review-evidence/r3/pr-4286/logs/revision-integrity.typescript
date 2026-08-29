@@ -1,0 +1,39 @@
+Script started on 2026-08-30 03:07:01+08:00 [<not executed on terminal>]
++ : <repo>
++ OLD_BASE=4b23e08a386779c8958673ebb052fc6306fe807c
++ OLD_HEAD=83c5c03560ac212c8bb2e236db559a29e8bf300d
++ NEW_BASE=409b3ed2644a977776391eae78ed6cb11e99d3d3
++ NEW_HEAD=81c547a2c26c370f0f101b8342770d47e97378cb
++ SOURCE=plugins/golang-filter/mcp-server/registry/remote.go
++ git -C <repo> rev-parse 'HEAD^' HEAD
+409b3ed2644a977776391eae78ed6cb11e99d3d3
+81c547a2c26c370f0f101b8342770d47e97378cb
+++ git -C <repo> rev-parse 'HEAD^'
++ test 409b3ed2644a977776391eae78ed6cb11e99d3d3 = 409b3ed2644a977776391eae78ed6cb11e99d3d3
+++ git -C <repo> rev-parse HEAD
++ test 81c547a2c26c370f0f101b8342770d47e97378cb = 81c547a2c26c370f0f101b8342770d47e97378cb
++ git -C <repo> diff --check 409b3ed2644a977776391eae78ed6cb11e99d3d3..81c547a2c26c370f0f101b8342770d47e97378cb
++ git -C <repo> log -1 --format=fuller
+commit 81c547a2c26c370f0f101b8342770d47e97378cb (HEAD -> agent/fix-mcp-registry-instance-selection)
+Author:     Rui <1685901819@qq.com>
+AuthorDate: Fri Aug 7 09:56:34 2026 +0800
+Commit:     Rui <1685901819@qq.com>
+CommitDate: Sun Aug 30 02:23:24 2026 +0800
+
+    fix(mcp-server): select from all registry instances
+
+    Signed-off-by: Rui <1685901819@qq.com>
++ git -C <repo> diff --stat 409b3ed2644a977776391eae78ed6cb11e99d3d3..81c547a2c26c370f0f101b8342770d47e97378cb
+ .../golang-filter/mcp-server/registry/remote.go    |  2 +-
+ .../mcp-server/registry/remote_test.go             | 43 ++++++++++++++++++++++
+ 2 files changed, 44 insertions(+), 1 deletion(-)
++ git -C <repo> range-diff 4b23e08a386779c8958673ebb052fc6306fe807c..83c5c03560ac212c8bb2e236db559a29e8bf300d 409b3ed2644a977776391eae78ed6cb11e99d3d3..81c547a2c26c370f0f101b8342770d47e97378cb
+1:  83c5c035 = 1:  81c547a2 fix(mcp-server): select from all registry instances
++ git -C <repo> diff 4b23e08a386779c8958673ebb052fc6306fe807c..83c5c03560ac212c8bb2e236db559a29e8bf300d -- plugins/golang-filter/mcp-server/registry/remote.go
++ sha256sum
+9faf5df150b9ee66f3d6e62fce4da91b83d88b4a2ec2e1122e845a440df6b989  -
++ git -C <repo> diff 409b3ed2644a977776391eae78ed6cb11e99d3d3..81c547a2c26c370f0f101b8342770d47e97378cb -- plugins/golang-filter/mcp-server/registry/remote.go
++ sha256sum
+9faf5df150b9ee66f3d6e62fce4da91b83d88b4a2ec2e1122e845a440df6b989  -
+
+Script done on 2026-08-30 03:07:02+08:00 [COMMAND_EXIT_CODE="0"]

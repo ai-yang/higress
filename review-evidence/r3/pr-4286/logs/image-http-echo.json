@@ -1,0 +1,81 @@
+[
+    {
+        "Id": "sha256:04fa556e62bddac2a783622a3cccc35d6d5c599199eecf75b6b4f2bc76c8c825",
+        "RepoTags": [
+            "docker.m.daocloud.io/hashicorp/http-echo:1.0.0"
+        ],
+        "RepoDigests": [
+            "docker.m.daocloud.io/hashicorp/http-echo@sha256:fcb75f691c8b0414d670ae570240cbf95502cc18a9ba57e982ecac589760a186"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-10-10T20:47:10.728020011Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "65532",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "5678/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt",
+                "ECHO_TEXT=hello-world"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/home/nonroot",
+            "Entrypoint": [
+                "/http-echo"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "HashiCorp Consul Team <consul@hashicorp.com>",
+                "name": "http-echo",
+                "release": "1.0.0",
+                "summary": "A test webserver that echos a response. You know, for kids.",
+                "vendor": "HashiCorp",
+                "version": "1.0.0"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 8792142,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/cbd4b210a343051d735dd1708aa1f48239420b1133300a9625199855a6077a32/diff:/var/lib/docker/overlay2/829bcac0746cf6e48d86f1efe6ea2e3bce8c92f48e54d9bcb11ade885c5a1d4f/diff:/var/lib/docker/overlay2/faa34bd14449742f5c0e3fd503d2ab6138106c924ed59c7179fd6f92565c043a/diff:/var/lib/docker/overlay2/001ad4e0308d9367c1e34d36e00959855ad6181b2dd784c4b963e7f83366ad8b/diff:/var/lib/docker/overlay2/fc523c3fc832aa94d3e53786b8c9dcc16b93149e801072aee7a88a34e853b657/diff:/var/lib/docker/overlay2/ea9d4c056855be1b227061a07f59ff39cae73d8cefc1089d5201f2f99bbfcc1b/diff:/var/lib/docker/overlay2/ca4709980f9e2cc96fb2aaf2c94b4926aab02e3264bc6c1575e7b81db8a80458/diff:/var/lib/docker/overlay2/1f271509579dd23d375260dd0cf9eba00fb477cb435067c4cd9d973fde24ee20/diff:/var/lib/docker/overlay2/697e9704f91b9ea732313388db60147e1199ba13f93c9b6caf724f8fefc820a6/diff",
+                "MergedDir": "/var/lib/docker/overlay2/5c89ddd6130fe20b880257591ce7c88e80664af14c361fa8b30c76a26db286b1/merged",
+                "UpperDir": "/var/lib/docker/overlay2/5c89ddd6130fe20b880257591ce7c88e80664af14c361fa8b30c76a26db286b1/diff",
+                "WorkDir": "/var/lib/docker/overlay2/5c89ddd6130fe20b880257591ce7c88e80664af14c361fa8b30c76a26db286b1/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:c1f171653244eccee9ea3eed88858c5e82d9db2c310a65ea1fbf912b50e5d8fa",
+                "sha256:10e9b9e72178b3e5fe8ff566a61eefb03ad585f5eae5cc0f2b08dbe3c874cecb",
+                "sha256:e16c585a5d503f63db1e5776d164d1e36cb7376951bd858c9f0b6861d85a1833",
+                "sha256:ff5700ec54186528cbae40f54c24b1a34fb7c01527beaa1232868c16e2353f52",
+                "sha256:d52f02c6501c9c4410568f0bf6ff30d30d8290f57794c308fe36ea78393afac2",
+                "sha256:e624a5370eca2b8266e74d179326e2a8767d361db14d13edd9fb57e408731784",
+                "sha256:1a73b54f556b477f0a8b939d13c504a3b4f4db71f7a09c63afbc10acb3de5849",
+                "sha256:8f2b2d741d53c8e25da6a3b40a1f45aba2612cf5c1ff06e642286358e756d9a8",
+                "sha256:9959f8de333696342eedd49db37331a9c3efa84899f1236226c18db2e856f2aa",
+                "sha256:756bfb5154c8fc77dcecee84e81741c8665471f750c60c8ac1f52ce3104a9c88"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

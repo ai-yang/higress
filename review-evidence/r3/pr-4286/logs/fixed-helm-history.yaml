@@ -1,0 +1,12 @@
+- app_version: 2.2.4
+  chart: higress-core-2.2.4
+  description: Install complete
+  revision: 1
+  status: superseded
+  updated: "2026-08-30T02:53:50.488207762+08:00"
+- app_version: 2.2.4
+  chart: higress-core-2.2.4
+  description: Upgrade complete
+  revision: 2
+  status: deployed
+  updated: "2026-08-30T03:02:33.021543573+08:00"

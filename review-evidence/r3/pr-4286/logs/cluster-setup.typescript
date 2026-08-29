@@ -1,0 +1,99 @@
+Script started on 2026-08-30 02:49:24+08:00 [<not executed on terminal>]
++ export KUBECONFIG=/tmp/pr4286-r3-kubeconfig
++ KUBECONFIG=/tmp/pr4286-r3-kubeconfig
++ KIND=/tmp/pr4286-bin/kind
++ KUBECTL=/tmp/pr4286-bin/kubectl
++ HELM=/tmp/pr4286-bin/helm
++++ dirname -- harness/cluster-setup.sh
+++ cd -- harness
+++ pwd
++ SCRIPT_DIR=<evidence>/harness
++ EVIDENCE=<evidence>
++ : <repo>
++ mkdir -p <evidence>/raw
++ /tmp/pr4286-bin/kind create cluster --name pr4286-r3 --image docker.m.daocloud.io/kindest/node:v1.25.3 --config <evidence>/harness/cluster/kind-config.yaml --kubeconfig /tmp/pr4286-r3-kubeconfig
+Creating cluster "pr4286-r3" ...
+ • Ensuring node image (docker.m.daocloud.io/kindest/node:v1.25.3) 🖼  ...
+ ✓ Ensuring node image (docker.m.daocloud.io/kindest/node:v1.25.3) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-pr4286-r3"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-pr4286-r3 --kubeconfig /tmp/pr4286-r3-kubeconfig
+
+Thanks for using kind! 😊
++ /tmp/pr4286-bin/kind load docker-image higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:pr4286-r3-baseline-409b3ed2 higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:pr4286-r3-fixed-81c547a2 higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:latest higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot:de2c9628294f51b13c4a70b3a862b4372890797a docker.m.daocloud.io/nacos/nacos-server:v2.3.2-slim docker.m.daocloud.io/hashicorp/http-echo:1.0.0 --name pr4286-r3
+Image: "" with ID "sha256:196878fb5f6a5ec90c49afb93c9d317dcfa3956c45f9d13ffaef5a2bdcffe54f" not yet present on node "pr4286-r3-control-plane", loading...
+Image: "" with ID "sha256:2ac39ec5b2e531c13fc8187b410a79b3a5541b5f7396b0190d4f08ac1838c946" not yet present on node "pr4286-r3-control-plane", loading...
+Image: "" with ID "sha256:57540655146ccf50c204113635bc05b827f8a59848d7524a42ab212d7c016270" not yet present on node "pr4286-r3-control-plane", loading...
+Image: "" with ID "sha256:d9c14fa955d91004fe52c7f20aa6b337a7632a0f4d03593883902f2e5f20bb54" not yet present on node "pr4286-r3-control-plane", loading...
+Image: "" with ID "sha256:2fe3e409559b9d8d91de79c3ef517b54e9e9d5930f2527b7ea530fc4a41e5496" not yet present on node "pr4286-r3-control-plane", loading...
+Image: "" with ID "sha256:04fa556e62bddac2a783622a3cccc35d6d5c599199eecf75b6b4f2bc76c8c825" not yet present on node "pr4286-r3-control-plane", loading...
++ /tmp/pr4286-bin/helm template pr4286 <repo>/helm/core --namespace higress-system --values <evidence>/harness/cluster/helm-values-baseline.yaml
++ /tmp/pr4286-bin/helm template pr4286 <repo>/helm/core --namespace higress-system --values <evidence>/harness/cluster/helm-values-fixed.yaml
++ /tmp/pr4286-bin/helm upgrade --install pr4286 <repo>/helm/core --namespace higress-system --create-namespace --values <evidence>/harness/cluster/helm-values-baseline.yaml --wait --timeout 5m
+Release "pr4286" does not exist. Installing it now.
+NAME: pr4286
+LAST DEPLOYED: Sun Aug 30 02:53:50 2026
+NAMESPACE: higress-system
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Higress successfully installed!
+
+To learn more about the release, try:
+  $ helm status pr4286 -n higress-system
+  $ helm get all pr4286 -n higress-system
++ /tmp/pr4286-bin/kubectl apply -f <evidence>/harness/cluster/runtime-fixtures.yaml
+namespace/pr4286-runtime created
+deployment.apps/pr4286-nacos created
+service/pr4286-nacos created
+deployment.apps/pr4286-backend-0 created
+deployment.apps/pr4286-backend-1 created
++ /tmp/pr4286-bin/kubectl rollout status deployment/pr4286-nacos -n pr4286-runtime --timeout=5m
+Waiting for deployment "pr4286-nacos" rollout to finish: 0 of 1 updated replicas are available...
+deployment "pr4286-nacos" successfully rolled out
++ /tmp/pr4286-bin/kubectl rollout status deployment/pr4286-backend-0 -n pr4286-runtime --timeout=2m
+deployment "pr4286-backend-0" successfully rolled out
++ /tmp/pr4286-bin/kubectl rollout status deployment/pr4286-backend-1 -n pr4286-runtime --timeout=2m
+deployment "pr4286-backend-1" successfully rolled out
++ /tmp/pr4286-bin/kubectl apply -f <evidence>/harness/cluster/ingress-route.yaml
+service/pr4286-dummy-backend created
+ingress.networking.k8s.io/pr4286-route created
++ /tmp/pr4286-bin/kubectl patch configmap higress-config -n higress-system --type merge --patch-file <evidence>/harness/cluster/higress-config-patch.yaml
+configmap/higress-config patched
++ /tmp/pr4286-bin/kubectl rollout status deployment/higress-controller -n higress-system --timeout=3m
+deployment "higress-controller" successfully rolled out
++ /tmp/pr4286-bin/kubectl rollout status deployment/higress-gateway -n higress-system --timeout=3m
+deployment "higress-gateway" successfully rolled out
++ /tmp/pr4286-bin/kubectl get nodes -o wide
+NAME                      STATUS   ROLES           AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
+pr4286-r3-control-plane   Ready    control-plane   4m30s   v1.25.3   172.29.0.2    <none>        Ubuntu 22.04.1 LTS   5.15.0-186-generic   containerd://1.6.9
++ /tmp/pr4286-bin/kubectl get pods -A -o wide
+NAMESPACE            NAME                                              READY   STATUS    RESTARTS   AGE     IP           NODE                      NOMINATED NODE   READINESS GATES
+higress-system       higress-controller-69fd484895-lbwpf               2/2     Running   0          23s     10.244.0.5   pr4286-r3-control-plane   <none>           <none>
+higress-system       higress-gateway-849dd8d4bb-4bfm7                  1/1     Running   0          23s     10.244.0.6   pr4286-r3-control-plane   <none>           <none>
+kube-system          coredns-565d847f94-5cx85                          1/1     Running   0          4m12s   10.244.0.4   pr4286-r3-control-plane   <none>           <none>
+kube-system          coredns-565d847f94-8rhm5                          1/1     Running   0          4m12s   10.244.0.3   pr4286-r3-control-plane   <none>           <none>
+kube-system          etcd-pr4286-r3-control-plane                      1/1     Running   0          4m26s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+kube-system          kindnet-w2fn2                                     1/1     Running   0          4m12s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+kube-system          kube-apiserver-pr4286-r3-control-plane            1/1     Running   0          4m27s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+kube-system          kube-controller-manager-pr4286-r3-control-plane   1/1     Running   0          4m25s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+kube-system          kube-proxy-qbczg                                  1/1     Running   0          4m12s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+kube-system          kube-scheduler-pr4286-r3-control-plane            1/1     Running   0          4m28s   172.29.0.2   pr4286-r3-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-684f458cdd-7sxnw           1/1     Running   0          4m12s   10.244.0.2   pr4286-r3-control-plane   <none>           <none>
+pr4286-runtime       pr4286-backend-0-7c5b76945c-s2zfz                 1/1     Running   0          17s     10.244.0.8   pr4286-r3-control-plane   <none>           <none>
+pr4286-runtime       pr4286-backend-1-5898d8fc8f-zl2sl                 1/1     Running   0          17s     10.244.0.9   pr4286-r3-control-plane   <none>           <none>
+pr4286-runtime       pr4286-nacos-b67c6566d-9kvqc                      1/1     Running   0          17s     10.244.0.7   pr4286-r3-control-plane   <none>           <none>
+
+Script done on 2026-08-30 02:54:14+08:00 [COMMAND_EXIT_CODE="0"]

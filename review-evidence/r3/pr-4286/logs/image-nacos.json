@@ -1,0 +1,102 @@
+[
+    {
+        "Id": "sha256:2fe3e409559b9d8d91de79c3ef517b54e9e9d5930f2527b7ea530fc4a41e5496",
+        "RepoTags": [
+            "docker.m.daocloud.io/nacos/nacos-server:v2.3.2-slim"
+        ],
+        "RepoDigests": [
+            "docker.m.daocloud.io/nacos/nacos-server@sha256:cca69ab12348b43d95c9b2c1d8d31d5a8d56e634ed4232a510423a9346090a70"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-04-03T07:38:52.883699538Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8848/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk8u372-b07",
+                "JAVA_HOME=/opt/java/openjdk",
+                "MODE=cluster",
+                "PREFER_HOST_MODE=ip",
+                "BASE_DIR=/home/nacos",
+                "CLASSPATH=.:/home/nacos/conf:",
+                "CLUSTER_CONF=/home/nacos/conf/cluster.conf",
+                "FUNCTION_MODE=all",
+                "NACOS_USER=nacos",
+                "JAVA=/opt/java/openjdk/bin/java",
+                "JVM_XMS=1g",
+                "JVM_XMX=1g",
+                "JVM_XMN=512m",
+                "JVM_MS=128m",
+                "JVM_MMS=320m",
+                "NACOS_DEBUG=n",
+                "TOMCAT_ACCESSLOG_ENABLED=false",
+                "TZ=Asia/Shanghai"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/home/nacos",
+            "Entrypoint": [
+                "bin/docker-startup.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.created": "2024-04-03T07:38:42.315Z",
+                "org.opencontainers.image.description": "This project contains a Docker image meant to facilitate the deployment of Nacos .",
+                "org.opencontainers.image.licenses": "",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.revision": "c150bce691f4996871203b5897dd357f6d8a0e24",
+                "org.opencontainers.image.source": "https://github.com/nacos-group/nacos-docker",
+                "org.opencontainers.image.title": "nacos-docker",
+                "org.opencontainers.image.url": "https://github.com/nacos-group/nacos-docker",
+                "org.opencontainers.image.version": "v2.3.2-slim"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 387866023,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/be49b99b694bab731454fae31f95f201298c2c2fd5a26779b8d19721f5c89762/diff:/var/lib/docker/overlay2/f73330e7303544173860df90033c5654d6b483c06ceff13e9429442a3f8569e3/diff:/var/lib/docker/overlay2/ed395fbd5531a49b93c6b3cb581d5f9ea7019c562011a5a2ae010cd7c6c7b264/diff:/var/lib/docker/overlay2/fb2f6ec26f6180f6114ef3bce70cd63afbe1c954462299623c0c815f19149c98/diff:/var/lib/docker/overlay2/820958c432945ad53f7bb3342b96db994dafa0510ef76ffc13dbe08c8f085669/diff:/var/lib/docker/overlay2/2e456d8459e4c0eb7b97856fd5656b9b6778a312f0161cd8aea1060658600082/diff:/var/lib/docker/overlay2/b0442e6087c3a89e0b001e66a38769d7274cdc8975dd0425eedf597e2f001116/diff:/var/lib/docker/overlay2/3a1a39e9e138762156d2d0f8b1640db122fdea1df8e280d7fd0b1ead4798061c/diff",
+                "MergedDir": "/var/lib/docker/overlay2/db3c7e6d6591766cf46fe16f860f18e4faabd9b06fb368d1719ba2991c967ca7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/db3c7e6d6591766cf46fe16f860f18e4faabd9b06fb368d1719ba2991c967ca7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/db3c7e6d6591766cf46fe16f860f18e4faabd9b06fb368d1719ba2991c967ca7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:f5bb4f853c84f6579d86f72de5f1d43fc8866443d9a027e2106e3755acefd61c",
+                "sha256:fa1334134451f7a18c495565eba1a58217d6208d674998269719475f1acc0c4d",
+                "sha256:3b64e9cc673a6f024a8fce52900444259e18f87baa3a456bdaf975d9369e4aa8",
+                "sha256:eaa57e6a088b97c3b45a9d642a4215f0567e7f316a6c1cb2ffeea461dbbe7d69",
+                "sha256:bbb2c8b89badb89533bbe83ac1327901ebdd4f5ad69bbbb1427560a80fd1fc25",
+                "sha256:d275b65fcceb2ae97fbcc779d414558c2e6f36501978be6791cb078e06d8e257",
+                "sha256:affef3bd40b9dea318ce893febe7f11e5b850d1af2175d344bee1446fab3c606",
+                "sha256:322583d95aa397360da61ac08f17767d0b54410a81c7828973fe097420bf28b9",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]

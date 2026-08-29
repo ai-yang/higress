@@ -1,0 +1,34 @@
+Script started on 2026-08-30 03:02:32+08:00 [<not executed on terminal>]
++ export KUBECONFIG=/tmp/pr4286-r3-kubeconfig
++ KUBECONFIG=/tmp/pr4286-r3-kubeconfig
++ HELM=/tmp/pr4286-bin/helm
++ KUBECTL=/tmp/pr4286-bin/kubectl
++++ dirname -- harness/upgrade-fixed.sh
+++ cd -- harness
+++ pwd
++ SCRIPT_DIR=<evidence>/harness
++ EVIDENCE=<evidence>
++ : <repo>
++ /tmp/pr4286-bin/helm upgrade pr4286 <repo>/helm/core --namespace higress-system --values <evidence>/harness/cluster/helm-values-fixed.yaml --wait --timeout 5m
+Release "pr4286" has been upgraded. Happy Helming!
+NAME: pr4286
+LAST DEPLOYED: Sun Aug 30 03:02:33 2026
+NAMESPACE: higress-system
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None
+NOTES:
+Higress successfully installed!
+
+To learn more about the release, try:
+  $ helm status pr4286 -n higress-system
+  $ helm get all pr4286 -n higress-system
++ /tmp/pr4286-bin/kubectl rollout status deployment/higress-gateway -n higress-system --timeout=3m
+Waiting for deployment "higress-gateway" rollout to finish: 0 of 1 updated replicas are available...
+deployment "higress-gateway" successfully rolled out
++ /tmp/pr4286-bin/kubectl get pods -n higress-system -o wide
+NAME                                  READY   STATUS    RESTARTS   AGE     IP            NODE                      NOMINATED NODE   READINESS GATES
+higress-controller-69fd484895-lbwpf   2/2     Running   0          8m53s   10.244.0.5    pr4286-r3-control-plane   <none>           <none>
+higress-gateway-74c989d977-rpnrw      1/1     Running   0          9s      10.244.0.10   pr4286-r3-control-plane   <none>           <none>
+
+Script done on 2026-08-30 03:02:44+08:00 [COMMAND_EXIT_CODE="0"]

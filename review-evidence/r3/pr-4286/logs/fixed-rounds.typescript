@@ -1,0 +1,70 @@
+Script started on 2026-08-30 03:03:44+08:00 [<not executed on terminal>]
++ [[ 2 -ne 2 ]]
++ [[ fixed != baseline ]]
++ [[ fixed != fixed ]]
++ variant=fixed
++ expected_unique=2
++++ dirname -- harness/run-variant.sh
+++ cd -- harness
+++ pwd
++ SCRIPT_DIR=<evidence>/harness
++ bash <evidence>/harness/wait-tools.sh fixed
++ [[ 1 -ne 1 ]]
++ variant=fixed
++++ dirname -- <evidence>/harness/wait-tools.sh
+++ cd -- <evidence>/harness
+++ pwd
++ SCRIPT_DIR=<evidence>/harness
++ EVIDENCE=<evidence>
++ response_file=<evidence>/raw/fixed-tools-ready-response.json
++ mkdir -p <evidence>/raw
+++ seq 1 60
++ for attempt in $(seq 1 60)
++ curl -fsS -X POST http://127.0.0.1:18080/pr4286/mcp -H 'Host: pr4286.example.com' -H 'Content-Type: application/json' --data-binary @<evidence>/harness/cluster/mcp-tools-list.json
++ grep -q PR4286_GROUP_pr4286-backend_identity <evidence>/raw/fixed-tools-ready-response.json
++ cat <evidence>/raw/fixed-tools-ready-response.json
+{"jsonrpc":"2.0","id":1,"result":{"tools":[{"description":"Return the selected backend identity","inputSchema":{"type":"object","properties":{},"additionalProperties":false},"name":"PR4286_GROUP_pr4286-backend_identity"}]}}+ exit 0
++ for round in 1 2 3
++ bash <evidence>/harness/run-requests.sh fixed 1 100 2
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 42,
+    "backend-1": 58
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
++ for round in 1 2 3
++ bash <evidence>/harness/run-requests.sh fixed 2 100 2
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 53,
+    "backend-1": 47
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
++ for round in 1 2 3
++ bash <evidence>/harness/run-requests.sh fixed 3 100 2
+{
+  "assertion_passed": true,
+  "counts": {
+    "backend-0": 49,
+    "backend-1": 51
+  },
+  "errors": [],
+  "expected_responses": 100,
+  "expected_unique_backends": 2,
+  "responses": 100,
+  "unique_backends": 2
+}
+
+Script done on 2026-08-30 03:03:50+08:00 [COMMAND_EXIT_CODE="0"]
