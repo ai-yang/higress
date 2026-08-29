@@ -1,0 +1,300 @@
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:413] initializing epoch 0 (base id=0, hot restart version=11.104)
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:415] statically linked extensions:
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.route.early_data_policy: envoy.route.early_data_policy.default
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.http.input: envoy.matching.inputs.destination_ip, envoy.matching.inputs.destination_port, envoy.matching.inputs.direct_source_ip, envoy.matching.inputs.dns_san, envoy.matching.inputs.request_headers, envoy.matching.inputs.request_trailers, envoy.matching.inputs.response_headers, envoy.matching.inputs.response_trailers, envoy.matching.inputs.server_name, envoy.matching.inputs.source_ip, envoy.matching.inputs.source_port, envoy.matching.inputs.source_type, envoy.matching.inputs.status_code_class_input, envoy.matching.inputs.status_code_input, envoy.matching.inputs.subject, envoy.matching.inputs.uri_san, query_params
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.router.cluster_specifier_plugin: envoy.router.cluster_specifier_plugin.cluster_fallback, envoy.router.cluster_specifier_plugin.golang
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.transport_sockets.upstream: envoy.transport_sockets.alts, envoy.transport_sockets.internal_upstream, envoy.transport_sockets.quic, envoy.transport_sockets.raw_buffer, envoy.transport_sockets.starttls, envoy.transport_sockets.tap, envoy.transport_sockets.tls, envoy.transport_sockets.upstream_proxy_protocol, raw_buffer, starttls, tls
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.header_validators: envoy.http.header_validators.envoy_default
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.quic.server.crypto_stream: envoy.quic.crypto_stream.server.quiche
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.quic.proof_source: envoy.quic.proof_source.filter_chain
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.tls.cert_validator: envoy.tls.cert_validator.default, envoy.tls.cert_validator.spiffe
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.access_loggers.extension_filters: envoy.access_loggers.extension_filters.cel
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.rate_limit_descriptors: envoy.rate_limit_descriptors.expr
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.listener: envoy.filters.listener.http_inspector, envoy.filters.listener.original_dst, envoy.filters.listener.original_src, envoy.filters.listener.proxy_protocol, envoy.filters.listener.tls_inspector, envoy.listener.http_inspector, envoy.listener.original_dst, envoy.listener.original_src, envoy.listener.proxy_protocol, envoy.listener.tls_inspector, istio.set_internal_dst_address
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.wasm.runtime: envoy.wasm.runtime.null, envoy.wasm.runtime.v8, envoy.wasm.runtime.wamr
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.http: envoy.bandwidth_limit, envoy.buffer, envoy.cors, envoy.csrf, envoy.ext_authz, envoy.ext_proc, envoy.fault, envoy.filters.http.adaptive_concurrency, envoy.filters.http.admission_control, envoy.filters.http.alternate_protocols_cache, envoy.filters.http.aws_lambda, envoy.filters.http.aws_request_signing, envoy.filters.http.bandwidth_limit, envoy.filters.http.buffer, envoy.filters.http.cache, envoy.filters.http.cdn_loop, envoy.filters.http.composite, envoy.filters.http.compressor, envoy.filters.http.connect_authority, envoy.filters.http.connect_grpc_bridge, envoy.filters.http.cors, envoy.filters.http.csrf, envoy.filters.http.custom_response, envoy.filters.http.decompressor, envoy.filters.http.dynamic_forward_proxy, envoy.filters.http.ext_authz, envoy.filters.http.ext_proc, envoy.filters.http.fault, envoy.filters.http.gcp_authn, envoy.filters.http.golang, envoy.filters.http.grpc_field_extraction, envoy.filters.http.grpc_http1_bridge, envoy.filters.http.grpc_http1_reverse_bridge, envoy.filters.http.grpc_json_transcoder, envoy.filters.http.grpc_stats, envoy.filters.http.grpc_web, envoy.filters.http.header_mutation, envoy.filters.http.header_to_metadata, envoy.filters.http.health_check, envoy.filters.http.http_dubbo_transcoder, envoy.filters.http.ip_tagging, envoy.filters.http.istio_stats, envoy.filters.http.jwt_authn, envoy.filters.http.local_ratelimit, envoy.filters.http.lua, envoy.filters.http.match_delegate, envoy.filters.http.oauth2, envoy.filters.http.on_demand, envoy.filters.http.original_src, envoy.filters.http.peer_metadata, envoy.filters.http.ratelimit, envoy.filters.http.rbac, envoy.filters.http.router, envoy.filters.http.set_metadata, envoy.filters.http.squash, envoy.filters.http.stateful_session, envoy.filters.http.sxg, envoy.filters.http.tap, envoy.filters.http.wasm, envoy.grpc_http1_bridge, envoy.grpc_json_transcoder, envoy.grpc_web, envoy.health_check, envoy.ip_tagging, envoy.local_rate_limit, envoy.lua, envoy.rate_limit, envoy.router, envoy.squash, istio.alpn, istio_authn
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.resolvers: envoy.ip
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.tracers: envoy.dynamic.ot, envoy.tracers.datadog, envoy.tracers.dynamic_ot, envoy.tracers.opencensus, envoy.tracers.opentelemetry, envoy.tracers.skywalking, envoy.tracers.xray, envoy.tracers.zipkin, envoy.zipkin
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.common.key_value: envoy.key_value.file_based
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.upstream_network: envoy.filters.network.upstream.metadata_exchange
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.retry_priorities: envoy.retry_priorities.previous_priorities
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.quic.connection_id_generator: envoy.quic.deterministic_connection_id_generator
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.custom_response: envoy.extensions.http.custom_response.local_response_policy, envoy.extensions.http.custom_response.redirect_policy
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.config_mux: envoy.config_mux.delta_grpc_mux_factory, envoy.config_mux.grpc_mux_factory, envoy.config_mux.new_grpc_mux_factory, envoy.config_mux.sotw_grpc_mux_factory
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.thrift_proxy.filters: envoy.filters.thrift.header_to_metadata, envoy.filters.thrift.rate_limit, envoy.filters.thrift.router
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.stateful_header_formatters: envoy.http.stateful_header_formatters.preserve_case, preserve_case
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.original_ip_detection: envoy.http.original_ip_detection.custom_header, envoy.http.original_ip_detection.xff
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.load_balancing_policies: envoy.load_balancing_policies.least_request, envoy.load_balancing_policies.maglev, envoy.load_balancing_policies.random, envoy.load_balancing_policies.ring_hash, envoy.load_balancing_policies.round_robin, envoy.load_balancing_policies.subset
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.listener_manager_impl: envoy.listener_manager_impl.default, envoy.listener_manager_impl.validation
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.transport_sockets.downstream: envoy.transport_sockets.alts, envoy.transport_sockets.quic, envoy.transport_sockets.raw_buffer, envoy.transport_sockets.starttls, envoy.transport_sockets.tap, envoy.transport_sockets.tls, raw_buffer, starttls, tls
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.stateful_session: envoy.http.stateful_session.cookie, envoy.http.stateful_session.header
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.thrift_proxy.transports: auto, framed, header, unframed
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.common_inputs: envoy.matching.common_inputs.environment_variable
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.compression.decompressor: envoy.compression.brotli.decompressor, envoy.compression.gzip.decompressor, envoy.compression.zstd.decompressor
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.sip_proxy.filters: envoy.filters.sip.router
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.dubbo_proxy.filters: envoy.filters.dubbo.router
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.compression.compressor: envoy.compression.brotli.compressor, envoy.compression.gzip.compressor, envoy.compression.zstd.compressor
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.internal_redirect_predicates: envoy.internal_redirect_predicates.allow_listed_routes, envoy.internal_redirect_predicates.previous_routes, envoy.internal_redirect_predicates.safe_cross_scheme
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.clusters: envoy.cluster.eds, envoy.cluster.logical_dns, envoy.cluster.original_dst, envoy.cluster.static, envoy.cluster.strict_dns, envoy.clusters.aggregate, envoy.clusters.dynamic_forward_proxy, envoy.clusters.redis
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   quic.http_server_connection: quic.http_server_connection.default
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.input_matchers: envoy.matching.matchers.consistent_hashing, envoy.matching.matchers.ip
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.guarddog_actions: envoy.watchdog.abort_action, envoy.watchdog.profile_action
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.network.custom_matchers: envoy.matching.custom_matchers.trie_matcher
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.udp_packet_writer: envoy.udp_packet_writer.default, envoy.udp_packet_writer.gso
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.regex_engines: envoy.regex_engines.google_re2
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.dubbo_proxy.protocols: dubbo
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.stats_sinks: envoy.dog_statsd, envoy.graphite_statsd, envoy.metrics_service, envoy.open_telemetry_stat_sink, envoy.stat_sinks.dog_statsd, envoy.stat_sinks.graphite_statsd, envoy.stat_sinks.hystrix, envoy.stat_sinks.metrics_service, envoy.stat_sinks.open_telemetry, envoy.stat_sinks.statsd, envoy.stat_sinks.wasm, envoy.statsd
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.rbac.matchers: envoy.rbac.matchers.upstream_ip_port
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.network.connection_balance: envoy.network.connection_balance.dlb
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.http.cache: envoy.extensions.http.cache.file_system_http_cache, envoy.extensions.http.cache.simple
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.path.match: envoy.path.match.uri_template.uri_template_matcher
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.formatter: envoy.formatter.metadata, envoy.formatter.req_without_query
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.network.dns_resolver: envoy.network.dns_resolver.cares
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.thrift_proxy.protocols: auto, binary, binary/non-strict, compact, twitter
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.request_id: envoy.request_id.uuid
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   network.connection.client: default, envoy_internal
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.http.custom_matchers: envoy.matching.custom_matchers.trie_matcher
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.access_loggers: envoy.access_loggers.file, envoy.access_loggers.http_grpc, envoy.access_loggers.open_telemetry, envoy.access_loggers.stderr, envoy.access_loggers.stdout, envoy.access_loggers.tcp_grpc, envoy.access_loggers.wasm, envoy.file_access_log, envoy.http_grpc_access_log, envoy.open_telemetry_access_log, envoy.stderr_access_log, envoy.stdout_access_log, envoy.tcp_grpc_access_log, envoy.wasm_access_log
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.dubbo_proxy.serializers: dubbo.hessian2
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.resource_monitors: envoy.resource_monitors.fixed_heap, envoy.resource_monitors.injected_resource
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.action: envoy.matching.actions.format_string, filter-chain-name
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.grpc_credentials: envoy.grpc_credentials.aws_iam, envoy.grpc_credentials.default, envoy.grpc_credentials.file_based_metadata
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.retry_host_predicates: envoy.retry_host_predicates.omit_canary_hosts, envoy.retry_host_predicates.omit_host_metadata, envoy.retry_host_predicates.previous_hosts
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.tls.key_providers: cryptomb, qat
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.upstreams: envoy.filters.connection_pools.http.dubbo_tcp, envoy.filters.connection_pools.http.generic, envoy.filters.connection_pools.http.http, envoy.filters.connection_pools.http.tcp
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.network: envoy.echo, envoy.ext_authz, envoy.filters.network.connect_authority, envoy.filters.network.connection_limit, envoy.filters.network.direct_response, envoy.filters.network.dubbo_proxy, envoy.filters.network.echo, envoy.filters.network.ext_authz, envoy.filters.network.golang, envoy.filters.network.http_connection_manager, envoy.filters.network.istio_stats, envoy.filters.network.kafka_broker, envoy.filters.network.kafka_mesh, envoy.filters.network.local_ratelimit, envoy.filters.network.metadata_exchange, envoy.filters.network.mongo_proxy, envoy.filters.network.mysql_proxy, envoy.filters.network.postgres_proxy, envoy.filters.network.ratelimit, envoy.filters.network.rbac, envoy.filters.network.redis_proxy, envoy.filters.network.rocketmq_proxy, envoy.filters.network.sip_proxy, envoy.filters.network.sni_cluster, envoy.filters.network.sni_dynamic_forward_proxy, envoy.filters.network.tcp_cluster_rewrite, envoy.filters.network.tcp_proxy, envoy.filters.network.thrift_proxy, envoy.filters.network.wasm, envoy.filters.network.zookeeper_proxy, envoy.http_connection_manager, envoy.mongo_proxy, envoy.ratelimit, envoy.redis_proxy, envoy.tcp_proxy, forward_downstream_sni, io.istio.network.authn, sni_verifier
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.config_subscription: envoy.config_subscription.ads, envoy.config_subscription.ads_collection, envoy.config_subscription.aggregated_grpc_collection, envoy.config_subscription.delta_grpc, envoy.config_subscription.delta_grpc_collection, envoy.config_subscription.filesystem, envoy.config_subscription.filesystem_collection, envoy.config_subscription.grpc, envoy.config_subscription.rest
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.upstream_options: envoy.extensions.upstreams.http.v3.HttpProtocolOptions, envoy.extensions.upstreams.tcp.v3.TcpProtocolOptions, envoy.upstreams.http.http_protocol_options, envoy.upstreams.tcp.tcp_protocol_options
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.matching.network.input: envoy.matching.inputs.application_protocol, envoy.matching.inputs.destination_ip, envoy.matching.inputs.destination_port, envoy.matching.inputs.direct_source_ip, envoy.matching.inputs.dns_san, envoy.matching.inputs.filter_state, envoy.matching.inputs.server_name, envoy.matching.inputs.source_ip, envoy.matching.inputs.source_port, envoy.matching.inputs.source_type, envoy.matching.inputs.subject, envoy.matching.inputs.transport_protocol, envoy.matching.inputs.uri_san
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.path.rewrite: envoy.path.rewrite.uri_template.uri_template_rewriter
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.connection_handler: envoy.connection_handler.default
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.health_checkers: envoy.health_checkers.grpc, envoy.health_checkers.http, envoy.health_checkers.redis, envoy.health_checkers.tcp
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.udp_listener: envoy.filters.udp.dns_filter, envoy.filters.udp_listener.udp_proxy
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.filters.http.upstream: envoy.buffer, envoy.filters.http.admission_control, envoy.filters.http.buffer, envoy.filters.http.header_mutation, envoy.filters.http.upstream_codec
+envoy-1  | [2026-08-29 18:10:31.535][7][info][main] [external/envoy/source/server/server.cc:417]   envoy.bootstrap: envoy.bootstrap.internal_listener, envoy.bootstrap.wasm, envoy.bootstrap.workload_discovery, envoy.extensions.network.socket_interface.default_socket_interface
+envoy-1  | [2026-08-29 18:10:31.541][7][info][main] [external/envoy/source/server/server.cc:470] HTTP header map info:
+envoy-1  | [2026-08-29 18:10:31.544][7][info][main] [external/envoy/source/server/server.cc:473]   request header map: 680 bytes: :authority,:method,:path,:protocol,:scheme,accept,accept-encoding,access-control-request-headers,access-control-request-method,access-control-request-private-network,authentication,authorization,cache-control,cdn-loop,connection,content-encoding,content-length,content-type,expect,grpc-accept-encoding,grpc-timeout,if-match,if-modified-since,if-none-match,if-range,if-unmodified-since,keep-alive,origin,pragma,proxy-connection,proxy-status,referer,te,transfer-encoding,upgrade,user-agent,via,x-client-trace-id,x-envoy-attempt-count,x-envoy-decorator-operation,x-envoy-downstream-service-cluster,x-envoy-downstream-service-node,x-envoy-expected-rq-timeout-ms,x-envoy-external-address,x-envoy-force-trace,x-envoy-hedge-on-per-try-timeout,x-envoy-internal,x-envoy-ip-tags,x-envoy-is-timeout-retry,x-envoy-max-retries,x-envoy-original-path,x-envoy-original-url,x-envoy-retriable-header-names,x-envoy-retriable-status-codes,x-envoy-retry-grpc-on,x-envoy-retry-on,x-envoy-upstream-alt-stat-name,x-envoy-upstream-rq-per-try-timeout-ms,x-envoy-upstream-rq-timeout-alt-response,x-envoy-upstream-rq-timeout-ms,x-envoy-upstream-stream-duration-ms,x-forwarded-client-cert,x-forwarded-for,x-forwarded-host,x-forwarded-port,x-forwarded-proto,x-ot-span-context,x-request-id
+envoy-1  | [2026-08-29 18:10:31.544][7][info][main] [external/envoy/source/server/server.cc:473]   request trailer map: 128 bytes: 
+envoy-1  | [2026-08-29 18:10:31.544][7][info][main] [external/envoy/source/server/server.cc:473]   response header map: 440 bytes: :status,access-control-allow-credentials,access-control-allow-headers,access-control-allow-methods,access-control-allow-origin,access-control-allow-private-network,access-control-expose-headers,access-control-max-age,age,cache-control,connection,content-encoding,content-length,content-type,date,etag,expires,grpc-message,grpc-status,keep-alive,last-modified,location,proxy-connection,proxy-status,server,transfer-encoding,upgrade,vary,via,x-envoy-attempt-count,x-envoy-decorator-operation,x-envoy-degraded,x-envoy-immediate-health-check-fail,x-envoy-ratelimited,x-envoy-upstream-canary,x-envoy-upstream-healthchecked-cluster,x-envoy-upstream-service-time,x-request-id
+envoy-1  | [2026-08-29 18:10:31.544][7][info][main] [external/envoy/source/server/server.cc:473]   response trailer map: 152 bytes: grpc-message,grpc-status
+envoy-1  | [2026-08-29 18:10:31.553][7][info][main] [external/envoy/source/server/server.cc:840] runtime: {}
+envoy-1  | [2026-08-29 18:10:31.553][7][info][admin] [external/envoy/source/server/admin/admin.cc:66] admin address: 0.0.0.0:9901
+envoy-1  | [2026-08-29 18:10:31.554][7][info][config] [external/envoy/source/server/configuration_impl.cc:144] loading tracing configuration
+envoy-1  | [2026-08-29 18:10:31.554][7][info][config] [external/envoy/source/server/configuration_impl.cc:103] loading 0 static secret(s)
+envoy-1  | [2026-08-29 18:10:31.554][7][info][config] [external/envoy/source/server/configuration_impl.cc:109] loading 1 cluster(s)
+envoy-1  | [2026-08-29 18:10:31.556][7][info][config] [external/envoy/source/server/configuration_impl.cc:113] loading 1 listener(s)
+envoy-1  | [2026-08-29 18:10:31.559][7][info][router] [external/envoy/source/common/router/config_impl.cc:725] route stats is , name is 
+envoy-1  | [2026-08-29 18:10:31.651][7][debug][wasm] [external/envoy/source/extensions/common/wasm/wasm.cc:122] Base Wasm created 1 now active
+envoy-1  | [2026-08-29 18:10:32.319][7][debug][wasm] [external/envoy/source/extensions/common/wasm/wasm.cc:148] Thread-Local Wasm created 2 now active
+envoy-1  | [2026-08-29 18:10:32.334][7][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] loading global config: {"provider":{"type":"gemini","apiTokens":["<redacted-test-token>"],"modelMapping":{"*":"gemini-pro"}}}
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.334][7][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] ai-proxy plugin configuration is updated, reset shared data
+envoy-1  | [2026-08-29 18:10:32.334][7][info][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1397] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] plugin start successfully
+envoy-1  | [2026-08-29 18:10:32.334][7][debug][wasm] [external/envoy/source/extensions/common/wasm/wasm.cc:191] ~Wasm 1 remaining active
+envoy-1  | [2026-08-29 18:10:32.348][7][debug][wasm] [external/envoy/source/extensions/common/wasm/wasm.cc:148] Thread-Local Wasm created 2 now active
+envoy-1  | [2026-08-29 18:10:32.362][7][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] loading global config: {"provider":{"type":"gemini","apiTokens":["<redacted-test-token>"],"modelMapping":{"*":"gemini-pro"}}}
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.362][7][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] ai-proxy plugin configuration is updated, reset shared data
+envoy-1  | [2026-08-29 18:10:32.362][7][info][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1397] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] plugin start successfully
+envoy-1  | [2026-08-29 18:10:32.363][7][info][config] [external/envoy/source/server/configuration_impl.cc:130] loading stats configuration
+envoy-1  | [2026-08-29 18:10:32.364][7][info][main] [external/envoy/source/server/server.cc:937] starting main dispatch loop
+envoy-1  | [2026-08-29 18:10:32.364][7][info][runtime] [external/envoy/source/common/runtime/runtime_impl.cc:577] RTDS has finished initialization
+envoy-1  | [2026-08-29 18:10:32.364][7][info][upstream] [external/envoy/source/common/upstream/cluster_manager_impl.cc:230] cm init: all clusters initialized
+envoy-1  | [2026-08-29 18:10:32.364][7][info][main] [external/envoy/source/server/server.cc:918] all clusters initialized. initializing init manager
+envoy-1  | [2026-08-29 18:10:32.364][7][info][config] [external/envoy/source/extensions/listener_managers/listener_manager/listener_manager_impl.cc:870] all dependencies initialized. starting workers
+envoy-1  | [2026-08-29 18:10:32.381][30][debug][wasm] [external/envoy/source/extensions/common/wasm/wasm.cc:148] Thread-Local Wasm created 3 now active
+envoy-1  | [2026-08-29 18:10:32.397][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] loading global config: {"provider":{"type":"gemini","apiTokens":["<redacted-test-token>"],"modelMapping":{"*":"gemini-pro"}}}
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.398][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] ai-proxy plugin configuration is updated, reset shared data
+envoy-1  | [2026-08-29 18:10:32.398][30][info][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1397] wasm log ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [nil] plugin start successfully
+envoy-1  | [2026-08-29 18:10:32.398][7][warning][main] [external/envoy/source/server/server.cc:814] there is no configured limit to the number of allowed active connections. Set a limit via the runtime key overload.global_downstream_max_connections
+envoy-1  | [2026-08-29 18:10:32.448][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] Failed to get VM memory: error status returned by host: not found
+envoy-1  | [2026-08-29 18:10:32.448][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] [onHttpRequestHeader] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.449][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] Use apiToken <redacted-test-token> to send request
+envoy-1  | [2026-08-29 18:10:32.449][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] SetRequestBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.449][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] [onHttpRequestBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.449][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] [onHttpRequestBody] newBody={
+envoy-1  |   "model": "gpt-4",
+envoy-1  |   "messages": [
+envoy-1  |     {
+envoy-1  |       "role": "user",
+envoy-1  |       "content": "Look up item 42"
+envoy-1  |     }
+envoy-1  |   ],
+envoy-1  |   "stream": false,
+envoy-1  |   "tools": [
+envoy-1  |     {
+envoy-1  |       "type": "function",
+envoy-1  |       "function": {
+envoy-1  |         "name": "lookup",
+envoy-1  |         "description": "Look up an item",
+envoy-1  |         "parameters": {
+envoy-1  |           "type": "object",
+envoy-1  |           "properties": {
+envoy-1  |             "id": {
+envoy-1  |               "type": "integer"
+envoy-1  |             }
+envoy-1  |           },
+envoy-1  |           "required": [
+envoy-1  |             "id"
+envoy-1  |           ]
+envoy-1  |         }
+envoy-1  |       }
+envoy-1  |     }
+envoy-1  |   ]
+envoy-1  | }
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.452][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] model [gpt-4] is mapped to [gemini-pro] via wildcard
+envoy-1  | [2026-08-29 18:10:32.453][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.453][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.455][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] [onHttpResponseHeaders] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.455][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] SetResponseBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.455][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] [onHttpResponseBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.455][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] chat completion response body:{"candidates":[{"content":{"role":"model","parts":[{"text":"Let me check. "},{"functionCall":{"name":"lookup","args":{"id":42}}},{"text":"One moment."}]},"finishReason":"STOP","index":0}],"usageMetadata":{"promptTokenCount":10,"candidatesTokenCount":5,"totalTokenCount":15}}
+envoy-1  | [2026-08-29 18:10:32.456][30][error][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1403] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-1] recovered from panic runtime error: invalid memory address or nil pointer dereference, stack: goroutine 1 [running]:
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.recoverFunc()
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1261 +0xb
+envoy-1  | panic({0x47ea0, 0x3d7360})
+envoy-1  | 	runtime/panic.go:792 +0x1a
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildToolCalls(0x8a3408, 0x813b10)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:788 +0x6
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildChatCompletionResponse(0x8a3408, {0x1000a8, 0x870ea0}, 0x87c870)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:766 +0x44
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).onChatCompletionResponseBody(0x8a3408, {0x1000a8, 0x870ea0}, {0x902360, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:283 +0x21
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).TransformResponseBody(0x8a3408, {0x1000a8, 0x870ea0}, {0x9b4e1, 0x19}, {0x902360, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:240 +0xa
+envoy-1  | main.onHttpResponseBody({0x1000a8, 0x870ea0}, {{0x8a3008, 0x1, 0x1}, 0x8a2c08, {0xfc060, 0x8a3408}}, {0x902360, 0x112, ...})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/main.go:602 +0x28
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.(*CommonHttpCtx[...]).OnHttpResponseBody(0x1005e0, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1187 +0x96
+envoy-1  | github.com/higress-group/proxy-wasm-go-sdk/proxywasm/internal.proxyOnResponseBody(0x2, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/proxy-wasm-go-sdk@v0.0.0-20251103120604-77e9cce339d2/proxywasm/internal/abi_callback_l7.go:86 +0xf
+envoy-1  | 
+envoy-1  | RID=pr4288-r3-baseline-1 ITER=1 METHOD=POST PATH=/v1beta/models/gemini-pro:generateContent CODE=200 FLAGS=- UPSTREAM=192.168.16.2:8080 RECEIVED=504 SENT=274 DURATION_MS=8
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] Failed to get VM memory: error status returned by host: not found
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] [onHttpRequestHeader] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] Use apiToken <redacted-test-token> to send request
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] SetRequestBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] [onHttpRequestBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.572][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] [onHttpRequestBody] newBody={
+envoy-1  |   "model": "gpt-4",
+envoy-1  |   "messages": [
+envoy-1  |     {
+envoy-1  |       "role": "user",
+envoy-1  |       "content": "Look up item 42"
+envoy-1  |     }
+envoy-1  |   ],
+envoy-1  |   "stream": false,
+envoy-1  |   "tools": [
+envoy-1  |     {
+envoy-1  |       "type": "function",
+envoy-1  |       "function": {
+envoy-1  |         "name": "lookup",
+envoy-1  |         "description": "Look up an item",
+envoy-1  |         "parameters": {
+envoy-1  |           "type": "object",
+envoy-1  |           "properties": {
+envoy-1  |             "id": {
+envoy-1  |               "type": "integer"
+envoy-1  |             }
+envoy-1  |           },
+envoy-1  |           "required": [
+envoy-1  |             "id"
+envoy-1  |           ]
+envoy-1  |         }
+envoy-1  |       }
+envoy-1  |     }
+envoy-1  |   ]
+envoy-1  | }
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.573][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] model [gpt-4] is mapped to [gemini-pro] via wildcard
+envoy-1  | [2026-08-29 18:10:32.573][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.573][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.574][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] [onHttpResponseHeaders] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.574][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] SetResponseBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.574][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] [onHttpResponseBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.575][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] chat completion response body:{"candidates":[{"content":{"role":"model","parts":[{"text":"Let me check. "},{"functionCall":{"name":"lookup","args":{"id":42}}},{"text":"One moment."}]},"finishReason":"STOP","index":0}],"usageMetadata":{"promptTokenCount":10,"candidatesTokenCount":5,"totalTokenCount":15}}
+envoy-1  | [2026-08-29 18:10:32.575][30][error][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1403] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-2] recovered from panic runtime error: invalid memory address or nil pointer dereference, stack: goroutine 1 [running]:
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.recoverFunc()
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1261 +0xb
+envoy-1  | panic({0x47ea0, 0x3d7360})
+envoy-1  | 	runtime/panic.go:792 +0x1a
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildToolCalls(0x8a3408, 0x813b10)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:788 +0x6
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildChatCompletionResponse(0x8a3408, {0x1000a8, 0x908120}, 0x87c910)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:766 +0x44
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).onChatCompletionResponseBody(0x8a3408, {0x1000a8, 0x908120}, {0x902900, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:283 +0x21
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).TransformResponseBody(0x8a3408, {0x1000a8, 0x908120}, {0x9b4e1, 0x19}, {0x902900, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:240 +0xa
+envoy-1  | main.onHttpResponseBody({0x1000a8, 0x908120}, {{0x8a3008, 0x1, 0x1}, 0x8a2c08, {0xfc060, 0x8a3408}}, {0x902900, 0x112, ...})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/main.go:602 +0x28
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.(*CommonHttpCtx[...]).OnHttpResponseBody(0x1005e0, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1187 +0x96
+envoy-1  | github.com/higress-group/proxy-wasm-go-sdk/proxywasm/internal.proxyOnResponseBody(0x3, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/proxy-wasm-go-sdk@v0.0.0-20251103120604-77e9cce339d2/proxywasm/internal/abi_callback_l7.go:86 +0xf
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.682][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] Failed to get VM memory: error status returned by host: not found
+envoy-1  | [2026-08-29 18:10:32.682][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] [onHttpRequestHeader] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.682][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] Use apiToken <redacted-test-token> to send request
+envoy-1  | [2026-08-29 18:10:32.683][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] SetRequestBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.683][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] [onHttpRequestBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.683][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] [onHttpRequestBody] newBody={
+envoy-1  |   "model": "gpt-4",
+envoy-1  |   "messages": [
+envoy-1  |     {
+envoy-1  |       "role": "user",
+envoy-1  |       "content": "Look up item 42"
+envoy-1  |     }
+envoy-1  |   ],
+envoy-1  |   "stream": false,
+envoy-1  |   "tools": [
+envoy-1  |     {
+envoy-1  |       "type": "function",
+envoy-1  |       "function": {
+envoy-1  |         "name": "lookup",
+envoy-1  |         "description": "Look up an item",
+envoy-1  |         "parameters": {
+envoy-1  |           "type": "object",
+envoy-1  |           "properties": {
+envoy-1  |             "id": {
+envoy-1  |               "type": "integer"
+envoy-1  |             }
+envoy-1  |           },
+envoy-1  |           "required": [
+envoy-1  |             "id"
+envoy-1  |           ]
+envoy-1  |         }
+envoy-1  |       }
+envoy-1  |     }
+envoy-1  |   ]
+envoy-1  | }
+envoy-1  | 
+envoy-1  | [2026-08-29 18:10:32.684][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] model [gpt-4] is mapped to [gemini-pro] via wildcard
+envoy-1  | [2026-08-29 18:10:32.684][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.684][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] request body: {"contents":[{"role":"user","parts":[{"text":"Look up item 42"}]}],"generationConfig":{},"tools":[{"function_declarations":[{"description":"Look up an item","name":"lookup","parameters":{"properties":{"id":{"type":"integer"}},"required":["id"],"type":"object"}}]}]}
+envoy-1  | [2026-08-29 18:10:32.685][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] [onHttpResponseHeaders] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.685][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] SetResponseBodyBufferLimit: 104857600
+envoy-1  | [2026-08-29 18:10:32.685][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] [onHttpResponseBody] provider=gemini
+envoy-1  | [2026-08-29 18:10:32.685][30][debug][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1394] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] chat completion response body:{"candidates":[{"content":{"role":"model","parts":[{"text":"Let me check. "},{"functionCall":{"name":"lookup","args":{"id":42}}},{"text":"One moment."}]},"finishReason":"STOP","index":0}],"usageMetadata":{"promptTokenCount":10,"candidatesTokenCount":5,"totalTokenCount":15}}
+envoy-1  | [2026-08-29 18:10:32.686][30][error][wasm] [external/envoy/source/extensions/common/wasm/context.cc:1403] wasm log ai-proxy ai-proxy pr4288-ai-proxy: [ai-proxy] [nil] [pr4288-r3-baseline-3] recovered from panic runtime error: invalid memory address or nil pointer dereference, stack: goroutine 1 [running]:
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.recoverFunc()
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1261 +0xb
+envoy-1  | panic({0x47ea0, 0x3d7360})
+envoy-1  | 	runtime/panic.go:792 +0x1a
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildToolCalls(0x8a3408, 0x813b10)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:788 +0x6
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).buildChatCompletionResponse(0x8a3408, {0x1000a8, 0x908fc0}, 0x87c9b0)
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:766 +0x44
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).onChatCompletionResponseBody(0x8a3408, {0x1000a8, 0x908fc0}, {0x902ea0, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:283 +0x21
+envoy-1  | github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider.(*geminiProvider).TransformResponseBody(0x8a3408, {0x1000a8, 0x908fc0}, {0x9b4e1, 0x19}, {0x902ea0, 0x112, 0x112})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/provider/gemini.go:240 +0xa
+envoy-1  | main.onHttpResponseBody({0x1000a8, 0x908fc0}, {{0x8a3008, 0x1, 0x1}, 0x8a2c08, {0xfc060, 0x8a3408}}, {0x902ea0, 0x112, ...})
+envoy-1  | 	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-proxy/main.go:602 +0x28
+envoy-1  | github.com/higress-group/wasm-go/pkg/wrapper.(*CommonHttpCtx[...]).OnHttpResponseBody(0x1005e0, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/wasm-go@v1.0.10-0.20260120033417-1c84f010156d/pkg/wrapper/plugin_wrapper.go:1187 +0x96
+envoy-1  | github.com/higress-group/proxy-wasm-go-sdk/proxywasm/internal.proxyOnResponseBody(0x4, 0x112, 0x1)
+envoy-1  | 	github.com/higress-group/proxy-wasm-go-sdk@v0.0.0-20251103120604-77e9cce339d2/proxywasm/internal/abi_callback_l7.go:86 +0xf
+envoy-1  | 

@@ -1,0 +1,82 @@
+{
+  "captured_at": {
+    "local": "2026-08-30T02:12:12+08:00",
+    "utc": "2026-08-29T18:12:12Z"
+  },
+  "source": {
+    "baseline_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "fixed_parent_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "fixed_sha": "2869a8e75a9ea2ac8a15364fc17cf5c493f97440",
+    "pre_rebase_sha": "4649f92bb8607dd9d02bb560634c201b998aadb6",
+    "pre_rebase_parent_sha": "4b23e08a386779c8958673ebb052fc6306fe807c",
+    "production_patch_sha256_before": "cc9102b18ad383581789afea8f04b663b58b770599cc56efdfd75e7c31902eff",
+    "production_patch_sha256_after": "cc9102b18ad383581789afea8f04b663b58b770599cc56efdfd75e7c31902eff",
+    "post_rebase_delta": "55 test-only lines for previously uncovered branches",
+    "signed_off_by": "Rui <1685901819@qq.com>"
+  },
+  "host_tools": {
+    "kernel": "Linux 5.15.0-186-generic x86_64",
+    "curl": "7.81.0",
+    "docker_client": "26.0.0",
+    "docker_server": "26.0.0",
+    "docker_compose": "2.25.0",
+    "git": "2.34.1",
+    "python": "3.14.6"
+  },
+  "build": {
+    "go_image": "golang:1.24.4@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f",
+    "go_image_id": "sha256:aca47f4a3f6a6dae115984e55d027898e8cf644fed7504413a57237b66d7af95",
+    "go_version": "go1.24.4 linux/amd64",
+    "goos": "wasip1",
+    "goarch": "wasm",
+    "cgo_enabled": false,
+    "build_flags": [
+      "-mod=readonly",
+      "-trimpath",
+      "-buildmode=c-shared",
+      "-buildvcs=false"
+    ],
+    "goproxy_recorded_run": "https://goproxy.cn,direct",
+    "artifacts": {
+      "baseline": {
+        "bytes": 9491449,
+        "sha256": "e68ef323ba48290ee562980c921b5cfef9c2820d1b636bd6701c2fbbfb676671"
+      },
+      "fixed": {
+        "bytes": 9493106,
+        "sha256": "369ff42b1dec10851c9c5f7e323c852bb04045e417d9f3b36f1cc671b5a816ec"
+      }
+    },
+    "coverage": {
+      "provider_total_statements_percent": 32.1,
+      "build_chat_completion_response_percent": 100.0,
+      "build_tool_calls_percent": 100.0
+    }
+  },
+  "runtime": {
+    "gateway_image": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:93e4da97560d00871299e67163df4f1801732aeea4934a9cea841f9e7b4a26e8",
+    "gateway_image_id": "sha256:c4e469c1e892f216a508674902cbb527d39aecf03264008123c5f07c62836f4f",
+    "envoy": "1.27.7 (d411a4f019545e015018826e660301c2f9a7edb6)",
+    "mock_image": "nginx@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10",
+    "mock_image_id": "sha256:6769dc3a703c719c1d2756bda113659be28ae16cf0da58dd5fd823d6b9a050ea",
+    "nginx": "1.27.5",
+    "envoy_concurrency": 1,
+    "loopback_listener_port": 11088,
+    "loopback_admin_port": 19988,
+    "rounds_per_variant": 3,
+    "request_stream": false,
+    "expected": {
+      "baseline_panic_count": 3,
+      "fixed_panic_count": 0,
+      "content": "Let me check. One moment.",
+      "function_name": "lookup",
+      "function_arguments": {"id": 42},
+      "finish_reason": "tool_calls",
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 5,
+        "total_tokens": 15
+      }
+    }
+  }
+}

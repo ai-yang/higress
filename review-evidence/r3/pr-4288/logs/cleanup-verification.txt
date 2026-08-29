@@ -1,0 +1,3 @@
+PASS: no Docker containers matched name=higress-pr4288 after cleanup
+PASS: loopback port 11088 refused connections after cleanup
+PASS: loopback port 19988 refused connections after cleanup

@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "variants": {
+    "baseline": {
+      "envoy_completed_2xx": 3,
+      "mock_200_count": 3,
+      "panic_count": 3,
+      "response_log_count": 3,
+      "rounds": [
+        {
+          "http_code": 200,
+          "response_bytes": 274,
+          "round": 1,
+          "time_total_seconds": 0.010588
+        },
+        {
+          "http_code": 200,
+          "response_bytes": 274,
+          "round": 2,
+          "time_total_seconds": 0.004871
+        },
+        {
+          "http_code": 200,
+          "response_bytes": 274,
+          "round": 3,
+          "time_total_seconds": 0.005595
+        }
+      ]
+    },
+    "fixed": {
+      "envoy_completed_2xx": 3,
+      "mock_200_count": 3,
+      "panic_count": 0,
+      "response_log_count": 3,
+      "rounds": [
+        {
+          "http_code": 200,
+          "response_bytes": 479,
+          "round": 1,
+          "time_total_seconds": 0.009618
+        },
+        {
+          "http_code": 200,
+          "response_bytes": 479,
+          "round": 2,
+          "time_total_seconds": 0.004365
+        },
+        {
+          "http_code": 200,
+          "response_bytes": 479,
+          "round": 3,
+          "time_total_seconds": 0.005061
+        }
+      ]
+    }
+  }
+}

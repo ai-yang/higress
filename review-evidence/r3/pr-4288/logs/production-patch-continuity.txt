@@ -1,0 +1,7 @@
+pre-rebase gemini.go binary diff sha256:
+cc9102b18ad383581789afea8f04b663b58b770599cc56efdfd75e7c31902eff
+
+current gemini.go binary diff sha256:
+cc9102b18ad383581789afea8f04b663b58b770599cc56efdfd75e7c31902eff
+
+PASS: production patch is byte-identical; range-diff shows only new tests.

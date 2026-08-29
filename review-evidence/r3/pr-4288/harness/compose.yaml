@@ -1,0 +1,57 @@
+services:
+  envoy:
+    image: ${HIGRESS_GATEWAY_IMAGE:?Set a pinned Higress gateway image}
+    entrypoint: /usr/local/bin/envoy
+    command:
+      - -c
+      - /etc/envoy/envoy.yaml
+      - --component-log-level
+      - wasm:debug
+      - --concurrency
+      - "1"
+    depends_on:
+      - mock-gemini
+    init: true
+    restart: "no"
+    networks:
+      - pr4288-internal
+      - pr4288-host
+    ports:
+      - target: 10000
+        published: ${ENVOY_PORT:-11088}
+        host_ip: 127.0.0.1
+        protocol: tcp
+      - target: 9901
+        published: ${ENVOY_ADMIN_PORT:-19988}
+        host_ip: 127.0.0.1
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: ./envoy.yaml
+        target: /etc/envoy/envoy.yaml
+        read_only: true
+      - type: bind
+        source: ${WASM_PATH:?Set a harness-relative Wasm path}
+        target: /etc/envoy/main.wasm
+        read_only: true
+
+  mock-gemini:
+    image: ${MOCK_IMAGE:?Set a pinned mock image}
+    init: true
+    restart: "no"
+    networks:
+      - pr4288-internal
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
+        read_only: true
+      - type: bind
+        source: ./gemini-response.json
+        target: /usr/share/nginx/html/gemini-response.json
+        read_only: true
+
+networks:
+  pr4288-internal:
+    internal: true
+  pr4288-host:

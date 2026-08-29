@@ -1,0 +1,2 @@
+expected OpenAI assertion failure: baseline response has no choices
+expected_failure_exit=1

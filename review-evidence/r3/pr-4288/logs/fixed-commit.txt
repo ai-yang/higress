@@ -1,0 +1,6 @@
+commit 2869a8e75a9ea2ac8a15364fc17cf5c493f97440
+parent 409b3ed2644a977776391eae78ed6cb11e99d3d3
+author Rui <1685901819@qq.com>
+author-date 2026-08-07T09:56:34+08:00
+subject fix(ai-proxy): preserve Gemini function calls
+signed-off-by Rui <1685901819@qq.com>

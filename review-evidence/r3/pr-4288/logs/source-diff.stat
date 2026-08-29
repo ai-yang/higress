@@ -1,0 +1,3 @@
+ .../wasm-go/extensions/ai-proxy/provider/gemini.go |  80 ++++++----
+ .../extensions/ai-proxy/provider/gemini_test.go    | 177 +++++++++++++++++++++
+ 2 files changed, 222 insertions(+), 35 deletions(-)
