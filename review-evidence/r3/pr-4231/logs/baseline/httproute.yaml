@@ -1,0 +1,51 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.networking.k8s.io/v1","kind":"HTTPRoute","metadata":{"annotations":{},"name":"pr4231-higress-service","namespace":"higress-system"},"spec":{"hostnames":["pr4231.example"],"parentRefs":[{"name":"higress-gateway"}],"rules":[{"backendRefs":[{"group":"networking.higress.io","kind":"Service","name":"pr4231-echo.dns","port":5678,"weight":1}],"matches":[{"path":{"type":"PathPrefix","value":"/r3"}}]}]}}
+  creationTimestamp: "2026-08-29T16:29:19Z"
+  generation: 1
+  name: pr4231-higress-service
+  namespace: higress-system
+  resourceVersion: "4403"
+  uid: b0417858-0350-44c0-962d-be8f386d8174
+spec:
+  hostnames:
+  - pr4231.example
+  parentRefs:
+  - group: gateway.networking.k8s.io
+    kind: Gateway
+    name: higress-gateway
+  rules:
+  - backendRefs:
+    - group: networking.higress.io
+      kind: Service
+      name: pr4231-echo.dns
+      port: 5678
+      weight: 1
+    matches:
+    - path:
+        type: PathPrefix
+        value: /r3
+status:
+  parents:
+  - conditions:
+    - lastTransitionTime: "2026-08-29T16:29:20Z"
+      message: Route was valid
+      observedGeneration: 1
+      reason: Accepted
+      status: "True"
+      type: Accepted
+    - lastTransitionTime: "2026-08-29T16:29:20Z"
+      message: 'referencing unsupported backendRef: group "networking.higress.io"
+        kind "Service"'
+      observedGeneration: 1
+      reason: InvalidKind
+      status: "False"
+      type: ResolvedRefs
+    controllerName: higress.io/gateway-controller
+    parentRef:
+      group: gateway.networking.k8s.io
+      kind: Gateway
+      name: higress-gateway

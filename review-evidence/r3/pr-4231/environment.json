@@ -1,0 +1,77 @@
+{
+  "source": {
+    "repository": "https://github.com/higress-group/higress",
+    "baseline_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "fixed_sha": "7cc8cde4bb8b268e1e5fa98219790b392e1d98d3",
+    "submodules": {
+      "envoy/go-control-plane": "4f11f65d9bc54bb8b18f1cc7c25460d3f8afef75",
+      "istio/api": "efc0fe428cccecc0285dbf51e2023f8e0422597c",
+      "istio/client-go": "09ed8dc4e7484d303c931fa42df7f7c728296923",
+      "istio/istio": "d5e408b7007e76e8f4f93565bcc21dd44143c214",
+      "istio/pkg": "15c662994e6515201dc106a2ec3de85ed50e8078"
+    }
+  },
+  "build": {
+    "go_image": "golang@sha256:dc2521c2a906db43073b8b4d99f491b6341cf15610b6ebbab187c45153f9959e",
+    "go_version": "go1.26.7 linux/amd64",
+    "settings": {
+      "CGO_ENABLED": "0",
+      "GOOS": "linux",
+      "GOARCH": "amd64",
+      "go_flags": "-mod=readonly -trimpath -buildvcs=false"
+    },
+    "baseline_binary": {
+      "bytes": 119292066,
+      "sha256": "2e19540692a0dc493723ef7b4d8987d2cd472284d30f1571c44518a96f231509"
+    },
+    "fixed_binary": {
+      "bytes": 119292066,
+      "sha256": "fa8042cc22e66506da15d408ea2c971c8d9021a5deff497a6e6168f33fa903f8"
+    }
+  },
+  "images": {
+    "controller_base": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress@sha256:11fb1244d35615210faaa6bda54cd187e6a445e09892da4cc2619896c34b0e11",
+    "baseline_controller": {
+      "tag": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:pr4231-r3-baseline-409b3ed2",
+      "id": "sha256:6b1c5f803b3a524a5e1b7573be8702d6fbefc189ee5b183eb32b168bcbf43e97"
+    },
+    "fixed_controller": {
+      "tag": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:pr4231-r3-fixed-7cc8cde4",
+      "id": "sha256:bde72bfecdad46ccf895950bc0f210332b5c603522c550eab004b5c20c1510e2"
+    },
+    "gateway": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway:v2.2.4@sha256:3dbd609df5db3fca61653eafe0e2310705e485190c4f8cd02d9aab8f07dcf329",
+    "pilot": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/pilot:v2.2.4@sha256:f742ed20f938c5c1eaf6f8c36c6481a87052d06e903ab6cb0c079165ac0c8284",
+    "echo": "docker.m.daocloud.io/hashicorp/http-echo:1.0.0@sha256:fcb75f691c8b0414d670ae570240cbf95502cc18a9ba57e982ecac589760a186",
+    "kind_node": "kindest/node:v1.34.0@sha256:7416a61b42b1662ca6ca89f02028ac133a309a2a30ba309614e8ec94d976dc5a"
+  },
+  "runtime": {
+    "kind": {
+      "version": "v0.17.0 go1.19.2 linux/amd64",
+      "binary_sha256": "a8c045856db33f839908b6acb90dc8ec397253ffdaef7baf058f5a542e009b9c"
+    },
+    "kubernetes": {
+      "client": "v1.34.0",
+      "server": "v1.34.0",
+      "kubectl_sha256": "cfda68cba5848bc3b6c6135ae2f20ba2c78de20059f68789c090166d6abc3e2c"
+    },
+    "helm": {
+      "version": "v3.14.4",
+      "binary_sha256": "912d3c044f46dcc43c22d073dec7eacf6ba8701dfc7f60688174b3eaa30d3698"
+    },
+    "gateway_api": {
+      "version": "v1.6.0",
+      "channel": "standard",
+      "manifest": "https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.6.0/standard-install.yaml"
+    },
+    "higress_chart": {
+      "path": "helm/core",
+      "version": "2.2.4",
+      "app_version": "2.2.4"
+    },
+    "cluster_name": "higress-pr4231-r3",
+    "host_ports": {
+      "http": 18080,
+      "https": 18443
+    }
+  }
+}

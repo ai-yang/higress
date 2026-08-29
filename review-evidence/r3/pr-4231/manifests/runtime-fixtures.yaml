@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pr4231-echo
+  namespace: higress-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pr4231-echo
+  template:
+    metadata:
+      labels:
+        app: pr4231-echo
+    spec:
+      containers:
+        - name: echo
+          image: docker.m.daocloud.io/hashicorp/http-echo:1.0.0
+          imagePullPolicy: IfNotPresent
+          args:
+            - -listen=:5678
+            - -text=pr4231-backend-ok
+          ports:
+            - name: http
+              containerPort: 5678
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pr4231-echo
+  namespace: higress-system
+spec:
+  selector:
+    app: pr4231-echo
+  ports:
+    - name: http
+      protocol: TCP
+      port: 5678
+      targetPort: 5678
+---
+apiVersion: networking.higress.io/v1
+kind: McpBridge
+metadata:
+  # Higress currently reconciles the registry bridge named "default".
+  name: default
+  namespace: higress-system
+spec:
+  registries:
+    - type: dns
+      domain: pr4231-echo.higress-system.svc.cluster.local
+      name: pr4231-echo
+      port: 5678
+      protocol: http
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: higress-gateway
+  namespace: higress-system
+spec:
+  gatewayClassName: higress
+  listeners:
+    - name: http
+      protocol: HTTP
+      port: 80
+      hostname: pr4231.example
+      allowedRoutes:
+        namespaces:
+          from: Same
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: pr4231-higress-service
+  namespace: higress-system
+spec:
+  parentRefs:
+    - name: higress-gateway
+  hostnames:
+    - pr4231.example
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /r3
+      backendRefs:
+        - group: networking.higress.io
+          kind: Service
+          name: pr4231-echo.dns
+          port: 5678
+          weight: 1

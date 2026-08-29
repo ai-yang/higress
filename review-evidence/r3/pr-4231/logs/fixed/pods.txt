@@ -1,0 +1,13 @@
+NAMESPACE            NAME                                                      READY   STATUS    RESTARTS   AGE     IP            NODE                              NOMINATED NODE   READINESS GATES
+higress-system       higress-controller-7676fb4b84-sqkj6                       2/2     Running   0          2m30s   10.244.0.11   higress-pr4231-r3-control-plane   <none>           <none>
+higress-system       higress-gateway-5978964d6f-sl9qr                          1/1     Running   0          5m1s    10.244.0.10   higress-pr4231-r3-control-plane   <none>           <none>
+higress-system       pr4231-echo-7ff8bb987c-t4jx8                              1/1     Running   0          16m     10.244.0.7    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-xzbjw                                  1/1     Running   0          23m     10.244.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-zdvb9                                  1/1     Running   0          23m     10.244.0.4    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          etcd-higress-pr4231-r3-control-plane                      1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          kindnet-zkmnf                                             1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          kube-apiserver-higress-pr4231-r3-control-plane            1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          kube-controller-manager-higress-pr4231-r3-control-plane   1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          kube-proxy-vdxnp                                          1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+kube-system          kube-scheduler-higress-pr4231-r3-control-plane            1/1     Running   0          23m     172.29.0.2    higress-pr4231-r3-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-7b8c8ddbd6-fn7tt                   1/1     Running   0          23m     10.244.0.3    higress-pr4231-r3-control-plane   <none>           <none>

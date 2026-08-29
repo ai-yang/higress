@@ -1,0 +1,20 @@
+1:  0fe031f1 ! 1:  7cc8cde4 fix: support Higress service backends in HTTPRoute
+    @@ Commit message
+      ## pkg/ingress/kube/gateway/istio/conversion.go ##
+     @@ pkg/ingress/kube/gateway/istio/conversion.go: func buildDestination(ctx RouteContext, to k8s.BackendRef, ns string,
+      			Host: hostname,
+    - 			// Port: &istio.PortSelector{Number: uint32(*to.Port)},
+    + 			Port: &istio.PortSelector{Number: destPort},
+      		}, ipCfg, invalidBackendErr
+     -	default:
+     -		return &istio.Destination{}, nil, &ConfigError{
+    @@ pkg/ingress/kube/gateway/istio/conversion_test.go: func TestGatewayReferenceAllo
+     +			Port:  &port,
+     +		}},
+     +	}}}
+    -+	obj := &k8sbeta.HTTPRoute{ObjectMeta: metav1.ObjectMeta{
+    ++	obj := &k8s.HTTPRoute{ObjectMeta: metav1.ObjectMeta{
+     +		Name:      "ai-route-test",
+     +		Namespace: "higress-system",
+     +	}}
+

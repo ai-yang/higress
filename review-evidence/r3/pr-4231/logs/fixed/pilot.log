@@ -1,0 +1,444 @@
+2026-08-29T16:32:00.468294446Z testing higress controller is ready to connect...
+2026-08-29T16:32:01.475018140Z testing higress controller is ready to connect...
+2026-08-29T16:32:02.480665510Z testing higress controller is ready to connect...
+2026-08-29T16:32:03.487547750Z testing higress controller is ready to connect...
+2026-08-29T16:32:04.494065905Z testing higress controller is ready to connect...
+2026-08-29T16:32:05.500278538Z testing higress controller is ready to connect...
+2026-08-29T16:32:06.506574123Z testing higress controller is ready to connect...
+2026-08-29T16:32:07.512304560Z testing higress controller is ready to connect...
+2026-08-29T16:32:08.519066401Z testing higress controller is ready to connect...
+2026-08-29T16:32:09.526634648Z testing higress controller is ready to connect...
+2026-08-29T16:32:10.532386994Z testing higress controller is ready to connect...
+2026-08-29T16:32:11.539288610Z testing higress controller is ready to connect...
+2026-08-29T16:32:11.618987535Z 2026-08-29T16:32:11.618717Z	info	FLAG: --caCertFile=""
+2026-08-29T16:32:11.619026384Z 2026-08-29T16:32:11.618775Z	info	FLAG: --clusterAliases="[]"
+2026-08-29T16:32:11.619035580Z 2026-08-29T16:32:11.618779Z	info	FLAG: --clusterID="Kubernetes"
+2026-08-29T16:32:11.619045575Z 2026-08-29T16:32:11.618782Z	info	FLAG: --clusterRegistriesNamespace="higress-system"
+2026-08-29T16:32:11.619054184Z 2026-08-29T16:32:11.618785Z	info	FLAG: --cniNamespace="higress-system"
+2026-08-29T16:32:11.619063339Z 2026-08-29T16:32:11.618788Z	info	FLAG: --configDir=""
+2026-08-29T16:32:11.619071503Z 2026-08-29T16:32:11.618791Z	info	FLAG: --ctrlz_address="localhost"
+2026-08-29T16:32:11.619079564Z 2026-08-29T16:32:11.618795Z	info	FLAG: --ctrlz_port="9876"
+2026-08-29T16:32:11.619087511Z 2026-08-29T16:32:11.618798Z	info	FLAG: --domain="cluster.local"
+2026-08-29T16:32:11.619095704Z 2026-08-29T16:32:11.618801Z	info	FLAG: --grpcAddr=":15010"
+2026-08-29T16:32:11.619104339Z 2026-08-29T16:32:11.618805Z	info	FLAG: --help="false"
+2026-08-29T16:32:11.619112456Z 2026-08-29T16:32:11.618808Z	info	FLAG: --httpAddr=":8080"
+2026-08-29T16:32:11.619120407Z 2026-08-29T16:32:11.618810Z	info	FLAG: --httpsAddr=":15017"
+2026-08-29T16:32:11.619128780Z 2026-08-29T16:32:11.618815Z	info	FLAG: --keepaliveInterval="30s"
+2026-08-29T16:32:11.619136984Z 2026-08-29T16:32:11.618818Z	info	FLAG: --keepaliveMaxServerConnectionAge="30m0s"
+2026-08-29T16:32:11.619145012Z 2026-08-29T16:32:11.618820Z	info	FLAG: --keepaliveTimeout="10s"
+2026-08-29T16:32:11.619153068Z 2026-08-29T16:32:11.618823Z	info	FLAG: --kubeconfig=""
+2026-08-29T16:32:11.619161100Z 2026-08-29T16:32:11.618827Z	info	FLAG: --kubernetesApiBurst="160"
+2026-08-29T16:32:11.619169104Z 2026-08-29T16:32:11.618832Z	info	FLAG: --kubernetesApiQPS="80"
+2026-08-29T16:32:11.619177009Z 2026-08-29T16:32:11.618835Z	info	FLAG: --log_as_json="false"
+2026-08-29T16:32:11.619184956Z 2026-08-29T16:32:11.618837Z	info	FLAG: --log_caller=""
+2026-08-29T16:32:11.619193301Z 2026-08-29T16:32:11.618840Z	info	FLAG: --log_output_level="default:info"
+2026-08-29T16:32:11.619201328Z 2026-08-29T16:32:11.618843Z	info	FLAG: --log_stacktrace_level="default:none"
+2026-08-29T16:32:11.619209308Z 2026-08-29T16:32:11.618853Z	info	FLAG: --log_target="[stdout]"
+2026-08-29T16:32:11.619226025Z 2026-08-29T16:32:11.618856Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2026-08-29T16:32:11.619234413Z 2026-08-29T16:32:11.618859Z	info	FLAG: --monitoringAddr=":15014"
+2026-08-29T16:32:11.619242468Z 2026-08-29T16:32:11.618863Z	info	FLAG: --namespace="higress-system"
+2026-08-29T16:32:11.619250568Z 2026-08-29T16:32:11.618866Z	info	FLAG: --networksConfig="./etc/istio/config/meshNetworks"
+2026-08-29T16:32:11.619262833Z 2026-08-29T16:32:11.618869Z	info	FLAG: --profile="true"
+2026-08-29T16:32:11.619298166Z 2026-08-29T16:32:11.618881Z	info	FLAG: --registries="[Kubernetes]"
+2026-08-29T16:32:11.619307109Z 2026-08-29T16:32:11.618884Z	info	FLAG: --secureGRPCAddr=":15012"
+2026-08-29T16:32:11.619315014Z 2026-08-29T16:32:11.618887Z	info	FLAG: --shutdownDuration="10s"
+2026-08-29T16:32:11.619323025Z 2026-08-29T16:32:11.618896Z	info	FLAG: --tls-cipher-suites="[]"
+2026-08-29T16:32:11.619330821Z 2026-08-29T16:32:11.618899Z	info	FLAG: --tlsCertFile=""
+2026-08-29T16:32:11.619338730Z 2026-08-29T16:32:11.618902Z	info	FLAG: --tlsKeyFile=""
+2026-08-29T16:32:11.619346686Z 2026-08-29T16:32:11.618907Z	info	FLAG: --vklog="0"
+2026-08-29T16:32:11.654986681Z 2026-08-29T16:32:11.654689Z	info	initializing Istiod admin server
+2026-08-29T16:32:11.656921247Z 2026-08-29T16:32:11.656542Z	info	starting HTTP service at [::]:8080
+2026-08-29T16:32:11.675035293Z 2026-08-29T16:32:11.674689Z	info	initializing mesh configuration ./etc/istio/config/mesh
+2026-08-29T16:32:11.675202849Z 2026-08-29T16:32:11.675074Z	info	sync complete	name=Mesh_File_mesh attempt=1 time=893ns
+2026-08-29T16:32:11.675215130Z 2026-08-29T16:32:11.675134Z	info	sync complete	name=Mesh_File_mesh attempt=1 time=578ns
+2026-08-29T16:32:11.675270082Z 2026-08-29T16:32:11.675186Z	info	sync complete	name=Mesh_File_mesh attempt=1 time=274ns
+2026-08-29T16:32:11.675298406Z 2026-08-29T16:32:11.675205Z	info	sync complete	name=Mesh_File_mesh attempt=1 time=179ns
+2026-08-29T16:32:11.675319875Z 2026-08-29T16:32:11.675253Z	info	krt	Mesh_File_mesh synced (uid 4)	owner=Mesh_File_mesh
+2026-08-29T16:32:11.675861582Z 2026-08-29T16:32:11.675712Z	info	sync complete	name=MeshConfig attempt=1 time=520ns
+2026-08-29T16:32:11.675876938Z 2026-08-29T16:32:11.675783Z	info	sync complete	name=MeshConfig attempt=1 time=462ns
+2026-08-29T16:32:11.678380696Z 2026-08-29T16:32:11.678131Z	info	krt	MeshConfig synced (uid 6)	owner=MeshConfig
+2026-08-29T16:32:11.681009081Z 2026-08-29T16:32:11.680756Z	info	mesh configuration: accessLogFile: /dev/stdout
+2026-08-29T16:32:11.681141346Z accessLogFormat: '{"ai_log":"%FILTER_STATE(wasm.ai_log:PLAIN)%","authority":"%REQ(X-ENVOY-ORIGINAL-HOST?:AUTHORITY)%","bytes_received":"%BYTES_RECEIVED%","bytes_sent":"%BYTES_SENT%","downstream_local_address":"%DOWNSTREAM_LOCAL_ADDRESS%","downstream_remote_address":"%DOWNSTREAM_REMOTE_ADDRESS%","duration":"%DURATION%","istio_policy_status":"%DYNAMIC_METADATA(istio.mixer:status)%","method":"%REQ(:METHOD)%","path":"%REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%","protocol":"%PROTOCOL%","request_id":"%REQ(X-REQUEST-ID)%","requested_server_name":"%REQUESTED_SERVER_NAME%","response_code":"%RESPONSE_CODE%","response_flags":"%RESPONSE_FLAGS%","route_name":"%ROUTE_NAME%","start_time":"%START_TIME%","trace_id":"%REQ(X-B3-TRACEID)%","upstream_cluster":"%UPSTREAM_CLUSTER%","upstream_host":"%UPSTREAM_HOST%","upstream_local_address":"%UPSTREAM_LOCAL_ADDRESS%","upstream_service_time":"%RESP(X-ENVOY-UPSTREAM-SERVICE-TIME)%","upstream_transport_failure_reason":"%UPSTREAM_TRANSPORT_FAILURE_REASON%","user_agent":"%REQ(USER-AGENT)%","x_forwarded_for":"%REQ(X-FORWARDED-FOR)%","response_code_details":"%RESPONSE_CODE_DETAILS%"}'
+2026-08-29T16:32:11.681192123Z configSources:
+2026-08-29T16:32:11.681203291Z - address: xds://127.0.0.1:15051
+2026-08-29T16:32:11.681212387Z - address: k8s://
+2026-08-29T16:32:11.681221095Z connectTimeout: 10s
+2026-08-29T16:32:11.681229367Z defaultConfig:
+2026-08-29T16:32:11.681238260Z   binaryPath: /usr/local/bin/envoy
+2026-08-29T16:32:11.681246375Z   configPath: ./etc/istio/proxy
+2026-08-29T16:32:11.681254580Z   controlPlaneAuthPolicy: MUTUAL_TLS
+2026-08-29T16:32:11.681263000Z   discoveryAddress: higress-controller.higress-system.svc:15012
+2026-08-29T16:32:11.681271207Z   drainDuration: 45s
+2026-08-29T16:32:11.681279492Z   proxyAdminPort: 15000
+2026-08-29T16:32:11.681313491Z   proxyStatsMatcher:
+2026-08-29T16:32:11.681321611Z     inclusionRegexps:
+2026-08-29T16:32:11.681329472Z     - .*
+2026-08-29T16:32:11.681337547Z   serviceCluster: istio-proxy
+2026-08-29T16:32:11.681345484Z   statNameLength: 189
+2026-08-29T16:32:11.681353388Z   statusPort: 15020
+2026-08-29T16:32:11.681361140Z   terminationDrainDuration: 5s
+2026-08-29T16:32:11.681369372Z   tracing: {}
+2026-08-29T16:32:11.681377352Z defaultDestinationRuleExportTo:
+2026-08-29T16:32:11.681385412Z - '*'
+2026-08-29T16:32:11.681393957Z defaultProviders: {}
+2026-08-29T16:32:11.681402153Z defaultServiceExportTo:
+2026-08-29T16:32:11.681410201Z - '*'
+2026-08-29T16:32:11.681418252Z defaultVirtualServiceExportTo:
+2026-08-29T16:32:11.681425965Z - '*'
+2026-08-29T16:32:11.681433912Z dnsRefreshRate: 200s
+2026-08-29T16:32:11.681442132Z enableAutoMtls: false
+2026-08-29T16:32:11.681450069Z enablePrometheusMerge: true
+2026-08-29T16:32:11.681457780Z enableTracing: true
+2026-08-29T16:32:11.681465797Z extensionProviders:
+2026-08-29T16:32:11.681473909Z - name: prometheus
+2026-08-29T16:32:11.681481873Z   prometheus: {}
+2026-08-29T16:32:11.681490117Z - name: stackdriver
+2026-08-29T16:32:11.681498201Z   stackdriver: {}
+2026-08-29T16:32:11.681506245Z - envoyFileAccessLog:
+2026-08-29T16:32:11.681514053Z     path: /dev/stdout
+2026-08-29T16:32:11.681521882Z   name: envoy
+2026-08-29T16:32:11.681529577Z inboundTrafficPolicy: {}
+2026-08-29T16:32:11.681537245Z ingressClass: istio
+2026-08-29T16:32:11.681545081Z ingressControllerMode: "OFF"
+2026-08-29T16:32:11.681553069Z ingressService: istio-ingressgateway
+2026-08-29T16:32:11.681561525Z localityLbSetting:
+2026-08-29T16:32:11.681575226Z   enabled: true
+2026-08-29T16:32:11.681583169Z mseIngressGlobalConfig:
+2026-08-29T16:32:11.681591266Z   tlsCipherSuites:
+2026-08-29T16:32:11.681599438Z   - ECDHE-ECDSA-AES128-GCM-SHA256
+2026-08-29T16:32:11.681607366Z   - ECDHE-ECDSA-CHACHA20-POLY1305
+2026-08-29T16:32:11.681615306Z   - ECDHE-RSA-AES128-GCM-SHA256
+2026-08-29T16:32:11.681623337Z   - ECDHE-RSA-CHACHA20-POLY1305
+2026-08-29T16:32:11.681631054Z   - ECDHE-ECDSA-AES128-SHA
+2026-08-29T16:32:11.681638810Z   - ECDHE-RSA-AES128-SHA
+2026-08-29T16:32:11.681646746Z   - AES128-GCM-SHA256
+2026-08-29T16:32:11.681654710Z   - AES128-SHA
+2026-08-29T16:32:11.681662486Z   - ECDHE-ECDSA-AES256-GCM-SHA384
+2026-08-29T16:32:11.681670390Z   - ECDHE-RSA-AES256-GCM-SHA384
+2026-08-29T16:32:11.681678254Z   - ECDHE-ECDSA-AES256-SHA
+2026-08-29T16:32:11.681686006Z   - ECDHE-RSA-AES256-SHA
+2026-08-29T16:32:11.681693663Z   - AES256-GCM-SHA384
+2026-08-29T16:32:11.681701751Z   - AES256-SHA
+2026-08-29T16:32:11.681709787Z   tlsMaxProtocolVersion: TLSv1.3
+2026-08-29T16:32:11.681717538Z   tlsMinProtocolVersion: TLSv1.0
+2026-08-29T16:32:11.681725394Z outboundTrafficPolicy:
+2026-08-29T16:32:11.681734031Z   mode: ALLOW_ANY
+2026-08-29T16:32:11.681742543Z protocolDetectionTimeout: 0.100s
+2026-08-29T16:32:11.681751003Z proxyInboundListenPort: 15006
+2026-08-29T16:32:11.681758879Z proxyListenPort: 15001
+2026-08-29T16:32:11.681767178Z rootNamespace: istio-system
+2026-08-29T16:32:11.681778083Z trustDomain: cluster.local
+2026-08-29T16:32:11.681785635Z 
+2026-08-29T16:32:11.681794575Z 2026-08-29T16:32:11.680779Z	info	version: 1.27-dev-unknown-Modified
+2026-08-29T16:32:11.682267466Z 2026-08-29T16:32:11.682000Z	info	flags: CniNamespace: higress-system
+2026-08-29T16:32:11.682301498Z CtrlZOptions:
+2026-08-29T16:32:11.682312499Z   Address: localhost
+2026-08-29T16:32:11.682321342Z   EnablePprof: false
+2026-08-29T16:32:11.682354063Z   Port: 9876
+2026-08-29T16:32:11.682362287Z InjectionOptions:
+2026-08-29T16:32:11.682371595Z   InjectionDirectory: ./var/lib/istio/inject
+2026-08-29T16:32:11.682380172Z JwtRule: ""
+2026-08-29T16:32:11.682388564Z KeepaliveOptions:
+2026-08-29T16:32:11.682396440Z   MaxServerConnectionAge: 1800000000000
+2026-08-29T16:32:11.682404500Z   MaxServerConnectionAgeGrace: 10000000000
+2026-08-29T16:32:11.682413284Z   Time: 30000000000
+2026-08-29T16:32:11.682421187Z   Timeout: 10000000000
+2026-08-29T16:32:11.682428991Z MeshConfigFile: ./etc/istio/config/mesh
+2026-08-29T16:32:11.682437760Z Namespace: higress-system
+2026-08-29T16:32:11.682446540Z NetworksConfigFile: ./etc/istio/config/meshNetworks
+2026-08-29T16:32:11.682454372Z PodName: higress-controller-7676fb4b84-sqkj6
+2026-08-29T16:32:11.682462235Z RegistryOptions:
+2026-08-29T16:32:11.682470079Z   ClusterRegistriesNamespace: higress-system
+2026-08-29T16:32:11.682478072Z   FileDir: ""
+2026-08-29T16:32:11.682486096Z   KubeConfig: ""
+2026-08-29T16:32:11.682494140Z   KubeOptions:
+2026-08-29T16:32:11.682502032Z     ClusterAliases: {}
+2026-08-29T16:32:11.682509916Z     ClusterID: Kubernetes
+2026-08-29T16:32:11.682517784Z     CniNamespace: ""
+2026-08-29T16:32:11.682525609Z     ConfigCluster: false
+2026-08-29T16:32:11.682533400Z     DomainSuffix: cluster.local
+2026-08-29T16:32:11.682541481Z     EndpointMode: 1
+2026-08-29T16:32:11.682549240Z     KrtDebugger: null
+2026-08-29T16:32:11.682557020Z     KubernetesAPIBurst: 160
+2026-08-29T16:32:11.682564833Z     KubernetesAPIQPS: 80
+2026-08-29T16:32:11.682572561Z     MeshNetworksWatcher: null
+2026-08-29T16:32:11.682580416Z     MeshServiceController: null
+2026-08-29T16:32:11.682588140Z     MeshWatcher: null
+2026-08-29T16:32:11.682595893Z     Metrics: null
+2026-08-29T16:32:11.682604012Z     Revision: default
+2026-08-29T16:32:11.682611816Z     StatusWritingEnabled: null
+2026-08-29T16:32:11.682619584Z     SyncTimeout: 0
+2026-08-29T16:32:11.682627400Z     SystemNamespace: ""
+2026-08-29T16:32:11.682635181Z     XDSUpdater: null
+2026-08-29T16:32:11.682642969Z   Registries:
+2026-08-29T16:32:11.682650817Z   - Kubernetes
+2026-08-29T16:32:11.682658841Z Revision: default
+2026-08-29T16:32:11.682666973Z ServerOptions:
+2026-08-29T16:32:11.682675333Z   EnableProfiling: true
+2026-08-29T16:32:11.682683550Z   GRPCAddr: :15010
+2026-08-29T16:32:11.682691338Z   HTTPAddr: :8080
+2026-08-29T16:32:11.682699089Z   HTTPSAddr: :15017
+2026-08-29T16:32:11.682706854Z   MonitoringAddr: :15014
+2026-08-29T16:32:11.682714686Z   SecureGRPCAddr: :15012
+2026-08-29T16:32:11.682722461Z   TLSOptions:
+2026-08-29T16:32:11.682730381Z     CaCertFile: ""
+2026-08-29T16:32:11.682738166Z     CertFile: ""
+2026-08-29T16:32:11.682746066Z     CipherSuits: null
+2026-08-29T16:32:11.682753886Z     KeyFile: ""
+2026-08-29T16:32:11.682761657Z     TLSCipherSuites: null
+2026-08-29T16:32:11.682769534Z ShutdownDuration: 10000000000
+2026-08-29T16:32:11.682777129Z 
+2026-08-29T16:32:11.689082261Z 2026-08-29T16:32:11.688791Z	info	sync complete	name=discovery filter attempt=3 time=6.616641ms
+2026-08-29T16:32:11.689111450Z 2026-08-29T16:32:11.688907Z	info	initializing mesh networks configuration ./etc/istio/config/meshNetworks
+2026-08-29T16:32:11.689197074Z 2026-08-29T16:32:11.689088Z	info	sync complete	name=Mesh_File_meshNetworks attempt=1 time=600ns
+2026-08-29T16:32:11.689207586Z 2026-08-29T16:32:11.689132Z	info	sync complete	name=Mesh_File_meshNetworks attempt=1 time=203ns
+2026-08-29T16:32:11.689215502Z 2026-08-29T16:32:11.689158Z	info	sync complete	name=Mesh_File_meshNetworks attempt=1 time=190ns
+2026-08-29T16:32:11.689267791Z 2026-08-29T16:32:11.689170Z	info	sync complete	name=Mesh_File_meshNetworks attempt=1 time=132ns
+2026-08-29T16:32:11.689298332Z 2026-08-29T16:32:11.689195Z	info	krt	Mesh_File_meshNetworks synced (uid 9)	owner=Mesh_File_meshNetworks
+2026-08-29T16:32:11.689549481Z 2026-08-29T16:32:11.689351Z	info	sync complete	name=MeshNetworks attempt=1 time=548ns
+2026-08-29T16:32:11.689578414Z 2026-08-29T16:32:11.689400Z	info	sync complete	name=MeshNetworks attempt=1 time=394ns
+2026-08-29T16:32:11.689903496Z 2026-08-29T16:32:11.689829Z	info	krt	MeshNetworks synced (uid 11)	owner=MeshNetworks
+2026-08-29T16:32:11.689979716Z 2026-08-29T16:32:11.689924Z	info	mesh networks configuration: {}
+2026-08-29T16:32:11.689989320Z 
+2026-08-29T16:32:11.689997796Z 2026-08-29T16:32:11.689938Z	info	initializing mesh handlers
+2026-08-29T16:32:11.690346198Z 2026-08-29T16:32:11.690254Z	info	model	reloading network gateways
+2026-08-29T16:32:11.690356527Z 2026-08-29T16:32:11.690279Z	info	creating CA and initializing public key
+2026-08-29T16:32:11.690377835Z 2026-08-29T16:32:11.690319Z	info	Using istiod file format for signing ca files
+2026-08-29T16:32:11.690440364Z 2026-08-29T16:32:11.690369Z	info	Use self-signed certificate as the CA certificate
+2026-08-29T16:32:11.694072129Z 2026-08-29T16:32:11.693874Z	info	pkica	Load signing key and cert from existing secret higress-system/istio-ca-secret
+2026-08-29T16:32:11.696044442Z 2026-08-29T16:32:11.695807Z	info	pkica	Using existing public key: -----BEGIN CERTIFICATE-----
+2026-08-29T16:32:11.696072403Z MIIC/DCCAeSgAwIBAgIQKlVSUzE/n/FTGpRbAu8IcDANBgkqhkiG9w0BAQsFADAY
+2026-08-29T16:32:11.696081659Z MRYwFAYDVQQKEw1jbHVzdGVyLmxvY2FsMB4XDTI2MDgyOTE2MTcyNloXDTM2MDgy
+2026-08-29T16:32:11.696089711Z NjE2MTcyNlowGDEWMBQGA1UEChMNY2x1c3Rlci5sb2NhbDCCASIwDQYJKoZIhvcN
+2026-08-29T16:32:11.696098090Z AQEBBQADggEPADCCAQoCggEBAMVdt3/lXPcLneogP0K8/Lffs6cgkyarloIt8Jyy
+2026-08-29T16:32:11.696106299Z s/jvQfpOKJOJ22gpi2iPkr/OVUQXnpRxpaFbbTbRH4tBxeATcil5GP/4M/IWyB5q
+2026-08-29T16:32:11.696114406Z e57feTusquD0Q3C2Mczh5zXPahzgfQkwa034W/byAWLD54twUUzEkPKHj3CbkBAO
+2026-08-29T16:32:11.696122386Z 5PJ3286mCOuXw3mFyGKkEGwXkXgZVwMa/ITmUr18Y/TXfkEcASf67kA8f5bh4wUP
+2026-08-29T16:32:11.696130214Z uslzGHgrNGn5tp15/OKcgJ7bmN8g8S+ne0ODfKcgDBBcEQeARtd4AJeB48OFGL2g
+2026-08-29T16:32:11.696138095Z YyKzgOAqiJN2A2JD4tHTbv8dnMXUywaup84aJzXpBtznZxUCAwEAAaNCMEAwDgYD
+2026-08-29T16:32:11.696146275Z VR0PAQH/BAQDAgIEMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFAJdHb4SGQ6o
+2026-08-29T16:32:11.696154154Z fDwcI848MJUwq1YoMA0GCSqGSIb3DQEBCwUAA4IBAQBTdToW/YfvJ5q6XY/nsLZY
+2026-08-29T16:32:11.696162306Z 0fIo6I4jcw18067uYWUwIFXGFxsuoP+xfwy3wdQ8G/tXeZaBtBrFVzIIbeg/Ihhx
+2026-08-29T16:32:11.696170151Z Gu3YxslmncyD71p2VhHI27mGIluI+pl7vjQ+k+jZDcqlipZqz+wriytMp3Sn3oK7
+2026-08-29T16:32:11.696178195Z 9M1a+yeuNy/O0My13FTLRq3EXsJOvD8Ov9gW/DSOqecNOB4BNLfNbmwn9A4u0AS3
+2026-08-29T16:32:11.696186023Z U1jFGcks8IBB3irlPr9tQa9OkM6iR5huAAf4KYuNoOBl4EurhWVVp9f2kI9MTOeU
+2026-08-29T16:32:11.696193923Z feo2SsZl9saWR0t5fZbgvVEIVz7b6/xE7LwtJYhU2qQSGTwAhkVPX9uljMCraoQP
+2026-08-29T16:32:11.696202023Z -----END CERTIFICATE-----
+2026-08-29T16:32:11.696209567Z 
+2026-08-29T16:32:11.696218451Z 2026-08-29T16:32:11.695824Z	info	pkica	Set secret name for self-signed CA cert rotator to istio-ca-secret
+2026-08-29T16:32:11.696226808Z 2026-08-29T16:32:11.695869Z	info	rootcertrotator	Set up back off time 11m6s to start rotator.
+2026-08-29T16:32:11.696235083Z 2026-08-29T16:32:11.695906Z	info	initializing controllers
+2026-08-29T16:32:11.696433224Z 2026-08-29T16:32:11.696089Z	info	rootcertrotator	Jitter is enabled, wait 11m6s before starting root cert rotator.
+2026-08-29T16:32:11.700200635Z 2026-08-29T16:32:11.699927Z	info	Started XDS configSource xds://127.0.0.1:15051
+2026-08-29T16:32:11.701290891Z 2026-08-29T16:32:11.701047Z	info	Started Kubernetes configSource k8s://
+2026-08-29T16:32:11.701329498Z 2026-08-29T16:32:11.701245Z	info	Adding Kubernetes registry adapter
+2026-08-29T16:32:11.701349415Z 2026-08-29T16:32:11.701306Z	info	Discover server subject alt names: [higress-controller.higress-system.svc istio-pilot.higress-system.svc istiod-remote.higress-system.svc istiod.higress-system.svc]
+2026-08-29T16:32:11.701426927Z 2026-08-29T16:32:11.701370Z	info	initializing Istiod DNS certificates host: higress-controller.higress-system.svc, custom host: 
+2026-08-29T16:32:11.702846214Z 2026-08-29T16:32:11.702741Z	info	adsc	Received	type=security.istio.io/v1/AuthorizationPolicy count=0 nonce=2026-08-29T16:32:10Z/2ff223199-639c-4f0e-8962-61b7db344c92
+2026-08-29T16:32:11.703009078Z 2026-08-29T16:32:11.702912Z	info	adsc	Received	type=networking.istio.io/v1/DestinationRule count=0 nonce=2026-08-29T16:32:10Z/2518f05bb-b75a-4e88-9db9-00790ad35dca
+2026-08-29T16:32:11.704479421Z 2026-08-29T16:32:11.704312Z	info	adsc	Received	type=networking.istio.io/v1alpha3/EnvoyFilter count=2 nonce=2026-08-29T16:32:10Z/2e367ed1b-85a5-464c-8894-af73aa2458f6
+2026-08-29T16:32:11.712257562Z 2026-08-29T16:32:11.712171Z	info	adsc	Received	type=networking.istio.io/v1/Gateway count=1 nonce=2026-08-29T16:32:10Z/2fa1f7f81-fe7f-432a-b8f1-f5e381333082
+2026-08-29T16:32:11.712879863Z 2026-08-29T16:32:11.712785Z	info	adsc	Received	type=security.istio.io/v1/PeerAuthentication count=0 nonce=2026-08-29T16:32:10Z/24b601a8d-f9da-4f53-91d4-6ddab877fe46
+2026-08-29T16:32:11.712916783Z 2026-08-29T16:32:11.712833Z	info	adsc	Received	type=networking.istio.io/v1beta1/ProxyConfig count=0 nonce=2026-08-29T16:32:10Z/2f1a31c41-4630-4d2f-9496-29daefe83f03
+2026-08-29T16:32:11.712932936Z 2026-08-29T16:32:11.712869Z	info	adsc	Received	type=security.istio.io/v1/RequestAuthentication count=0 nonce=2026-08-29T16:32:10Z/208004de0-20f5-45a4-9704-647d277ebf98
+2026-08-29T16:32:11.713039840Z 2026-08-29T16:32:11.712945Z	info	adsc	Received	type=networking.istio.io/v1/ServiceEntry count=1 nonce=2026-08-29T16:32:10Z/292d31348-f7de-4c4c-9591-d4f13bd9b27c
+2026-08-29T16:32:11.713627253Z 2026-08-29T16:32:11.713545Z	info	adsc	Received	type=networking.istio.io/v1/Sidecar count=0 nonce=2026-08-29T16:32:10Z/28d50687a-f02e-4abb-86b1-251d277a6db7
+2026-08-29T16:32:11.713722372Z 2026-08-29T16:32:11.713656Z	info	adsc	Received	type=telemetry.istio.io/v1/Telemetry count=0 nonce=2026-08-29T16:32:10Z/2467ba711-0a77-424c-b755-8ae99afd1539
+2026-08-29T16:32:11.713800129Z 2026-08-29T16:32:11.713728Z	info	adsc	Received	type=networking.istio.io/v1/VirtualService count=1 nonce=2026-08-29T16:32:10Z/292648d92-fd7c-4574-93f6-870b11aea1d6
+2026-08-29T16:32:11.715091711Z 2026-08-29T16:32:11.715003Z	info	adsc	Received	type=extensions.istio.io/v1alpha1/WasmPlugin count=0 nonce=2026-08-29T16:32:10Z/28e5a8d3f-721a-46cc-93c9-81d29cb3ccb0
+2026-08-29T16:32:11.715115206Z 2026-08-29T16:32:11.715059Z	info	adsc	Received	type=networking.istio.io/v1/WorkloadEntry count=0 nonce=2026-08-29T16:32:10Z/2a01b2d6e-3694-4b26-8972-12169cbb0e27
+2026-08-29T16:32:11.715131807Z 2026-08-29T16:32:11.715097Z	info	adsc	Received	type=networking.istio.io/v1/WorkloadGroup count=0 nonce=2026-08-29T16:32:10Z/29cda6ba6-34a3-40fa-833f-9abf8922d946
+2026-08-29T16:32:11.966818750Z 2026-08-29T16:32:11.966513Z	info	Generating istiod-signed cert for [higress-controller.higress-system.svc istio-pilot.higress-system.svc istiod-remote.higress-system.svc istiod.higress-system.svc]:
+2026-08-29T16:32:11.966841200Z  -----BEGIN CERTIFICATE-----
+2026-08-29T16:32:11.966846332Z MIIDmTCCAoGgAwIBAgIQVw75w0oD0j9NhUAyEskrujANBgkqhkiG9w0BAQsFADAY
+2026-08-29T16:32:11.966850635Z MRYwFAYDVQQKEw1jbHVzdGVyLmxvY2FsMB4XDTI2MDgyOTE2MzAxMVoXDTM2MDgy
+2026-08-29T16:32:11.966854874Z NjE2MzIxMVowADCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMPqweV5
+2026-08-29T16:32:11.966875894Z 5Oocpe+Gws7sr8H1hLXWtGNTahuLSt0G+TA2MlbeLVRD96mjFbFN87lo3dxIddlk
+2026-08-29T16:32:11.966880220Z 8WQl3S0fSnjSWn7MiZWr1tSx11a9SMyD1H1GYV1byKX8KDlnVCzIlHHEfEWbGBIC
+2026-08-29T16:32:11.966884587Z aTOQ+sKIiEJ4Vu6o33QI2n/7o2UrXPyAgckGKsyFaqkpNN/sTUG9OL3B9pdbWSYh
+2026-08-29T16:32:11.966888907Z 0mRy7z3jUJRR25fOg9Fe9xgr9NiG8+vM9ctkJBuBQlu0YfqqUzEzi45v7mCRTNml
+2026-08-29T16:32:11.966893089Z F/fwvLD6zpCJ1cYT61OpmivSxc+EMgamTmHNqoFpenjTVgyYVu6IifkGoTkRLvq4
+2026-08-29T16:32:11.966897119Z MkThQIEXUdwKIXcCAwEAAaOB9jCB8zAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYw
+2026-08-29T16:32:11.966901150Z FAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAU
+2026-08-29T16:32:11.966905282Z Al0dvhIZDqh8PBwjzjwwlTCrVigwgZIGA1UdEQEB/wSBhzCBhIIlaGlncmVzcy1j
+2026-08-29T16:32:11.966909445Z b250cm9sbGVyLmhpZ3Jlc3Mtc3lzdGVtLnN2Y4IeaXN0aW8tcGlsb3QuaGlncmVz
+2026-08-29T16:32:11.966913455Z cy1zeXN0ZW0uc3ZjgiBpc3Rpb2QtcmVtb3RlLmhpZ3Jlc3Mtc3lzdGVtLnN2Y4IZ
+2026-08-29T16:32:11.966917789Z aXN0aW9kLmhpZ3Jlc3Mtc3lzdGVtLnN2YzANBgkqhkiG9w0BAQsFAAOCAQEAgrcN
+2026-08-29T16:32:11.966921801Z uyJvqP5JxO4kWRySNOFgSvT1XXvNghvWqGR2fw5CRkDfwD/rRJqT7h+sUD1ilpLs
+2026-08-29T16:32:11.966925906Z kvlV1sIAq7nru16NGkA6zSrVzDAH9t8YuMkmiEn4U17uxDALj32RYCLrOJlEn4Sh
+2026-08-29T16:32:11.966929775Z VP3lz0bLANm4uRe0XGl/9Yql/7HKylenKp8DX7wc4N4Wnov1BO4H9as9jdxSUr26
+2026-08-29T16:32:11.966933641Z BTLRPihi43WjH7ezvB9l1H1FUN5tz28WGS1ptHAPECD//ksORLtgtiMU5MeBCLQj
+2026-08-29T16:32:11.966948307Z CckVpq+U9UUJIgLayvHhlgLfP0aRyQ/7MWQDWIFrwjPZ8l2c6aN23sYhUOdm0zrv
+2026-08-29T16:32:11.966957251Z 84Dt4zsmcL8rVAhjag==
+2026-08-29T16:32:11.966961389Z -----END CERTIFICATE-----
+2026-08-29T16:32:11.966965345Z 
+2026-08-29T16:32:11.966970417Z 2026-08-29T16:32:11.966616Z	info	Using istiod file format for signing ca files
+2026-08-29T16:32:11.966974697Z 2026-08-29T16:32:11.966631Z	info	Use roots from istio-ca-secret
+2026-08-29T16:32:11.967174121Z 2026-08-29T16:32:11.966996Z	info	x509 cert - Issuer: "O=cluster.local", Subject: "", SN: 570ef9c34a03d23f4d85403212c92bba, NotBefore: "2026-08-29T16:30:11Z", NotAfter: "2036-08-26T16:32:11Z"
+2026-08-29T16:32:11.967217930Z 2026-08-29T16:32:11.967003Z	info	Istiod certificates are reloaded
+2026-08-29T16:32:11.967269754Z 2026-08-29T16:32:11.967079Z	info	spiffe	Added 1 certs to trust domain cluster.local in peer cert verifier
+2026-08-29T16:32:11.967280330Z 2026-08-29T16:32:11.967084Z	info	initializing secure discovery service
+2026-08-29T16:32:11.967289695Z 2026-08-29T16:32:11.967137Z	info	initializing secure webhook server for istiod webhooks
+2026-08-29T16:32:11.967308698Z 2026-08-29T16:32:11.967169Z	info	Skipping sidecar injector, injection path is missing or disabled.
+2026-08-29T16:32:11.967318534Z 2026-08-29T16:32:11.967173Z	info	initializing config validator
+2026-08-29T16:32:11.967327607Z 2026-08-29T16:32:11.967208Z	info	initializing registry event handlers
+2026-08-29T16:32:11.967355479Z 2026-08-29T16:32:11.967278Z	info	starting discovery service
+2026-08-29T16:32:11.967393546Z 2026-08-29T16:32:11.967285Z	info	initializing CA server with IstioD CA
+2026-08-29T16:32:11.969484518Z 2026-08-29T16:32:11.969351Z	info	Starting Istiod Server with primary cluster Kubernetes
+2026-08-29T16:32:11.969852204Z 2026-08-29T16:32:11.969464Z	info	ControlZ available at 127.0.0.1:9876
+2026-08-29T16:32:11.969882924Z 2026-08-29T16:32:11.969570Z	info	kube	Initializing Kubernetes service registry "Kubernetes"
+2026-08-29T16:32:11.970494488Z 2026-08-29T16:32:11.970326Z	info	Starting ADS server
+2026-08-29T16:32:11.970506661Z 2026-08-29T16:32:11.970293Z	info	Starting multicluster remote secrets controller
+2026-08-29T16:32:11.970515237Z 2026-08-29T16:32:11.970410Z	info	controllers	starting	controller=healthcheck
+2026-08-29T16:32:11.970528941Z 2026-08-29T16:32:11.970438Z	info	controllers	starting	controller=auto-register existing connections
+2026-08-29T16:32:11.970575989Z 2026-08-29T16:32:11.970369Z	info	starting CA server
+2026-08-29T16:32:11.970604326Z 2026-08-29T16:32:11.970405Z	info	kube	Starting Pilot K8S CRD controller	controller=crd-controller
+2026-08-29T16:32:11.970614966Z 2026-08-29T16:32:11.970472Z	info	controllers	starting	controller=unregister_workloadentry
+2026-08-29T16:32:11.970688258Z 2026-08-29T16:32:11.970577Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0xe, Name:"higress-config-gzip", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:11.970717122Z 2026-08-29T16:32:11.970594Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:11.970727406Z 2026-08-29T16:32:11.970556Z	info	kube	controller "networking.istio.io/v1/WorkloadEntry" is syncing...	controller=crd-controller
+2026-08-29T16:32:11.970736078Z 2026-08-29T16:32:11.970623Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0xe, Name:"global-option", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:11.970744234Z 2026-08-29T16:32:11.970629Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:11.970778943Z 2026-08-29T16:32:11.970644Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x10, Name:"higress-gateway-istio-autogenerated-k8s-gateway-http", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:11.970789098Z 2026-08-29T16:32:11.970648Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:11.970936448Z 2026-08-29T16:32:11.970792Z	info	Istiod CA has started
+2026-08-29T16:32:11.970978204Z 2026-08-29T16:32:11.970738Z	info	klog	attempting to acquire leader lease higress-system/higress-ip-autoallocate...
+2026-08-29T16:32:11.970984586Z 2026-08-29T16:32:11.970811Z	info	model	Cache Update, new service mcp/pr4231-echo.dns
+2026-08-29T16:32:11.970996670Z 2026-08-29T16:32:11.970878Z	info	serviceentry	PushRequest generated in Controller::serviceEntryHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"pr4231-echo.dns", Namespace:"mcp"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:11.971002437Z 2026-08-29T16:32:11.970885Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:11.971012607Z 2026-08-29T16:32:11.970901Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x30, Name:"higress-system~higress-gateway-istio-autogenerated-k8s-gateway-http~pr4231.example", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:11.971058817Z 2026-08-29T16:32:11.970905Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:11.971156302Z 2026-08-29T16:32:11.971050Z	info	cluster "Kubernetes" kube client started
+2026-08-29T16:32:11.972937682Z 2026-08-29T16:32:11.972769Z	info	kube	controller "networking.istio.io/v1/WorkloadEntry" is syncing...	controller=crd-controller
+2026-08-29T16:32:11.976939165Z 2026-08-29T16:32:11.976782Z	info	sync complete	name=default revision attempt=3 time=6.260603ms
+2026-08-29T16:32:11.976968043Z 2026-08-29T16:32:11.976847Z	info	controllers	starting	controller=default revision
+2026-08-29T16:32:11.976986759Z 2026-08-29T16:32:11.976845Z	info	kube	controller "networking.istio.io/v1/Sidecar" is syncing...	controller=crd-controller
+2026-08-29T16:32:11.976993405Z 2026-08-29T16:32:11.976796Z	info	sync complete	name=tag watcher attempt=3 time=6.365969ms
+2026-08-29T16:32:11.976999872Z 2026-08-29T16:32:11.976825Z	info	sync complete	name=multicluster remote secrets attempt=3 time=6.424154ms
+2026-08-29T16:32:11.977178482Z 2026-08-29T16:32:11.976948Z	info	ads	full push happen, reason:map[tag:1]
+2026-08-29T16:32:11.977207091Z 2026-08-29T16:32:11.976992Z	info	controllers	starting	controller=tag
+2026-08-29T16:32:11.977217103Z 2026-08-29T16:32:11.976966Z	info	multicluster remote secrets controller cache synced in 6.712131ms
+2026-08-29T16:32:11.977226215Z 2026-08-29T16:32:11.977039Z	info	controllers	starting	controller=multicluster secret
+2026-08-29T16:32:11.985378764Z 2026-08-29T16:32:11.985144Z	info	kube	controller "security.istio.io/v1/PeerAuthentication" is syncing...	controller=crd-controller
+2026-08-29T16:32:12.001430980Z 2026-08-29T16:32:12.001316Z	info	kube	controller "networking.istio.io/v1/Gateway" is syncing...	controller=crd-controller
+2026-08-29T16:32:12.029815040Z 2026-08-29T16:32:12.029560Z	info	sync complete	name=crdclient/informer/Ingress attempt=9 time=328.903835ms
+2026-08-29T16:32:12.029860592Z 2026-08-29T16:32:12.029673Z	info	krt	crdclient/informer/Ingress synced	owner=crdclient/informer/Ingress
+2026-08-29T16:32:12.034075449Z 2026-08-29T16:32:12.033899Z	info	sync complete	name=crd watcher attempt=6 time=62.806566ms
+2026-08-29T16:32:12.034100320Z 2026-08-29T16:32:12.033975Z	info	controllers	starting	controller=crd watcher
+2026-08-29T16:32:12.034116140Z 2026-08-29T16:32:12.034033Z	info	kube	controller "security.istio.io/v1/PeerAuthentication" is syncing...	controller=crd-controller
+2026-08-29T16:32:12.034160166Z 2026-08-29T16:32:12.034114Z	info	envoyfilters.networking.istio.io is now ready, building client
+2026-08-29T16:32:12.034232450Z 2026-08-29T16:32:12.034186Z	info	gateways.gateway.networking.k8s.io is now ready, building client
+2026-08-29T16:32:12.039106916Z 2026-08-29T16:32:12.038969Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0xe, Name:"higress-gateway-global-custom-response", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.039135321Z 2026-08-29T16:32:12.038988Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:12.098398580Z 2026-08-29T16:32:12.098088Z	info	sync complete	name=kube controller attempt=7 time=127.683424ms
+2026-08-29T16:32:12.098461437Z 2026-08-29T16:32:12.098208Z	info	kube	kube controller for Kubernetes synced after 127.824929ms
+2026-08-29T16:32:12.098472068Z 2026-08-29T16:32:12.098185Z	info	kube	controller "networking.istio.io/v1/WorkloadEntry" is syncing...	controller=crd-controller
+2026-08-29T16:32:12.098481397Z 2026-08-29T16:32:12.098247Z	info	sync complete	name=crd watcher attempt=7 time=127.16874ms
+2026-08-29T16:32:12.098490033Z 2026-08-29T16:32:12.098313Z	info	Waiting for caches to be synced
+2026-08-29T16:32:12.098525104Z 2026-08-29T16:32:12.098332Z	info	model	Full push, new service default/kubernetes.default.svc.cluster.local
+2026-08-29T16:32:12.098534564Z 2026-08-29T16:32:12.098357Z	info	kube	joining leader-election for higress-namespace-controller-election in higress-system on cluster Kubernetes
+2026-08-29T16:32:12.098542893Z 2026-08-29T16:32:12.098378Z	info	ads	full push happen, reason:map[endpoint:1]
+2026-08-29T16:32:12.098558969Z 2026-08-29T16:32:12.098477Z	info	model	Full push, new service higress-system/higress-controller.higress-system.svc.cluster.local
+2026-08-29T16:32:12.098574430Z 2026-08-29T16:32:12.098504Z	info	ads	full push happen, reason:map[endpoint:1]
+2026-08-29T16:32:12.098660301Z 2026-08-29T16:32:12.098550Z	info	model	Full push, new service higress-system/higress-gateway.higress-system.svc.cluster.local
+2026-08-29T16:32:12.098691654Z 2026-08-29T16:32:12.098570Z	info	ads	full push happen, reason:map[endpoint:1]
+2026-08-29T16:32:12.098717463Z 2026-08-29T16:32:12.098607Z	info	model	Full push, new service higress-system/pr4231-echo.higress-system.svc.cluster.local
+2026-08-29T16:32:12.098726314Z 2026-08-29T16:32:12.098632Z	info	ads	full push happen, reason:map[endpoint:1]
+2026-08-29T16:32:12.098735258Z 2026-08-29T16:32:12.098647Z	info	klog	attempting to acquire leader lease higress-system/higress-namespace-controller-election...
+2026-08-29T16:32:12.098744822Z 2026-08-29T16:32:12.098684Z	info	model	Full push, new service kube-system/kube-dns.kube-system.svc.cluster.local
+2026-08-29T16:32:12.098765775Z 2026-08-29T16:32:12.098706Z	info	ads	full push happen, reason:map[endpoint:1]
+2026-08-29T16:32:12.098918008Z 2026-08-29T16:32:12.098658Z	info	sync complete	name=default revision attempt=1 time=16.008µs
+2026-08-29T16:32:12.098960147Z 2026-08-29T16:32:12.098783Z	info	PushRequest generated in serviceHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"kubernetes.default.svc.cluster.local", Namespace:"default"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.098968870Z 2026-08-29T16:32:12.098805Z	info	controllers	starting	controller=default revision
+2026-08-29T16:32:12.098975176Z 2026-08-29T16:32:12.098813Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:12.099000640Z 2026-08-29T16:32:12.098883Z	info	PushRequest generated in serviceHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"higress-controller.higress-system.svc.cluster.local", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.099027625Z 2026-08-29T16:32:12.098898Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:12.099049929Z 2026-08-29T16:32:12.098934Z	info	PushRequest generated in serviceHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"higress-gateway.higress-system.svc.cluster.local", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.099078377Z 2026-08-29T16:32:12.098982Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:12.099104057Z 2026-08-29T16:32:12.099024Z	info	PushRequest generated in serviceHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"pr4231-echo.higress-system.svc.cluster.local", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.099112657Z 2026-08-29T16:32:12.099035Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:12.099143081Z 2026-08-29T16:32:12.099070Z	info	PushRequest generated in serviceHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"kube-dns.kube-system.svc.cluster.local", Namespace:"kube-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:12.099151774Z 2026-08-29T16:32:12.099080Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:12.130720528Z 2026-08-29T16:32:12.130473Z	info	sync complete	name=crdclient/informer/DestinationRule attempt=10 time=430.198306ms
+2026-08-29T16:32:12.130769725Z 2026-08-29T16:32:12.130553Z	info	krt	crdclient/informer/DestinationRule synced	owner=crdclient/informer/DestinationRule
+2026-08-29T16:32:12.130817637Z 2026-08-29T16:32:12.130602Z	info	sync complete	name=crdclient/informer/Gateway attempt=10 time=430.280413ms
+2026-08-29T16:32:12.130830062Z 2026-08-29T16:32:12.130691Z	info	krt	crdclient/informer/Gateway synced	owner=crdclient/informer/Gateway
+2026-08-29T16:32:12.130844061Z 2026-08-29T16:32:12.130711Z	info	sync complete	name=crdclient/informer/PeerAuthentication attempt=10 time=430.378165ms
+2026-08-29T16:32:12.130855701Z 2026-08-29T16:32:12.130749Z	info	krt	crdclient/informer/PeerAuthentication synced	owner=crdclient/informer/PeerAuthentication
+2026-08-29T16:32:12.130889414Z 2026-08-29T16:32:12.130763Z	info	sync complete	name=crdclient/informer/WorkloadEntry attempt=10 time=430.228596ms
+2026-08-29T16:32:12.130919898Z 2026-08-29T16:32:12.130789Z	info	krt	crdclient/informer/WorkloadEntry synced	owner=crdclient/informer/WorkloadEntry
+2026-08-29T16:32:12.131004214Z 2026-08-29T16:32:12.130711Z	info	sync complete	name=crdclient/informer/AuthorizationPolicy attempt=10 time=430.496702ms
+2026-08-29T16:32:12.131020091Z 2026-08-29T16:32:12.130806Z	info	sync complete	name=crdclient/informer/EnvoyFilter attempt=10 time=430.516794ms
+2026-08-29T16:32:12.131028715Z 2026-08-29T16:32:12.130834Z	info	krt	crdclient/informer/AuthorizationPolicy synced	owner=crdclient/informer/AuthorizationPolicy
+2026-08-29T16:32:12.131037262Z 2026-08-29T16:32:12.130842Z	info	krt	crdclient/informer/EnvoyFilter synced	owner=crdclient/informer/EnvoyFilter
+2026-08-29T16:32:12.131060179Z 2026-08-29T16:32:12.130856Z	info	sync complete	name=crdclient/informer/VirtualService attempt=10 time=430.359237ms
+2026-08-29T16:32:12.131086159Z 2026-08-29T16:32:12.130893Z	info	krt	crdclient/informer/VirtualService synced	owner=crdclient/informer/VirtualService
+2026-08-29T16:32:12.131094183Z 2026-08-29T16:32:12.130856Z	info	sync complete	name=crdclient/informer/Sidecar attempt=10 time=430.400869ms
+2026-08-29T16:32:12.131102443Z 2026-08-29T16:32:12.130915Z	info	krt	crdclient/informer/Sidecar synced	owner=crdclient/informer/Sidecar
+2026-08-29T16:32:12.131110247Z 2026-08-29T16:32:12.130827Z	info	sync complete	name=crdclient/informer/ServiceEntry attempt=10 time=430.391633ms
+2026-08-29T16:32:12.131128171Z 2026-08-29T16:32:12.130976Z	info	krt	crdclient/informer/ServiceEntry synced	owner=crdclient/informer/ServiceEntry
+2026-08-29T16:32:12.131136547Z 2026-08-29T16:32:12.130894Z	info	sync complete	name=crdclient/informer/ProxyConfig attempt=10 time=430.529706ms
+2026-08-29T16:32:12.131145088Z 2026-08-29T16:32:12.130932Z	info	sync complete	name=crdclient/informer/WasmPlugin attempt=10 time=430.4223ms
+2026-08-29T16:32:12.131152899Z 2026-08-29T16:32:12.130978Z	info	sync complete	name=crdclient/informer/WorkloadGroup attempt=10 time=430.358168ms
+2026-08-29T16:32:12.131160656Z 2026-08-29T16:32:12.131012Z	info	krt	crdclient/informer/WasmPlugin synced	owner=crdclient/informer/WasmPlugin
+2026-08-29T16:32:12.131168472Z 2026-08-29T16:32:12.131028Z	info	krt	crdclient/informer/WorkloadGroup synced	owner=crdclient/informer/WorkloadGroup
+2026-08-29T16:32:12.131176747Z 2026-08-29T16:32:12.131005Z	info	krt	crdclient/informer/ProxyConfig synced	owner=crdclient/informer/ProxyConfig
+2026-08-29T16:32:12.131200547Z 2026-08-29T16:32:12.130928Z	info	sync complete	name=crdclient/informer/RequestAuthentication attempt=10 time=430.472766ms
+2026-08-29T16:32:12.131209215Z 2026-08-29T16:32:12.131018Z	info	sync complete	name=crdclient/informer/Telemetry attempt=10 time=430.524138ms
+2026-08-29T16:32:12.131218420Z 2026-08-29T16:32:12.131092Z	info	krt	crdclient/informer/RequestAuthentication synced	owner=crdclient/informer/RequestAuthentication
+2026-08-29T16:32:12.131241100Z 2026-08-29T16:32:12.131109Z	info	krt	crdclient/informer/Telemetry synced	owner=crdclient/informer/Telemetry
+2026-08-29T16:32:12.162622774Z 2026-08-29T16:32:12.162406Z	info	sync complete	name=server attempt=6 time=64.077068ms
+2026-08-29T16:32:12.162656950Z 2026-08-29T16:32:12.162449Z	info	All controller caches have been synced up in 64.133856ms
+2026-08-29T16:32:12.199509566Z 2026-08-29T16:32:12.199322Z	info	sync complete	name=crdclient attempt=8 time=228.818213ms
+2026-08-29T16:32:12.199553214Z 2026-08-29T16:32:12.199373Z	info	kube	Pilot K8S CRD controller synced in 228.964377ms	controller=crd-controller
+2026-08-29T16:32:12.199582875Z 2026-08-29T16:32:12.199374Z	info	ads	Push debounce stable[1] 25 for config ConfigMap/local-path-storage/kube-root-ca.crt and 18 more configs: 100.225115ms since last change, 228.593474ms since last push, full=true
+2026-08-29T16:32:12.208020617Z 2026-08-29T16:32:12.207744Z	info	ads	XDS: Pushing Services:6 ConnectedEndpoints:0 Version:2026-08-29T16:32:12Z/1
+2026-08-29T16:32:12.213348702Z 2026-08-29T16:32:12.213105Z	warn	discovery is not ready
+2026-08-29T16:32:12.214848561Z 2026-08-29T16:32:12.214617Z	warn	discovery is not ready
+2026-08-29T16:32:12.227171010Z 2026-08-29T16:32:12.226936Z	info	sync complete	name=push context attempt=6 time=64.466916ms
+2026-08-29T16:32:12.227203355Z 2026-08-29T16:32:12.227033Z	info	ads	All caches have been synced up in 609.54643ms, marking server ready
+2026-08-29T16:32:12.227475601Z 2026-08-29T16:32:12.227337Z	info	starting secure gRPC discovery service at [::]:15012
+2026-08-29T16:32:12.227496232Z 2026-08-29T16:32:12.227398Z	info	starting gRPC discovery service at [::]:15010
+2026-08-29T16:32:12.227523133Z 2026-08-29T16:32:12.227434Z	info	starting webhook service at [::]:15017
+2026-08-29T16:32:15.460364616Z 2026-08-29T16:32:15.460274Z	info	ads	Push debounce stable[2] 2 for config ServiceEntry/higress-system/higress-controller.higress-system.svc.cluster.local: 100.745778ms since last change, 199.57938ms since last push, full=false
+2026-08-29T16:32:15.460425935Z 2026-08-29T16:32:15.460375Z	info	ads	XDS: Incremental Pushing ConnectedEndpoints:0 Version:2026-08-29T16:32:12Z/1
+2026-08-29T16:32:15.460614872Z 2026-08-29T16:32:15.460385Z	info	adsc	Received	type=networking.istio.io/v1/WorkloadEntry count=0 nonce=2026-08-29T16:32:15Z/3cb5d5709-3f2f-4de4-9227-683bf9cf16cb
+2026-08-29T16:32:15.460651082Z 2026-08-29T16:32:15.460576Z	info	adsc	Received	type=security.istio.io/v1/AuthorizationPolicy count=0 nonce=2026-08-29T16:32:15Z/3e760293a-de40-4cd4-a28a-170eddc837ee
+2026-08-29T16:32:15.460758659Z 2026-08-29T16:32:15.460648Z	info	adsc	Received	type=networking.istio.io/v1/DestinationRule count=0 nonce=2026-08-29T16:32:15Z/30ad7aab6-3548-437a-8107-4a8690f3f86d
+2026-08-29T16:32:15.463612902Z 2026-08-29T16:32:15.463548Z	info	adsc	Received	type=networking.istio.io/v1/Gateway count=1 nonce=2026-08-29T16:32:15Z/32e06c86c-3238-465e-b2d0-f1643cee43ca
+2026-08-29T16:32:15.463800564Z 2026-08-29T16:32:15.463754Z	info	adsc	Received	type=extensions.istio.io/v1alpha1/WasmPlugin count=0 nonce=2026-08-29T16:32:15Z/3531dcbb2-0f96-49d8-a4d4-200496fec80e
+2026-08-29T16:32:15.463849070Z 2026-08-29T16:32:15.463815Z	info	adsc	Received	type=security.istio.io/v1/PeerAuthentication count=0 nonce=2026-08-29T16:32:15Z/377738416-4924-4443-a656-9d4764b148bd
+2026-08-29T16:32:15.464014186Z 2026-08-29T16:32:15.463843Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x10, Name:"higress-gateway-istio-autogenerated-k8s-gateway-http", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:15.464028400Z 2026-08-29T16:32:15.463871Z	info	adsc	Received	type=networking.istio.io/v1/Sidecar count=0 nonce=2026-08-29T16:32:15Z/312cf305f-be24-4bb5-a763-b0232f8eecff
+2026-08-29T16:32:15.464033211Z 2026-08-29T16:32:15.463879Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:15.466775833Z 2026-08-29T16:32:15.466676Z	info	adsc	Received	type=networking.istio.io/v1alpha3/EnvoyFilter count=2 nonce=2026-08-29T16:32:15Z/3f1abcc5e-7695-4658-8a78-e029a97b4f25
+2026-08-29T16:32:15.467379749Z 2026-08-29T16:32:15.467303Z	info	adsc	Received	type=security.istio.io/v1/RequestAuthentication count=0 nonce=2026-08-29T16:32:15Z/367e743cf-b280-4465-a2b4-637eb06a6e39
+2026-08-29T16:32:15.467464614Z 2026-08-29T16:32:15.467412Z	info	adsc	Received	type=networking.istio.io/v1/ServiceEntry count=1 nonce=2026-08-29T16:32:15Z/30d1a9c4b-4c6a-4c97-81fd-2ec58589daab
+2026-08-29T16:32:15.467588255Z 2026-08-29T16:32:15.467533Z	info	adsc	Received	type=telemetry.istio.io/v1/Telemetry count=0 nonce=2026-08-29T16:32:15Z/3c729b4be-e49b-4b31-9db3-b2e1bbe2633e
+2026-08-29T16:32:15.467640986Z 2026-08-29T16:32:15.467597Z	info	adsc	Received	type=networking.istio.io/v1/WorkloadGroup count=0 nonce=2026-08-29T16:32:15Z/33eda3f10-e8db-49f8-85b5-fb616b1f790e
+2026-08-29T16:32:15.467750884Z 2026-08-29T16:32:15.467697Z	info	adsc	Received	type=networking.istio.io/v1beta1/ProxyConfig count=0 nonce=2026-08-29T16:32:15Z/3ffc670fb-06b5-458f-9cd9-f5d0573bdb71
+2026-08-29T16:32:15.467817916Z 2026-08-29T16:32:15.467776Z	info	adsc	Received	type=networking.istio.io/v1/VirtualService count=1 nonce=2026-08-29T16:32:15Z/38334c26f-81a2-4a55-8af3-af3ebbc6ff39
+2026-08-29T16:32:15.467950317Z 2026-08-29T16:32:15.467876Z	info	serviceentry	PushRequest generated in Controller::serviceEntryHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x28, Name:"pr4231-echo.dns", Namespace:"mcp"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"service":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:15.467980126Z 2026-08-29T16:32:15.467904Z	info	ads	full push happen, reason:map[service:1]
+2026-08-29T16:32:15.468002673Z 2026-08-29T16:32:15.467946Z	info	PushRequest generated in configHandler: &model.PushRequest{Full:true, ConfigsUpdated:sets.Set[istio.io/istio/pilot/pkg/model.ConfigKey]{model.ConfigKey{Kind:0x30, Name:"higress-system~higress-gateway-istio-autogenerated-k8s-gateway-http~pr4231.example", Namespace:"higress-system"}:struct {}{}}, AddressesUpdated:sets.Set[string](nil), Push:(*model.PushContext)(nil), Start:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC), Reason:model.ReasonStats{"config":1}, Delta:xds.ResourceDelta{Subscribed:sets.Set[string](nil), Unsubscribed:sets.Set[string](nil)}, Forced:false}
+2026-08-29T16:32:15.468011586Z 2026-08-29T16:32:15.467957Z	info	ads	full push happen, reason:map[config:1]
+2026-08-29T16:32:15.568861938Z 2026-08-29T16:32:15.568632Z	info	ads	Push debounce stable[3] 3 for config Gateway/higress-system/higress-gateway-istio-autogenerated-k8s-gateway-http and 2 more configs: 100.63181ms since last change, 104.680355ms since last push, full=true
+2026-08-29T16:32:15.569064459Z 2026-08-29T16:32:15.568984Z	info	ads	XDS: Pushing Services:6 ConnectedEndpoints:0 Version:2026-08-29T16:32:15Z/2
+2026-08-29T16:32:45.638033859Z 2026-08-29T16:32:45.637930Z	info	delta	ADS: new delta connection for node:higress-gateway-5978964d6f-sl9qr.higress-system-1
+2026-08-29T16:32:45.638752211Z 2026-08-29T16:32:45.638696Z	info	delta	CDS: PUSH request for node:higress-gateway-5978964d6f-sl9qr.higress-system resources:2 removed:0 size:589B cached:0/1 filtered:0
+2026-08-29T16:32:45.640072513Z 2026-08-29T16:32:45.639935Z	info	delta	LDS: PUSH request for node:higress-gateway-5978964d6f-sl9qr.higress-system resources:1 removed:0 size:4.7kB filtered:0
+2026-08-29T16:32:45.640088928Z 2026-08-29T16:32:45.640012Z	info	delta	SRDS: PUSH request for node:higress-gateway-5978964d6f-sl9qr.higress-system resources:1 removed:0 size:76B filtered:0
+2026-08-29T16:32:45.640140273Z 2026-08-29T16:32:45.640096Z	info	[CheckAndGetInferencePoolConfigs] virtualservice: map[]
+2026-08-29T16:32:45.640255194Z 2026-08-29T16:32:45.640210Z	info	delta	RDS: PUSH request for node:higress-gateway-5978964d6f-sl9qr.higress-system resources:1 removed:0 size:635B cached:0/1 filtered:0
+2026-08-29T16:32:45.823208032Z 2026-08-29T16:32:45.823008Z	info	ads	Push debounce stable[4] 1 for config ServiceEntry/higress-system/higress-controller.higress-system.svc.cluster.local: 100.360886ms since last change, 100.36069ms since last push, full=false
+2026-08-29T16:32:45.823244734Z 2026-08-29T16:32:45.823107Z	info	ads	XDS: Incremental Pushing ConnectedEndpoints:1 Version:2026-08-29T16:32:15Z/2
+2026-08-29T16:33:25.386493467Z 2026-08-29T16:33:25.386314Z	info	klog	successfully acquired lease higress-system/higress-namespace-controller-election
+2026-08-29T16:33:25.386716668Z 2026-08-29T16:33:25.386502Z	info	leader election lock obtained: higress-namespace-controller-election
+2026-08-29T16:33:25.386746164Z 2026-08-29T16:33:25.386591Z	info	kube	starting namespace controller for cluster Kubernetes
+2026-08-29T16:33:25.387127818Z 2026-08-29T16:33:25.387016Z	info	sync complete	name=crd watcher attempt=1 time=1.503µs
+2026-08-29T16:33:25.487995829Z 2026-08-29T16:33:25.487738Z	info	sync complete	name=namespace controller attempt=1 time=5.271µs
+2026-08-29T16:33:25.488030070Z 2026-08-29T16:33:25.487778Z	info	controllers	starting	controller=namespace controller
+2026-08-29T16:33:38.673744497Z 2026-08-29T16:33:38.673475Z	info	klog	successfully acquired lease higress-system/higress-ip-autoallocate
+2026-08-29T16:33:38.673844513Z 2026-08-29T16:33:38.673643Z	info	leader election lock obtained: higress-ip-autoallocate
+2026-08-29T16:33:38.674053855Z 2026-08-29T16:33:38.673926Z	info	sync complete	name=IP Autoallocator attempt=1 time=2.384µs
+2026-08-29T16:33:38.674067818Z 2026-08-29T16:33:38.673979Z	info	controllers	starting	controller=IP Autoallocator

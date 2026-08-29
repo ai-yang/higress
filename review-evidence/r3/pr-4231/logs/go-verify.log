@@ -1,0 +1,9 @@
+go version go1.26.7 linux/amd64
+[go-verify] targeted unit tests
+ok  	github.com/alibaba/higress/v2/pkg/ingress/kube/gateway/istio	0.080s
+[go-verify] full package tests
+ok  	github.com/alibaba/higress/v2/pkg/ingress/kube/gateway/istio	9.948s
+[go-verify] targeted race tests, count=20
+ok  	github.com/alibaba/higress/v2/pkg/ingress/kube/gateway/istio	1.328s
+[go-verify] package vet
+[go-verify] PASS

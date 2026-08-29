@@ -1,0 +1,11 @@
+--- helm-rendered-controller-baseline.yaml
++++ helm-rendered-controller-fixed.yaml
+@@ -31,7 +31,7 @@
+         - name: higress-core
+           securityContext:
+             {}
+-          image: "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:pr4231-r3-baseline-409b3ed2"
++          image: "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/higress:pr4231-r3-fixed-7cc8cde4"
+           imagePullPolicy: IfNotPresent
+           args:
+           - "serve"

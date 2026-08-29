@@ -1,0 +1,4 @@
+Deleting cluster "higress-pr4231-r3" ...
+No kind clusters found.
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+cleanup verification: PASS

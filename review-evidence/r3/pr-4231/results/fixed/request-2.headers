@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+x-app-name: http-echo
+x-app-version: 1.0.0
+date: Sat, 29 Aug 2026 16:34:20 GMT
+content-length: 18
+content-type: text/plain; charset=utf-8
+req-cost-time: 0
+req-arrive-time: 1788021260001
+resp-start-time: 1788021260002
+x-envoy-upstream-service-time: 0
+server: istio-envoy
+

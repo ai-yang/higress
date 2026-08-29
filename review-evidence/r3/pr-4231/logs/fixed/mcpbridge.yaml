@@ -1,0 +1,19 @@
+apiVersion: networking.higress.io/v1
+kind: McpBridge
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"networking.higress.io/v1","kind":"McpBridge","metadata":{"annotations":{},"name":"default","namespace":"higress-system"},"spec":{"registries":[{"domain":"pr4231-echo.higress-system.svc.cluster.local","name":"pr4231-echo","port":5678,"protocol":"http","type":"dns"}]}}
+  creationTimestamp: "2026-08-29T16:27:29Z"
+  generation: 1
+  name: default
+  namespace: higress-system
+  resourceVersion: "3135"
+  uid: 7c81b553-5762-4fa6-800a-e7c803a3e2ab
+spec:
+  registries:
+  - domain: pr4231-echo.higress-system.svc.cluster.local
+    name: pr4231-echo
+    port: 5678
+    protocol: http
+    type: dns

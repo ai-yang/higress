@@ -1,0 +1,30 @@
+controller:
+  imagePullPolicy: IfNotPresent
+  replicas: 1
+  tag: pr4231-r3-fixed-7cc8cde4
+gateway:
+  imagePullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    ports:
+    - name: http2
+      port: 80
+      protocol: TCP
+      targetPort: 80
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 443
+    type: ClusterIP
+  tag: v2.2.4
+global:
+  enableGatewayAPI: true
+  enableGatewayAPIDeploymentController: false
+  enableIstioAPI: true
+  imagePullPolicy: IfNotPresent
+  local: true
+  logging:
+    level: default:info
+pilot:
+  tag: v2.2.4
+

@@ -1,0 +1,6 @@
+HTTP/1.1 500 Internal Server Error
+vary: Accept-Encoding
+date: Sat, 29 Aug 2026 16:31:26 GMT
+server: istio-envoy
+content-length: 0
+

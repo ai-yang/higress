@@ -1,0 +1,13 @@
+commit 7cc8cde4bb8b268e1e5fa98219790b392e1d98d3
+Author:     Rui <1685901819@qq.com>
+AuthorDate: Thu Jul 30 23:07:27 2026 +0800
+Commit:     Rui <1685901819@qq.com>
+CommitDate: Sat Aug 29 23:49:11 2026 +0800
+
+    fix: support Higress service backends in HTTPRoute
+    
+    Signed-off-by: Rui <1685901819@qq.com>
+
+ pkg/ingress/kube/gateway/istio/conversion.go      |  23 ++---
+ pkg/ingress/kube/gateway/istio/conversion_test.go | 113 ++++++++++++++++++++++
+ 2 files changed, 120 insertions(+), 16 deletions(-)

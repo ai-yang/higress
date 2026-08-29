@@ -1,0 +1,80 @@
+2026-08-29T16:29:35.214192759Z 2026-08-29T16:29:35.213935Z	info	FLAG: --concurrency="0"
+2026-08-29T16:29:35.214230001Z 2026-08-29T16:29:35.213979Z	info	FLAG: --domain="higress-system.svc.cluster.local"
+2026-08-29T16:29:35.214235208Z 2026-08-29T16:29:35.213984Z	info	FLAG: --help="false"
+2026-08-29T16:29:35.214239084Z 2026-08-29T16:29:35.213987Z	info	FLAG: --log_as_json="false"
+2026-08-29T16:29:35.214242897Z 2026-08-29T16:29:35.213989Z	info	FLAG: --log_caller=""
+2026-08-29T16:29:35.214247073Z 2026-08-29T16:29:35.213992Z	info	FLAG: --log_output_level="default:info"
+2026-08-29T16:29:35.214251034Z 2026-08-29T16:29:35.213995Z	info	FLAG: --log_stacktrace_level="default:none"
+2026-08-29T16:29:35.214614057Z 2026-08-29T16:29:35.214453Z	info	FLAG: --log_target="[stdout]"
+2026-08-29T16:29:35.214632883Z 2026-08-29T16:29:35.214554Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2026-08-29T16:29:35.214637915Z 2026-08-29T16:29:35.214559Z	info	FLAG: --outlierLogPath=""
+2026-08-29T16:29:35.214642251Z 2026-08-29T16:29:35.214564Z	info	FLAG: --profiling="true"
+2026-08-29T16:29:35.214646971Z 2026-08-29T16:29:35.214569Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2026-08-29T16:29:35.214662356Z 2026-08-29T16:29:35.214583Z	info	FLAG: --proxyLogLevel="warning"
+2026-08-29T16:29:35.214666891Z 2026-08-29T16:29:35.214588Z	info	FLAG: --serviceCluster="higress-gateway"
+2026-08-29T16:29:35.214671322Z 2026-08-29T16:29:35.214593Z	info	FLAG: --stsPort="0"
+2026-08-29T16:29:35.214675663Z 2026-08-29T16:29:35.214597Z	info	FLAG: --templateFile=""
+2026-08-29T16:29:35.214680105Z 2026-08-29T16:29:35.214615Z	info	FLAG: --tokenManagerPlugin=""
+2026-08-29T16:29:35.214684280Z 2026-08-29T16:29:35.214622Z	info	FLAG: --vklog="0"
+2026-08-29T16:29:35.214688591Z 2026-08-29T16:29:35.214627Z	info	Version 1.27-dev-unknown-Modified
+2026-08-29T16:29:35.216595696Z 2026-08-29T16:29:35.216445Z	info	Proxy role	ips=[10.244.0.10] type=router id=higress-gateway-5978964d6f-sl9qr.higress-system domain=higress-system.svc.cluster.local
+2026-08-29T16:29:35.216622156Z 2026-08-29T16:29:35.216586Z	info	Apply mesh config from file accessLogEncoding: TEXT
+2026-08-29T16:29:35.216628621Z accessLogFile: /dev/stdout
+2026-08-29T16:29:35.216634694Z accessLogFormat: '{"ai_log":"%FILTER_STATE(wasm.ai_log:PLAIN)%","authority":"%REQ(X-ENVOY-ORIGINAL-HOST?:AUTHORITY)%","bytes_received":"%BYTES_RECEIVED%","bytes_sent":"%BYTES_SENT%","downstream_local_address":"%DOWNSTREAM_LOCAL_ADDRESS%","downstream_remote_address":"%DOWNSTREAM_REMOTE_ADDRESS%","duration":"%DURATION%","istio_policy_status":"%DYNAMIC_METADATA(istio.mixer:status)%","method":"%REQ(:METHOD)%","path":"%REQ(X-ENVOY-ORIGINAL-PATH?:PATH)%","protocol":"%PROTOCOL%","request_id":"%REQ(X-REQUEST-ID)%","requested_server_name":"%REQUESTED_SERVER_NAME%","response_code":"%RESPONSE_CODE%","response_flags":"%RESPONSE_FLAGS%","route_name":"%ROUTE_NAME%","start_time":"%START_TIME%","trace_id":"%REQ(X-B3-TRACEID)%","upstream_cluster":"%UPSTREAM_CLUSTER%","upstream_host":"%UPSTREAM_HOST%","upstream_local_address":"%UPSTREAM_LOCAL_ADDRESS%","upstream_service_time":"%RESP(X-ENVOY-UPSTREAM-SERVICE-TIME)%","upstream_transport_failure_reason":"%UPSTREAM_TRANSPORT_FAILURE_REASON%","user_agent":"%REQ(USER-AGENT)%","x_forwarded_for":"%REQ(X-FORWARDED-FOR)%","response_code_details":"%RESPONSE_CODE_DETAILS%"}'
+2026-08-29T16:29:35.216640547Z configSources:
+2026-08-29T16:29:35.216644415Z - address: xds://127.0.0.1:15051
+2026-08-29T16:29:35.216648692Z - address: k8s://
+2026-08-29T16:29:35.216652720Z defaultConfig:
+2026-08-29T16:29:35.216656704Z   discoveryAddress: higress-controller.higress-system.svc:15012
+2026-08-29T16:29:35.216660487Z   proxyStatsMatcher:
+2026-08-29T16:29:35.216664288Z     inclusionRegexps:
+2026-08-29T16:29:35.216668067Z     - .*
+2026-08-29T16:29:35.216671915Z   tracing: {}
+2026-08-29T16:29:35.216685378Z dnsRefreshRate: 200s
+2026-08-29T16:29:35.216689388Z enableAutoMtls: false
+2026-08-29T16:29:35.216693155Z enablePrometheusMerge: true
+2026-08-29T16:29:35.216696931Z ingressControllerMode: "OFF"
+2026-08-29T16:29:35.216700629Z mseIngressGlobalConfig:
+2026-08-29T16:29:35.216704362Z   enableH3: false
+2026-08-29T16:29:35.216708260Z   enableProxyProtocol: false
+2026-08-29T16:29:35.216712092Z protocolDetectionTimeout: 100ms
+2026-08-29T16:29:35.216715839Z rootNamespace: null
+2026-08-29T16:29:35.216719777Z trustDomain: cluster.local
+2026-08-29T16:29:35.219875846Z 2026-08-29T16:29:35.219756Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+2026-08-29T16:29:35.219889391Z concurrency: 80
+2026-08-29T16:29:35.219893990Z configPath: ./etc/istio/proxy
+2026-08-29T16:29:35.219898206Z controlPlaneAuthPolicy: MUTUAL_TLS
+2026-08-29T16:29:35.219902355Z discoveryAddress: higress-controller.higress-system.svc:15012
+2026-08-29T16:29:35.219906514Z drainDuration: 45s
+2026-08-29T16:29:35.219910910Z proxyAdminPort: 15000
+2026-08-29T16:29:35.219914678Z proxyStatsMatcher:
+2026-08-29T16:29:35.219918483Z   inclusionRegexps:
+2026-08-29T16:29:35.219922494Z   - .*
+2026-08-29T16:29:35.219926361Z serviceCluster: istio-proxy
+2026-08-29T16:29:35.219932773Z statNameLength: 189
+2026-08-29T16:29:35.219936611Z statusPort: 15020
+2026-08-29T16:29:35.219940328Z terminationDrainDuration: 5s
+2026-08-29T16:29:35.219944252Z tracing: {}
+2026-08-29T16:29:35.219947923Z 
+2026-08-29T16:29:35.219951754Z 2026-08-29T16:29:35.219773Z	info	JWT policy is third-party-jwt
+2026-08-29T16:29:35.219956174Z 2026-08-29T16:29:35.219778Z	info	using credential fetcher of JWT type in cluster.local trust domain
+2026-08-29T16:29:35.423053574Z 2026-08-29T16:29:35.422735Z	info	Starting default Istio SDS Server
+2026-08-29T16:29:35.423105252Z 2026-08-29T16:29:35.422790Z	info	CA Endpoint higress-controller.higress-system.svc:15012, provider Citadel
+2026-08-29T16:29:35.423120655Z 2026-08-29T16:29:35.422777Z	info	Opening status port 15020
+2026-08-29T16:29:35.423155135Z 2026-08-29T16:29:35.422830Z	info	Using CA higress-controller.higress-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2026-08-29T16:29:35.424632106Z 2026-08-29T16:29:35.424380Z	info	xdsproxy	Initializing with upstream address "higress-controller.higress-system.svc:15012" and cluster "Kubernetes"
+2026-08-29T16:29:35.424700586Z 2026-08-29T16:29:35.424408Z	info	sds	Starting SDS grpc server
+2026-08-29T16:29:35.424838647Z 2026-08-29T16:29:35.424720Z	info	sds	Starting SDS server for workload certificates, will listen on "var/run/secrets/workload-spiffe-uds/socket"
+2026-08-29T16:29:35.428059510Z 2026-08-29T16:29:35.427904Z	info	Pilot SAN: [higress-controller.higress-system.svc]
+2026-08-29T16:29:35.430441599Z 2026-08-29T16:29:35.430191Z	info	Starting proxy agent
+2026-08-29T16:29:35.430472127Z 2026-08-29T16:29:35.430259Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields -l warning --component-log-level misc:error --skip-deprecated-logs --concurrency 80]
+2026-08-29T16:29:35.572554702Z 2026-08-29T16:29:35.572256Z	info	cache	generated new workload certificate	resourceName=default latency=147.676069ms ttl=23h59m59.427754442s
+2026-08-29T16:29:35.572594203Z 2026-08-29T16:29:35.572363Z	info	cache	Root cert has changed, start rotating root cert
+2026-08-29T16:29:35.572605007Z 2026-08-29T16:29:35.572453Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.427548837s
+2026-08-29T16:29:35.606066277Z [2026-08-29 16:29:35.605][48][warning][main] [external/envoy/source/server/server.cc:1012] There is no configured limit to the number of allowed active downstream connections. Configure a limit in `envoy.resource_monitors.global_downstream_max_connections` resource monitor.
+2026-08-29T16:29:35.618863787Z 2026-08-29T16:29:35.618574Z	info	xdsproxy	connected to delta upstream XDS server: higress-controller.higress-system.svc:15012	id=1
+2026-08-29T16:29:36.734773239Z 2026-08-29T16:29:36.734401Z	info	Readiness succeeded in 1.522536273s
+2026-08-29T16:29:36.735307899Z 2026-08-29T16:29:36.735227Z	info	Envoy proxy is ready
+2026-08-29T16:31:27.098237469Z {"ai_log":"-","authority":"pr4231.example:18080","bytes_received":"0","bytes_sent":"0","downstream_local_address":"10.244.0.10:80","downstream_remote_address":"172.29.0.1:60686","duration":"0","istio_policy_status":"-","method":"GET","path":"/r3","protocol":"HTTP/1.1","request_id":"3fd65673-6929-46ad-bd23-f0e73f5ada9c","requested_server_name":"-","response_code":"500","response_flags":"NC","route_name":"pr4231-higress-service","start_time":"2026-08-29T16:31:27.097Z","trace_id":"-","upstream_cluster":"-","upstream_host":"-","upstream_local_address":"-","upstream_service_time":"-","upstream_transport_failure_reason":"-","user_agent":"curl/7.81.0","x_forwarded_for":"172.29.0.1","response_code_details":"cluster_not_found"}
+2026-08-29T16:31:27.754134549Z {"ai_log":"-","authority":"pr4231.example:18080","bytes_received":"0","bytes_sent":"0","downstream_local_address":"10.244.0.10:80","downstream_remote_address":"172.29.0.1:60690","duration":"0","istio_policy_status":"-","method":"GET","path":"/r3","protocol":"HTTP/1.1","request_id":"fa0f8895-d595-4b26-903a-d4eb4963d2fd","requested_server_name":"-","response_code":"500","response_flags":"NC","route_name":"pr4231-higress-service","start_time":"2026-08-29T16:31:27.112Z","trace_id":"-","upstream_cluster":"-","upstream_host":"-","upstream_local_address":"-","upstream_service_time":"-","upstream_transport_failure_reason":"-","user_agent":"curl/7.81.0","x_forwarded_for":"172.29.0.1","response_code_details":"cluster_not_found"}
+2026-08-29T16:31:27.754177865Z {"ai_log":"-","authority":"pr4231.example:18080","bytes_received":"0","bytes_sent":"0","downstream_local_address":"10.244.0.10:80","downstream_remote_address":"172.29.0.1:60706","duration":"0","istio_policy_status":"-","method":"GET","path":"/r3","protocol":"HTTP/1.1","request_id":"79dbb9ed-282d-468c-801f-1de7f28580bc","requested_server_name":"-","response_code":"500","response_flags":"NC","route_name":"pr4231-higress-service","start_time":"2026-08-29T16:31:27.125Z","trace_id":"-","upstream_cluster":"-","upstream_host":"-","upstream_local_address":"-","upstream_service_time":"-","upstream_transport_failure_reason":"-","user_agent":"curl/7.81.0","x_forwarded_for":"172.29.0.1","response_code_details":"cluster_not_found"}

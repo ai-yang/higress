@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "source_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "http_codes": [
+      500,
+      500,
+      500
+    ],
+    "route_condition": "ResolvedRefs=False/InvalidKind",
+    "envoy_route_cluster": "UnknownService",
+    "registry_cluster_healthy": true,
+    "direct_backend_http_code": 200
+  },
+  "fixed": {
+    "source_sha": "7cc8cde4bb8b268e1e5fa98219790b392e1d98d3",
+    "http_codes": [
+      200,
+      200,
+      200
+    ],
+    "response_body": "pr4231-backend-ok\\n",
+    "route_condition": "ResolvedRefs=True/ResolvedRefs",
+    "envoy_route_cluster": "outbound|5678||pr4231-echo.dns",
+    "registry_cluster_healthy": true,
+    "direct_backend_http_code": 200
+  },
+  "go_verification": {
+    "go_version": "go1.26.7 linux/amd64",
+    "targeted": "pass",
+    "full_package": "pass",
+    "targeted_race_count": 20,
+    "vet": "pass"
+  }
+}

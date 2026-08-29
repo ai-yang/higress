@@ -1,0 +1,19 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  creationTimestamp: "2026-08-29T16:17:25Z"
+  generation: 1
+  name: higress
+  resourceVersion: "1077"
+  uid: 96cf282c-48d7-4da5-9bd1-ea7387d1bc5f
+spec:
+  controllerName: higress.io/gateway-controller
+  description: The default Higress GatewayClass
+status:
+  conditions:
+  - lastTransitionTime: "2026-08-29T16:17:25Z"
+    message: Handled by Higress controller
+    observedGeneration: 1
+    reason: Accepted
+    status: "True"
+    type: Accepted
