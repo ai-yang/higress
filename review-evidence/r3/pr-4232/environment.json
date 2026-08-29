@@ -1,0 +1,74 @@
+{
+  "captured_at": {
+    "local": "2026-08-30T01:41:04+08:00",
+    "utc": "2026-08-29T17:41:04Z"
+  },
+  "source": {
+    "baseline_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "fixed_parent_sha": "409b3ed2644a977776391eae78ed6cb11e99d3d3",
+    "fixed_sha": "d03df0204427d5b77d3f2e54e54ced8754d3db80",
+    "pre_rebase_sha": "c7f41a0dba00fcd04945d9f70014ea87b0b571ce",
+    "range_diff": "equal",
+    "signed_off_by": "Rui <1685901819@qq.com>"
+  },
+  "host_tools": {
+    "kernel": "Linux 5.15.0-186-generic x86_64",
+    "curl": "7.81.0",
+    "docker_client": "26.0.0",
+    "docker_server": "26.0.0",
+    "docker_compose": "2.25.0",
+    "git": "2.34.1",
+    "python": "3.14.6"
+  },
+  "build": {
+    "go_image": "golang@sha256:20a022e5112a144aa7b7aeb3f22ebf2cdaefcc4aac0d64e8deeee8cdc18b9c0f",
+    "go_image_id": "sha256:aca47f4a3f6a6dae115984e55d027898e8cf644fed7504413a57237b66d7af95",
+    "go_version": "go1.24.4 linux/amd64",
+    "goos": "wasip1",
+    "goarch": "wasm",
+    "cgo_enabled": false,
+    "build_flags": [
+      "-mod=readonly",
+      "-trimpath",
+      "-buildmode=c-shared",
+      "-buildvcs=false"
+    ],
+    "goproxy_recorded_run": "https://goproxy.cn,direct",
+    "artifacts": {
+      "baseline": {
+        "bytes": 5802185,
+        "sha256": "97697b83b41045406ca9c994361306efb4a3e3e5f13180477d842f02332f3742"
+      },
+      "fixed": {
+        "bytes": 5819901,
+        "sha256": "fe1f284383d14e2d5441517d6d8127f5d4d8b3e4aefde038304348bdb75db6f0"
+      }
+    }
+  },
+  "runtime": {
+    "gateway_image": "higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:3dbd609df5db3fca61653eafe0e2310705e485190c4f8cd02d9aab8f07dcf329",
+    "gateway_image_id": "sha256:18d1fd6633bba40d95cc85ef07f634dd746f1bae464a2f5a0d02d59f35639031",
+    "envoy": "1.36.4 (4735dd6b874700fc2bc9a218ce80ba0be759e53f)",
+    "redis_image": "redis:7.4@sha256:3e0669e42d4fe421c9dea0ba5fbc04d336b80b4f32a6c7d25bee3a1d089288a1",
+    "redis_image_id": "sha256:7ceda270a3137de18c0b3aff75fa0002faa1c2a87e2b25e86978a1c3f20b3b78",
+    "envoy_concurrency": 1,
+    "loopback_listener_port": 12032,
+    "loopback_admin_port": 19032,
+    "redis_port_published": false,
+    "response_content_type": "application/json",
+    "response_bytes": 120,
+    "chunk_sizes_bytes": [60, 60],
+    "inter_chunk_delay_seconds": 0.35,
+    "usage": {
+      "prompt_tokens": 11,
+      "completion_tokens": 7,
+      "total_tokens": 18
+    },
+    "rounds_per_variant": 3,
+    "initial_quota_per_round": 100,
+    "expected_final_quota": {
+      "baseline": 100,
+      "fixed": 82
+    }
+  }
+}

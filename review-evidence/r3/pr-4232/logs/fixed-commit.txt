@@ -1,0 +1,6 @@
+commit d03df0204427d5b77d3f2e54e54ced8754d3db80
+parent 409b3ed2644a977776391eae78ed6cb11e99d3d3
+author Rui <1685901819@qq.com>
+author-date 2026-07-30T23:11:35+08:00
+subject fix: deduct AI quota for non-streaming responses
+signed-off-by Rui <1685901819@qq.com>

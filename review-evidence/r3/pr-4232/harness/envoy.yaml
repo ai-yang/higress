@@ -1,0 +1,88 @@
+admin:
+  address:
+    socket_address:
+      address: 0.0.0.0
+      port_value: 9901
+
+static_resources:
+  listeners:
+    - name: pr4232_listener
+      address:
+        socket_address:
+          address: 0.0.0.0
+          port_value: 10000
+      filter_chains:
+        - filters:
+            - name: envoy.filters.network.http_connection_manager
+              typed_config:
+                "@type": type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager
+                stat_prefix: pr4232
+                access_log:
+                  - name: envoy.access_loggers.stdout
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.access_loggers.stream.v3.StdoutAccessLog
+                      log_format:
+                        text_format_source:
+                          inline_string: "RID=%REQ(X-REQUEST-ID)% ROUND=%REQ(X-VERIFICATION-ROUND)% CODE=%RESPONSE_CODE% FLAGS=%RESPONSE_FLAGS% UPSTREAM=%UPSTREAM_HOST% RECEIVED=%BYTES_RECEIVED% SENT=%BYTES_SENT% DURATION_MS=%DURATION%\n"
+                route_config:
+                  name: pr4232_route
+                  virtual_hosts:
+                    - name: chunked_mock
+                      domains:
+                        - "*"
+                      routes:
+                        - match:
+                            prefix: /
+                          route:
+                            cluster: chunked_mock
+                http_filters:
+                  - name: envoy.filters.http.wasm
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.wasm.v3.Wasm
+                      config:
+                        name: ai-quota
+                        root_id: ai-quota
+                        configuration:
+                          "@type": type.googleapis.com/google.protobuf.StringValue
+                          value: |
+                            {"admin_consumer":"admin","redis_key_prefix":"chat_quota:","redis":{"service_name":"redis.static","service_port":6379,"timeout":1000,"database":0}}
+                        vm_config:
+                          vm_id: pr4232-ai-quota
+                          runtime: envoy.wasm.runtime.v8
+                          code:
+                            local:
+                              filename: /etc/envoy/ai-quota.wasm
+                  - name: envoy.filters.http.router
+                    typed_config:
+                      "@type": type.googleapis.com/envoy.extensions.filters.http.router.v3.Router
+
+  clusters:
+    - name: chunked_mock
+      connect_timeout: 5s
+      type: STRICT_DNS
+      dns_lookup_family: V4_ONLY
+      lb_policy: ROUND_ROBIN
+      load_assignment:
+        cluster_name: chunked_mock
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address:
+                      address: chunked-mock
+                      port_value: 8080
+
+    - name: "outbound|6379||redis.static"
+      connect_timeout: 5s
+      type: STRICT_DNS
+      dns_lookup_family: V4_ONLY
+      lb_policy: ROUND_ROBIN
+      load_assignment:
+        cluster_name: "outbound|6379||redis.static"
+        endpoints:
+          - lb_endpoints:
+              - endpoint:
+                  address:
+                    socket_address:
+                      address: redis
+                      port_value: 6379

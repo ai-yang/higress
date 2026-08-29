@@ -1,0 +1,75 @@
+{
+  "result": "PASS",
+  "variants": {
+    "baseline": {
+      "chunk_sizes": [
+        60,
+        60
+      ],
+      "expected_final_quota": 100,
+      "quota_update_log_count": 0,
+      "rounds": [
+        {
+          "http_code": 200,
+          "redis_after": 100,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 1,
+          "time_total_seconds": 0.360281
+        },
+        {
+          "http_code": 200,
+          "redis_after": 100,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 2,
+          "time_total_seconds": 0.358539
+        },
+        {
+          "http_code": 200,
+          "redis_after": 100,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 3,
+          "time_total_seconds": 0.358241
+        }
+      ],
+      "usage_tokens": 18
+    },
+    "fixed": {
+      "chunk_sizes": [
+        60,
+        60
+      ],
+      "expected_final_quota": 82,
+      "quota_update_log_count": 3,
+      "rounds": [
+        {
+          "http_code": 200,
+          "redis_after": 82,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 1,
+          "time_total_seconds": 0.361239
+        },
+        {
+          "http_code": 200,
+          "redis_after": 82,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 2,
+          "time_total_seconds": 0.358356
+        },
+        {
+          "http_code": 200,
+          "redis_after": 82,
+          "redis_before": 100,
+          "response_bytes": 120,
+          "round": 3,
+          "time_total_seconds": 0.357945
+        }
+      ],
+      "usage_tokens": 18
+    }
+  }
+}

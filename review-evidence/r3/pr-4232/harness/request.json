@@ -1,0 +1,10 @@
+{
+  "model": "test-model",
+  "messages": [
+    {
+      "role": "user",
+      "content": "quota verification"
+    }
+  ],
+  "stream": false
+}

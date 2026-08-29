@@ -1,0 +1,6 @@
+chunked-mock-1  | received_request_round=1 line=POST /v1/chat/completions HTTP/1.1
+chunked-mock-1  | served_chunked_json_round=1 part_sizes=60,60
+chunked-mock-1  | received_request_round=2 line=POST /v1/chat/completions HTTP/1.1
+chunked-mock-1  | served_chunked_json_round=2 part_sizes=60,60
+chunked-mock-1  | received_request_round=3 line=POST /v1/chat/completions HTTP/1.1
+chunked-mock-1  | served_chunked_json_round=3 part_sizes=60,60

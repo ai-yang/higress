@@ -1,0 +1,2 @@
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota	0.014s	coverage: 68.2% of statements
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota/util	0.009s	coverage: 85.7% of statements

@@ -1,0 +1,72 @@
+services:
+  envoy:
+    image: ${HIGRESS_GATEWAY_IMAGE:?set a pinned Higress gateway image}
+    entrypoint: /usr/local/bin/envoy
+    command:
+      - -c
+      - /etc/envoy/envoy.yaml
+      - --component-log-level
+      - wasm:debug
+      - --concurrency
+      - "1"
+    init: true
+    restart: "no"
+    depends_on:
+      - redis
+      - chunked-mock
+    networks:
+      - internal
+      - host
+    ports:
+      - target: 10000
+        published: ${ENVOY_PORT:-12032}
+        host_ip: 127.0.0.1
+        protocol: tcp
+      - target: 9901
+        published: ${ENVOY_ADMIN_PORT:-19032}
+        host_ip: 127.0.0.1
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: ./envoy.yaml
+        target: /etc/envoy/envoy.yaml
+        read_only: true
+      - type: bind
+        source: ${WASM_PATH:?set the baseline or fixed Wasm path}
+        target: /etc/envoy/ai-quota.wasm
+        read_only: true
+
+  redis:
+    image: ${REDIS_IMAGE:?set a pinned Redis image}
+    command:
+      - redis-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+      - --loglevel
+      - notice
+    init: true
+    restart: "no"
+    networks:
+      - internal
+
+  chunked-mock:
+    image: ${HIGRESS_GATEWAY_IMAGE:?set a pinned Higress gateway image}
+    entrypoint: /bin/sh
+    command:
+      - /harness/chunked-mock.sh
+    init: true
+    restart: "no"
+    networks:
+      - internal
+    volumes:
+      - type: bind
+        source: ./chunked-mock.sh
+        target: /harness/chunked-mock.sh
+        read_only: true
+
+networks:
+  internal:
+    internal: true
+  host:

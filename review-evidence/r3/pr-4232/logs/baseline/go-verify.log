@@ -1,0 +1,16 @@
+== go version ==
+go version go1.24.4 linux/amd64
+== unit tests ==
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota	(cached)
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota/util	(cached)
+== race tests, 20 repetitions ==
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota	1.249s
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota/util	1.044s
+== go vet ==
+== Wasm build ==
+== Wasm-host tests ==
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota	0.010s
+ok  	github.com/alibaba/higress/plugins/wasm-go/extensions/ai-quota/util	0.007s
+== artifact ==
+5802185 /out/ai-quota-baseline.wasm
+97697b83b41045406ca9c994361306efb4a3e3e5f13180477d842f02332f3742  /out/ai-quota-baseline.wasm
