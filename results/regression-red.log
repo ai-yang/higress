@@ -1,0 +1,61 @@
+=== RUN   TestHeaderKeyLookupABI
+=== RUN   TestHeaderKeyLookupABI/hit
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/hit
+=== RUN   TestHeaderKeyLookupABI/miss
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/miss
+=== RUN   TestHeaderKeyLookupABI/RESP_error
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/RESP_error
+=== RUN   TestHeaderKeyLookupABI/host_error
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/host_error
+=== RUN   TestHeaderKeyLookupABI/empty_value
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/empty_value
+=== RUN   TestHeaderKeyLookupABI/whitespace_value
+    header_lookup_test.go:130: 
+        	Error Trace:	/src/header_lookup_test.go:130
+        	Error:      	Not equal: 
+        	            	expected: 0x4
+        	            	actual  : 0x0
+        	Test:       	TestHeaderKeyLookupABI/whitespace_value
+=== RUN   TestHeaderKeyLookupABI/synchronous_dispatch_failure
+=== RUN   TestHeaderKeyLookupABI/empty_header
+=== RUN   TestHeaderKeyLookupABI/explicit_skip
+--- FAIL: TestHeaderKeyLookupABI (5.45s)
+    --- FAIL: TestHeaderKeyLookupABI/hit (0.02s)
+    --- FAIL: TestHeaderKeyLookupABI/miss (0.02s)
+    --- FAIL: TestHeaderKeyLookupABI/RESP_error (0.02s)
+    --- FAIL: TestHeaderKeyLookupABI/host_error (0.04s)
+    --- FAIL: TestHeaderKeyLookupABI/empty_value (0.01s)
+    --- FAIL: TestHeaderKeyLookupABI/whitespace_value (0.01s)
+    --- PASS: TestHeaderKeyLookupABI/synchronous_dispatch_failure (0.02s)
+    --- PASS: TestHeaderKeyLookupABI/empty_header (0.02s)
+    --- PASS: TestHeaderKeyLookupABI/explicit_skip (0.01s)
+FAIL
+FAIL	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache	5.479s
+?   	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache/cache	[no test files]
+?   	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache/config	[no test files]
+FAIL

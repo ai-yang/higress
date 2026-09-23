@@ -1,0 +1,86 @@
+{
+  "id": "hit-r2-023",
+  "variant": "fixed",
+  "mode": "hit",
+  "round": 2,
+  "key": "higress-audit:hit-r2-023",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f",
+  "body": "{\"source\":\"cache\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 0,
+  "events": [
+    {
+      "seq": 161,
+      "time_ns": 4018830350069,
+      "event": "prepared",
+      "id": "hit-r2-023",
+      "mode": "hit",
+      "key": "higress-audit:hit-r2-023",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 162,
+      "time_ns": 4018846650012,
+      "event": "redis_command",
+      "id": "hit-r2-023",
+      "command": "GET",
+      "args": [
+        "higress-audit:hit-r2-023"
+      ]
+    },
+    {
+      "seq": 163,
+      "time_ns": 4018846695653,
+      "event": "redis_get_seen",
+      "id": "hit-r2-023"
+    },
+    {
+      "seq": 164,
+      "time_ns": 4019858823402,
+      "event": "redis_release_requested",
+      "id": "hit-r2-023"
+    },
+    {
+      "seq": 165,
+      "time_ns": 4019859042537,
+      "event": "redis_reply_released",
+      "id": "hit-r2-023",
+      "mode": "hit"
+    },
+    {
+      "seq": 166,
+      "time_ns": 4019864062957,
+      "event": "client_complete",
+      "id": "hit-r2-023",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/hit-r2-023.headers",
+    "--output",
+    "RESULT_DIR/hit-r2-023.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: hit-r2-023",
+    "--header",
+    "x-verification-id: hit-r2-023",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

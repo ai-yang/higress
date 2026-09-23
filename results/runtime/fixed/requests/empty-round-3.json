@@ -1,0 +1,879 @@
+{
+  "summary": {
+    "mode": "empty",
+    "round": 3,
+    "requests": 10,
+    "upstream_calls": 10,
+    "all_passed": true,
+    "redis_commands": {
+      "GET": 10,
+      "SET": 10
+    }
+  },
+  "fixture": {
+    "events": [
+      {
+        "seq": 0,
+        "time_ns": 4148425263269,
+        "event": "prepared",
+        "id": "empty-r3-000",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-000",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 1,
+        "time_ns": 4148440226673,
+        "event": "redis_command",
+        "id": "empty-r3-000",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-000"
+        ]
+      },
+      {
+        "seq": 2,
+        "time_ns": 4148440306521,
+        "event": "redis_get_seen",
+        "id": "empty-r3-000"
+      },
+      {
+        "seq": 3,
+        "time_ns": 4148495420129,
+        "event": "redis_release_requested",
+        "id": "empty-r3-000"
+      },
+      {
+        "seq": 4,
+        "time_ns": 4148495609809,
+        "event": "redis_reply_released",
+        "id": "empty-r3-000",
+        "mode": "empty"
+      },
+      {
+        "seq": 5,
+        "time_ns": 4148496896311,
+        "event": "upstream_seen",
+        "id": "empty-r3-000",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-000",
+          "x-verification-id": "empty-r3-000",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "bf9bcebc-c5d4-4631-8d6a-75f31bd60c83",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159053658"
+        }
+      },
+      {
+        "seq": 6,
+        "time_ns": 4148500949143,
+        "event": "client_complete",
+        "id": "empty-r3-000",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 7,
+        "time_ns": 4148501876485,
+        "event": "redis_command",
+        "id": "empty-r3-000",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-000",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 8,
+        "time_ns": 4148608684567,
+        "event": "redis_release_requested",
+        "id": "empty-r3-000"
+      },
+      {
+        "seq": 9,
+        "time_ns": 4148612945759,
+        "event": "prepared",
+        "id": "empty-r3-001",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-001",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 10,
+        "time_ns": 4148628922962,
+        "event": "redis_command",
+        "id": "empty-r3-001",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-001"
+        ]
+      },
+      {
+        "seq": 11,
+        "time_ns": 4148629047563,
+        "event": "redis_get_seen",
+        "id": "empty-r3-001"
+      },
+      {
+        "seq": 12,
+        "time_ns": 4148696693695,
+        "event": "redis_release_requested",
+        "id": "empty-r3-001"
+      },
+      {
+        "seq": 13,
+        "time_ns": 4148696863743,
+        "event": "redis_reply_released",
+        "id": "empty-r3-001",
+        "mode": "empty"
+      },
+      {
+        "seq": 14,
+        "time_ns": 4148697920275,
+        "event": "upstream_seen",
+        "id": "empty-r3-001",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-001",
+          "x-verification-id": "empty-r3-001",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "a5fd95f4-cada-4591-b6fd-8ed7a418e186",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159053847"
+        }
+      },
+      {
+        "seq": 15,
+        "time_ns": 4148701778323,
+        "event": "client_complete",
+        "id": "empty-r3-001",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 16,
+        "time_ns": 4148702782443,
+        "event": "redis_command",
+        "id": "empty-r3-001",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-001",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 17,
+        "time_ns": 4148809983257,
+        "event": "redis_release_requested",
+        "id": "empty-r3-001"
+      },
+      {
+        "seq": 18,
+        "time_ns": 4148814107152,
+        "event": "prepared",
+        "id": "empty-r3-002",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-002",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 19,
+        "time_ns": 4148829350894,
+        "event": "redis_command",
+        "id": "empty-r3-002",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-002"
+        ]
+      },
+      {
+        "seq": 20,
+        "time_ns": 4148829572521,
+        "event": "redis_get_seen",
+        "id": "empty-r3-002"
+      },
+      {
+        "seq": 21,
+        "time_ns": 4148885457698,
+        "event": "redis_release_requested",
+        "id": "empty-r3-002"
+      },
+      {
+        "seq": 22,
+        "time_ns": 4148885657753,
+        "event": "redis_reply_released",
+        "id": "empty-r3-002",
+        "mode": "empty"
+      },
+      {
+        "seq": 23,
+        "time_ns": 4148886898513,
+        "event": "upstream_seen",
+        "id": "empty-r3-002",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-002",
+          "x-verification-id": "empty-r3-002",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "cff1aae6-3c1f-4210-95d9-135876f775a8",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159054047"
+        }
+      },
+      {
+        "seq": 24,
+        "time_ns": 4148888653268,
+        "event": "redis_command",
+        "id": "empty-r3-002",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-002",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 25,
+        "time_ns": 4148890964797,
+        "event": "client_complete",
+        "id": "empty-r3-002",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 26,
+        "time_ns": 4148998973984,
+        "event": "redis_release_requested",
+        "id": "empty-r3-002"
+      },
+      {
+        "seq": 27,
+        "time_ns": 4149003157331,
+        "event": "prepared",
+        "id": "empty-r3-003",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-003",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 28,
+        "time_ns": 4149018457106,
+        "event": "redis_command",
+        "id": "empty-r3-003",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-003"
+        ]
+      },
+      {
+        "seq": 29,
+        "time_ns": 4149018828098,
+        "event": "redis_get_seen",
+        "id": "empty-r3-003"
+      },
+      {
+        "seq": 30,
+        "time_ns": 4149076629845,
+        "event": "redis_release_requested",
+        "id": "empty-r3-003"
+      },
+      {
+        "seq": 31,
+        "time_ns": 4149076772473,
+        "event": "redis_reply_released",
+        "id": "empty-r3-003",
+        "mode": "empty"
+      },
+      {
+        "seq": 32,
+        "time_ns": 4149078141256,
+        "event": "upstream_seen",
+        "id": "empty-r3-003",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-003",
+          "x-verification-id": "empty-r3-003",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "008dd3c1-3b95-4711-a13d-331339281042",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159054236"
+        }
+      },
+      {
+        "seq": 33,
+        "time_ns": 4149082109649,
+        "event": "client_complete",
+        "id": "empty-r3-003",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 34,
+        "time_ns": 4149083111185,
+        "event": "redis_command",
+        "id": "empty-r3-003",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-003",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 35,
+        "time_ns": 4149190492786,
+        "event": "redis_release_requested",
+        "id": "empty-r3-003"
+      },
+      {
+        "seq": 36,
+        "time_ns": 4149194569761,
+        "event": "prepared",
+        "id": "empty-r3-004",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-004",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 37,
+        "time_ns": 4149210559576,
+        "event": "redis_command",
+        "id": "empty-r3-004",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-004"
+        ]
+      },
+      {
+        "seq": 38,
+        "time_ns": 4149210635124,
+        "event": "redis_get_seen",
+        "id": "empty-r3-004"
+      },
+      {
+        "seq": 39,
+        "time_ns": 4149270147666,
+        "event": "redis_release_requested",
+        "id": "empty-r3-004"
+      },
+      {
+        "seq": 40,
+        "time_ns": 4149270319498,
+        "event": "redis_reply_released",
+        "id": "empty-r3-004",
+        "mode": "empty"
+      },
+      {
+        "seq": 41,
+        "time_ns": 4149271680621,
+        "event": "upstream_seen",
+        "id": "empty-r3-004",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-004",
+          "x-verification-id": "empty-r3-004",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "e3fc73b4-2c0a-4a05-8df2-f70005a5918d",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159054428"
+        }
+      },
+      {
+        "seq": 42,
+        "time_ns": 4149276887438,
+        "event": "redis_command",
+        "id": "empty-r3-004",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-004",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 43,
+        "time_ns": 4149277265010,
+        "event": "client_complete",
+        "id": "empty-r3-004",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 44,
+        "time_ns": 4149386365355,
+        "event": "redis_release_requested",
+        "id": "empty-r3-004"
+      },
+      {
+        "seq": 45,
+        "time_ns": 4149390958615,
+        "event": "prepared",
+        "id": "empty-r3-005",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-005",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 46,
+        "time_ns": 4149407579344,
+        "event": "redis_command",
+        "id": "empty-r3-005",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-005"
+        ]
+      },
+      {
+        "seq": 47,
+        "time_ns": 4149407717348,
+        "event": "redis_get_seen",
+        "id": "empty-r3-005"
+      },
+      {
+        "seq": 48,
+        "time_ns": 4149478340788,
+        "event": "redis_release_requested",
+        "id": "empty-r3-005"
+      },
+      {
+        "seq": 49,
+        "time_ns": 4149478488635,
+        "event": "redis_reply_released",
+        "id": "empty-r3-005",
+        "mode": "empty"
+      },
+      {
+        "seq": 50,
+        "time_ns": 4149479598872,
+        "event": "upstream_seen",
+        "id": "empty-r3-005",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-005",
+          "x-verification-id": "empty-r3-005",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "b466aea0-96a0-4ef7-86f7-dfe9fc087e3b",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159054625"
+        }
+      },
+      {
+        "seq": 51,
+        "time_ns": 4149480657913,
+        "event": "redis_command",
+        "id": "empty-r3-005",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-005",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 52,
+        "time_ns": 4149483766052,
+        "event": "client_complete",
+        "id": "empty-r3-005",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 53,
+        "time_ns": 4149592172561,
+        "event": "redis_release_requested",
+        "id": "empty-r3-005"
+      },
+      {
+        "seq": 54,
+        "time_ns": 4149596176230,
+        "event": "prepared",
+        "id": "empty-r3-006",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-006",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 55,
+        "time_ns": 4149611695747,
+        "event": "redis_command",
+        "id": "empty-r3-006",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-006"
+        ]
+      },
+      {
+        "seq": 56,
+        "time_ns": 4149612027230,
+        "event": "redis_get_seen",
+        "id": "empty-r3-006"
+      },
+      {
+        "seq": 57,
+        "time_ns": 4149669303230,
+        "event": "redis_release_requested",
+        "id": "empty-r3-006"
+      },
+      {
+        "seq": 58,
+        "time_ns": 4149669440083,
+        "event": "redis_reply_released",
+        "id": "empty-r3-006",
+        "mode": "empty"
+      },
+      {
+        "seq": 59,
+        "time_ns": 4149670751601,
+        "event": "upstream_seen",
+        "id": "empty-r3-006",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-006",
+          "x-verification-id": "empty-r3-006",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "c95aa3ca-0075-453f-b99a-667e1875de46",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159054829"
+        }
+      },
+      {
+        "seq": 60,
+        "time_ns": 4149672576112,
+        "event": "redis_command",
+        "id": "empty-r3-006",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-006",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 61,
+        "time_ns": 4149675172422,
+        "event": "client_complete",
+        "id": "empty-r3-006",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 62,
+        "time_ns": 4149783640275,
+        "event": "redis_release_requested",
+        "id": "empty-r3-006"
+      },
+      {
+        "seq": 63,
+        "time_ns": 4149787797056,
+        "event": "prepared",
+        "id": "empty-r3-007",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-007",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 64,
+        "time_ns": 4149802946203,
+        "event": "redis_command",
+        "id": "empty-r3-007",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-007"
+        ]
+      },
+      {
+        "seq": 65,
+        "time_ns": 4149803022762,
+        "event": "redis_get_seen",
+        "id": "empty-r3-007"
+      },
+      {
+        "seq": 66,
+        "time_ns": 4149865080563,
+        "event": "redis_release_requested",
+        "id": "empty-r3-007"
+      },
+      {
+        "seq": 67,
+        "time_ns": 4149865281847,
+        "event": "redis_reply_released",
+        "id": "empty-r3-007",
+        "mode": "empty"
+      },
+      {
+        "seq": 68,
+        "time_ns": 4149866562919,
+        "event": "upstream_seen",
+        "id": "empty-r3-007",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-007",
+          "x-verification-id": "empty-r3-007",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "4f0210d2-2785-4677-bf7e-c34f7844323e",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159055021"
+        }
+      },
+      {
+        "seq": 69,
+        "time_ns": 4149870633238,
+        "event": "client_complete",
+        "id": "empty-r3-007",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 70,
+        "time_ns": 4149871407752,
+        "event": "redis_command",
+        "id": "empty-r3-007",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-007",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 71,
+        "time_ns": 4149979061581,
+        "event": "redis_release_requested",
+        "id": "empty-r3-007"
+      },
+      {
+        "seq": 72,
+        "time_ns": 4149983209684,
+        "event": "prepared",
+        "id": "empty-r3-008",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-008",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 73,
+        "time_ns": 4149998273797,
+        "event": "redis_command",
+        "id": "empty-r3-008",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-008"
+        ]
+      },
+      {
+        "seq": 74,
+        "time_ns": 4149998347250,
+        "event": "redis_get_seen",
+        "id": "empty-r3-008"
+      },
+      {
+        "seq": 75,
+        "time_ns": 4150058939099,
+        "event": "redis_release_requested",
+        "id": "empty-r3-008"
+      },
+      {
+        "seq": 76,
+        "time_ns": 4150059087476,
+        "event": "redis_reply_released",
+        "id": "empty-r3-008",
+        "mode": "empty"
+      },
+      {
+        "seq": 77,
+        "time_ns": 4150060405867,
+        "event": "upstream_seen",
+        "id": "empty-r3-008",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-008",
+          "x-verification-id": "empty-r3-008",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "efdbcdff-7c05-44f0-8192-09a648c3d98f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159055216"
+        }
+      },
+      {
+        "seq": 78,
+        "time_ns": 4150064288357,
+        "event": "client_complete",
+        "id": "empty-r3-008",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 79,
+        "time_ns": 4150065389936,
+        "event": "redis_command",
+        "id": "empty-r3-008",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-008",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 80,
+        "time_ns": 4150173048214,
+        "event": "redis_release_requested",
+        "id": "empty-r3-008"
+      },
+      {
+        "seq": 81,
+        "time_ns": 4150177162308,
+        "event": "prepared",
+        "id": "empty-r3-009",
+        "mode": "empty",
+        "key": "higress-audit:empty-r3-009",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 82,
+        "time_ns": 4150191908758,
+        "event": "redis_command",
+        "id": "empty-r3-009",
+        "command": "GET",
+        "args": [
+          "higress-audit:empty-r3-009"
+        ]
+      },
+      {
+        "seq": 83,
+        "time_ns": 4150191983026,
+        "event": "redis_get_seen",
+        "id": "empty-r3-009"
+      },
+      {
+        "seq": 84,
+        "time_ns": 4150253982766,
+        "event": "redis_release_requested",
+        "id": "empty-r3-009"
+      },
+      {
+        "seq": 85,
+        "time_ns": 4150254129540,
+        "event": "redis_reply_released",
+        "id": "empty-r3-009",
+        "mode": "empty"
+      },
+      {
+        "seq": 86,
+        "time_ns": 4150255427562,
+        "event": "upstream_seen",
+        "id": "empty-r3-009",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "empty-r3-009",
+          "x-verification-id": "empty-r3-009",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "95adec82-b19f-4912-bb02-7d7134f94ecf",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790159055410"
+        }
+      },
+      {
+        "seq": 87,
+        "time_ns": 4150256699234,
+        "event": "redis_command",
+        "id": "empty-r3-009",
+        "command": "SET",
+        "args": [
+          "higress-audit:empty-r3-009",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 88,
+        "time_ns": 4150259522352,
+        "event": "client_complete",
+        "id": "empty-r3-009",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 89,
+        "time_ns": 4150368265654,
+        "event": "redis_release_requested",
+        "id": "empty-r3-009"
+      }
+    ],
+    "cases": {
+      "empty-r3-000": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-001": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-002": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-003": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-004": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-005": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-006": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-007": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-008": {
+        "mode": "empty",
+        "upstream": 1
+      },
+      "empty-r3-009": {
+        "mode": "empty",
+        "upstream": 1
+      }
+    }
+  }
+}

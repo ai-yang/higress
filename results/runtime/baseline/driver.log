@@ -1,0 +1,3 @@
+{"mode": "hit", "round": 1, "requests": 50, "upstream_calls": 50, "all_passed": true, "redis_commands": {"GET": 50}}
+{"mode": "hit", "round": 2, "requests": 50, "upstream_calls": 50, "all_passed": true, "redis_commands": {"GET": 50}}
+{"mode": "hit", "round": 3, "requests": 50, "upstream_calls": 50, "all_passed": true, "redis_commands": {"GET": 50}}

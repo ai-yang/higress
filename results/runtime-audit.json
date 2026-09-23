@@ -1,0 +1,208 @@
+{
+  "all_passed": true,
+  "scope": "runtime-only",
+  "formal_runtime_requests": 511,
+  "rounds": [
+    {
+      "variant": "baseline",
+      "mode": "hit",
+      "round": 1,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "baseline",
+      "mode": "hit",
+      "round": 2,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "baseline",
+      "mode": "hit",
+      "round": 3,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "empty",
+      "round": 1,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "empty",
+      "round": 2,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "empty",
+      "round": 3,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "error",
+      "round": 1,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "error",
+      "round": 2,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "error",
+      "round": 3,
+      "requests": 10,
+      "upstream_calls": 10,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 10,
+        "SET": 10
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "hit",
+      "round": 1,
+      "requests": 50,
+      "upstream_calls": 0,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "hit",
+      "round": 2,
+      "requests": 50,
+      "upstream_calls": 0,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "hit",
+      "round": 3,
+      "requests": 50,
+      "upstream_calls": 0,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "miss",
+      "round": 1,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50,
+        "SET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "miss",
+      "round": 2,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50,
+        "SET": 50
+      }
+    },
+    {
+      "variant": "fixed",
+      "mode": "miss",
+      "round": 3,
+      "requests": 50,
+      "upstream_calls": 50,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 50,
+        "SET": 50
+      }
+    },
+    {
+      "variant": "fixed-timeout",
+      "mode": "timeout",
+      "round": 1,
+      "requests": 1,
+      "upstream_calls": 1,
+      "all_passed": true,
+      "redis_commands": {
+        "GET": 1,
+        "SET": 1
+      }
+    }
+  ],
+  "race_repetitions_by_test": null,
+  "build": null,
+  "cached_body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f",
+  "upstream_body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "cleanup": {
+    "project": "response-cache-4569-20260923",
+    "containers_remaining": [],
+    "networks_remaining": [],
+    "volumes_remaining": [],
+    "ports_closed": [
+      19468,
+      19469,
+      19470
+    ]
+  }
+}

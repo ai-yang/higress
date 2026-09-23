@@ -1,0 +1,115 @@
+{
+  "id": "miss-r2-010",
+  "variant": "fixed",
+  "mode": "miss",
+  "round": 2,
+  "key": "higress-audit:miss-r2-010",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 90,
+      "time_ns": 3750397972862,
+      "event": "prepared",
+      "id": "miss-r2-010",
+      "mode": "miss",
+      "key": "higress-audit:miss-r2-010",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 91,
+      "time_ns": 3750414473221,
+      "event": "redis_command",
+      "id": "miss-r2-010",
+      "command": "GET",
+      "args": [
+        "higress-audit:miss-r2-010"
+      ]
+    },
+    {
+      "seq": 92,
+      "time_ns": 3750414886104,
+      "event": "redis_get_seen",
+      "id": "miss-r2-010"
+    },
+    {
+      "seq": 93,
+      "time_ns": 3750476872383,
+      "event": "redis_release_requested",
+      "id": "miss-r2-010"
+    },
+    {
+      "seq": 94,
+      "time_ns": 3750477038459,
+      "event": "redis_reply_released",
+      "id": "miss-r2-010",
+      "mode": "miss"
+    },
+    {
+      "seq": 95,
+      "time_ns": 3750478385070,
+      "event": "upstream_seen",
+      "id": "miss-r2-010",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "miss-r2-010",
+        "x-verification-id": "miss-r2-010",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "7fa2af0a-2176-4d3d-a34c-341fdc22e94c",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790158655632"
+      }
+    },
+    {
+      "seq": 96,
+      "time_ns": 3750480752379,
+      "event": "redis_command",
+      "id": "miss-r2-010",
+      "command": "SET",
+      "args": [
+        "higress-audit:miss-r2-010",
+        "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+      ]
+    },
+    {
+      "seq": 97,
+      "time_ns": 3750483532185,
+      "event": "client_complete",
+      "id": "miss-r2-010",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/miss-r2-010.headers",
+    "--output",
+    "RESULT_DIR/miss-r2-010.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: miss-r2-010",
+    "--header",
+    "x-verification-id: miss-r2-010",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

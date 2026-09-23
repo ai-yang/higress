@@ -1,0 +1,115 @@
+{
+  "id": "error-r2-008",
+  "variant": "fixed",
+  "mode": "error",
+  "round": 2,
+  "key": "higress-audit:error-r2-008",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 72,
+      "time_ns": 3773084397567,
+      "event": "prepared",
+      "id": "error-r2-008",
+      "mode": "error",
+      "key": "higress-audit:error-r2-008",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 73,
+      "time_ns": 3773101785612,
+      "event": "redis_command",
+      "id": "error-r2-008",
+      "command": "GET",
+      "args": [
+        "higress-audit:error-r2-008"
+      ]
+    },
+    {
+      "seq": 74,
+      "time_ns": 3773101949152,
+      "event": "redis_get_seen",
+      "id": "error-r2-008"
+    },
+    {
+      "seq": 75,
+      "time_ns": 3773175178224,
+      "event": "redis_release_requested",
+      "id": "error-r2-008"
+    },
+    {
+      "seq": 76,
+      "time_ns": 3773175361014,
+      "event": "redis_reply_released",
+      "id": "error-r2-008",
+      "mode": "error"
+    },
+    {
+      "seq": 77,
+      "time_ns": 3773176831089,
+      "event": "upstream_seen",
+      "id": "error-r2-008",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "error-r2-008",
+        "x-verification-id": "error-r2-008",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "41a09327-b04f-46da-8dbe-5a4ee016dc68",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790158678319"
+      }
+    },
+    {
+      "seq": 78,
+      "time_ns": 3773181933076,
+      "event": "client_complete",
+      "id": "error-r2-008",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+    },
+    {
+      "seq": 79,
+      "time_ns": 3773182201957,
+      "event": "redis_command",
+      "id": "error-r2-008",
+      "command": "SET",
+      "args": [
+        "higress-audit:error-r2-008",
+        "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+      ]
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/error-r2-008.headers",
+    "--output",
+    "RESULT_DIR/error-r2-008.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: error-r2-008",
+    "--header",
+    "x-verification-id: error-r2-008",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

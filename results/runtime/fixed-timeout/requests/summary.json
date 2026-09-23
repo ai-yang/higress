@@ -1,0 +1,24 @@
+{
+  "variant": "fixed",
+  "requests": 1,
+  "all_passed": true,
+  "upstream_calls": 1,
+  "cases": [
+    {
+      "id": "timeout-r1-000",
+      "variant": "fixed",
+      "mode": "timeout",
+      "round": 1,
+      "key": "higress-audit:timeout-r1-000",
+      "status": "200",
+      "curl_exit": 0,
+      "stderr": "",
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+      "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+      "upstream_before_release": null,
+      "upstream_total": 1,
+      "timeout_contract": "host callback resumed request once",
+      "passed": true
+    }
+  ]
+}

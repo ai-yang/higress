@@ -1,0 +1,11 @@
+{
+  "project": "response-cache-4569-20260923",
+  "containers_remaining": [],
+  "networks_remaining": [],
+  "volumes_remaining": [],
+  "ports_closed": [
+    19468,
+    19469,
+    19470
+  ]
+}

@@ -1,0 +1,4 @@
+{"mode": "hit", "round": 1, "requests": 1, "upstream_calls": 0, "all_passed": true, "redis_commands": {"GET": 1}}
+{"mode": "miss", "round": 1, "requests": 1, "upstream_calls": 1, "all_passed": true, "redis_commands": {"GET": 1, "SET": 1}}
+{"mode": "error", "round": 1, "requests": 1, "upstream_calls": 1, "all_passed": true, "redis_commands": {"GET": 1, "SET": 1}}
+{"mode": "empty", "round": 1, "requests": 1, "upstream_calls": 1, "all_passed": true, "redis_commands": {"GET": 1, "SET": 1}}

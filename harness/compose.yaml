@@ -1,0 +1,36 @@
+services:
+  redis-fixture:
+    image: python@sha256:b18992999dbe963a45a8a4da40ac2b1975be1a776d939d098c647482bcad5cba
+    command: [python, -u, /fixture/fixture.py]
+    cpus: 1
+    mem_limit: 256m
+    read_only: true
+    restart: "no"
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:9000/', timeout=1)"]
+      interval: 1s
+      timeout: 2s
+      retries: 15
+    volumes:
+      - ./fixture.py:/fixture/fixture.py:ro
+    ports:
+      - "127.0.0.1:19469:9000"
+    networks: [verify]
+  envoy:
+    image: higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/gateway@sha256:3dbd609df5db3fca61653eafe0e2310705e485190c4f8cd02d9aab8f07dcf329
+    entrypoint: /usr/local/bin/envoy
+    command: [-c, /etc/envoy/envoy.yaml, --concurrency, "1", --component-log-level, "wasm:debug"]
+    cpus: 1
+    mem_limit: 512m
+    restart: "no"
+    depends_on:
+      redis-fixture: {condition: service_healthy}
+    volumes:
+      - ${ENVOY_CONFIG:?Set rendered configuration}:/etc/envoy/envoy.yaml:ro
+      - ${WASM_PATH:?Set baseline or fixed Wasm}:/etc/envoy/plugin.wasm:ro
+    ports:
+      - "127.0.0.1:19468:10000"
+      - "127.0.0.1:19470:9901"
+    networks: [verify]
+networks:
+  verify: {driver: bridge}

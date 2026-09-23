@@ -1,0 +1,115 @@
+{
+  "id": "error-r2-009",
+  "variant": "fixed",
+  "mode": "error",
+  "round": 2,
+  "key": "higress-audit:error-r2-009",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 81,
+      "time_ns": 4142260765450,
+      "event": "prepared",
+      "id": "error-r2-009",
+      "mode": "error",
+      "key": "higress-audit:error-r2-009",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 82,
+      "time_ns": 4142277082039,
+      "event": "redis_command",
+      "id": "error-r2-009",
+      "command": "GET",
+      "args": [
+        "higress-audit:error-r2-009"
+      ]
+    },
+    {
+      "seq": 83,
+      "time_ns": 4142277292543,
+      "event": "redis_get_seen",
+      "id": "error-r2-009"
+    },
+    {
+      "seq": 84,
+      "time_ns": 4142341873733,
+      "event": "redis_release_requested",
+      "id": "error-r2-009"
+    },
+    {
+      "seq": 85,
+      "time_ns": 4142342016767,
+      "event": "redis_reply_released",
+      "id": "error-r2-009",
+      "mode": "error"
+    },
+    {
+      "seq": 86,
+      "time_ns": 4142343591999,
+      "event": "upstream_seen",
+      "id": "error-r2-009",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "error-r2-009",
+        "x-verification-id": "error-r2-009",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "7786c452-6172-4c3a-92ab-a4a45bd55f2e",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790159047495"
+      }
+    },
+    {
+      "seq": 87,
+      "time_ns": 4142345030670,
+      "event": "redis_command",
+      "id": "error-r2-009",
+      "command": "SET",
+      "args": [
+        "higress-audit:error-r2-009",
+        "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+      ]
+    },
+    {
+      "seq": 88,
+      "time_ns": 4142347662060,
+      "event": "client_complete",
+      "id": "error-r2-009",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/error-r2-009.headers",
+    "--output",
+    "RESULT_DIR/error-r2-009.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: error-r2-009",
+    "--header",
+    "x-verification-id: error-r2-009",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

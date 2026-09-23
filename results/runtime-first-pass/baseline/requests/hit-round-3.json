@@ -1,0 +1,4068 @@
+{
+  "summary": {
+    "mode": "hit",
+    "round": 3,
+    "requests": 50,
+    "upstream_calls": 50,
+    "all_passed": true,
+    "redis_commands": {
+      "GET": 50
+    }
+  },
+  "fixture": {
+    "events": [
+      {
+        "seq": 0,
+        "time_ns": 3523248967259,
+        "event": "prepared",
+        "id": "hit-r3-000",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-000",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 1,
+        "time_ns": 3523261417153,
+        "event": "upstream_seen",
+        "id": "hit-r3-000",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-000",
+          "x-verification-id": "hit-r3-000",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "4b171aa4-d434-4fcb-800b-1f2f7cb3640d",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158428482"
+        }
+      },
+      {
+        "seq": 2,
+        "time_ns": 3523264253806,
+        "event": "redis_command",
+        "id": "hit-r3-000",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-000"
+        ]
+      },
+      {
+        "seq": 3,
+        "time_ns": 3523264334435,
+        "event": "redis_get_seen",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 4,
+        "time_ns": 3523276326426,
+        "event": "redis_release_requested",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 5,
+        "time_ns": 3523276447915,
+        "event": "redis_reply_released",
+        "id": "hit-r3-000",
+        "mode": "hit"
+      },
+      {
+        "seq": 6,
+        "time_ns": 3523279995248,
+        "event": "client_complete",
+        "id": "hit-r3-000",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 7,
+        "time_ns": 3523281481704,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 8,
+        "time_ns": 3523386963879,
+        "event": "redis_release_requested",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 9,
+        "time_ns": 3523390912216,
+        "event": "prepared",
+        "id": "hit-r3-001",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-001",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 10,
+        "time_ns": 3523402480177,
+        "event": "upstream_seen",
+        "id": "hit-r3-001",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-001",
+          "x-verification-id": "hit-r3-001",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "123522c7-0163-4120-9dfa-206c26a5338f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158428623"
+        }
+      },
+      {
+        "seq": 11,
+        "time_ns": 3523405425318,
+        "event": "redis_command",
+        "id": "hit-r3-001",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-001"
+        ]
+      },
+      {
+        "seq": 12,
+        "time_ns": 3523406042247,
+        "event": "redis_get_seen",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 13,
+        "time_ns": 3523422103415,
+        "event": "redis_release_requested",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 14,
+        "time_ns": 3523422281521,
+        "event": "redis_reply_released",
+        "id": "hit-r3-001",
+        "mode": "hit"
+      },
+      {
+        "seq": 15,
+        "time_ns": 3523426732518,
+        "event": "client_complete",
+        "id": "hit-r3-001",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 16,
+        "time_ns": 3523428588022,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 17,
+        "time_ns": 3523535043288,
+        "event": "redis_release_requested",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 18,
+        "time_ns": 3523539707470,
+        "event": "prepared",
+        "id": "hit-r3-002",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-002",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 19,
+        "time_ns": 3523553115566,
+        "event": "upstream_seen",
+        "id": "hit-r3-002",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-002",
+          "x-verification-id": "hit-r3-002",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "d8e8598d-a9f8-493f-b62c-f3cea405c99a",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158428773"
+        }
+      },
+      {
+        "seq": 20,
+        "time_ns": 3523553271833,
+        "event": "redis_command",
+        "id": "hit-r3-002",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-002"
+        ]
+      },
+      {
+        "seq": 21,
+        "time_ns": 3523553345040,
+        "event": "redis_get_seen",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 22,
+        "time_ns": 3523560161612,
+        "event": "redis_release_requested",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 23,
+        "time_ns": 3523560334973,
+        "event": "redis_reply_released",
+        "id": "hit-r3-002",
+        "mode": "hit"
+      },
+      {
+        "seq": 24,
+        "time_ns": 3523564373973,
+        "event": "client_complete",
+        "id": "hit-r3-002",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 25,
+        "time_ns": 3523566533585,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 26,
+        "time_ns": 3523672417191,
+        "event": "redis_release_requested",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 27,
+        "time_ns": 3523676389029,
+        "event": "prepared",
+        "id": "hit-r3-003",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-003",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 28,
+        "time_ns": 3523689987820,
+        "event": "upstream_seen",
+        "id": "hit-r3-003",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-003",
+          "x-verification-id": "hit-r3-003",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "2c43b9c1-8667-40b1-9d09-595a0d5ad973",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158428910"
+        }
+      },
+      {
+        "seq": 29,
+        "time_ns": 3523692799656,
+        "event": "redis_command",
+        "id": "hit-r3-003",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-003"
+        ]
+      },
+      {
+        "seq": 30,
+        "time_ns": 3523692876225,
+        "event": "redis_get_seen",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 31,
+        "time_ns": 3523709239563,
+        "event": "redis_release_requested",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 32,
+        "time_ns": 3523709418241,
+        "event": "redis_reply_released",
+        "id": "hit-r3-003",
+        "mode": "hit"
+      },
+      {
+        "seq": 33,
+        "time_ns": 3523713795281,
+        "event": "client_complete",
+        "id": "hit-r3-003",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 34,
+        "time_ns": 3523715936777,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 35,
+        "time_ns": 3523822382369,
+        "event": "redis_release_requested",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 36,
+        "time_ns": 3523826729613,
+        "event": "prepared",
+        "id": "hit-r3-004",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-004",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 37,
+        "time_ns": 3523840400597,
+        "event": "upstream_seen",
+        "id": "hit-r3-004",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-004",
+          "x-verification-id": "hit-r3-004",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "405d3569-3e30-4ea4-88b4-9b8016aa5518",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429060"
+        }
+      },
+      {
+        "seq": 38,
+        "time_ns": 3523843940450,
+        "event": "redis_command",
+        "id": "hit-r3-004",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-004"
+        ]
+      },
+      {
+        "seq": 39,
+        "time_ns": 3523844056927,
+        "event": "redis_get_seen",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 40,
+        "time_ns": 3523861037011,
+        "event": "redis_release_requested",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 41,
+        "time_ns": 3523861249440,
+        "event": "redis_reply_released",
+        "id": "hit-r3-004",
+        "mode": "hit"
+      },
+      {
+        "seq": 42,
+        "time_ns": 3523866143919,
+        "event": "client_complete",
+        "id": "hit-r3-004",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 43,
+        "time_ns": 3523868145373,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 44,
+        "time_ns": 3523974754109,
+        "event": "redis_release_requested",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 45,
+        "time_ns": 3523978862607,
+        "event": "prepared",
+        "id": "hit-r3-005",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-005",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 46,
+        "time_ns": 3523993268079,
+        "event": "redis_command",
+        "id": "hit-r3-005",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-005"
+        ]
+      },
+      {
+        "seq": 47,
+        "time_ns": 3523993602407,
+        "event": "redis_get_seen",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 48,
+        "time_ns": 3523993788702,
+        "event": "upstream_seen",
+        "id": "hit-r3-005",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-005",
+          "x-verification-id": "hit-r3-005",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "7099c312-b7c2-4e79-81d9-c656fae6e061",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429213"
+        }
+      },
+      {
+        "seq": 49,
+        "time_ns": 3523999374018,
+        "event": "redis_release_requested",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 50,
+        "time_ns": 3523999592175,
+        "event": "redis_reply_released",
+        "id": "hit-r3-005",
+        "mode": "hit"
+      },
+      {
+        "seq": 51,
+        "time_ns": 3524004163082,
+        "event": "client_complete",
+        "id": "hit-r3-005",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 52,
+        "time_ns": 3524006229935,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 53,
+        "time_ns": 3524112429607,
+        "event": "redis_release_requested",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 54,
+        "time_ns": 3524116312241,
+        "event": "prepared",
+        "id": "hit-r3-006",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-006",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 55,
+        "time_ns": 3524130771783,
+        "event": "upstream_seen",
+        "id": "hit-r3-006",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-006",
+          "x-verification-id": "hit-r3-006",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "2bc542f1-a52d-40d2-b11c-b1a526c8681f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429351"
+        }
+      },
+      {
+        "seq": 56,
+        "time_ns": 3524133695998,
+        "event": "redis_command",
+        "id": "hit-r3-006",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-006"
+        ]
+      },
+      {
+        "seq": 57,
+        "time_ns": 3524133771550,
+        "event": "redis_get_seen",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 58,
+        "time_ns": 3524150141643,
+        "event": "redis_release_requested",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 59,
+        "time_ns": 3524150279282,
+        "event": "redis_reply_released",
+        "id": "hit-r3-006",
+        "mode": "hit"
+      },
+      {
+        "seq": 60,
+        "time_ns": 3524154804483,
+        "event": "client_complete",
+        "id": "hit-r3-006",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 61,
+        "time_ns": 3524156762315,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 62,
+        "time_ns": 3524263329925,
+        "event": "redis_release_requested",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 63,
+        "time_ns": 3524267239934,
+        "event": "prepared",
+        "id": "hit-r3-007",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-007",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 64,
+        "time_ns": 3524282336523,
+        "event": "upstream_seen",
+        "id": "hit-r3-007",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-007",
+          "x-verification-id": "hit-r3-007",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "59036722-985c-41c5-a3a5-69300999c07c",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429502"
+        }
+      },
+      {
+        "seq": 65,
+        "time_ns": 3524285173867,
+        "event": "redis_command",
+        "id": "hit-r3-007",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-007"
+        ]
+      },
+      {
+        "seq": 66,
+        "time_ns": 3524285258716,
+        "event": "redis_get_seen",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 67,
+        "time_ns": 3524302493917,
+        "event": "redis_release_requested",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 68,
+        "time_ns": 3524302678075,
+        "event": "redis_reply_released",
+        "id": "hit-r3-007",
+        "mode": "hit"
+      },
+      {
+        "seq": 69,
+        "time_ns": 3524307110454,
+        "event": "client_complete",
+        "id": "hit-r3-007",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 70,
+        "time_ns": 3524309056234,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 71,
+        "time_ns": 3524415505943,
+        "event": "redis_release_requested",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 72,
+        "time_ns": 3524419558623,
+        "event": "prepared",
+        "id": "hit-r3-008",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-008",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 73,
+        "time_ns": 3524434277360,
+        "event": "upstream_seen",
+        "id": "hit-r3-008",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-008",
+          "x-verification-id": "hit-r3-008",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "1ad65fb5-897a-4c69-aa28-59295c673c81",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429654"
+        }
+      },
+      {
+        "seq": 74,
+        "time_ns": 3524437477530,
+        "event": "redis_command",
+        "id": "hit-r3-008",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-008"
+        ]
+      },
+      {
+        "seq": 75,
+        "time_ns": 3524437576900,
+        "event": "redis_get_seen",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 76,
+        "time_ns": 3524455568310,
+        "event": "redis_release_requested",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 77,
+        "time_ns": 3524455775956,
+        "event": "redis_reply_released",
+        "id": "hit-r3-008",
+        "mode": "hit"
+      },
+      {
+        "seq": 78,
+        "time_ns": 3524460374819,
+        "event": "client_complete",
+        "id": "hit-r3-008",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 79,
+        "time_ns": 3524462632535,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 80,
+        "time_ns": 3524569278732,
+        "event": "redis_release_requested",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 81,
+        "time_ns": 3524573069458,
+        "event": "prepared",
+        "id": "hit-r3-009",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-009",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 82,
+        "time_ns": 3524587374117,
+        "event": "upstream_seen",
+        "id": "hit-r3-009",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-009",
+          "x-verification-id": "hit-r3-009",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "4de9cd3e-b712-4b2a-b79c-2be8b3980192",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429807"
+        }
+      },
+      {
+        "seq": 83,
+        "time_ns": 3524590256742,
+        "event": "redis_command",
+        "id": "hit-r3-009",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-009"
+        ]
+      },
+      {
+        "seq": 84,
+        "time_ns": 3524590337798,
+        "event": "redis_get_seen",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 85,
+        "time_ns": 3524609501256,
+        "event": "redis_release_requested",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 86,
+        "time_ns": 3524609666351,
+        "event": "redis_reply_released",
+        "id": "hit-r3-009",
+        "mode": "hit"
+      },
+      {
+        "seq": 87,
+        "time_ns": 3524614215906,
+        "event": "client_complete",
+        "id": "hit-r3-009",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 88,
+        "time_ns": 3524616655063,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 89,
+        "time_ns": 3524724090804,
+        "event": "redis_release_requested",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 90,
+        "time_ns": 3524727997035,
+        "event": "prepared",
+        "id": "hit-r3-010",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-010",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 91,
+        "time_ns": 3524741538094,
+        "event": "upstream_seen",
+        "id": "hit-r3-010",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-010",
+          "x-verification-id": "hit-r3-010",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "7db93528-a074-4d27-a8d6-b6919a956625",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158429962"
+        }
+      },
+      {
+        "seq": 92,
+        "time_ns": 3524741667775,
+        "event": "redis_command",
+        "id": "hit-r3-010",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-010"
+        ]
+      },
+      {
+        "seq": 93,
+        "time_ns": 3524741745751,
+        "event": "redis_get_seen",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 94,
+        "time_ns": 3524750640089,
+        "event": "redis_release_requested",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 95,
+        "time_ns": 3524750822155,
+        "event": "redis_reply_released",
+        "id": "hit-r3-010",
+        "mode": "hit"
+      },
+      {
+        "seq": 96,
+        "time_ns": 3524754710705,
+        "event": "client_complete",
+        "id": "hit-r3-010",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 97,
+        "time_ns": 3524756803103,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 98,
+        "time_ns": 3524864353646,
+        "event": "redis_release_requested",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 99,
+        "time_ns": 3524868422822,
+        "event": "prepared",
+        "id": "hit-r3-011",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-011",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 100,
+        "time_ns": 3524882003212,
+        "event": "upstream_seen",
+        "id": "hit-r3-011",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-011",
+          "x-verification-id": "hit-r3-011",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "7d66a179-026a-4295-b652-148e6007a8d6",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430102"
+        }
+      },
+      {
+        "seq": 101,
+        "time_ns": 3524885702353,
+        "event": "redis_command",
+        "id": "hit-r3-011",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-011"
+        ]
+      },
+      {
+        "seq": 102,
+        "time_ns": 3524885830606,
+        "event": "redis_get_seen",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 103,
+        "time_ns": 3524904274280,
+        "event": "redis_release_requested",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 104,
+        "time_ns": 3524904409044,
+        "event": "redis_reply_released",
+        "id": "hit-r3-011",
+        "mode": "hit"
+      },
+      {
+        "seq": 105,
+        "time_ns": 3524908754063,
+        "event": "client_complete",
+        "id": "hit-r3-011",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 106,
+        "time_ns": 3524911006429,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 107,
+        "time_ns": 3525017714553,
+        "event": "redis_release_requested",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 108,
+        "time_ns": 3525021730082,
+        "event": "prepared",
+        "id": "hit-r3-012",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-012",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 109,
+        "time_ns": 3525035924223,
+        "event": "upstream_seen",
+        "id": "hit-r3-012",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-012",
+          "x-verification-id": "hit-r3-012",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "b6da45d2-dc89-48bf-b373-57b721a7670f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430256"
+        }
+      },
+      {
+        "seq": 110,
+        "time_ns": 3525038808493,
+        "event": "redis_command",
+        "id": "hit-r3-012",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-012"
+        ]
+      },
+      {
+        "seq": 111,
+        "time_ns": 3525038887930,
+        "event": "redis_get_seen",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 112,
+        "time_ns": 3525057157042,
+        "event": "redis_release_requested",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 113,
+        "time_ns": 3525057325972,
+        "event": "redis_reply_released",
+        "id": "hit-r3-012",
+        "mode": "hit"
+      },
+      {
+        "seq": 114,
+        "time_ns": 3525061425521,
+        "event": "client_complete",
+        "id": "hit-r3-012",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 115,
+        "time_ns": 3525063897048,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 116,
+        "time_ns": 3525170942319,
+        "event": "redis_release_requested",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 117,
+        "time_ns": 3525175529553,
+        "event": "prepared",
+        "id": "hit-r3-013",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-013",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 118,
+        "time_ns": 3525188435167,
+        "event": "upstream_seen",
+        "id": "hit-r3-013",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-013",
+          "x-verification-id": "hit-r3-013",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "366bd312-0c71-46b7-9be6-d119c1797435",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430408"
+        }
+      },
+      {
+        "seq": 119,
+        "time_ns": 3525191518665,
+        "event": "redis_command",
+        "id": "hit-r3-013",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-013"
+        ]
+      },
+      {
+        "seq": 120,
+        "time_ns": 3525192593949,
+        "event": "redis_get_seen",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 121,
+        "time_ns": 3525209458907,
+        "event": "redis_release_requested",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 122,
+        "time_ns": 3525209601188,
+        "event": "redis_reply_released",
+        "id": "hit-r3-013",
+        "mode": "hit"
+      },
+      {
+        "seq": 123,
+        "time_ns": 3525213529380,
+        "event": "client_complete",
+        "id": "hit-r3-013",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 124,
+        "time_ns": 3525215887992,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 125,
+        "time_ns": 3525323227035,
+        "event": "redis_release_requested",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 126,
+        "time_ns": 3525327326952,
+        "event": "prepared",
+        "id": "hit-r3-014",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-014",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 127,
+        "time_ns": 3525342367314,
+        "event": "upstream_seen",
+        "id": "hit-r3-014",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-014",
+          "x-verification-id": "hit-r3-014",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "09fad6f0-db7f-496f-b080-a2738e71dbea",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430562"
+        }
+      },
+      {
+        "seq": 128,
+        "time_ns": 3525345171756,
+        "event": "redis_command",
+        "id": "hit-r3-014",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-014"
+        ]
+      },
+      {
+        "seq": 129,
+        "time_ns": 3525345217857,
+        "event": "redis_get_seen",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 130,
+        "time_ns": 3525366020673,
+        "event": "redis_release_requested",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 131,
+        "time_ns": 3525366180523,
+        "event": "redis_reply_released",
+        "id": "hit-r3-014",
+        "mode": "hit"
+      },
+      {
+        "seq": 132,
+        "time_ns": 3525370831379,
+        "event": "client_complete",
+        "id": "hit-r3-014",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 133,
+        "time_ns": 3525373392273,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 134,
+        "time_ns": 3525480460284,
+        "event": "redis_release_requested",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 135,
+        "time_ns": 3525485049741,
+        "event": "prepared",
+        "id": "hit-r3-015",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-015",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 136,
+        "time_ns": 3525499152062,
+        "event": "upstream_seen",
+        "id": "hit-r3-015",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-015",
+          "x-verification-id": "hit-r3-015",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "d17ce8dc-f297-42e9-9405-07d4aa032623",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430719"
+        }
+      },
+      {
+        "seq": 137,
+        "time_ns": 3525502885834,
+        "event": "redis_command",
+        "id": "hit-r3-015",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-015"
+        ]
+      },
+      {
+        "seq": 138,
+        "time_ns": 3525502969735,
+        "event": "redis_get_seen",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 139,
+        "time_ns": 3525522818599,
+        "event": "redis_release_requested",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 140,
+        "time_ns": 3525522968345,
+        "event": "redis_reply_released",
+        "id": "hit-r3-015",
+        "mode": "hit"
+      },
+      {
+        "seq": 141,
+        "time_ns": 3525527773391,
+        "event": "client_complete",
+        "id": "hit-r3-015",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 142,
+        "time_ns": 3525530212647,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 143,
+        "time_ns": 3525637243987,
+        "event": "redis_release_requested",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 144,
+        "time_ns": 3525641846197,
+        "event": "prepared",
+        "id": "hit-r3-016",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-016",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 145,
+        "time_ns": 3525655608268,
+        "event": "upstream_seen",
+        "id": "hit-r3-016",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-016",
+          "x-verification-id": "hit-r3-016",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "bd703b28-c0b5-458b-82a9-cde1f83b3878",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158430876"
+        }
+      },
+      {
+        "seq": 146,
+        "time_ns": 3525658475961,
+        "event": "redis_command",
+        "id": "hit-r3-016",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-016"
+        ]
+      },
+      {
+        "seq": 147,
+        "time_ns": 3525658521742,
+        "event": "redis_get_seen",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 148,
+        "time_ns": 3525666234513,
+        "event": "redis_release_requested",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 149,
+        "time_ns": 3525666394736,
+        "event": "redis_reply_released",
+        "id": "hit-r3-016",
+        "mode": "hit"
+      },
+      {
+        "seq": 150,
+        "time_ns": 3525671006008,
+        "event": "client_complete",
+        "id": "hit-r3-016",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 151,
+        "time_ns": 3525673474365,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 152,
+        "time_ns": 3525780601551,
+        "event": "redis_release_requested",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 153,
+        "time_ns": 3525784709657,
+        "event": "prepared",
+        "id": "hit-r3-017",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-017",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 154,
+        "time_ns": 3525798495429,
+        "event": "upstream_seen",
+        "id": "hit-r3-017",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-017",
+          "x-verification-id": "hit-r3-017",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "b27dca70-a219-4c3e-8849-125fd73997e5",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431018"
+        }
+      },
+      {
+        "seq": 155,
+        "time_ns": 3525801006712,
+        "event": "redis_command",
+        "id": "hit-r3-017",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-017"
+        ]
+      },
+      {
+        "seq": 156,
+        "time_ns": 3525801081237,
+        "event": "redis_get_seen",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 157,
+        "time_ns": 3525808493164,
+        "event": "redis_release_requested",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 158,
+        "time_ns": 3525808698497,
+        "event": "redis_reply_released",
+        "id": "hit-r3-017",
+        "mode": "hit"
+      },
+      {
+        "seq": 159,
+        "time_ns": 3525812651626,
+        "event": "client_complete",
+        "id": "hit-r3-017",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 160,
+        "time_ns": 3525815027121,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 161,
+        "time_ns": 3525922551090,
+        "event": "redis_release_requested",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 162,
+        "time_ns": 3525926444263,
+        "event": "prepared",
+        "id": "hit-r3-018",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-018",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 163,
+        "time_ns": 3525939356376,
+        "event": "upstream_seen",
+        "id": "hit-r3-018",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-018",
+          "x-verification-id": "hit-r3-018",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "84c350de-c937-4139-b8fc-0adff1c1cd6f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431159"
+        }
+      },
+      {
+        "seq": 164,
+        "time_ns": 3525942205999,
+        "event": "redis_command",
+        "id": "hit-r3-018",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-018"
+        ]
+      },
+      {
+        "seq": 165,
+        "time_ns": 3525942247255,
+        "event": "redis_get_seen",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 166,
+        "time_ns": 3525950275217,
+        "event": "redis_release_requested",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 167,
+        "time_ns": 3525950417714,
+        "event": "redis_reply_released",
+        "id": "hit-r3-018",
+        "mode": "hit"
+      },
+      {
+        "seq": 168,
+        "time_ns": 3525954493028,
+        "event": "client_complete",
+        "id": "hit-r3-018",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 169,
+        "time_ns": 3525956903274,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 170,
+        "time_ns": 3526064401099,
+        "event": "redis_release_requested",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 171,
+        "time_ns": 3526068669683,
+        "event": "prepared",
+        "id": "hit-r3-019",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-019",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 172,
+        "time_ns": 3526083131817,
+        "event": "upstream_seen",
+        "id": "hit-r3-019",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-019",
+          "x-verification-id": "hit-r3-019",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "e3e1a2b4-7564-47b2-80a4-d53968a42f79",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431303"
+        }
+      },
+      {
+        "seq": 173,
+        "time_ns": 3526085822444,
+        "event": "redis_command",
+        "id": "hit-r3-019",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-019"
+        ]
+      },
+      {
+        "seq": 174,
+        "time_ns": 3526085953418,
+        "event": "redis_get_seen",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 175,
+        "time_ns": 3526093617821,
+        "event": "redis_release_requested",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 176,
+        "time_ns": 3526093725680,
+        "event": "redis_reply_released",
+        "id": "hit-r3-019",
+        "mode": "hit"
+      },
+      {
+        "seq": 177,
+        "time_ns": 3526098011624,
+        "event": "client_complete",
+        "id": "hit-r3-019",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 178,
+        "time_ns": 3526100611006,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 179,
+        "time_ns": 3526208127943,
+        "event": "redis_release_requested",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 180,
+        "time_ns": 3526212128252,
+        "event": "prepared",
+        "id": "hit-r3-020",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-020",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 181,
+        "time_ns": 3526226205948,
+        "event": "upstream_seen",
+        "id": "hit-r3-020",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-020",
+          "x-verification-id": "hit-r3-020",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "cc1e56c6-024a-4193-995b-8854fad4232a",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431446"
+        }
+      },
+      {
+        "seq": 182,
+        "time_ns": 3526229942993,
+        "event": "redis_command",
+        "id": "hit-r3-020",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-020"
+        ]
+      },
+      {
+        "seq": 183,
+        "time_ns": 3526230020703,
+        "event": "redis_get_seen",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 184,
+        "time_ns": 3526250175598,
+        "event": "redis_release_requested",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 185,
+        "time_ns": 3526250342418,
+        "event": "redis_reply_released",
+        "id": "hit-r3-020",
+        "mode": "hit"
+      },
+      {
+        "seq": 186,
+        "time_ns": 3526254440642,
+        "event": "client_complete",
+        "id": "hit-r3-020",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 187,
+        "time_ns": 3526256561346,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 188,
+        "time_ns": 3526365320271,
+        "event": "redis_release_requested",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 189,
+        "time_ns": 3526369254958,
+        "event": "prepared",
+        "id": "hit-r3-021",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-021",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 190,
+        "time_ns": 3526382383686,
+        "event": "upstream_seen",
+        "id": "hit-r3-021",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-021",
+          "x-verification-id": "hit-r3-021",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "ef064f58-0f2c-45ca-b4d9-3f73d596e992",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431602"
+        }
+      },
+      {
+        "seq": 191,
+        "time_ns": 3526384878376,
+        "event": "redis_command",
+        "id": "hit-r3-021",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-021"
+        ]
+      },
+      {
+        "seq": 192,
+        "time_ns": 3526384952625,
+        "event": "redis_get_seen",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 193,
+        "time_ns": 3526393464460,
+        "event": "redis_release_requested",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 194,
+        "time_ns": 3526393606390,
+        "event": "redis_reply_released",
+        "id": "hit-r3-021",
+        "mode": "hit"
+      },
+      {
+        "seq": 195,
+        "time_ns": 3526397742846,
+        "event": "client_complete",
+        "id": "hit-r3-021",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 196,
+        "time_ns": 3526399837995,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 197,
+        "time_ns": 3526507826500,
+        "event": "redis_release_requested",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 198,
+        "time_ns": 3526512581338,
+        "event": "prepared",
+        "id": "hit-r3-022",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-022",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 199,
+        "time_ns": 3526524857586,
+        "event": "redis_command",
+        "id": "hit-r3-022",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-022"
+        ]
+      },
+      {
+        "seq": 200,
+        "time_ns": 3526524905889,
+        "event": "redis_get_seen",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 201,
+        "time_ns": 3526525263265,
+        "event": "upstream_seen",
+        "id": "hit-r3-022",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-022",
+          "x-verification-id": "hit-r3-022",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "ce8502ff-a141-4a15-91a4-1ae710ef5ae5",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431745"
+        }
+      },
+      {
+        "seq": 202,
+        "time_ns": 3526536719066,
+        "event": "redis_release_requested",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 203,
+        "time_ns": 3526536860072,
+        "event": "redis_reply_released",
+        "id": "hit-r3-022",
+        "mode": "hit"
+      },
+      {
+        "seq": 204,
+        "time_ns": 3526540593771,
+        "event": "client_complete",
+        "id": "hit-r3-022",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 205,
+        "time_ns": 3526542826231,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 206,
+        "time_ns": 3526651259448,
+        "event": "redis_release_requested",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 207,
+        "time_ns": 3526655196569,
+        "event": "prepared",
+        "id": "hit-r3-023",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-023",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 208,
+        "time_ns": 3526668193327,
+        "event": "upstream_seen",
+        "id": "hit-r3-023",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-023",
+          "x-verification-id": "hit-r3-023",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "6916966f-a181-454f-a76f-a39980f9fb70",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158431888"
+        }
+      },
+      {
+        "seq": 209,
+        "time_ns": 3526671031762,
+        "event": "redis_command",
+        "id": "hit-r3-023",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-023"
+        ]
+      },
+      {
+        "seq": 210,
+        "time_ns": 3526671105847,
+        "event": "redis_get_seen",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 211,
+        "time_ns": 3526680799114,
+        "event": "redis_release_requested",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 212,
+        "time_ns": 3526680943836,
+        "event": "redis_reply_released",
+        "id": "hit-r3-023",
+        "mode": "hit"
+      },
+      {
+        "seq": 213,
+        "time_ns": 3526685267070,
+        "event": "client_complete",
+        "id": "hit-r3-023",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 214,
+        "time_ns": 3526687497709,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 215,
+        "time_ns": 3526794692100,
+        "event": "redis_release_requested",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 216,
+        "time_ns": 3526798723573,
+        "event": "prepared",
+        "id": "hit-r3-024",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-024",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 217,
+        "time_ns": 3526811843155,
+        "event": "upstream_seen",
+        "id": "hit-r3-024",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-024",
+          "x-verification-id": "hit-r3-024",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "f73b4239-5c44-4323-b555-3c71f264b610",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432032"
+        }
+      },
+      {
+        "seq": 218,
+        "time_ns": 3526814808337,
+        "event": "redis_command",
+        "id": "hit-r3-024",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-024"
+        ]
+      },
+      {
+        "seq": 219,
+        "time_ns": 3526814882530,
+        "event": "redis_get_seen",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 220,
+        "time_ns": 3526823669513,
+        "event": "redis_release_requested",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 221,
+        "time_ns": 3526823837645,
+        "event": "redis_reply_released",
+        "id": "hit-r3-024",
+        "mode": "hit"
+      },
+      {
+        "seq": 222,
+        "time_ns": 3526828164490,
+        "event": "client_complete",
+        "id": "hit-r3-024",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 223,
+        "time_ns": 3526830405544,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 224,
+        "time_ns": 3526937479976,
+        "event": "redis_release_requested",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 225,
+        "time_ns": 3526941561676,
+        "event": "prepared",
+        "id": "hit-r3-025",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-025",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 226,
+        "time_ns": 3526953750743,
+        "event": "upstream_seen",
+        "id": "hit-r3-025",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-025",
+          "x-verification-id": "hit-r3-025",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "66909748-a38b-4fc1-b6c9-bff2ea725b51",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432174"
+        }
+      },
+      {
+        "seq": 227,
+        "time_ns": 3526956550400,
+        "event": "redis_command",
+        "id": "hit-r3-025",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-025"
+        ]
+      },
+      {
+        "seq": 228,
+        "time_ns": 3526956591663,
+        "event": "redis_get_seen",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 229,
+        "time_ns": 3526967420915,
+        "event": "redis_release_requested",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 230,
+        "time_ns": 3526967532010,
+        "event": "redis_reply_released",
+        "id": "hit-r3-025",
+        "mode": "hit"
+      },
+      {
+        "seq": 231,
+        "time_ns": 3526971495114,
+        "event": "client_complete",
+        "id": "hit-r3-025",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 232,
+        "time_ns": 3526973744373,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 233,
+        "time_ns": 3527081463669,
+        "event": "redis_release_requested",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 234,
+        "time_ns": 3527085397840,
+        "event": "prepared",
+        "id": "hit-r3-026",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-026",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 235,
+        "time_ns": 3527098150157,
+        "event": "upstream_seen",
+        "id": "hit-r3-026",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-026",
+          "x-verification-id": "hit-r3-026",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "61efd58a-f46c-4cc5-8f05-7c75f1e7a158",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432318"
+        }
+      },
+      {
+        "seq": 236,
+        "time_ns": 3527100907032,
+        "event": "redis_command",
+        "id": "hit-r3-026",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-026"
+        ]
+      },
+      {
+        "seq": 237,
+        "time_ns": 3527100948707,
+        "event": "redis_get_seen",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 238,
+        "time_ns": 3527112082625,
+        "event": "redis_release_requested",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 239,
+        "time_ns": 3527112255245,
+        "event": "redis_reply_released",
+        "id": "hit-r3-026",
+        "mode": "hit"
+      },
+      {
+        "seq": 240,
+        "time_ns": 3527116376068,
+        "event": "client_complete",
+        "id": "hit-r3-026",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 241,
+        "time_ns": 3527118480536,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 242,
+        "time_ns": 3527225735239,
+        "event": "redis_release_requested",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 243,
+        "time_ns": 3527229334155,
+        "event": "prepared",
+        "id": "hit-r3-027",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-027",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 244,
+        "time_ns": 3527241883770,
+        "event": "upstream_seen",
+        "id": "hit-r3-027",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-027",
+          "x-verification-id": "hit-r3-027",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "6b5d00ec-86d1-4e7e-aad1-946fcb18afcc",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432462"
+        }
+      },
+      {
+        "seq": 245,
+        "time_ns": 3527244677855,
+        "event": "redis_command",
+        "id": "hit-r3-027",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-027"
+        ]
+      },
+      {
+        "seq": 246,
+        "time_ns": 3527244714023,
+        "event": "redis_get_seen",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 247,
+        "time_ns": 3527254386332,
+        "event": "redis_release_requested",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 248,
+        "time_ns": 3527254564528,
+        "event": "redis_reply_released",
+        "id": "hit-r3-027",
+        "mode": "hit"
+      },
+      {
+        "seq": 249,
+        "time_ns": 3527258668630,
+        "event": "client_complete",
+        "id": "hit-r3-027",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 250,
+        "time_ns": 3527260779210,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 251,
+        "time_ns": 3527368954672,
+        "event": "redis_release_requested",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 252,
+        "time_ns": 3527373202232,
+        "event": "prepared",
+        "id": "hit-r3-028",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-028",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 253,
+        "time_ns": 3527387232230,
+        "event": "upstream_seen",
+        "id": "hit-r3-028",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-028",
+          "x-verification-id": "hit-r3-028",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "c165c310-3d6f-4674-966c-0bae153e9df4",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432607"
+        }
+      },
+      {
+        "seq": 254,
+        "time_ns": 3527389878181,
+        "event": "redis_command",
+        "id": "hit-r3-028",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-028"
+        ]
+      },
+      {
+        "seq": 255,
+        "time_ns": 3527389950562,
+        "event": "redis_get_seen",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 256,
+        "time_ns": 3527400923362,
+        "event": "redis_release_requested",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 257,
+        "time_ns": 3527401112857,
+        "event": "redis_reply_released",
+        "id": "hit-r3-028",
+        "mode": "hit"
+      },
+      {
+        "seq": 258,
+        "time_ns": 3527405602351,
+        "event": "client_complete",
+        "id": "hit-r3-028",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 259,
+        "time_ns": 3527407947782,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 260,
+        "time_ns": 3527516665141,
+        "event": "redis_release_requested",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 261,
+        "time_ns": 3527521196265,
+        "event": "prepared",
+        "id": "hit-r3-029",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-029",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 262,
+        "time_ns": 3527534649492,
+        "event": "upstream_seen",
+        "id": "hit-r3-029",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-029",
+          "x-verification-id": "hit-r3-029",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "2d11c328-6324-411e-9084-08c9c246a8b8",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432754"
+        }
+      },
+      {
+        "seq": 263,
+        "time_ns": 3527537201944,
+        "event": "redis_command",
+        "id": "hit-r3-029",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-029"
+        ]
+      },
+      {
+        "seq": 264,
+        "time_ns": 3527537244052,
+        "event": "redis_get_seen",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 265,
+        "time_ns": 3527549054964,
+        "event": "redis_release_requested",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 266,
+        "time_ns": 3527549188428,
+        "event": "redis_reply_released",
+        "id": "hit-r3-029",
+        "mode": "hit"
+      },
+      {
+        "seq": 267,
+        "time_ns": 3527554055061,
+        "event": "client_complete",
+        "id": "hit-r3-029",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 268,
+        "time_ns": 3527556287834,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 269,
+        "time_ns": 3527665013477,
+        "event": "redis_release_requested",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 270,
+        "time_ns": 3527669190227,
+        "event": "prepared",
+        "id": "hit-r3-030",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-030",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 271,
+        "time_ns": 3527683840112,
+        "event": "upstream_seen",
+        "id": "hit-r3-030",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-030",
+          "x-verification-id": "hit-r3-030",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "8bf3a28b-9ce1-49d8-a326-55bf86610953",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158432903"
+        }
+      },
+      {
+        "seq": 272,
+        "time_ns": 3527686262599,
+        "event": "redis_command",
+        "id": "hit-r3-030",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-030"
+        ]
+      },
+      {
+        "seq": 273,
+        "time_ns": 3527686334552,
+        "event": "redis_get_seen",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 274,
+        "time_ns": 3527709773341,
+        "event": "redis_release_requested",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 275,
+        "time_ns": 3527709935572,
+        "event": "redis_reply_released",
+        "id": "hit-r3-030",
+        "mode": "hit"
+      },
+      {
+        "seq": 276,
+        "time_ns": 3527714622708,
+        "event": "client_complete",
+        "id": "hit-r3-030",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 277,
+        "time_ns": 3527716805950,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 278,
+        "time_ns": 3527825584112,
+        "event": "redis_release_requested",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 279,
+        "time_ns": 3527829957872,
+        "event": "prepared",
+        "id": "hit-r3-031",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-031",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 280,
+        "time_ns": 3527841593861,
+        "event": "redis_command",
+        "id": "hit-r3-031",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-031"
+        ]
+      },
+      {
+        "seq": 281,
+        "time_ns": 3527841810162,
+        "event": "redis_get_seen",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 282,
+        "time_ns": 3527842375301,
+        "event": "upstream_seen",
+        "id": "hit-r3-031",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-031",
+          "x-verification-id": "hit-r3-031",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "41c1f644-bb11-42cd-8c26-83ef56a8775c",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433062"
+        }
+      },
+      {
+        "seq": 283,
+        "time_ns": 3527856453787,
+        "event": "redis_release_requested",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 284,
+        "time_ns": 3527856611522,
+        "event": "redis_reply_released",
+        "id": "hit-r3-031",
+        "mode": "hit"
+      },
+      {
+        "seq": 285,
+        "time_ns": 3527861221779,
+        "event": "client_complete",
+        "id": "hit-r3-031",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 286,
+        "time_ns": 3527863426808,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 287,
+        "time_ns": 3527971195224,
+        "event": "redis_release_requested",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 288,
+        "time_ns": 3527975806056,
+        "event": "prepared",
+        "id": "hit-r3-032",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-032",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 289,
+        "time_ns": 3527990134354,
+        "event": "upstream_seen",
+        "id": "hit-r3-032",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-032",
+          "x-verification-id": "hit-r3-032",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "5eda265e-a8ea-4347-b91e-973f9e41ef39",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433210"
+        }
+      },
+      {
+        "seq": 290,
+        "time_ns": 3527993000034,
+        "event": "redis_command",
+        "id": "hit-r3-032",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-032"
+        ]
+      },
+      {
+        "seq": 291,
+        "time_ns": 3527993075563,
+        "event": "redis_get_seen",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 292,
+        "time_ns": 3528004619812,
+        "event": "redis_release_requested",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 293,
+        "time_ns": 3528004780146,
+        "event": "redis_reply_released",
+        "id": "hit-r3-032",
+        "mode": "hit"
+      },
+      {
+        "seq": 294,
+        "time_ns": 3528009272254,
+        "event": "client_complete",
+        "id": "hit-r3-032",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 295,
+        "time_ns": 3528011569689,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 296,
+        "time_ns": 3528120107705,
+        "event": "redis_release_requested",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 297,
+        "time_ns": 3528124533894,
+        "event": "prepared",
+        "id": "hit-r3-033",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-033",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 298,
+        "time_ns": 3528136580634,
+        "event": "upstream_seen",
+        "id": "hit-r3-033",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-033",
+          "x-verification-id": "hit-r3-033",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "b7d3f47e-e72a-4533-a1b8-bb1701409e06",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433357"
+        }
+      },
+      {
+        "seq": 299,
+        "time_ns": 3528136739338,
+        "event": "redis_command",
+        "id": "hit-r3-033",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-033"
+        ]
+      },
+      {
+        "seq": 300,
+        "time_ns": 3528136813998,
+        "event": "redis_get_seen",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 301,
+        "time_ns": 3528153940564,
+        "event": "redis_release_requested",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 302,
+        "time_ns": 3528154105948,
+        "event": "redis_reply_released",
+        "id": "hit-r3-033",
+        "mode": "hit"
+      },
+      {
+        "seq": 303,
+        "time_ns": 3528158220555,
+        "event": "client_complete",
+        "id": "hit-r3-033",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 304,
+        "time_ns": 3528160493494,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 305,
+        "time_ns": 3528268222183,
+        "event": "redis_release_requested",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 306,
+        "time_ns": 3528272551575,
+        "event": "prepared",
+        "id": "hit-r3-034",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-034",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 307,
+        "time_ns": 3528285962532,
+        "event": "upstream_seen",
+        "id": "hit-r3-034",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-034",
+          "x-verification-id": "hit-r3-034",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "ca63e3d7-3a64-4928-a034-9e31be0f6d76",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433506"
+        }
+      },
+      {
+        "seq": 308,
+        "time_ns": 3528288763256,
+        "event": "redis_command",
+        "id": "hit-r3-034",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-034"
+        ]
+      },
+      {
+        "seq": 309,
+        "time_ns": 3528288839768,
+        "event": "redis_get_seen",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 310,
+        "time_ns": 3528302309371,
+        "event": "redis_release_requested",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 311,
+        "time_ns": 3528302462002,
+        "event": "redis_reply_released",
+        "id": "hit-r3-034",
+        "mode": "hit"
+      },
+      {
+        "seq": 312,
+        "time_ns": 3528306560057,
+        "event": "client_complete",
+        "id": "hit-r3-034",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 313,
+        "time_ns": 3528308870877,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 314,
+        "time_ns": 3528417420412,
+        "event": "redis_release_requested",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 315,
+        "time_ns": 3528421736652,
+        "event": "prepared",
+        "id": "hit-r3-035",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-035",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 316,
+        "time_ns": 3528433532518,
+        "event": "upstream_seen",
+        "id": "hit-r3-035",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-035",
+          "x-verification-id": "hit-r3-035",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "95407256-2146-4a69-88ca-3f4e4dce8dbf",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433654"
+        }
+      },
+      {
+        "seq": 317,
+        "time_ns": 3528436361696,
+        "event": "redis_command",
+        "id": "hit-r3-035",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-035"
+        ]
+      },
+      {
+        "seq": 318,
+        "time_ns": 3528436435144,
+        "event": "redis_get_seen",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 319,
+        "time_ns": 3528449601348,
+        "event": "redis_release_requested",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 320,
+        "time_ns": 3528449820248,
+        "event": "redis_reply_released",
+        "id": "hit-r3-035",
+        "mode": "hit"
+      },
+      {
+        "seq": 321,
+        "time_ns": 3528453832225,
+        "event": "client_complete",
+        "id": "hit-r3-035",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 322,
+        "time_ns": 3528456482800,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 323,
+        "time_ns": 3528565445717,
+        "event": "redis_release_requested",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 324,
+        "time_ns": 3528569906205,
+        "event": "prepared",
+        "id": "hit-r3-036",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-036",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 325,
+        "time_ns": 3528583074903,
+        "event": "upstream_seen",
+        "id": "hit-r3-036",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-036",
+          "x-verification-id": "hit-r3-036",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "37519410-87d9-4d46-bc16-40723f0cadcc",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433803"
+        }
+      },
+      {
+        "seq": 326,
+        "time_ns": 3528585676813,
+        "event": "redis_command",
+        "id": "hit-r3-036",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-036"
+        ]
+      },
+      {
+        "seq": 327,
+        "time_ns": 3528585750794,
+        "event": "redis_get_seen",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 328,
+        "time_ns": 3528600264296,
+        "event": "redis_release_requested",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 329,
+        "time_ns": 3528600428659,
+        "event": "redis_reply_released",
+        "id": "hit-r3-036",
+        "mode": "hit"
+      },
+      {
+        "seq": 330,
+        "time_ns": 3528604509587,
+        "event": "client_complete",
+        "id": "hit-r3-036",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 331,
+        "time_ns": 3528606817210,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 332,
+        "time_ns": 3528715351705,
+        "event": "redis_release_requested",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 333,
+        "time_ns": 3528720128628,
+        "event": "prepared",
+        "id": "hit-r3-037",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-037",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 334,
+        "time_ns": 3528734097736,
+        "event": "upstream_seen",
+        "id": "hit-r3-037",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-037",
+          "x-verification-id": "hit-r3-037",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "e880b130-48a3-44a5-b5db-67f557bba84e",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158433954"
+        }
+      },
+      {
+        "seq": 335,
+        "time_ns": 3528737013241,
+        "event": "redis_command",
+        "id": "hit-r3-037",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-037"
+        ]
+      },
+      {
+        "seq": 336,
+        "time_ns": 3528737091703,
+        "event": "redis_get_seen",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 337,
+        "time_ns": 3528749007598,
+        "event": "redis_release_requested",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 338,
+        "time_ns": 3528749173852,
+        "event": "redis_reply_released",
+        "id": "hit-r3-037",
+        "mode": "hit"
+      },
+      {
+        "seq": 339,
+        "time_ns": 3528753366767,
+        "event": "client_complete",
+        "id": "hit-r3-037",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 340,
+        "time_ns": 3528755961107,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 341,
+        "time_ns": 3528864508172,
+        "event": "redis_release_requested",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 342,
+        "time_ns": 3528868452100,
+        "event": "prepared",
+        "id": "hit-r3-038",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-038",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 343,
+        "time_ns": 3528882702117,
+        "event": "upstream_seen",
+        "id": "hit-r3-038",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-038",
+          "x-verification-id": "hit-r3-038",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "80c456e2-dd17-412c-ae25-50d720716fa9",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434102"
+        }
+      },
+      {
+        "seq": 344,
+        "time_ns": 3528885239123,
+        "event": "redis_command",
+        "id": "hit-r3-038",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-038"
+        ]
+      },
+      {
+        "seq": 345,
+        "time_ns": 3528885323824,
+        "event": "redis_get_seen",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 346,
+        "time_ns": 3528900651275,
+        "event": "redis_release_requested",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 347,
+        "time_ns": 3528900754312,
+        "event": "redis_reply_released",
+        "id": "hit-r3-038",
+        "mode": "hit"
+      },
+      {
+        "seq": 348,
+        "time_ns": 3528905005666,
+        "event": "client_complete",
+        "id": "hit-r3-038",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 349,
+        "time_ns": 3528907264327,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 350,
+        "time_ns": 3529016794430,
+        "event": "redis_release_requested",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 351,
+        "time_ns": 3529021336701,
+        "event": "prepared",
+        "id": "hit-r3-039",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-039",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 352,
+        "time_ns": 3529035441715,
+        "event": "upstream_seen",
+        "id": "hit-r3-039",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-039",
+          "x-verification-id": "hit-r3-039",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "07a8de9c-227d-4fec-aeb5-9f32de5d89f7",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434255"
+        }
+      },
+      {
+        "seq": 353,
+        "time_ns": 3529037976807,
+        "event": "redis_command",
+        "id": "hit-r3-039",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-039"
+        ]
+      },
+      {
+        "seq": 354,
+        "time_ns": 3529038057050,
+        "event": "redis_get_seen",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 355,
+        "time_ns": 3529052118236,
+        "event": "redis_release_requested",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 356,
+        "time_ns": 3529052312214,
+        "event": "redis_reply_released",
+        "id": "hit-r3-039",
+        "mode": "hit"
+      },
+      {
+        "seq": 357,
+        "time_ns": 3529056689461,
+        "event": "client_complete",
+        "id": "hit-r3-039",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 358,
+        "time_ns": 3529058803341,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 359,
+        "time_ns": 3529167818714,
+        "event": "redis_release_requested",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 360,
+        "time_ns": 3529171861068,
+        "event": "prepared",
+        "id": "hit-r3-040",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-040",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 361,
+        "time_ns": 3529184369570,
+        "event": "redis_command",
+        "id": "hit-r3-040",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-040"
+        ]
+      },
+      {
+        "seq": 362,
+        "time_ns": 3529184432881,
+        "event": "redis_get_seen",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 363,
+        "time_ns": 3529184722590,
+        "event": "upstream_seen",
+        "id": "hit-r3-040",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-040",
+          "x-verification-id": "hit-r3-040",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "94d65dba-6181-4432-9204-d98832f253df",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434405"
+        }
+      },
+      {
+        "seq": 364,
+        "time_ns": 3529203997046,
+        "event": "redis_release_requested",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 365,
+        "time_ns": 3529204182865,
+        "event": "redis_reply_released",
+        "id": "hit-r3-040",
+        "mode": "hit"
+      },
+      {
+        "seq": 366,
+        "time_ns": 3529208383571,
+        "event": "client_complete",
+        "id": "hit-r3-040",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 367,
+        "time_ns": 3529210549109,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 368,
+        "time_ns": 3529318980664,
+        "event": "redis_release_requested",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 369,
+        "time_ns": 3529323203462,
+        "event": "prepared",
+        "id": "hit-r3-041",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-041",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 370,
+        "time_ns": 3529335302015,
+        "event": "upstream_seen",
+        "id": "hit-r3-041",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-041",
+          "x-verification-id": "hit-r3-041",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "d6404a4b-5b6c-4abb-9959-32aac7709e70",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434555"
+        }
+      },
+      {
+        "seq": 371,
+        "time_ns": 3529338231381,
+        "event": "redis_command",
+        "id": "hit-r3-041",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-041"
+        ]
+      },
+      {
+        "seq": 372,
+        "time_ns": 3529338305870,
+        "event": "redis_get_seen",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 373,
+        "time_ns": 3529352807957,
+        "event": "redis_release_requested",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 374,
+        "time_ns": 3529352979259,
+        "event": "redis_reply_released",
+        "id": "hit-r3-041",
+        "mode": "hit"
+      },
+      {
+        "seq": 375,
+        "time_ns": 3529357177159,
+        "event": "client_complete",
+        "id": "hit-r3-041",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 376,
+        "time_ns": 3529359269926,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 377,
+        "time_ns": 3529469100978,
+        "event": "redis_release_requested",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 378,
+        "time_ns": 3529473454514,
+        "event": "prepared",
+        "id": "hit-r3-042",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-042",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 379,
+        "time_ns": 3529485840259,
+        "event": "upstream_seen",
+        "id": "hit-r3-042",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-042",
+          "x-verification-id": "hit-r3-042",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "a83ec0a3-a1af-4eab-a980-81338686d3f9",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434706"
+        }
+      },
+      {
+        "seq": 380,
+        "time_ns": 3529488517447,
+        "event": "redis_command",
+        "id": "hit-r3-042",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-042"
+        ]
+      },
+      {
+        "seq": 381,
+        "time_ns": 3529488590102,
+        "event": "redis_get_seen",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 382,
+        "time_ns": 3529502346454,
+        "event": "redis_release_requested",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 383,
+        "time_ns": 3529502479679,
+        "event": "redis_reply_released",
+        "id": "hit-r3-042",
+        "mode": "hit"
+      },
+      {
+        "seq": 384,
+        "time_ns": 3529506434840,
+        "event": "client_complete",
+        "id": "hit-r3-042",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 385,
+        "time_ns": 3529507979987,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 386,
+        "time_ns": 3529617513719,
+        "event": "redis_release_requested",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 387,
+        "time_ns": 3529622020089,
+        "event": "prepared",
+        "id": "hit-r3-043",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-043",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 388,
+        "time_ns": 3529634795180,
+        "event": "upstream_seen",
+        "id": "hit-r3-043",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-043",
+          "x-verification-id": "hit-r3-043",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "832280c5-455b-4bcf-a342-0a39a52d3364",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158434855"
+        }
+      },
+      {
+        "seq": 389,
+        "time_ns": 3529637631474,
+        "event": "redis_command",
+        "id": "hit-r3-043",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-043"
+        ]
+      },
+      {
+        "seq": 390,
+        "time_ns": 3529637706114,
+        "event": "redis_get_seen",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 391,
+        "time_ns": 3529652728074,
+        "event": "redis_release_requested",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 392,
+        "time_ns": 3529652891024,
+        "event": "redis_reply_released",
+        "id": "hit-r3-043",
+        "mode": "hit"
+      },
+      {
+        "seq": 393,
+        "time_ns": 3529657212442,
+        "event": "client_complete",
+        "id": "hit-r3-043",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 394,
+        "time_ns": 3529659632850,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 395,
+        "time_ns": 3529769742012,
+        "event": "redis_release_requested",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 396,
+        "time_ns": 3529773872124,
+        "event": "prepared",
+        "id": "hit-r3-044",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-044",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 397,
+        "time_ns": 3529786820851,
+        "event": "upstream_seen",
+        "id": "hit-r3-044",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-044",
+          "x-verification-id": "hit-r3-044",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "7b2ed2bf-567f-4cbe-9bb5-820802d19414",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435007"
+        }
+      },
+      {
+        "seq": 398,
+        "time_ns": 3529789695860,
+        "event": "redis_command",
+        "id": "hit-r3-044",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-044"
+        ]
+      },
+      {
+        "seq": 399,
+        "time_ns": 3529789770457,
+        "event": "redis_get_seen",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 400,
+        "time_ns": 3529805744013,
+        "event": "redis_release_requested",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 401,
+        "time_ns": 3529805915241,
+        "event": "redis_reply_released",
+        "id": "hit-r3-044",
+        "mode": "hit"
+      },
+      {
+        "seq": 402,
+        "time_ns": 3529810174598,
+        "event": "client_complete",
+        "id": "hit-r3-044",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 403,
+        "time_ns": 3529812369162,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 404,
+        "time_ns": 3529921797306,
+        "event": "redis_release_requested",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 405,
+        "time_ns": 3529926278004,
+        "event": "prepared",
+        "id": "hit-r3-045",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-045",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 406,
+        "time_ns": 3529939149698,
+        "event": "upstream_seen",
+        "id": "hit-r3-045",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-045",
+          "x-verification-id": "hit-r3-045",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "b18b0d65-cff6-455d-95d2-36446d739c10",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435159"
+        }
+      },
+      {
+        "seq": 407,
+        "time_ns": 3529941914372,
+        "event": "redis_command",
+        "id": "hit-r3-045",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-045"
+        ]
+      },
+      {
+        "seq": 408,
+        "time_ns": 3529941989208,
+        "event": "redis_get_seen",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 409,
+        "time_ns": 3529958770189,
+        "event": "redis_release_requested",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 410,
+        "time_ns": 3529958947434,
+        "event": "redis_reply_released",
+        "id": "hit-r3-045",
+        "mode": "hit"
+      },
+      {
+        "seq": 411,
+        "time_ns": 3529963735096,
+        "event": "client_complete",
+        "id": "hit-r3-045",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 412,
+        "time_ns": 3529966112642,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 413,
+        "time_ns": 3530075287375,
+        "event": "redis_release_requested",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 414,
+        "time_ns": 3530079590480,
+        "event": "prepared",
+        "id": "hit-r3-046",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-046",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 415,
+        "time_ns": 3530092052585,
+        "event": "upstream_seen",
+        "id": "hit-r3-046",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-046",
+          "x-verification-id": "hit-r3-046",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "6eaee1dd-14ad-47fa-a291-013e30f2fd2d",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435312"
+        }
+      },
+      {
+        "seq": 416,
+        "time_ns": 3530094894372,
+        "event": "redis_command",
+        "id": "hit-r3-046",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-046"
+        ]
+      },
+      {
+        "seq": 417,
+        "time_ns": 3530094968225,
+        "event": "redis_get_seen",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 418,
+        "time_ns": 3530111155434,
+        "event": "redis_release_requested",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 419,
+        "time_ns": 3530111363767,
+        "event": "redis_reply_released",
+        "id": "hit-r3-046",
+        "mode": "hit"
+      },
+      {
+        "seq": 420,
+        "time_ns": 3530115271166,
+        "event": "client_complete",
+        "id": "hit-r3-046",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 421,
+        "time_ns": 3530117515172,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 422,
+        "time_ns": 3530226678757,
+        "event": "redis_release_requested",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 423,
+        "time_ns": 3530231448274,
+        "event": "prepared",
+        "id": "hit-r3-047",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-047",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 424,
+        "time_ns": 3530244251331,
+        "event": "upstream_seen",
+        "id": "hit-r3-047",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-047",
+          "x-verification-id": "hit-r3-047",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "774d6c52-33c2-49b5-8484-89d0599c26c0",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435464"
+        }
+      },
+      {
+        "seq": 425,
+        "time_ns": 3530247052637,
+        "event": "redis_command",
+        "id": "hit-r3-047",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-047"
+        ]
+      },
+      {
+        "seq": 426,
+        "time_ns": 3530247091236,
+        "event": "redis_get_seen",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 427,
+        "time_ns": 3530262800336,
+        "event": "redis_release_requested",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 428,
+        "time_ns": 3530262937323,
+        "event": "redis_reply_released",
+        "id": "hit-r3-047",
+        "mode": "hit"
+      },
+      {
+        "seq": 429,
+        "time_ns": 3530266990442,
+        "event": "client_complete",
+        "id": "hit-r3-047",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 430,
+        "time_ns": 3530269140598,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 431,
+        "time_ns": 3530378146989,
+        "event": "redis_release_requested",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 432,
+        "time_ns": 3530382490552,
+        "event": "prepared",
+        "id": "hit-r3-048",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-048",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 433,
+        "time_ns": 3530396973438,
+        "event": "redis_command",
+        "id": "hit-r3-048",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-048"
+        ]
+      },
+      {
+        "seq": 434,
+        "time_ns": 3530400139185,
+        "event": "redis_get_seen",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 435,
+        "time_ns": 3530400316814,
+        "event": "upstream_seen",
+        "id": "hit-r3-048",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-048",
+          "x-verification-id": "hit-r3-048",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "c1375725-7dce-4c4e-9d67-0df6b85dfe30",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435617"
+        }
+      },
+      {
+        "seq": 436,
+        "time_ns": 3530414724777,
+        "event": "redis_release_requested",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 437,
+        "time_ns": 3530414930648,
+        "event": "redis_reply_released",
+        "id": "hit-r3-048",
+        "mode": "hit"
+      },
+      {
+        "seq": 438,
+        "time_ns": 3530419155713,
+        "event": "client_complete",
+        "id": "hit-r3-048",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 439,
+        "time_ns": 3530421602318,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 440,
+        "time_ns": 3530531347380,
+        "event": "redis_release_requested",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 441,
+        "time_ns": 3530535445684,
+        "event": "prepared",
+        "id": "hit-r3-049",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-049",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 442,
+        "time_ns": 3530549390274,
+        "event": "redis_command",
+        "id": "hit-r3-049",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-049"
+        ]
+      },
+      {
+        "seq": 443,
+        "time_ns": 3530549830980,
+        "event": "upstream_seen",
+        "id": "hit-r3-049",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "hit-r3-049",
+          "x-verification-id": "hit-r3-049",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "16736cf1-c1b0-4909-97a7-34ff2b24a498",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158435770"
+        }
+      },
+      {
+        "seq": 444,
+        "time_ns": 3530549886105,
+        "event": "redis_get_seen",
+        "id": "hit-r3-049"
+      },
+      {
+        "seq": 445,
+        "time_ns": 3530567090171,
+        "event": "redis_release_requested",
+        "id": "hit-r3-049"
+      },
+      {
+        "seq": 446,
+        "time_ns": 3530567217619,
+        "event": "redis_reply_released",
+        "id": "hit-r3-049",
+        "mode": "hit"
+      },
+      {
+        "seq": 447,
+        "time_ns": 3530571753411,
+        "event": "client_complete",
+        "id": "hit-r3-049",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 448,
+        "time_ns": 3530573841328,
+        "event": "upstream_peer_closed",
+        "id": "hit-r3-049"
+      },
+      {
+        "seq": 449,
+        "time_ns": 3530683502190,
+        "event": "redis_release_requested",
+        "id": "hit-r3-049"
+      }
+    ],
+    "cases": {
+      "hit-r3-000": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-001": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-002": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-003": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-004": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-005": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-006": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-007": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-008": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-009": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-010": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-011": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-012": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-013": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-014": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-015": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-016": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-017": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-018": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-019": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-020": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-021": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-022": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-023": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-024": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-025": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-026": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-027": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-028": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-029": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-030": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-031": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-032": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-033": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-034": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-035": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-036": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-037": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-038": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-039": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-040": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-041": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-042": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-043": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-044": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-045": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-046": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-047": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-048": {
+        "mode": "hit",
+        "upstream": 1
+      },
+      "hit-r3-049": {
+        "mode": "hit",
+        "upstream": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "variant": "baseline",
+  "requests": 1,
+  "all_passed": true,
+  "upstream_calls": 1,
+  "cases": [
+    {
+      "id": "hit-r1-000",
+      "variant": "baseline",
+      "mode": "hit",
+      "round": 1,
+      "key": "higress-audit:hit-r1-000",
+      "status": "200",
+      "curl_exit": 0,
+      "stderr": "",
+      "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f",
+      "body": "{\"source\":\"cache\",\"value\":\"fixture-only\"}",
+      "upstream_before_release": true,
+      "upstream_total": 1,
+      "passed": true
+    }
+  ]
+}

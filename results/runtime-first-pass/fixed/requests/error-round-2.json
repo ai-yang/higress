@@ -1,0 +1,879 @@
+{
+  "summary": {
+    "mode": "error",
+    "round": 2,
+    "requests": 10,
+    "upstream_calls": 10,
+    "all_passed": true,
+    "redis_commands": {
+      "GET": 10,
+      "SET": 10
+    }
+  },
+  "fixture": {
+    "events": [
+      {
+        "seq": 0,
+        "time_ns": 3771416731414,
+        "event": "prepared",
+        "id": "error-r2-000",
+        "mode": "error",
+        "key": "higress-audit:error-r2-000",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 1,
+        "time_ns": 3771433755036,
+        "event": "redis_command",
+        "id": "error-r2-000",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-000"
+        ]
+      },
+      {
+        "seq": 2,
+        "time_ns": 3771433823451,
+        "event": "redis_get_seen",
+        "id": "error-r2-000"
+      },
+      {
+        "seq": 3,
+        "time_ns": 3771500718528,
+        "event": "redis_release_requested",
+        "id": "error-r2-000"
+      },
+      {
+        "seq": 4,
+        "time_ns": 3771500884903,
+        "event": "redis_reply_released",
+        "id": "error-r2-000",
+        "mode": "error"
+      },
+      {
+        "seq": 5,
+        "time_ns": 3771502475964,
+        "event": "upstream_seen",
+        "id": "error-r2-000",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-000",
+          "x-verification-id": "error-r2-000",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "d81a363e-b063-46fb-bdec-0d6668c8bbf8",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158676651"
+        }
+      },
+      {
+        "seq": 6,
+        "time_ns": 3771504732804,
+        "event": "redis_command",
+        "id": "error-r2-000",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-000",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 7,
+        "time_ns": 3771507244973,
+        "event": "client_complete",
+        "id": "error-r2-000",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 8,
+        "time_ns": 3771615262196,
+        "event": "redis_release_requested",
+        "id": "error-r2-000"
+      },
+      {
+        "seq": 9,
+        "time_ns": 3771619921390,
+        "event": "prepared",
+        "id": "error-r2-001",
+        "mode": "error",
+        "key": "higress-audit:error-r2-001",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 10,
+        "time_ns": 3771637374695,
+        "event": "redis_command",
+        "id": "error-r2-001",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-001"
+        ]
+      },
+      {
+        "seq": 11,
+        "time_ns": 3771637474724,
+        "event": "redis_get_seen",
+        "id": "error-r2-001"
+      },
+      {
+        "seq": 12,
+        "time_ns": 3771704425429,
+        "event": "redis_release_requested",
+        "id": "error-r2-001"
+      },
+      {
+        "seq": 13,
+        "time_ns": 3771704656070,
+        "event": "redis_reply_released",
+        "id": "error-r2-001",
+        "mode": "error"
+      },
+      {
+        "seq": 14,
+        "time_ns": 3771705978567,
+        "event": "upstream_seen",
+        "id": "error-r2-001",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-001",
+          "x-verification-id": "error-r2-001",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "86f36871-a943-46ba-a215-cfc696805399",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158676855"
+        }
+      },
+      {
+        "seq": 15,
+        "time_ns": 3771710736909,
+        "event": "client_complete",
+        "id": "error-r2-001",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 16,
+        "time_ns": 3771710979186,
+        "event": "redis_command",
+        "id": "error-r2-001",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-001",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 17,
+        "time_ns": 3771819769147,
+        "event": "redis_release_requested",
+        "id": "error-r2-001"
+      },
+      {
+        "seq": 18,
+        "time_ns": 3771824314907,
+        "event": "prepared",
+        "id": "error-r2-002",
+        "mode": "error",
+        "key": "higress-audit:error-r2-002",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 19,
+        "time_ns": 3771842552137,
+        "event": "redis_command",
+        "id": "error-r2-002",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-002"
+        ]
+      },
+      {
+        "seq": 20,
+        "time_ns": 3771842648673,
+        "event": "redis_get_seen",
+        "id": "error-r2-002"
+      },
+      {
+        "seq": 21,
+        "time_ns": 3771910621682,
+        "event": "redis_release_requested",
+        "id": "error-r2-002"
+      },
+      {
+        "seq": 22,
+        "time_ns": 3771910765463,
+        "event": "redis_reply_released",
+        "id": "error-r2-002",
+        "mode": "error"
+      },
+      {
+        "seq": 23,
+        "time_ns": 3771912227395,
+        "event": "upstream_seen",
+        "id": "error-r2-002",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-002",
+          "x-verification-id": "error-r2-002",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "6abc0d52-eefe-46bc-b043-095bb779b047",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158677060"
+        }
+      },
+      {
+        "seq": 24,
+        "time_ns": 3771917682480,
+        "event": "client_complete",
+        "id": "error-r2-002",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 25,
+        "time_ns": 3771917950443,
+        "event": "redis_command",
+        "id": "error-r2-002",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-002",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 26,
+        "time_ns": 3772025926960,
+        "event": "redis_release_requested",
+        "id": "error-r2-002"
+      },
+      {
+        "seq": 27,
+        "time_ns": 3772030645569,
+        "event": "prepared",
+        "id": "error-r2-003",
+        "mode": "error",
+        "key": "higress-audit:error-r2-003",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 28,
+        "time_ns": 3772049239822,
+        "event": "redis_command",
+        "id": "error-r2-003",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-003"
+        ]
+      },
+      {
+        "seq": 29,
+        "time_ns": 3772049333484,
+        "event": "redis_get_seen",
+        "id": "error-r2-003"
+      },
+      {
+        "seq": 30,
+        "time_ns": 3772118219281,
+        "event": "redis_release_requested",
+        "id": "error-r2-003"
+      },
+      {
+        "seq": 31,
+        "time_ns": 3772118390727,
+        "event": "redis_reply_released",
+        "id": "error-r2-003",
+        "mode": "error"
+      },
+      {
+        "seq": 32,
+        "time_ns": 3772120196937,
+        "event": "upstream_seen",
+        "id": "error-r2-003",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-003",
+          "x-verification-id": "error-r2-003",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "90aa6507-23ba-4d1b-904d-054704512b35",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158677267"
+        }
+      },
+      {
+        "seq": 33,
+        "time_ns": 3772125278800,
+        "event": "client_complete",
+        "id": "error-r2-003",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 34,
+        "time_ns": 3772125498713,
+        "event": "redis_command",
+        "id": "error-r2-003",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-003",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 35,
+        "time_ns": 3772233954722,
+        "event": "redis_release_requested",
+        "id": "error-r2-003"
+      },
+      {
+        "seq": 36,
+        "time_ns": 3772238347690,
+        "event": "prepared",
+        "id": "error-r2-004",
+        "mode": "error",
+        "key": "higress-audit:error-r2-004",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 37,
+        "time_ns": 3772255250547,
+        "event": "redis_command",
+        "id": "error-r2-004",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-004"
+        ]
+      },
+      {
+        "seq": 38,
+        "time_ns": 3772255933993,
+        "event": "redis_get_seen",
+        "id": "error-r2-004"
+      },
+      {
+        "seq": 39,
+        "time_ns": 3772326272523,
+        "event": "redis_release_requested",
+        "id": "error-r2-004"
+      },
+      {
+        "seq": 40,
+        "time_ns": 3772326491720,
+        "event": "redis_reply_released",
+        "id": "error-r2-004",
+        "mode": "error"
+      },
+      {
+        "seq": 41,
+        "time_ns": 3772328101488,
+        "event": "upstream_seen",
+        "id": "error-r2-004",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-004",
+          "x-verification-id": "error-r2-004",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "5f46fc55-f988-4d64-9923-296b666aaa83",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158677473"
+        }
+      },
+      {
+        "seq": 42,
+        "time_ns": 3772333514981,
+        "event": "client_complete",
+        "id": "error-r2-004",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 43,
+        "time_ns": 3772333866008,
+        "event": "redis_command",
+        "id": "error-r2-004",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-004",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 44,
+        "time_ns": 3772442770196,
+        "event": "redis_release_requested",
+        "id": "error-r2-004"
+      },
+      {
+        "seq": 45,
+        "time_ns": 3772447758645,
+        "event": "prepared",
+        "id": "error-r2-005",
+        "mode": "error",
+        "key": "higress-audit:error-r2-005",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 46,
+        "time_ns": 3772465385663,
+        "event": "redis_command",
+        "id": "error-r2-005",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-005"
+        ]
+      },
+      {
+        "seq": 47,
+        "time_ns": 3772465479959,
+        "event": "redis_get_seen",
+        "id": "error-r2-005"
+      },
+      {
+        "seq": 48,
+        "time_ns": 3772538070161,
+        "event": "redis_release_requested",
+        "id": "error-r2-005"
+      },
+      {
+        "seq": 49,
+        "time_ns": 3772538230947,
+        "event": "redis_reply_released",
+        "id": "error-r2-005",
+        "mode": "error"
+      },
+      {
+        "seq": 50,
+        "time_ns": 3772539570272,
+        "event": "upstream_seen",
+        "id": "error-r2-005",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-005",
+          "x-verification-id": "error-r2-005",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "ac460d31-8e4b-4a8d-86d0-c5420b94cceb",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158677683"
+        }
+      },
+      {
+        "seq": 51,
+        "time_ns": 3772540995077,
+        "event": "redis_command",
+        "id": "error-r2-005",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-005",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 52,
+        "time_ns": 3772544447633,
+        "event": "client_complete",
+        "id": "error-r2-005",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 53,
+        "time_ns": 3772654750132,
+        "event": "redis_release_requested",
+        "id": "error-r2-005"
+      },
+      {
+        "seq": 54,
+        "time_ns": 3772659296476,
+        "event": "prepared",
+        "id": "error-r2-006",
+        "mode": "error",
+        "key": "higress-audit:error-r2-006",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 55,
+        "time_ns": 3772676969340,
+        "event": "redis_command",
+        "id": "error-r2-006",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-006"
+        ]
+      },
+      {
+        "seq": 56,
+        "time_ns": 3772677030874,
+        "event": "redis_get_seen",
+        "id": "error-r2-006"
+      },
+      {
+        "seq": 57,
+        "time_ns": 3772750123707,
+        "event": "redis_release_requested",
+        "id": "error-r2-006"
+      },
+      {
+        "seq": 58,
+        "time_ns": 3772750295930,
+        "event": "redis_reply_released",
+        "id": "error-r2-006",
+        "mode": "error"
+      },
+      {
+        "seq": 59,
+        "time_ns": 3772751865545,
+        "event": "upstream_seen",
+        "id": "error-r2-006",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-006",
+          "x-verification-id": "error-r2-006",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "9993155b-4891-40b8-b2b9-a4693232fa26",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158677895"
+        }
+      },
+      {
+        "seq": 60,
+        "time_ns": 3772756926313,
+        "event": "client_complete",
+        "id": "error-r2-006",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 61,
+        "time_ns": 3772757343224,
+        "event": "redis_command",
+        "id": "error-r2-006",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-006",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 62,
+        "time_ns": 3772866946835,
+        "event": "redis_release_requested",
+        "id": "error-r2-006"
+      },
+      {
+        "seq": 63,
+        "time_ns": 3772871834105,
+        "event": "prepared",
+        "id": "error-r2-007",
+        "mode": "error",
+        "key": "higress-audit:error-r2-007",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 64,
+        "time_ns": 3772889986257,
+        "event": "redis_command",
+        "id": "error-r2-007",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-007"
+        ]
+      },
+      {
+        "seq": 65,
+        "time_ns": 3772890051826,
+        "event": "redis_get_seen",
+        "id": "error-r2-007"
+      },
+      {
+        "seq": 66,
+        "time_ns": 3772963069591,
+        "event": "redis_release_requested",
+        "id": "error-r2-007"
+      },
+      {
+        "seq": 67,
+        "time_ns": 3772963227419,
+        "event": "redis_reply_released",
+        "id": "error-r2-007",
+        "mode": "error"
+      },
+      {
+        "seq": 68,
+        "time_ns": 3772964849551,
+        "event": "upstream_seen",
+        "id": "error-r2-007",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-007",
+          "x-verification-id": "error-r2-007",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "e39ec0b4-8bc9-4590-9881-b865c5c9fce2",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158678108"
+        }
+      },
+      {
+        "seq": 69,
+        "time_ns": 3772969807503,
+        "event": "client_complete",
+        "id": "error-r2-007",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 70,
+        "time_ns": 3772970228316,
+        "event": "redis_command",
+        "id": "error-r2-007",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-007",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 71,
+        "time_ns": 3773079544750,
+        "event": "redis_release_requested",
+        "id": "error-r2-007"
+      },
+      {
+        "seq": 72,
+        "time_ns": 3773084397567,
+        "event": "prepared",
+        "id": "error-r2-008",
+        "mode": "error",
+        "key": "higress-audit:error-r2-008",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 73,
+        "time_ns": 3773101785612,
+        "event": "redis_command",
+        "id": "error-r2-008",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-008"
+        ]
+      },
+      {
+        "seq": 74,
+        "time_ns": 3773101949152,
+        "event": "redis_get_seen",
+        "id": "error-r2-008"
+      },
+      {
+        "seq": 75,
+        "time_ns": 3773175178224,
+        "event": "redis_release_requested",
+        "id": "error-r2-008"
+      },
+      {
+        "seq": 76,
+        "time_ns": 3773175361014,
+        "event": "redis_reply_released",
+        "id": "error-r2-008",
+        "mode": "error"
+      },
+      {
+        "seq": 77,
+        "time_ns": 3773176831089,
+        "event": "upstream_seen",
+        "id": "error-r2-008",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-008",
+          "x-verification-id": "error-r2-008",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "41a09327-b04f-46da-8dbe-5a4ee016dc68",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158678319"
+        }
+      },
+      {
+        "seq": 78,
+        "time_ns": 3773181933076,
+        "event": "client_complete",
+        "id": "error-r2-008",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 79,
+        "time_ns": 3773182201957,
+        "event": "redis_command",
+        "id": "error-r2-008",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-008",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 80,
+        "time_ns": 3773293059941,
+        "event": "redis_release_requested",
+        "id": "error-r2-008"
+      },
+      {
+        "seq": 81,
+        "time_ns": 3773297845401,
+        "event": "prepared",
+        "id": "error-r2-009",
+        "mode": "error",
+        "key": "higress-audit:error-r2-009",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 82,
+        "time_ns": 3773313699377,
+        "event": "redis_command",
+        "id": "error-r2-009",
+        "command": "GET",
+        "args": [
+          "higress-audit:error-r2-009"
+        ]
+      },
+      {
+        "seq": 83,
+        "time_ns": 3773313794370,
+        "event": "redis_get_seen",
+        "id": "error-r2-009"
+      },
+      {
+        "seq": 84,
+        "time_ns": 3773371752665,
+        "event": "redis_release_requested",
+        "id": "error-r2-009"
+      },
+      {
+        "seq": 85,
+        "time_ns": 3773371975950,
+        "event": "redis_reply_released",
+        "id": "error-r2-009",
+        "mode": "error"
+      },
+      {
+        "seq": 86,
+        "time_ns": 3773373765128,
+        "event": "upstream_seen",
+        "id": "error-r2-009",
+        "headers": {
+          "host": "127.0.0.1:19468",
+          "user-agent": "curl/7.81.0",
+          "accept": "*/*",
+          "x-http-cache-key": "error-r2-009",
+          "x-verification-id": "error-r2-009",
+          "x-forwarded-proto": "http",
+          "x-envoy-original-host": "127.0.0.1:19468",
+          "x-request-id": "3d277473-4764-4458-94fd-fbe1c3f5820f",
+          "x-envoy-expected-rq-timeout-ms": "15000",
+          "req-start-time": "1790158678531"
+        }
+      },
+      {
+        "seq": 87,
+        "time_ns": 3773378860444,
+        "event": "client_complete",
+        "id": "error-r2-009",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+      },
+      {
+        "seq": 88,
+        "time_ns": 3773379253551,
+        "event": "redis_command",
+        "id": "error-r2-009",
+        "command": "SET",
+        "args": [
+          "higress-audit:error-r2-009",
+          "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+        ]
+      },
+      {
+        "seq": 89,
+        "time_ns": 3773486756424,
+        "event": "redis_release_requested",
+        "id": "error-r2-009"
+      }
+    ],
+    "cases": {
+      "error-r2-000": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-001": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-002": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-003": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-004": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-005": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-006": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-007": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-008": {
+        "mode": "error",
+        "upstream": 1
+      },
+      "error-r2-009": {
+        "mode": "error",
+        "upstream": 1
+      }
+    }
+  }
+}

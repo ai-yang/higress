@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-23T12:29:30.751058+00:00",
+  "project": "response-cache-4569-20260923",
+  "containers_remaining": [],
+  "networks_remaining": [],
+  "volumes_remaining": [],
+  "race_builder_removed": true,
+  "ports_closed": [
+    19468,
+    19469,
+    19470
+  ]
+}

@@ -1,0 +1,2868 @@
+{
+  "summary": {
+    "mode": "hit",
+    "round": 3,
+    "requests": 50,
+    "upstream_calls": 0,
+    "all_passed": true,
+    "redis_commands": {
+      "GET": 50
+    }
+  },
+  "fixture": {
+    "events": [
+      {
+        "seq": 0,
+        "time_ns": 3679957544552,
+        "event": "prepared",
+        "id": "hit-r3-000",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-000",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 1,
+        "time_ns": 3679971547382,
+        "event": "redis_command",
+        "id": "hit-r3-000",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-000"
+        ]
+      },
+      {
+        "seq": 2,
+        "time_ns": 3679971613647,
+        "event": "redis_get_seen",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 3,
+        "time_ns": 3680986463659,
+        "event": "redis_release_requested",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 4,
+        "time_ns": 3680986679359,
+        "event": "redis_reply_released",
+        "id": "hit-r3-000",
+        "mode": "hit"
+      },
+      {
+        "seq": 5,
+        "time_ns": 3680992217402,
+        "event": "client_complete",
+        "id": "hit-r3-000",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 6,
+        "time_ns": 3681100431266,
+        "event": "redis_release_requested",
+        "id": "hit-r3-000"
+      },
+      {
+        "seq": 7,
+        "time_ns": 3681104054502,
+        "event": "prepared",
+        "id": "hit-r3-001",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-001",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 8,
+        "time_ns": 3681121080056,
+        "event": "redis_command",
+        "id": "hit-r3-001",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-001"
+        ]
+      },
+      {
+        "seq": 9,
+        "time_ns": 3681121172604,
+        "event": "redis_get_seen",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 10,
+        "time_ns": 3682144870755,
+        "event": "redis_release_requested",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 11,
+        "time_ns": 3682145074688,
+        "event": "redis_reply_released",
+        "id": "hit-r3-001",
+        "mode": "hit"
+      },
+      {
+        "seq": 12,
+        "time_ns": 3682151014337,
+        "event": "client_complete",
+        "id": "hit-r3-001",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 13,
+        "time_ns": 3682259327528,
+        "event": "redis_release_requested",
+        "id": "hit-r3-001"
+      },
+      {
+        "seq": 14,
+        "time_ns": 3682263342022,
+        "event": "prepared",
+        "id": "hit-r3-002",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-002",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 15,
+        "time_ns": 3682281108432,
+        "event": "redis_command",
+        "id": "hit-r3-002",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-002"
+        ]
+      },
+      {
+        "seq": 16,
+        "time_ns": 3682281175485,
+        "event": "redis_get_seen",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 17,
+        "time_ns": 3683298826722,
+        "event": "redis_release_requested",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 18,
+        "time_ns": 3683299039727,
+        "event": "redis_reply_released",
+        "id": "hit-r3-002",
+        "mode": "hit"
+      },
+      {
+        "seq": 19,
+        "time_ns": 3683303564862,
+        "event": "client_complete",
+        "id": "hit-r3-002",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 20,
+        "time_ns": 3683411680306,
+        "event": "redis_release_requested",
+        "id": "hit-r3-002"
+      },
+      {
+        "seq": 21,
+        "time_ns": 3683416077033,
+        "event": "prepared",
+        "id": "hit-r3-003",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-003",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 22,
+        "time_ns": 3683433704153,
+        "event": "redis_command",
+        "id": "hit-r3-003",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-003"
+        ]
+      },
+      {
+        "seq": 23,
+        "time_ns": 3683433799121,
+        "event": "redis_get_seen",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 24,
+        "time_ns": 3684451212420,
+        "event": "redis_release_requested",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 25,
+        "time_ns": 3684451445846,
+        "event": "redis_reply_released",
+        "id": "hit-r3-003",
+        "mode": "hit"
+      },
+      {
+        "seq": 26,
+        "time_ns": 3684457303392,
+        "event": "client_complete",
+        "id": "hit-r3-003",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 27,
+        "time_ns": 3684565770763,
+        "event": "redis_release_requested",
+        "id": "hit-r3-003"
+      },
+      {
+        "seq": 28,
+        "time_ns": 3684569808261,
+        "event": "prepared",
+        "id": "hit-r3-004",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-004",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 29,
+        "time_ns": 3684586581459,
+        "event": "redis_command",
+        "id": "hit-r3-004",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-004"
+        ]
+      },
+      {
+        "seq": 30,
+        "time_ns": 3684586644283,
+        "event": "redis_get_seen",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 31,
+        "time_ns": 3685605226459,
+        "event": "redis_release_requested",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 32,
+        "time_ns": 3685605405157,
+        "event": "redis_reply_released",
+        "id": "hit-r3-004",
+        "mode": "hit"
+      },
+      {
+        "seq": 33,
+        "time_ns": 3685610505660,
+        "event": "client_complete",
+        "id": "hit-r3-004",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 34,
+        "time_ns": 3685719526564,
+        "event": "redis_release_requested",
+        "id": "hit-r3-004"
+      },
+      {
+        "seq": 35,
+        "time_ns": 3685723481044,
+        "event": "prepared",
+        "id": "hit-r3-005",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-005",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 36,
+        "time_ns": 3685740978671,
+        "event": "redis_command",
+        "id": "hit-r3-005",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-005"
+        ]
+      },
+      {
+        "seq": 37,
+        "time_ns": 3685741070216,
+        "event": "redis_get_seen",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 38,
+        "time_ns": 3686757460576,
+        "event": "redis_release_requested",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 39,
+        "time_ns": 3686757699214,
+        "event": "redis_reply_released",
+        "id": "hit-r3-005",
+        "mode": "hit"
+      },
+      {
+        "seq": 40,
+        "time_ns": 3686764933969,
+        "event": "client_complete",
+        "id": "hit-r3-005",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 41,
+        "time_ns": 3686872589146,
+        "event": "redis_release_requested",
+        "id": "hit-r3-005"
+      },
+      {
+        "seq": 42,
+        "time_ns": 3686876889230,
+        "event": "prepared",
+        "id": "hit-r3-006",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-006",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 43,
+        "time_ns": 3686894620558,
+        "event": "redis_command",
+        "id": "hit-r3-006",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-006"
+        ]
+      },
+      {
+        "seq": 44,
+        "time_ns": 3686894720454,
+        "event": "redis_get_seen",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 45,
+        "time_ns": 3687913050174,
+        "event": "redis_release_requested",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 46,
+        "time_ns": 3687913269291,
+        "event": "redis_reply_released",
+        "id": "hit-r3-006",
+        "mode": "hit"
+      },
+      {
+        "seq": 47,
+        "time_ns": 3687918702713,
+        "event": "client_complete",
+        "id": "hit-r3-006",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 48,
+        "time_ns": 3688026141103,
+        "event": "redis_release_requested",
+        "id": "hit-r3-006"
+      },
+      {
+        "seq": 49,
+        "time_ns": 3688030068268,
+        "event": "prepared",
+        "id": "hit-r3-007",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-007",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 50,
+        "time_ns": 3688046872981,
+        "event": "redis_command",
+        "id": "hit-r3-007",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-007"
+        ]
+      },
+      {
+        "seq": 51,
+        "time_ns": 3688047019543,
+        "event": "redis_get_seen",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 52,
+        "time_ns": 3689065583176,
+        "event": "redis_release_requested",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 53,
+        "time_ns": 3689065820018,
+        "event": "redis_reply_released",
+        "id": "hit-r3-007",
+        "mode": "hit"
+      },
+      {
+        "seq": 54,
+        "time_ns": 3689071854343,
+        "event": "client_complete",
+        "id": "hit-r3-007",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 55,
+        "time_ns": 3689180867324,
+        "event": "redis_release_requested",
+        "id": "hit-r3-007"
+      },
+      {
+        "seq": 56,
+        "time_ns": 3689184699292,
+        "event": "prepared",
+        "id": "hit-r3-008",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-008",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 57,
+        "time_ns": 3689201866653,
+        "event": "redis_command",
+        "id": "hit-r3-008",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-008"
+        ]
+      },
+      {
+        "seq": 58,
+        "time_ns": 3689201922774,
+        "event": "redis_get_seen",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 59,
+        "time_ns": 3690220784437,
+        "event": "redis_release_requested",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 60,
+        "time_ns": 3690220995553,
+        "event": "redis_reply_released",
+        "id": "hit-r3-008",
+        "mode": "hit"
+      },
+      {
+        "seq": 61,
+        "time_ns": 3690227280300,
+        "event": "client_complete",
+        "id": "hit-r3-008",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 62,
+        "time_ns": 3690336070849,
+        "event": "redis_release_requested",
+        "id": "hit-r3-008"
+      },
+      {
+        "seq": 63,
+        "time_ns": 3690340147886,
+        "event": "prepared",
+        "id": "hit-r3-009",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-009",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 64,
+        "time_ns": 3690358422861,
+        "event": "redis_command",
+        "id": "hit-r3-009",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-009"
+        ]
+      },
+      {
+        "seq": 65,
+        "time_ns": 3690358532889,
+        "event": "redis_get_seen",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 66,
+        "time_ns": 3691372691758,
+        "event": "redis_release_requested",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 67,
+        "time_ns": 3691372859544,
+        "event": "redis_reply_released",
+        "id": "hit-r3-009",
+        "mode": "hit"
+      },
+      {
+        "seq": 68,
+        "time_ns": 3691378956706,
+        "event": "client_complete",
+        "id": "hit-r3-009",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 69,
+        "time_ns": 3691487133672,
+        "event": "redis_release_requested",
+        "id": "hit-r3-009"
+      },
+      {
+        "seq": 70,
+        "time_ns": 3691491249011,
+        "event": "prepared",
+        "id": "hit-r3-010",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-010",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 71,
+        "time_ns": 3691509216111,
+        "event": "redis_command",
+        "id": "hit-r3-010",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-010"
+        ]
+      },
+      {
+        "seq": 72,
+        "time_ns": 3691509310203,
+        "event": "redis_get_seen",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 73,
+        "time_ns": 3692533858321,
+        "event": "redis_release_requested",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 74,
+        "time_ns": 3692534060538,
+        "event": "redis_reply_released",
+        "id": "hit-r3-010",
+        "mode": "hit"
+      },
+      {
+        "seq": 75,
+        "time_ns": 3692538920903,
+        "event": "client_complete",
+        "id": "hit-r3-010",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 76,
+        "time_ns": 3692647190248,
+        "event": "redis_release_requested",
+        "id": "hit-r3-010"
+      },
+      {
+        "seq": 77,
+        "time_ns": 3692651310782,
+        "event": "prepared",
+        "id": "hit-r3-011",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-011",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 78,
+        "time_ns": 3692668965223,
+        "event": "redis_command",
+        "id": "hit-r3-011",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-011"
+        ]
+      },
+      {
+        "seq": 79,
+        "time_ns": 3692669055887,
+        "event": "redis_get_seen",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 80,
+        "time_ns": 3693683458963,
+        "event": "redis_release_requested",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 81,
+        "time_ns": 3693683630449,
+        "event": "redis_reply_released",
+        "id": "hit-r3-011",
+        "mode": "hit"
+      },
+      {
+        "seq": 82,
+        "time_ns": 3693689070061,
+        "event": "client_complete",
+        "id": "hit-r3-011",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 83,
+        "time_ns": 3693797122595,
+        "event": "redis_release_requested",
+        "id": "hit-r3-011"
+      },
+      {
+        "seq": 84,
+        "time_ns": 3693800691129,
+        "event": "prepared",
+        "id": "hit-r3-012",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-012",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 85,
+        "time_ns": 3693817813555,
+        "event": "redis_command",
+        "id": "hit-r3-012",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-012"
+        ]
+      },
+      {
+        "seq": 86,
+        "time_ns": 3693817918973,
+        "event": "redis_get_seen",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 87,
+        "time_ns": 3694834527266,
+        "event": "redis_release_requested",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 88,
+        "time_ns": 3694834764308,
+        "event": "redis_reply_released",
+        "id": "hit-r3-012",
+        "mode": "hit"
+      },
+      {
+        "seq": 89,
+        "time_ns": 3694840251813,
+        "event": "client_complete",
+        "id": "hit-r3-012",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 90,
+        "time_ns": 3694949210569,
+        "event": "redis_release_requested",
+        "id": "hit-r3-012"
+      },
+      {
+        "seq": 91,
+        "time_ns": 3694953219505,
+        "event": "prepared",
+        "id": "hit-r3-013",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-013",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 92,
+        "time_ns": 3694969565739,
+        "event": "redis_command",
+        "id": "hit-r3-013",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-013"
+        ]
+      },
+      {
+        "seq": 93,
+        "time_ns": 3694969682636,
+        "event": "redis_get_seen",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 94,
+        "time_ns": 3695996105633,
+        "event": "redis_release_requested",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 95,
+        "time_ns": 3695996348086,
+        "event": "redis_reply_released",
+        "id": "hit-r3-013",
+        "mode": "hit"
+      },
+      {
+        "seq": 96,
+        "time_ns": 3696002074434,
+        "event": "client_complete",
+        "id": "hit-r3-013",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 97,
+        "time_ns": 3696110750043,
+        "event": "redis_release_requested",
+        "id": "hit-r3-013"
+      },
+      {
+        "seq": 98,
+        "time_ns": 3696115193049,
+        "event": "prepared",
+        "id": "hit-r3-014",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-014",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 99,
+        "time_ns": 3696133223474,
+        "event": "redis_command",
+        "id": "hit-r3-014",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-014"
+        ]
+      },
+      {
+        "seq": 100,
+        "time_ns": 3696133369726,
+        "event": "redis_get_seen",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 101,
+        "time_ns": 3697150731674,
+        "event": "redis_release_requested",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 102,
+        "time_ns": 3697150939601,
+        "event": "redis_reply_released",
+        "id": "hit-r3-014",
+        "mode": "hit"
+      },
+      {
+        "seq": 103,
+        "time_ns": 3697156782500,
+        "event": "client_complete",
+        "id": "hit-r3-014",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 104,
+        "time_ns": 3697264874175,
+        "event": "redis_release_requested",
+        "id": "hit-r3-014"
+      },
+      {
+        "seq": 105,
+        "time_ns": 3697268625876,
+        "event": "prepared",
+        "id": "hit-r3-015",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-015",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 106,
+        "time_ns": 3697285516767,
+        "event": "redis_command",
+        "id": "hit-r3-015",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-015"
+        ]
+      },
+      {
+        "seq": 107,
+        "time_ns": 3697285669944,
+        "event": "redis_get_seen",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 108,
+        "time_ns": 3698303489644,
+        "event": "redis_release_requested",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 109,
+        "time_ns": 3698303695041,
+        "event": "redis_reply_released",
+        "id": "hit-r3-015",
+        "mode": "hit"
+      },
+      {
+        "seq": 110,
+        "time_ns": 3698309393301,
+        "event": "client_complete",
+        "id": "hit-r3-015",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 111,
+        "time_ns": 3698417622232,
+        "event": "redis_release_requested",
+        "id": "hit-r3-015"
+      },
+      {
+        "seq": 112,
+        "time_ns": 3698421735780,
+        "event": "prepared",
+        "id": "hit-r3-016",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-016",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 113,
+        "time_ns": 3698439350724,
+        "event": "redis_command",
+        "id": "hit-r3-016",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-016"
+        ]
+      },
+      {
+        "seq": 114,
+        "time_ns": 3698439512440,
+        "event": "redis_get_seen",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 115,
+        "time_ns": 3699466765060,
+        "event": "redis_release_requested",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 116,
+        "time_ns": 3699466998198,
+        "event": "redis_reply_released",
+        "id": "hit-r3-016",
+        "mode": "hit"
+      },
+      {
+        "seq": 117,
+        "time_ns": 3699472474654,
+        "event": "client_complete",
+        "id": "hit-r3-016",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 118,
+        "time_ns": 3699581294197,
+        "event": "redis_release_requested",
+        "id": "hit-r3-016"
+      },
+      {
+        "seq": 119,
+        "time_ns": 3699584948538,
+        "event": "prepared",
+        "id": "hit-r3-017",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-017",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 120,
+        "time_ns": 3699602532876,
+        "event": "redis_command",
+        "id": "hit-r3-017",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-017"
+        ]
+      },
+      {
+        "seq": 121,
+        "time_ns": 3699602724650,
+        "event": "redis_get_seen",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 122,
+        "time_ns": 3700622968574,
+        "event": "redis_release_requested",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 123,
+        "time_ns": 3700623134950,
+        "event": "redis_reply_released",
+        "id": "hit-r3-017",
+        "mode": "hit"
+      },
+      {
+        "seq": 124,
+        "time_ns": 3700629012226,
+        "event": "client_complete",
+        "id": "hit-r3-017",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 125,
+        "time_ns": 3700737461908,
+        "event": "redis_release_requested",
+        "id": "hit-r3-017"
+      },
+      {
+        "seq": 126,
+        "time_ns": 3700741013810,
+        "event": "prepared",
+        "id": "hit-r3-018",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-018",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 127,
+        "time_ns": 3700757957582,
+        "event": "redis_command",
+        "id": "hit-r3-018",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-018"
+        ]
+      },
+      {
+        "seq": 128,
+        "time_ns": 3700758104452,
+        "event": "redis_get_seen",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 129,
+        "time_ns": 3701783106351,
+        "event": "redis_release_requested",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 130,
+        "time_ns": 3701783321765,
+        "event": "redis_reply_released",
+        "id": "hit-r3-018",
+        "mode": "hit"
+      },
+      {
+        "seq": 131,
+        "time_ns": 3701789469695,
+        "event": "client_complete",
+        "id": "hit-r3-018",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 132,
+        "time_ns": 3701899240966,
+        "event": "redis_release_requested",
+        "id": "hit-r3-018"
+      },
+      {
+        "seq": 133,
+        "time_ns": 3701903146289,
+        "event": "prepared",
+        "id": "hit-r3-019",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-019",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 134,
+        "time_ns": 3701920803250,
+        "event": "redis_command",
+        "id": "hit-r3-019",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-019"
+        ]
+      },
+      {
+        "seq": 135,
+        "time_ns": 3701920957062,
+        "event": "redis_get_seen",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 136,
+        "time_ns": 3702946490502,
+        "event": "redis_release_requested",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 137,
+        "time_ns": 3702946703836,
+        "event": "redis_reply_released",
+        "id": "hit-r3-019",
+        "mode": "hit"
+      },
+      {
+        "seq": 138,
+        "time_ns": 3702952250518,
+        "event": "client_complete",
+        "id": "hit-r3-019",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 139,
+        "time_ns": 3703060930433,
+        "event": "redis_release_requested",
+        "id": "hit-r3-019"
+      },
+      {
+        "seq": 140,
+        "time_ns": 3703065189073,
+        "event": "prepared",
+        "id": "hit-r3-020",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-020",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 141,
+        "time_ns": 3703082372243,
+        "event": "redis_command",
+        "id": "hit-r3-020",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-020"
+        ]
+      },
+      {
+        "seq": 142,
+        "time_ns": 3703082476312,
+        "event": "redis_get_seen",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 143,
+        "time_ns": 3704113413631,
+        "event": "redis_release_requested",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 144,
+        "time_ns": 3704113608559,
+        "event": "redis_reply_released",
+        "id": "hit-r3-020",
+        "mode": "hit"
+      },
+      {
+        "seq": 145,
+        "time_ns": 3704119558644,
+        "event": "client_complete",
+        "id": "hit-r3-020",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 146,
+        "time_ns": 3704228635581,
+        "event": "redis_release_requested",
+        "id": "hit-r3-020"
+      },
+      {
+        "seq": 147,
+        "time_ns": 3704232751840,
+        "event": "prepared",
+        "id": "hit-r3-021",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-021",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 148,
+        "time_ns": 3704250126232,
+        "event": "redis_command",
+        "id": "hit-r3-021",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-021"
+        ]
+      },
+      {
+        "seq": 149,
+        "time_ns": 3704250280169,
+        "event": "redis_get_seen",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 150,
+        "time_ns": 3705267680756,
+        "event": "redis_release_requested",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 151,
+        "time_ns": 3705267908195,
+        "event": "redis_reply_released",
+        "id": "hit-r3-021",
+        "mode": "hit"
+      },
+      {
+        "seq": 152,
+        "time_ns": 3705273760203,
+        "event": "client_complete",
+        "id": "hit-r3-021",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 153,
+        "time_ns": 3705382486256,
+        "event": "redis_release_requested",
+        "id": "hit-r3-021"
+      },
+      {
+        "seq": 154,
+        "time_ns": 3705386134491,
+        "event": "prepared",
+        "id": "hit-r3-022",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-022",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 155,
+        "time_ns": 3705402304163,
+        "event": "redis_command",
+        "id": "hit-r3-022",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-022"
+        ]
+      },
+      {
+        "seq": 156,
+        "time_ns": 3705402394764,
+        "event": "redis_get_seen",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 157,
+        "time_ns": 3706411074006,
+        "event": "redis_release_requested",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 158,
+        "time_ns": 3706411309321,
+        "event": "redis_reply_released",
+        "id": "hit-r3-022",
+        "mode": "hit"
+      },
+      {
+        "seq": 159,
+        "time_ns": 3706417481595,
+        "event": "client_complete",
+        "id": "hit-r3-022",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 160,
+        "time_ns": 3706525599254,
+        "event": "redis_release_requested",
+        "id": "hit-r3-022"
+      },
+      {
+        "seq": 161,
+        "time_ns": 3706529040632,
+        "event": "prepared",
+        "id": "hit-r3-023",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-023",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 162,
+        "time_ns": 3706545857914,
+        "event": "redis_command",
+        "id": "hit-r3-023",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-023"
+        ]
+      },
+      {
+        "seq": 163,
+        "time_ns": 3706545954628,
+        "event": "redis_get_seen",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 164,
+        "time_ns": 3707572593002,
+        "event": "redis_release_requested",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 165,
+        "time_ns": 3707572797472,
+        "event": "redis_reply_released",
+        "id": "hit-r3-023",
+        "mode": "hit"
+      },
+      {
+        "seq": 166,
+        "time_ns": 3707579036495,
+        "event": "client_complete",
+        "id": "hit-r3-023",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 167,
+        "time_ns": 3707688546511,
+        "event": "redis_release_requested",
+        "id": "hit-r3-023"
+      },
+      {
+        "seq": 168,
+        "time_ns": 3707692625342,
+        "event": "prepared",
+        "id": "hit-r3-024",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-024",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 169,
+        "time_ns": 3707709600835,
+        "event": "redis_command",
+        "id": "hit-r3-024",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-024"
+        ]
+      },
+      {
+        "seq": 170,
+        "time_ns": 3707710815484,
+        "event": "redis_get_seen",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 171,
+        "time_ns": 3708735080996,
+        "event": "redis_release_requested",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 172,
+        "time_ns": 3708735269379,
+        "event": "redis_reply_released",
+        "id": "hit-r3-024",
+        "mode": "hit"
+      },
+      {
+        "seq": 173,
+        "time_ns": 3708741249384,
+        "event": "client_complete",
+        "id": "hit-r3-024",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 174,
+        "time_ns": 3708851287001,
+        "event": "redis_release_requested",
+        "id": "hit-r3-024"
+      },
+      {
+        "seq": 175,
+        "time_ns": 3708855950712,
+        "event": "prepared",
+        "id": "hit-r3-025",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-025",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 176,
+        "time_ns": 3708874329184,
+        "event": "redis_command",
+        "id": "hit-r3-025",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-025"
+        ]
+      },
+      {
+        "seq": 177,
+        "time_ns": 3708874447773,
+        "event": "redis_get_seen",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 178,
+        "time_ns": 3709896711137,
+        "event": "redis_release_requested",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 179,
+        "time_ns": 3709896922425,
+        "event": "redis_reply_released",
+        "id": "hit-r3-025",
+        "mode": "hit"
+      },
+      {
+        "seq": 180,
+        "time_ns": 3709905551322,
+        "event": "client_complete",
+        "id": "hit-r3-025",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 181,
+        "time_ns": 3710014467869,
+        "event": "redis_release_requested",
+        "id": "hit-r3-025"
+      },
+      {
+        "seq": 182,
+        "time_ns": 3710018954108,
+        "event": "prepared",
+        "id": "hit-r3-026",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-026",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 183,
+        "time_ns": 3710037712683,
+        "event": "redis_command",
+        "id": "hit-r3-026",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-026"
+        ]
+      },
+      {
+        "seq": 184,
+        "time_ns": 3710037807503,
+        "event": "redis_get_seen",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 185,
+        "time_ns": 3711054597243,
+        "event": "redis_release_requested",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 186,
+        "time_ns": 3711054962566,
+        "event": "redis_reply_released",
+        "id": "hit-r3-026",
+        "mode": "hit"
+      },
+      {
+        "seq": 187,
+        "time_ns": 3711061515337,
+        "event": "client_complete",
+        "id": "hit-r3-026",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 188,
+        "time_ns": 3711171401986,
+        "event": "redis_release_requested",
+        "id": "hit-r3-026"
+      },
+      {
+        "seq": 189,
+        "time_ns": 3711175374190,
+        "event": "prepared",
+        "id": "hit-r3-027",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-027",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 190,
+        "time_ns": 3711193228626,
+        "event": "redis_command",
+        "id": "hit-r3-027",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-027"
+        ]
+      },
+      {
+        "seq": 191,
+        "time_ns": 3711193383711,
+        "event": "redis_get_seen",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 192,
+        "time_ns": 3712214480416,
+        "event": "redis_release_requested",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 193,
+        "time_ns": 3712214663208,
+        "event": "redis_reply_released",
+        "id": "hit-r3-027",
+        "mode": "hit"
+      },
+      {
+        "seq": 194,
+        "time_ns": 3712220806484,
+        "event": "client_complete",
+        "id": "hit-r3-027",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 195,
+        "time_ns": 3712331544060,
+        "event": "redis_release_requested",
+        "id": "hit-r3-027"
+      },
+      {
+        "seq": 196,
+        "time_ns": 3712335667373,
+        "event": "prepared",
+        "id": "hit-r3-028",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-028",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 197,
+        "time_ns": 3712353354458,
+        "event": "redis_command",
+        "id": "hit-r3-028",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-028"
+        ]
+      },
+      {
+        "seq": 198,
+        "time_ns": 3712353420791,
+        "event": "redis_get_seen",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 199,
+        "time_ns": 3713365545361,
+        "event": "redis_release_requested",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 200,
+        "time_ns": 3713365737938,
+        "event": "redis_reply_released",
+        "id": "hit-r3-028",
+        "mode": "hit"
+      },
+      {
+        "seq": 201,
+        "time_ns": 3713371814556,
+        "event": "client_complete",
+        "id": "hit-r3-028",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 202,
+        "time_ns": 3713481128248,
+        "event": "redis_release_requested",
+        "id": "hit-r3-028"
+      },
+      {
+        "seq": 203,
+        "time_ns": 3713485355095,
+        "event": "prepared",
+        "id": "hit-r3-029",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-029",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 204,
+        "time_ns": 3713503514057,
+        "event": "redis_command",
+        "id": "hit-r3-029",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-029"
+        ]
+      },
+      {
+        "seq": 205,
+        "time_ns": 3713503666403,
+        "event": "redis_get_seen",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 206,
+        "time_ns": 3714529867414,
+        "event": "redis_release_requested",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 207,
+        "time_ns": 3714530071998,
+        "event": "redis_reply_released",
+        "id": "hit-r3-029",
+        "mode": "hit"
+      },
+      {
+        "seq": 208,
+        "time_ns": 3714536135457,
+        "event": "client_complete",
+        "id": "hit-r3-029",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 209,
+        "time_ns": 3714646553140,
+        "event": "redis_release_requested",
+        "id": "hit-r3-029"
+      },
+      {
+        "seq": 210,
+        "time_ns": 3714650921143,
+        "event": "prepared",
+        "id": "hit-r3-030",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-030",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 211,
+        "time_ns": 3714668370505,
+        "event": "redis_command",
+        "id": "hit-r3-030",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-030"
+        ]
+      },
+      {
+        "seq": 212,
+        "time_ns": 3714668662724,
+        "event": "redis_get_seen",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 213,
+        "time_ns": 3715679636711,
+        "event": "redis_release_requested",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 214,
+        "time_ns": 3715679871392,
+        "event": "redis_reply_released",
+        "id": "hit-r3-030",
+        "mode": "hit"
+      },
+      {
+        "seq": 215,
+        "time_ns": 3715685920811,
+        "event": "client_complete",
+        "id": "hit-r3-030",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 216,
+        "time_ns": 3715796155470,
+        "event": "redis_release_requested",
+        "id": "hit-r3-030"
+      },
+      {
+        "seq": 217,
+        "time_ns": 3715800479690,
+        "event": "prepared",
+        "id": "hit-r3-031",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-031",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 218,
+        "time_ns": 3715817890741,
+        "event": "redis_command",
+        "id": "hit-r3-031",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-031"
+        ]
+      },
+      {
+        "seq": 219,
+        "time_ns": 3715819166211,
+        "event": "redis_get_seen",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 220,
+        "time_ns": 3716838687991,
+        "event": "redis_release_requested",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 221,
+        "time_ns": 3716838823918,
+        "event": "redis_reply_released",
+        "id": "hit-r3-031",
+        "mode": "hit"
+      },
+      {
+        "seq": 222,
+        "time_ns": 3716843759390,
+        "event": "client_complete",
+        "id": "hit-r3-031",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 223,
+        "time_ns": 3716953106334,
+        "event": "redis_release_requested",
+        "id": "hit-r3-031"
+      },
+      {
+        "seq": 224,
+        "time_ns": 3716957694393,
+        "event": "prepared",
+        "id": "hit-r3-032",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-032",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 225,
+        "time_ns": 3716976266862,
+        "event": "redis_command",
+        "id": "hit-r3-032",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-032"
+        ]
+      },
+      {
+        "seq": 226,
+        "time_ns": 3716976443498,
+        "event": "redis_get_seen",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 227,
+        "time_ns": 3718000637248,
+        "event": "redis_release_requested",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 228,
+        "time_ns": 3718000794413,
+        "event": "redis_reply_released",
+        "id": "hit-r3-032",
+        "mode": "hit"
+      },
+      {
+        "seq": 229,
+        "time_ns": 3718006292237,
+        "event": "client_complete",
+        "id": "hit-r3-032",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 230,
+        "time_ns": 3718116542413,
+        "event": "redis_release_requested",
+        "id": "hit-r3-032"
+      },
+      {
+        "seq": 231,
+        "time_ns": 3718120469858,
+        "event": "prepared",
+        "id": "hit-r3-033",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-033",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 232,
+        "time_ns": 3718138187565,
+        "event": "redis_command",
+        "id": "hit-r3-033",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-033"
+        ]
+      },
+      {
+        "seq": 233,
+        "time_ns": 3718138347419,
+        "event": "redis_get_seen",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 234,
+        "time_ns": 3719162879703,
+        "event": "redis_release_requested",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 235,
+        "time_ns": 3719163114272,
+        "event": "redis_reply_released",
+        "id": "hit-r3-033",
+        "mode": "hit"
+      },
+      {
+        "seq": 236,
+        "time_ns": 3719168903024,
+        "event": "client_complete",
+        "id": "hit-r3-033",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 237,
+        "time_ns": 3719278281611,
+        "event": "redis_release_requested",
+        "id": "hit-r3-033"
+      },
+      {
+        "seq": 238,
+        "time_ns": 3719281993807,
+        "event": "prepared",
+        "id": "hit-r3-034",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-034",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 239,
+        "time_ns": 3719295490650,
+        "event": "redis_command",
+        "id": "hit-r3-034",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-034"
+        ]
+      },
+      {
+        "seq": 240,
+        "time_ns": 3719295531125,
+        "event": "redis_get_seen",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 241,
+        "time_ns": 3720316528493,
+        "event": "redis_release_requested",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 242,
+        "time_ns": 3720316764510,
+        "event": "redis_reply_released",
+        "id": "hit-r3-034",
+        "mode": "hit"
+      },
+      {
+        "seq": 243,
+        "time_ns": 3720322506431,
+        "event": "client_complete",
+        "id": "hit-r3-034",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 244,
+        "time_ns": 3720433440394,
+        "event": "redis_release_requested",
+        "id": "hit-r3-034"
+      },
+      {
+        "seq": 245,
+        "time_ns": 3720438464243,
+        "event": "prepared",
+        "id": "hit-r3-035",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-035",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 246,
+        "time_ns": 3720458102263,
+        "event": "redis_command",
+        "id": "hit-r3-035",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-035"
+        ]
+      },
+      {
+        "seq": 247,
+        "time_ns": 3720458188349,
+        "event": "redis_get_seen",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 248,
+        "time_ns": 3721488225579,
+        "event": "redis_release_requested",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 249,
+        "time_ns": 3721488467717,
+        "event": "redis_reply_released",
+        "id": "hit-r3-035",
+        "mode": "hit"
+      },
+      {
+        "seq": 250,
+        "time_ns": 3721494671079,
+        "event": "client_complete",
+        "id": "hit-r3-035",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 251,
+        "time_ns": 3721604799066,
+        "event": "redis_release_requested",
+        "id": "hit-r3-035"
+      },
+      {
+        "seq": 252,
+        "time_ns": 3721609228176,
+        "event": "prepared",
+        "id": "hit-r3-036",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-036",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 253,
+        "time_ns": 3721627954764,
+        "event": "redis_command",
+        "id": "hit-r3-036",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-036"
+        ]
+      },
+      {
+        "seq": 254,
+        "time_ns": 3721628064190,
+        "event": "redis_get_seen",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 255,
+        "time_ns": 3722649690054,
+        "event": "redis_release_requested",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 256,
+        "time_ns": 3722649859457,
+        "event": "redis_reply_released",
+        "id": "hit-r3-036",
+        "mode": "hit"
+      },
+      {
+        "seq": 257,
+        "time_ns": 3722655713558,
+        "event": "client_complete",
+        "id": "hit-r3-036",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 258,
+        "time_ns": 3722768134357,
+        "event": "redis_release_requested",
+        "id": "hit-r3-036"
+      },
+      {
+        "seq": 259,
+        "time_ns": 3722772936420,
+        "event": "prepared",
+        "id": "hit-r3-037",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-037",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 260,
+        "time_ns": 3722793029982,
+        "event": "redis_command",
+        "id": "hit-r3-037",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-037"
+        ]
+      },
+      {
+        "seq": 261,
+        "time_ns": 3722793138431,
+        "event": "redis_get_seen",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 262,
+        "time_ns": 3723819986949,
+        "event": "redis_release_requested",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 263,
+        "time_ns": 3723820211372,
+        "event": "redis_reply_released",
+        "id": "hit-r3-037",
+        "mode": "hit"
+      },
+      {
+        "seq": 264,
+        "time_ns": 3723827997986,
+        "event": "client_complete",
+        "id": "hit-r3-037",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 265,
+        "time_ns": 3723938533683,
+        "event": "redis_release_requested",
+        "id": "hit-r3-037"
+      },
+      {
+        "seq": 266,
+        "time_ns": 3723943446545,
+        "event": "prepared",
+        "id": "hit-r3-038",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-038",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 267,
+        "time_ns": 3723960649255,
+        "event": "redis_command",
+        "id": "hit-r3-038",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-038"
+        ]
+      },
+      {
+        "seq": 268,
+        "time_ns": 3723960737452,
+        "event": "redis_get_seen",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 269,
+        "time_ns": 3724978558843,
+        "event": "redis_release_requested",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 270,
+        "time_ns": 3724978790717,
+        "event": "redis_reply_released",
+        "id": "hit-r3-038",
+        "mode": "hit"
+      },
+      {
+        "seq": 271,
+        "time_ns": 3724984589828,
+        "event": "client_complete",
+        "id": "hit-r3-038",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 272,
+        "time_ns": 3725094642402,
+        "event": "redis_release_requested",
+        "id": "hit-r3-038"
+      },
+      {
+        "seq": 273,
+        "time_ns": 3725100733714,
+        "event": "prepared",
+        "id": "hit-r3-039",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-039",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 274,
+        "time_ns": 3725118658665,
+        "event": "redis_command",
+        "id": "hit-r3-039",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-039"
+        ]
+      },
+      {
+        "seq": 275,
+        "time_ns": 3725119109115,
+        "event": "redis_get_seen",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 276,
+        "time_ns": 3726126683517,
+        "event": "redis_release_requested",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 277,
+        "time_ns": 3726126866750,
+        "event": "redis_reply_released",
+        "id": "hit-r3-039",
+        "mode": "hit"
+      },
+      {
+        "seq": 278,
+        "time_ns": 3726133178104,
+        "event": "client_complete",
+        "id": "hit-r3-039",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 279,
+        "time_ns": 3726244520962,
+        "event": "redis_release_requested",
+        "id": "hit-r3-039"
+      },
+      {
+        "seq": 280,
+        "time_ns": 3726249725198,
+        "event": "prepared",
+        "id": "hit-r3-040",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-040",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 281,
+        "time_ns": 3726267840518,
+        "event": "redis_command",
+        "id": "hit-r3-040",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-040"
+        ]
+      },
+      {
+        "seq": 282,
+        "time_ns": 3726268033405,
+        "event": "redis_get_seen",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 283,
+        "time_ns": 3727280278527,
+        "event": "redis_release_requested",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 284,
+        "time_ns": 3727280487256,
+        "event": "redis_reply_released",
+        "id": "hit-r3-040",
+        "mode": "hit"
+      },
+      {
+        "seq": 285,
+        "time_ns": 3727285680867,
+        "event": "client_complete",
+        "id": "hit-r3-040",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 286,
+        "time_ns": 3727396429618,
+        "event": "redis_release_requested",
+        "id": "hit-r3-040"
+      },
+      {
+        "seq": 287,
+        "time_ns": 3727401244869,
+        "event": "prepared",
+        "id": "hit-r3-041",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-041",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 288,
+        "time_ns": 3727418974329,
+        "event": "redis_command",
+        "id": "hit-r3-041",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-041"
+        ]
+      },
+      {
+        "seq": 289,
+        "time_ns": 3727419051667,
+        "event": "redis_get_seen",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 290,
+        "time_ns": 3728435760125,
+        "event": "redis_release_requested",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 291,
+        "time_ns": 3728435982711,
+        "event": "redis_reply_released",
+        "id": "hit-r3-041",
+        "mode": "hit"
+      },
+      {
+        "seq": 292,
+        "time_ns": 3728442011769,
+        "event": "client_complete",
+        "id": "hit-r3-041",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 293,
+        "time_ns": 3728552345913,
+        "event": "redis_release_requested",
+        "id": "hit-r3-041"
+      },
+      {
+        "seq": 294,
+        "time_ns": 3728556333069,
+        "event": "prepared",
+        "id": "hit-r3-042",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-042",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 295,
+        "time_ns": 3728573113845,
+        "event": "redis_command",
+        "id": "hit-r3-042",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-042"
+        ]
+      },
+      {
+        "seq": 296,
+        "time_ns": 3728573189458,
+        "event": "redis_get_seen",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 297,
+        "time_ns": 3729600321279,
+        "event": "redis_release_requested",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 298,
+        "time_ns": 3729600516659,
+        "event": "redis_reply_released",
+        "id": "hit-r3-042",
+        "mode": "hit"
+      },
+      {
+        "seq": 299,
+        "time_ns": 3729605505905,
+        "event": "client_complete",
+        "id": "hit-r3-042",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 300,
+        "time_ns": 3729717688439,
+        "event": "redis_release_requested",
+        "id": "hit-r3-042"
+      },
+      {
+        "seq": 301,
+        "time_ns": 3729722555988,
+        "event": "prepared",
+        "id": "hit-r3-043",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-043",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 302,
+        "time_ns": 3729742361462,
+        "event": "redis_command",
+        "id": "hit-r3-043",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-043"
+        ]
+      },
+      {
+        "seq": 303,
+        "time_ns": 3729742447478,
+        "event": "redis_get_seen",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 304,
+        "time_ns": 3730775449365,
+        "event": "redis_release_requested",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 305,
+        "time_ns": 3730775581934,
+        "event": "redis_reply_released",
+        "id": "hit-r3-043",
+        "mode": "hit"
+      },
+      {
+        "seq": 306,
+        "time_ns": 3730781086950,
+        "event": "client_complete",
+        "id": "hit-r3-043",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 307,
+        "time_ns": 3730891187075,
+        "event": "redis_release_requested",
+        "id": "hit-r3-043"
+      },
+      {
+        "seq": 308,
+        "time_ns": 3730896121205,
+        "event": "prepared",
+        "id": "hit-r3-044",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-044",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 309,
+        "time_ns": 3730914273942,
+        "event": "redis_command",
+        "id": "hit-r3-044",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-044"
+        ]
+      },
+      {
+        "seq": 310,
+        "time_ns": 3730914684494,
+        "event": "redis_get_seen",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 311,
+        "time_ns": 3731923873019,
+        "event": "redis_release_requested",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 312,
+        "time_ns": 3731924074536,
+        "event": "redis_reply_released",
+        "id": "hit-r3-044",
+        "mode": "hit"
+      },
+      {
+        "seq": 313,
+        "time_ns": 3731929680529,
+        "event": "client_complete",
+        "id": "hit-r3-044",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 314,
+        "time_ns": 3732040866186,
+        "event": "redis_release_requested",
+        "id": "hit-r3-044"
+      },
+      {
+        "seq": 315,
+        "time_ns": 3732046003844,
+        "event": "prepared",
+        "id": "hit-r3-045",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-045",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 316,
+        "time_ns": 3732063283586,
+        "event": "redis_command",
+        "id": "hit-r3-045",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-045"
+        ]
+      },
+      {
+        "seq": 317,
+        "time_ns": 3732063385179,
+        "event": "redis_get_seen",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 318,
+        "time_ns": 3733082485337,
+        "event": "redis_release_requested",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 319,
+        "time_ns": 3733082703925,
+        "event": "redis_reply_released",
+        "id": "hit-r3-045",
+        "mode": "hit"
+      },
+      {
+        "seq": 320,
+        "time_ns": 3733088382114,
+        "event": "client_complete",
+        "id": "hit-r3-045",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 321,
+        "time_ns": 3733198867419,
+        "event": "redis_release_requested",
+        "id": "hit-r3-045"
+      },
+      {
+        "seq": 322,
+        "time_ns": 3733203604045,
+        "event": "prepared",
+        "id": "hit-r3-046",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-046",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 323,
+        "time_ns": 3733220804603,
+        "event": "redis_command",
+        "id": "hit-r3-046",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-046"
+        ]
+      },
+      {
+        "seq": 324,
+        "time_ns": 3733220916708,
+        "event": "redis_get_seen",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 325,
+        "time_ns": 3734239836155,
+        "event": "redis_release_requested",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 326,
+        "time_ns": 3734240111965,
+        "event": "redis_reply_released",
+        "id": "hit-r3-046",
+        "mode": "hit"
+      },
+      {
+        "seq": 327,
+        "time_ns": 3734246437368,
+        "event": "client_complete",
+        "id": "hit-r3-046",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 328,
+        "time_ns": 3734357303218,
+        "event": "redis_release_requested",
+        "id": "hit-r3-046"
+      },
+      {
+        "seq": 329,
+        "time_ns": 3734362153861,
+        "event": "prepared",
+        "id": "hit-r3-047",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-047",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 330,
+        "time_ns": 3734380221582,
+        "event": "redis_command",
+        "id": "hit-r3-047",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-047"
+        ]
+      },
+      {
+        "seq": 331,
+        "time_ns": 3734380335900,
+        "event": "redis_get_seen",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 332,
+        "time_ns": 3735394421002,
+        "event": "redis_release_requested",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 333,
+        "time_ns": 3735394608799,
+        "event": "redis_reply_released",
+        "id": "hit-r3-047",
+        "mode": "hit"
+      },
+      {
+        "seq": 334,
+        "time_ns": 3735400995443,
+        "event": "client_complete",
+        "id": "hit-r3-047",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 335,
+        "time_ns": 3735512646930,
+        "event": "redis_release_requested",
+        "id": "hit-r3-047"
+      },
+      {
+        "seq": 336,
+        "time_ns": 3735517661022,
+        "event": "prepared",
+        "id": "hit-r3-048",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-048",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 337,
+        "time_ns": 3735535297365,
+        "event": "redis_command",
+        "id": "hit-r3-048",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-048"
+        ]
+      },
+      {
+        "seq": 338,
+        "time_ns": 3735535397899,
+        "event": "redis_get_seen",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 339,
+        "time_ns": 3736551171491,
+        "event": "redis_release_requested",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 340,
+        "time_ns": 3736551417789,
+        "event": "redis_reply_released",
+        "id": "hit-r3-048",
+        "mode": "hit"
+      },
+      {
+        "seq": 341,
+        "time_ns": 3736557517317,
+        "event": "client_complete",
+        "id": "hit-r3-048",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 342,
+        "time_ns": 3736669101181,
+        "event": "redis_release_requested",
+        "id": "hit-r3-048"
+      },
+      {
+        "seq": 343,
+        "time_ns": 3736673926663,
+        "event": "prepared",
+        "id": "hit-r3-049",
+        "mode": "hit",
+        "key": "higress-audit:hit-r3-049",
+        "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+      },
+      {
+        "seq": 344,
+        "time_ns": 3736690555979,
+        "event": "redis_command",
+        "id": "hit-r3-049",
+        "command": "GET",
+        "args": [
+          "higress-audit:hit-r3-049"
+        ]
+      },
+      {
+        "seq": 345,
+        "time_ns": 3736690649032,
+        "event": "redis_get_seen",
+        "id": "hit-r3-049"
+      },
+      {
+        "seq": 346,
+        "time_ns": 3737708777863,
+        "event": "redis_release_requested",
+        "id": "hit-r3-049"
+      },
+      {
+        "seq": 347,
+        "time_ns": 3737709020272,
+        "event": "redis_reply_released",
+        "id": "hit-r3-049",
+        "mode": "hit"
+      },
+      {
+        "seq": 348,
+        "time_ns": 3737714106594,
+        "event": "client_complete",
+        "id": "hit-r3-049",
+        "status": "200",
+        "curl_exit": 0,
+        "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+      },
+      {
+        "seq": 349,
+        "time_ns": 3737824233262,
+        "event": "redis_release_requested",
+        "id": "hit-r3-049"
+      }
+    ],
+    "cases": {
+      "hit-r3-000": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-001": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-002": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-003": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-004": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-005": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-006": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-007": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-008": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-009": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-010": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-011": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-012": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-013": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-014": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-015": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-016": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-017": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-018": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-019": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-020": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-021": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-022": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-023": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-024": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-025": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-026": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-027": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-028": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-029": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-030": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-031": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-032": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-033": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-034": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-035": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-036": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-037": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-038": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-039": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-040": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-041": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-042": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-043": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-044": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-045": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-046": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-047": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-048": {
+        "mode": "hit",
+        "upstream": 0
+      },
+      "hit-r3-049": {
+        "mode": "hit",
+        "upstream": 0
+      }
+    }
+  }
+}

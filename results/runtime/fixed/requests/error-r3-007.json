@@ -1,0 +1,115 @@
+{
+  "id": "error-r3-007",
+  "variant": "fixed",
+  "mode": "error",
+  "round": 3,
+  "key": "higress-audit:error-r3-007",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 63,
+      "time_ns": 4143851303338,
+      "event": "prepared",
+      "id": "error-r3-007",
+      "mode": "error",
+      "key": "higress-audit:error-r3-007",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 64,
+      "time_ns": 4143866929045,
+      "event": "redis_command",
+      "id": "error-r3-007",
+      "command": "GET",
+      "args": [
+        "higress-audit:error-r3-007"
+      ]
+    },
+    {
+      "seq": 65,
+      "time_ns": 4143867005293,
+      "event": "redis_get_seen",
+      "id": "error-r3-007"
+    },
+    {
+      "seq": 66,
+      "time_ns": 4143926659333,
+      "event": "redis_release_requested",
+      "id": "error-r3-007"
+    },
+    {
+      "seq": 67,
+      "time_ns": 4143926869106,
+      "event": "redis_reply_released",
+      "id": "error-r3-007",
+      "mode": "error"
+    },
+    {
+      "seq": 68,
+      "time_ns": 4143927983411,
+      "event": "upstream_seen",
+      "id": "error-r3-007",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "error-r3-007",
+        "x-verification-id": "error-r3-007",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "d8c755f4-fac3-4f66-a731-a0b8b73d827b",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790159049085"
+      }
+    },
+    {
+      "seq": 69,
+      "time_ns": 4143932451578,
+      "event": "client_complete",
+      "id": "error-r3-007",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+    },
+    {
+      "seq": 70,
+      "time_ns": 4143933133449,
+      "event": "redis_command",
+      "id": "error-r3-007",
+      "command": "SET",
+      "args": [
+        "higress-audit:error-r3-007",
+        "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+      ]
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/error-r3-007.headers",
+    "--output",
+    "RESULT_DIR/error-r3-007.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: error-r3-007",
+    "--header",
+    "x-verification-id: error-r3-007",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

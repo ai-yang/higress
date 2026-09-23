@@ -1,0 +1,110 @@
+{
+  "id": "hit-r1-035",
+  "variant": "baseline",
+  "mode": "hit",
+  "round": 1,
+  "key": "higress-audit:hit-r1-035",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f",
+  "body": "{\"source\":\"cache\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": true,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 315,
+      "time_ns": 3513408038946,
+      "event": "prepared",
+      "id": "hit-r1-035",
+      "mode": "hit",
+      "key": "higress-audit:hit-r1-035",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 316,
+      "time_ns": 3513421106350,
+      "event": "redis_command",
+      "id": "hit-r1-035",
+      "command": "GET",
+      "args": [
+        "higress-audit:hit-r1-035"
+      ]
+    },
+    {
+      "seq": 317,
+      "time_ns": 3513421261096,
+      "event": "redis_get_seen",
+      "id": "hit-r1-035"
+    },
+    {
+      "seq": 318,
+      "time_ns": 3513421598166,
+      "event": "upstream_seen",
+      "id": "hit-r1-035",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "hit-r1-035",
+        "x-verification-id": "hit-r1-035",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "1b95bcd5-cb9b-4bed-88a6-dccb030599c3",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790158418641"
+      }
+    },
+    {
+      "seq": 319,
+      "time_ns": 3513435138719,
+      "event": "redis_release_requested",
+      "id": "hit-r1-035"
+    },
+    {
+      "seq": 320,
+      "time_ns": 3513435275419,
+      "event": "redis_reply_released",
+      "id": "hit-r1-035",
+      "mode": "hit"
+    },
+    {
+      "seq": 321,
+      "time_ns": 3513439598265,
+      "event": "client_complete",
+      "id": "hit-r1-035",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "da87d065c0f96d585f02840dc10c88f7e8edac17ae77dbdae4b9e051a619338f"
+    },
+    {
+      "seq": 322,
+      "time_ns": 3513441916937,
+      "event": "upstream_peer_closed",
+      "id": "hit-r1-035"
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/hit-r1-035.headers",
+    "--output",
+    "RESULT_DIR/hit-r1-035.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: hit-r1-035",
+    "--header",
+    "x-verification-id: hit-r1-035",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

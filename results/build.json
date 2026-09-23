@@ -1,0 +1,17 @@
+{
+  "builder": "golang@sha256:ef5b4be1f94b36c90385abd9b6b4f201723ae28e71acacb76d00687333c17282",
+  "sources": {
+    "baseline": "a42482341eb199b2c1553a560c81137ebad14441",
+    "baseline_wasm_sha256": "effe5f6904396aa221a344dbaf82028abb8dcdcd98734a4d12cf6f62ee8d41bf",
+    "fixed": "44b0997f4d154686f35244e51aa5b0aa8f6fcd74",
+    "fixed_wasm_sha256": "6464d796b6cfe61cd476523a2f8b1fe802b47a253aa61c27663606c742c496a8"
+  },
+  "commands": [
+    "go version && GOOS=wasip1 GOARCH=wasm go build -buildmode=c-shared -o /evidence/baseline.wasm ./",
+    "go version && GOOS=wasip1 GOARCH=wasm go build -buildmode=c-shared -o /evidence/fixed.wasm ./",
+    "export WASM_FILE_PATH=/evidence/baseline.wasm; go test -run TestHeaderKeyLookupABI -count=1 -v ./...",
+    "export WASM_FILE_PATH=/evidence/fixed.wasm; go test ./... -count=1 -v",
+    "export WASM_FILE_PATH=/evidence/fixed.wasm; go test -race ./... -count=20 -timeout=3h -v",
+    "export WASM_FILE_PATH=/evidence/fixed.wasm; go vet ./..."
+  ]
+}

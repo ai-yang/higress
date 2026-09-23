@@ -1,0 +1,697 @@
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_warn_log: [response-cache] [nil] [nil] parse rule config failed: parse config failed, no valid rules; global config parse error:cacheKeyFromHeader and cacheKeyFromBody cannot be all set
+2026/09/23 10:08:08 proxy_error_log: [response-cache] [nil] [nil] plugin start failed
+2026/09/23 10:08:08 proxy_warn_log: [response-cache] [nil] [nil] parse rule config failed: parse config failed, no valid rules; global config parse error:cache provider cannot be empty
+2026/09/23 10:08:08 proxy_error_log: [response-cache] [nil] [nil] plugin start failed
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:08:08 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:08:08 proxy_debug_log: redis call start, request-id: b6cdc5d8-9e05-4b05-a5c0-6f10bdb86877, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: text/plain
+2026/09/23 10:08:08 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:08:08 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:08:08 [redis init] password: 
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:08:08 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:08:08 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: 
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:09:11 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:09:11 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: text/plain
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: 
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:09:11 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:09:11 proxy_debug_log: redis call start, request-id: d0c42168-d48c-4300-904e-54b91c27dece, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] parse key from request body failed
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:09:11 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:09:11 [redis init] password: 
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:09:11 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"data": "test"}
+2026/09/23 10:09:11 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"data": "test"}
+2026/09/23 10:09:11 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 100 97 116 97 34 58 32 34 116 101 115 116 34 125 13 10]
+2026/09/23 10:09:11 proxy_debug_log: redis call start, request-id: ba8b4152-9839-4e92-b271-1e33f75b8f75, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsiZGF0YSI6ICJ0ZXN0In0NCg==
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:10:14 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:10:14 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] parse key from request body failed
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"data": "test"}
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"data": "test"}
+2026/09/23 10:10:14 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 100 97 116 97 34 58 32 34 116 101 115 116 34 125 13 10]
+2026/09/23 10:10:14 proxy_debug_log: redis call start, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsiZGF0YSI6ICJ0ZXN0In0NCg==
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:10:14 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:10:14 proxy_debug_log: redis call start, request-id: 54e4b944-48e8-4e6d-bac9-71dc00d68a8e, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:10:14 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:10:14 proxy_debug_log: redis call start, request-id: eda06ba5-de8a-4b7e-844f-54dc430817ca, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [test-request-id-default] [onHttpResponseBody] status not allow to cached: 500
+2026/09/23 10:10:14 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:10:14 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:10:14 [redis init] password: 
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:10:14 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [test-request-id-default] [onHttpResponseBody] status not allow to cached: 500
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: 860f86af-61fe-4cb5-bb7c-b17807cfc645, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 50 13 10 99 97 99 104 101 100 32 118 97 108 117 101 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: c354b49c-df31-49b8-a2d5-f867b5f90e99, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMg0KY2FjaGVkIHZhbHVlDQo=
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 12
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"test": "data"}
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"test": "data"}
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 116 101 115 116 34 58 32 34 100 97 116 97 34 125 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: 0fe9a01f-85f7-4e66-866a-b3150aa23143, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsidGVzdCI6ICJkYXRhIn0NCg==
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:11:16 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 116 101 115 116 34 58 32 34 100 97 116 97 34 125 13 10 36 50 53 13 10 123 34 100 97 116 97 34 58 32 34 102 117 108 108 32 114 101 115 112 111 110 115 101 34 125 13 10]
+2026/09/23 10:11:16 proxy_debug_log: redis call start, request-id: 400efc5f-a672-44d2-962e-6b8bbd5f2c23, respQuery: KjMNCiQzDQpzZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsidGVzdCI6ICJkYXRhIn0NCiQyNQ0KeyJkYXRhIjogImZ1bGwgcmVzcG9uc2UifQ0K
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:{"test": "data"}, length of value: 25
+2026/09/23 10:11:16 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:11:16 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:11:16 [redis init] password: 
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:11:16 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:11:16 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 50 13 10 99 97 99 104 101 100 32 118 97 108 117 101 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMg0KY2FjaGVkIHZhbHVlDQo=
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 12
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"test": "data"}
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"test": "data"}
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 116 101 115 116 34 58 32 34 100 97 116 97 34 125 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: 9e6f82e5-4e74-4e81-a79e-4bbd6fe34cdc, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsidGVzdCI6ICJkYXRhIn0NCg==
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 116 101 115 116 34 58 32 34 100 97 116 97 34 125 13 10 36 50 53 13 10 123 34 100 97 116 97 34 58 32 34 102 117 108 108 32 114 101 115 112 111 110 115 101 34 125 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: ba843ee8-d63e-4c4f-be1c-ebea546d8fac, respQuery: KjMNCiQzDQpzZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsidGVzdCI6ICJkYXRhIn0NCiQyNQ0KeyJkYXRhIjogImZ1bGwgcmVzcG9uc2UifQ0K
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:{"test": "data"}, length of value: 25
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: a0570daa-c9c5-4217-a7ad-80259d4966bd, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: a0570daa-c9c5-4217-a7ad-80259d4966bd, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDEyDQpjYWNoZWQgdmFsdWUNCg==
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: cached value
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: cb35c06c-164d-4610-9832-6f28235544b8, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: cb35c06c-164d-4610-9832-6f28235544b8, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 56 13 10 110 101 119 32 100 97 116 97 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: d294e307-71ae-4735-8edf-6ea311379a14, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQ4DQpuZXcgZGF0YQ0K
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 8
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: d294e307-71ae-4735-8edf-6ea311379a14, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQ4DQpuZXcgZGF0YQ0K, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: 5e9f9ba1-faa1-4f47-9386-c5fff324df52, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: 5e9f9ba1-faa1-4f47-9386-c5fff324df52, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 52 13 10 102 105 114 115 116 32 114 101 115 112 111 110 115 101 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: 4070266f-7a65-44ab-be9f-845f871a3b5e, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxNA0KZmlyc3QgcmVzcG9uc2UNCg==
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 14
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: 4070266f-7a65-44ab-be9f-845f871a3b5e, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxNA0KZmlyc3QgcmVzcG9uc2UNCg==, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: cd0d3390-c22b-46e9-a95b-5ae0e35f8118, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: cd0d3390-c22b-46e9-a95b-5ae0e35f8118, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDE0DQpmaXJzdCByZXNwb25zZQ0K
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: first response
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:12:18 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:12:18 [redis init] password: 
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: f7304916-cc78-48a8-8bfb-ae0e5d725294, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: f7304916-cc78-48a8-8bfb-ae0e5d725294, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 49 13 10 104 101 108 108 111 32 119 111 114 108 100 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: ef90ca19-9da9-46ab-b148-23c8f3f5ffd7, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMQ0KaGVsbG8gd29ybGQNCg==
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 11
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: ef90ca19-9da9-46ab-b148-23c8f3f5ffd7, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMQ0KaGVsbG8gd29ybGQNCg==, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:12:18 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:12:18 proxy_debug_log: redis call start, request-id: ef42556e-d943-4323-96ad-4d5a1574f0e3, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:12:18 proxy_debug_log: redis call end, request-id: ef42556e-d943-4323-96ad-4d5a1574f0e3, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDExDQpoZWxsbyB3b3JsZA0K
+2026/09/23 10:12:18 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:12:18 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: hello world
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:13:21 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:13:21 [redis init] password: 
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDEyDQpjYWNoZWQgdmFsdWUNCg==
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: cached value
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:13:21 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:13:21 [redis init] password: 
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 56 13 10 110 101 119 32 100 97 116 97 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 9e6f82e5-4e74-4e81-a79e-4bbd6fe34cdc, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQ4DQpuZXcgZGF0YQ0K
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 8
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 9e6f82e5-4e74-4e81-a79e-4bbd6fe34cdc, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQ4DQpuZXcgZGF0YQ0K, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:13:21 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:13:21 [redis init] password: 
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: ba843ee8-d63e-4c4f-be1c-ebea546d8fac, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: ba843ee8-d63e-4c4f-be1c-ebea546d8fac, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 52 13 10 102 105 114 115 116 32 114 101 115 112 111 110 115 101 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 13dd1aac-04ce-4ea2-877c-5579cfa2c78e, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxNA0KZmlyc3QgcmVzcG9uc2UNCg==
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 14
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 13dd1aac-04ce-4ea2-877c-5579cfa2c78e, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxNA0KZmlyc3QgcmVzcG9uc2UNCg==, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 1b0bafae-881b-42a7-9110-8a42ed3c903c, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 1b0bafae-881b-42a7-9110-8a42ed3c903c, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDE0DQpmaXJzdCByZXNwb25zZQ0K
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: first response
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:13:21 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:13:21 [redis init] password: 
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: aa43465a-7862-4616-978a-ed0ce3c6c4f3, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: aa43465a-7862-4616-978a-ed0ce3c6c4f3, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JC0xDQo=
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] [handleCacheResponse] cache miss for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 51 13 10 36 51 13 10 115 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10 36 49 49 13 10 104 101 108 108 111 32 119 111 114 108 100 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: ae7bc3e0-495b-4712-befd-be0c102887e1, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMQ0KaGVsbG8gd29ybGQNCg==
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [cacheResponse] cache set success, key: higress-resp-cache:user123, length of value: 11
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: ae7bc3e0-495b-4712-befd-be0c102887e1, respQuery: KjMNCiQzDQpzZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCiQxMQ0KaGVsbG8gd29ybGQNCg==, respValue: KjENCiQyDQpPSw0K
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:13:21 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:13:21 proxy_debug_log: redis call start, request-id: 00dacd2d-885f-492c-b607-da00a11c1c70, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:13:21 proxy_debug_log: redis call end, request-id: 00dacd2d-885f-492c-b607-da00a11c1c70, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==, respValue: JDExDQpoZWxsbyB3b3JsZA0K
+2026/09/23 10:13:21 proxy_info_log: [response-cache] [nil] [test-request-id-default] [response-cache] cache hit for key: user123
+2026/09/23 10:13:21 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [processCacheHit] cached response for key user123: hello world
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_warn_log: [response-cache] [nil] [nil] parse rule config failed: parse config failed, no valid rules; global config parse error:cacheKeyFromHeader and cacheKeyFromBody cannot be all set
+2026/09/23 10:14:25 proxy_error_log: [response-cache] [nil] [nil] plugin start failed
+2026/09/23 10:14:25 proxy_warn_log: [response-cache] [nil] [nil] parse rule config failed: parse config failed, no valid rules; global config parse error:cache provider cannot be empty
+2026/09/23 10:14:25 proxy_error_log: [response-cache] [nil] [nil] plugin start failed
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:14:25 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:14:25 proxy_debug_log: redis call start, request-id: 2e9770a4-ed2e-41bc-b46b-0bb4e3c521e5, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: text/plain
+2026/09/23 10:14:25 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:14:25 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:14:25 [redis init] password: 
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:14:25 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:14:25 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: 
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:15:26 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:15:26 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from header: x-user-id is empty, skip cache
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: text/plain
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_warn_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] content is not application/json, can't process: 
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:15:26 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:15:26 proxy_debug_log: redis call start, request-id: 38b9976c-ecb1-4c06-a0d7-e680769d63e9, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] parse key from request body failed
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:15:26 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:15:26 [redis init] password: 
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:15:26 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"data": "test"}
+2026/09/23 10:15:26 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"data": "test"}
+2026/09/23 10:15:26 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 100 97 116 97 34 58 32 34 116 101 115 116 34 125 13 10]
+2026/09/23 10:15:26 proxy_debug_log: redis call start, request-id: 3766e8d5-8b71-4e63-b6a5-8687f13383a1, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsiZGF0YSI6ICJ0ZXN0In0NCg==
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: user123
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:16:30 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:16:30 proxy_debug_log: redis call start, request-id: 0cc0d614-4c88-4535-841a-cbe0709b0758, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestBody: user_id
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] parse key from request body failed
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetRequestBodyBufferLimit: 10485760
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] cache key from requestWholeBody.
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestBody] key: {"data": "test"}
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:{"data": "test"}
+2026/09/23 10:16:30 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 51 53 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 123 34 100 97 116 97 34 58 32 34 116 101 115 116 34 125 13 10]
+2026/09/23 10:16:30 proxy_debug_log: redis call start, request-id: 083f61d3-75bc-42b4-9df4-f91929e18fda, respQuery: KjINCiQzDQpnZXQNCiQzNQ0KaGlncmVzcy1yZXNwLWNhY2hlOnsiZGF0YSI6ICJ0ZXN0In0NCg==
+[WASM_PATH] Using environment variable WASM_FILE_PATH: /evidence/fixed.wasm
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:16:30 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:16:30 proxy_debug_log: redis call start, request-id: e5623c67-8245-48d7-8ec8-131c28c3622f, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] SetResponseBodyBufferLimit: 10485760
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [onHttpRequestHeaders] cache key from request header: x-user-id, key: user123
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [test-request-id-default] [response-cache] [CheckCacheForKey] querying cache with key: higress-resp-cache:user123
+2026/09/23 10:16:30 [redis callout to outbound|6379||redis.static] query: [42 50 13 10 36 51 13 10 103 101 116 13 10 36 50 54 13 10 104 105 103 114 101 115 115 45 114 101 115 112 45 99 97 99 104 101 58 117 115 101 114 49 50 51 13 10]
+2026/09/23 10:16:30 proxy_debug_log: redis call start, request-id: efdf2690-f9c3-4931-b463-021e43c14a09, respQuery: KjINCiQzDQpnZXQNCiQyNg0KaGlncmVzcy1yZXNwLWNhY2hlOnVzZXIxMjMNCg==
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [test-request-id-default] [onHttpResponseBody] status not allow to cached: 500
+2026/09/23 10:16:30 proxy_debug_log: [response-cache] [nil] [nil] cache provider is set to redis
+2026/09/23 10:16:30 [redis init] upstream: outbound|6379||redis.static, username: , timeout: 10000
+2026/09/23 10:16:30 [redis init] password: 
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] redis init successfully
+2026/09/23 10:16:30 proxy_info_log: [response-cache] [nil] [nil] plugin start successfully
+panic: test timed out after 10m0s
+	running tests:
+		TestOnHttpResponseHeaders (34s)
+		TestOnHttpResponseHeaders/wasm (34s)
+
+goroutine 157 [running]:
+testing.(*M).startAlarm.func1()
+	/usr/local/go/src/testing/testing.go:2484 +0x605
+created by time.goFunc
+	/usr/local/go/src/time/sleep.go:215 +0x45
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc002416c40, {0xa89dca, 0x19}, 0xaa1378)
+	/usr/local/go/src/testing/testing.go:1859 +0x91e
+testing.runTests.func1(0xc002416c40)
+	/usr/local/go/src/testing/testing.go:2279 +0x86
+testing.tRunner(0xc002416c40, 0xc00027dae0)
+	/usr/local/go/src/testing/testing.go:1792 +0x226
+testing.runTests(0xc000266180, {0xe20d60, 0x8, 0x8}, {0x5?, 0x0?, 0xe2d800?})
+	/usr/local/go/src/testing/testing.go:2277 +0x96d
+testing.(*M).Run(0xc000220e60)
+	/usr/local/go/src/testing/testing.go:2142 +0xeeb
+main.main()
+	_testmain.go:59 +0x165
+
+goroutine 229 [chan receive]:
+testing.(*T).Run(0xc003b82fc0, {0xa7ec63, 0x4}, 0xc0029ba520)
+	/usr/local/go/src/testing/testing.go:1859 +0x91e
+github.com/higress-group/wasm-go/pkg/test.RunTestWithPath(0xc003b82fc0, {0xc00001a00f, 0x14}, 0xaa1560)
+	/cache/mod/github.com/higress-group/wasm-go@v1.0.3-0.20251011083635-792cb1547bac/pkg/test/test.go:165 +0x174
+github.com/higress-group/wasm-go/pkg/test.RunTest(0xc003b82fc0, 0xaa1560)
+	/cache/mod/github.com/higress-group/wasm-go@v1.0.3-0.20251011083635-792cb1547bac/pkg/test/test.go:184 +0x3f
+github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache.TestOnHttpResponseHeaders(0xc003b82fc0)
+	/src/main_test.go:364 +0x2e
+testing.tRunner(0xc003b82fc0, 0xaa1378)
+	/usr/local/go/src/testing/testing.go:1792 +0x226
+created by testing.(*T).Run in goroutine 1
+	/usr/local/go/src/testing/testing.go:1851 +0x8f3
+
+goroutine 234 [runnable]:
+github.com/tetratelabs/wazero/internal/engine/wazevo/ssa.(*builder).resolveAlias(...)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/ssa/builder.go:683
+github.com/tetratelabs/wazero/internal/engine/wazevo/ssa.(*builder).resolveArgumentAlias(0xc0023cdb88, 0xc0041f7700)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/ssa/builder.go:662 +0xb6
+github.com/tetratelabs/wazero/internal/engine/wazevo/ssa.passDeadCodeEliminationOpt(0xc0023cdb88)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/ssa/pass.go:277 +0x7f3
+github.com/tetratelabs/wazero/internal/engine/wazevo/ssa.(*builder).runPreBlockLayoutPasses(0xc0023cdb88)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/ssa/pass.go:43 +0x59
+github.com/tetratelabs/wazero/internal/engine/wazevo/ssa.(*builder).RunPasses(0xc0023cdb88)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/ssa/pass.go:16 +0x2f
+github.com/tetratelabs/wazero/internal/engine/wazevo.(*engine).compileLocalWasmFunction(0x1?, {0xb35200, 0xe4e000}, 0xc003b83dc0, 0x7ca, 0xc0027b1208, {0xb3c408, 0xc0023cdb88}, {0xb3af28, 0xc004050000}, ...)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/engine.go:359 +0x2a9
+github.com/tetratelabs/wazero/internal/engine/wazevo.(*engine).compileModule(0xc0026ccd80, {0xb35200, 0xe4e000}, 0xc003b83dc0, {0x0, 0x0, 0x0}, 0x0)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/engine.go:247 +0x8af
+github.com/tetratelabs/wazero/internal/engine/wazevo.(*engine).CompileModule(0xc0026ccd80, {0xb35200, 0xe4e000}, 0xc003b83dc0, {0x0, 0x0, 0x0}, 0x0)
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/internal/engine/wazevo/engine.go:135 +0xf7
+github.com/tetratelabs/wazero.(*runtime).CompileModule(0xc002711440, {0xb35200, 0xe4e000}, {0xc006300000, 0x5700f0, 0x5700f1})
+	/cache/mod/github.com/tetratelabs/wazero@v1.7.2/runtime.go:237 +0x4c2
+github.com/higress-group/proxy-wasm-go-sdk/proxywasm/proxytest.NewWasmVMContext({0xc006300000, 0x5700f0, 0x5700f1})
+	/cache/mod/github.com/higress-group/proxy-wasm-go-sdk@v0.0.0-20250822030947-8345453fddd0/proxywasm/proxytest/wasmwrapper.go:98 +0xeb
+github.com/higress-group/wasm-go/pkg/test.RunTestWithPath.func2(0xc003b83880)
+	/cache/mod/github.com/higress-group/wasm-go@v1.0.3-0.20251011083635-792cb1547bac/pkg/test/test.go:171 +0x16a
+testing.tRunner(0xc003b83880, 0xc0029ba520)
+	/usr/local/go/src/testing/testing.go:1792 +0x226
+created by testing.(*T).Run in goroutine 229
+	/usr/local/go/src/testing/testing.go:1851 +0x8f3
+FAIL	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache	600.100s
+?   	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache/cache	[no test files]
+?   	github.com/alibaba/higress/plugins/wasm-go/extensions/response-cache/config	[no test files]
+FAIL

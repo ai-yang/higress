@@ -1,0 +1,115 @@
+{
+  "id": "error-r1-002",
+  "variant": "fixed",
+  "mode": "error",
+  "round": 1,
+  "key": "higress-audit:error-r1-002",
+  "status": "200",
+  "curl_exit": 0,
+  "stderr": "",
+  "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be",
+  "body": "{\"source\":\"upstream\",\"value\":\"fixture-only\"}",
+  "upstream_before_release": false,
+  "upstream_total": 1,
+  "events": [
+    {
+      "seq": 18,
+      "time_ns": 3769728616894,
+      "event": "prepared",
+      "id": "error-r1-002",
+      "mode": "error",
+      "key": "higress-audit:error-r1-002",
+      "value": "{\"source\":\"cache\",\"value\":\"fixture-only\"}"
+    },
+    {
+      "seq": 19,
+      "time_ns": 3769744848674,
+      "event": "redis_command",
+      "id": "error-r1-002",
+      "command": "GET",
+      "args": [
+        "higress-audit:error-r1-002"
+      ]
+    },
+    {
+      "seq": 20,
+      "time_ns": 3769745281605,
+      "event": "redis_get_seen",
+      "id": "error-r1-002"
+    },
+    {
+      "seq": 21,
+      "time_ns": 3769803552590,
+      "event": "redis_release_requested",
+      "id": "error-r1-002"
+    },
+    {
+      "seq": 22,
+      "time_ns": 3769803715481,
+      "event": "redis_reply_released",
+      "id": "error-r1-002",
+      "mode": "error"
+    },
+    {
+      "seq": 23,
+      "time_ns": 3769805265503,
+      "event": "upstream_seen",
+      "id": "error-r1-002",
+      "headers": {
+        "host": "127.0.0.1:19468",
+        "user-agent": "curl/7.81.0",
+        "accept": "*/*",
+        "x-http-cache-key": "error-r1-002",
+        "x-verification-id": "error-r1-002",
+        "x-forwarded-proto": "http",
+        "x-envoy-original-host": "127.0.0.1:19468",
+        "x-request-id": "e8b03878-5fd6-49d9-8345-8d0b07b7f672",
+        "x-envoy-expected-rq-timeout-ms": "15000",
+        "req-start-time": "1790158674963"
+      }
+    },
+    {
+      "seq": 24,
+      "time_ns": 3769810455300,
+      "event": "client_complete",
+      "id": "error-r1-002",
+      "status": "200",
+      "curl_exit": 0,
+      "body_sha256": "405de3e3016afb9b6f10e3c4327b8843f4379292888d2513ac167d9fe7d9a2be"
+    },
+    {
+      "seq": 25,
+      "time_ns": 3769811040036,
+      "event": "redis_command",
+      "id": "error-r1-002",
+      "command": "SET",
+      "args": [
+        "higress-audit:error-r1-002",
+        "{\"source\":\"upstream\",\"value\":\"fixture-only\"}"
+      ]
+    }
+  ],
+  "request_command": [
+    "curl",
+    "--noproxy",
+    "*",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "10",
+    "--dump-header",
+    "RESULT_DIR/error-r1-002.headers",
+    "--output",
+    "RESULT_DIR/error-r1-002.body",
+    "--write-out",
+    "%{http_code}",
+    "--header",
+    "x-http-cache-key: error-r1-002",
+    "--header",
+    "x-verification-id: error-r1-002",
+    "--header",
+    "Accept-Encoding: gzip",
+    "http://127.0.0.1:19468/fixture"
+  ],
+  "passed": true
+}

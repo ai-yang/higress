@@ -1,0 +1,1 @@
+{"mode": "timeout", "round": 1, "requests": 1, "upstream_calls": 1, "all_passed": true, "redis_commands": {"GET": 1, "SET": 1}}
