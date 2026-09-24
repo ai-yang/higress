@@ -127,6 +127,7 @@ type Renderer interface {
 type RendererOptions struct {
 	Name      string
 	Namespace string
+	ChartName string
 
 	// fields for LocalChartRenderer and LocalFileRenderer
 	FS  fs.FS
@@ -148,6 +149,12 @@ type RendererOption func(*RendererOptions)
 func WithName(name string) RendererOption {
 	return func(opts *RendererOptions) {
 		opts.Name = name
+	}
+}
+
+func WithChartName(name string) RendererOption {
+	return func(opts *RendererOptions) {
+		opts.ChartName = name
 	}
 }
 
@@ -342,8 +349,11 @@ func (rr *RemoteRenderer) initChartPathOptions() *action.ChartPathOptions {
 func (rr *RemoteRenderer) Init() error {
 	cpOpts := rr.initChartPathOptions()
 	settings := cli.New()
-	// using release name as chart name by default
-	cp, err := locateChart(cpOpts, rr.Opts.Name, settings)
+	chartName := rr.Opts.ChartName
+	if chartName == "" {
+		chartName = rr.Opts.Name
+	}
+	cp, err := locateChart(cpOpts, chartName, settings)
 	if err != nil {
 		return err
 	}
